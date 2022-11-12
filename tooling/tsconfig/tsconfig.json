@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Type Checking
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    // Modules
+    "allowImportingTsExtensions": true,
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": false,
+
+    // Emit
+    "newLine": "lf",
+    "noEmit": true,
+
+    // Interop Constraints
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Language and Environment
+    "lib": ["es2022"],
+    "moduleDetection": "force",
+    "target": "ES2022",
+
+    // Output Formatting
+    "preserveWatchOutput": true,
+
+    // Completeness
+    "skipLibCheck": true
+  }
+}

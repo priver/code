@@ -1,0 +1,43 @@
+{
+  "name": "@priver/eslint-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint .",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint --fix .",
+    "test": "node scripts/find-rules.js"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-i": "^2.29.1",
+    "eslint-plugin-jest": "^27.6.3",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "globals": "^13.24.0"
+  },
+  "devDependencies": {
+    "chalk": "^5.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.55.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

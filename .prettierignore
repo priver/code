@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+pnpm-lock.yaml
+
+# testing
+coverage
+
+# build
+out
+dist
+
+# https://github.com/prettier/prettier/issues/5246
+*.html

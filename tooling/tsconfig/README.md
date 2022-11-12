@@ -1,0 +1,3 @@
+# @priver/tsconfig
+
+Shareable TSConfigs.

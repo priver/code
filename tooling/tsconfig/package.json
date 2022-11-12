@@ -1,0 +1,9 @@
+{
+  "name": "@priver/tsconfig",
+  "private": true,
+  "exports": {
+    ".": "./tsconfig.json",
+    "./react": "./tsconfig.react.json",
+    "./vite": "./tsconfig.vite.json"
+  }
+}
