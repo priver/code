@@ -22,6 +22,7 @@ const config = {
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: false,
+  proseWrap: 'always',
 
   plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-jsdoc'],
 

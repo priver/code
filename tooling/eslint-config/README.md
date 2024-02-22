@@ -1,6 +1,7 @@
 # @priver/eslint-config
 
-Shareable config for [ESLint]. Uses [ESLint's new config system](https://eslint.org/docs/latest/use/configure/configuration-files-new).
+Shareable config for [ESLint]. Uses
+[ESLint's new config system](https://eslint.org/docs/latest/use/configure/configuration-files-new).
 
 ## Installation
 
