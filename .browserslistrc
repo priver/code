@@ -1,17 +1,1 @@
-# Generated with `pnpm dlx browserslist "defaults, maintained node versions"`
-and_chr 121
-and_ff 122
-and_qq 13.1
-and_uc 15.5
-android 121
-chrome 109
-edge 119
-firefox 115
-ios_saf 15.6-15.8
-kaios 2.5
-node 18.19.0
-op_mini all
-op_mob 73
-opera 104
-safari 16.6
-samsung 22
+defaults, maintained node versions
