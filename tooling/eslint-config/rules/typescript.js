@@ -1,15 +1,14 @@
-import typescriptPlugin from '@typescript-eslint/eslint-plugin';
-import typescriptParser from '@typescript-eslint/parser';
+import tseslint from 'typescript-eslint';
 
 export const typescript = {
   languageOptions: {
-    parser: typescriptParser,
+    parser: tseslint.parser,
     parserOptions: {
       project: 'tsconfig.json',
     },
   },
   plugins: {
-    '@typescript-eslint': typescriptPlugin,
+    '@typescript-eslint': tseslint.plugin,
   },
   settings: {
     'import/extensions': ['.ts', '.tsx', '.js'],
