@@ -1,6 +1,6 @@
 {
   "name": "@priver/eslint-config",
-  "version": "7.0.3",
+  "version": "8.0.0",
   "description": "Shareable config for eslint",
   "keywords": [
     "eslint",
