@@ -1,13 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
-    "clean": {
-      "cache": false
-    },
+  "tasks": {
     "lint": {},
     "typecheck": {},
     "test": {
       "outputs": ["coverage/**"]
+    },
+    "clean": {
+      "cache": false
     },
     "build": {
       "dependsOn": ["^build"],

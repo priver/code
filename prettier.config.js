@@ -1,8 +1,4 @@
-/**
- * @type {import('prettier').Config &
- *   import('@ianvs/prettier-plugin-sort-imports').PluginConfig &
- *   import('prettier-plugin-jsdoc').Options}
- */
+/** @type {import('prettier').Config} */
 const config = {
   experimentalTernaries: true,
   printWidth: 100,
@@ -24,7 +20,7 @@ const config = {
   singleAttributePerLine: false,
   proseWrap: 'always',
 
-  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-jsdoc'],
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
 
   // @ianvs/prettier-plugin-sort-imports
   importOrder: [
@@ -35,15 +31,11 @@ const config = {
     '',
     '^@priver/',
     '',
-    '^@/',
-    '^(?!.*\\.css\\.ts$)\\.\\.\\/.*$',
-    '^(?!.*\\.css\\.ts$)\\.\\/.*$',
-    '\\.css\\.ts$',
+    '^#',
+    '^[.][.]',
+    '^[.]',
   ],
-  importOrderTypeScriptVersion: '5.1.6',
-
-  // prettier-plugin-jsdoc
-  tsdoc: true,
+  importOrderTypeScriptVersion: '5.5.4',
 };
 
 export default config;
