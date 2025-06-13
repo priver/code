@@ -11,25 +11,30 @@
   ],
   "homepage": "https://github.com/priver/code/tooling/eslint-config#readme",
   "bugs": "https://github.com/priver/code/issues",
+  "author": "Mikhail Priver <m.priver@gmail.com> (https://github.com/priver)",
   "repository": {
     "type": "git",
     "url": "https://github.com/priver/code.git",
     "directory": "tooling/eslint-config"
   },
   "license": "MIT",
-  "author": "Mikhail Priver <m.priver@gmail.com> (https://github.com/priver)",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
-  "files": [
-    "rules",
-    "index.js"
-  ],
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
+    "check-types": "tsc --noEmit",
     "test": "node scripts/find-rules.ts && node scripts/compare.ts",
-    "build": "node scripts/compare.ts --update"
+    "build": "tsup src/index.ts --format cjs,esm --dts && node scripts/compare.ts --update",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
@@ -53,17 +58,18 @@
     "typescript-eslint": "^8.34.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.28.0",
+    "@eslint/js": "^9.29.0",
     "@priver/tsconfig": "workspace:^",
     "@types/confusing-browser-globals": "^1.0.3",
-    "@types/node": "^22.15.31",
-    "eslint": "^9.28.0",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.5",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.3"
+    "prettier": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
   },
   "peerDependencies": {
-    "eslint": "^9.28.0"
+    "eslint": "catalog:"
   },
   "engines": {
     "node": "^20.12.0 || >=22.0.0"
