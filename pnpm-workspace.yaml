@@ -1,2 +1,7 @@
 packages:
-  - 'tooling/*'
+  - tooling/*
+
+nodeOptions: '--experimental-strip-types'
+
+onlyBuiltDependencies:
+  - unrs-resolver
