@@ -29,13 +29,14 @@ const config = {
     '',
     '<THIRD_PARTY_MODULES>',
     '',
-    '^@priver/',
+    '^@priver/(.*)$',
     '',
     '^#',
     '^[.][.]',
     '^[.]',
   ],
-  importOrderTypeScriptVersion: '5.5.4',
+  importOrderCaseSensitive: true,
+  importOrderTypeScriptVersion: '5.8.3',
 };
 
 export default config;

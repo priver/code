@@ -1,0 +1,4 @@
+{
+  "extends": ["@priver/tsconfig"],
+  "include": ["src/**/*", "scripts/**/*", "eslint.config.ts"]
+}

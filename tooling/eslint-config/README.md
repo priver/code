@@ -1,7 +1,7 @@
 # @priver/eslint-config
 
-Shareable config for [ESLint]. Uses
-[ESLint's new config system](https://eslint.org/docs/latest/use/configure/configuration-files-new).
+Shareable config for [ESLint](https://eslint.org/). Uses
+[ESLint's new config system](https://eslint.org/docs/latest/use/configure/configuration-files).
 
 ## Installation
 
@@ -23,7 +23,7 @@ Included plugins:
 - [eslint-plugin-react-hooks]
 - [eslint-plugin-react]
 - [eslint-plugin-unicorn]
-- [typescript-eslint]
+- [typescript-eslint](https://typescript-eslint.io/)
 
 ## Usage
 
@@ -42,7 +42,7 @@ import { base, node, typescript } from '@priver/eslint-config';
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   { ignores: ['scripts/**/*'] }, // files will not be linted
   base,
@@ -70,7 +70,7 @@ import { base, browser, jest, node, react, typescript } from '@priver/eslint-con
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   { ignores: ['.next/**/*', 'next-env.d.ts'] }, // files will not be linted
   base,
@@ -102,7 +102,6 @@ export default [
 ];
 ```
 
-[eslint]: https://eslint.org/
 [eslint-plugin-compat]: https://github.com/amilajack/eslint-plugin-compat
 [eslint-plugin-eslint-comments]: https://mysticatea.github.io/eslint-plugin-eslint-comments/
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
@@ -113,4 +112,3 @@ export default [
 [eslint-plugin-react-hooks]: https://reactjs.org/docs/hooks-rules.html
 [eslint-plugin-react]: https://github.com/jsx-eslint/eslint-plugin-react
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
-[typescript-eslint]: https://typescript-eslint.io/

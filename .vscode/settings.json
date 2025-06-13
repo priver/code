@@ -6,17 +6,28 @@
   "editor.formatOnSave": true,
   "editor.rulers": [100],
   "editor.tabSize": 2,
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.workingDirectories": [{ "pattern": "./tooling/*/" }],
+  "eslint.runtime": "node",
+  "eslint.execArgv": ["--experimental-strip-types"],
+  "eslint.options": {
+    "flags": ["unstable_native_nodejs_ts_config"]
+  },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "markdown.extension.toc.levels": "2..4",
+  "markdownlint.config": {
+    "line-length": false,
+    "no-inline-html": false
+  },
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.importModuleSpecifierEnding": "auto",
   "typescript.tsdk": "node_modules/typescript/lib",
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "[markdown]": {
+    "editor.wordWrap": "off"
   }
 }

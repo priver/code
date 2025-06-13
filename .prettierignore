@@ -10,4 +10,4 @@ out
 dist
 
 # https://github.com/prettier/prettier/issues/5246
-*.html
+# *.html
