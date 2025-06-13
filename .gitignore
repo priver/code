@@ -1,22 +1,26 @@
-# dependencies
+# Dependencies
 node_modules
 
-# testing
-coverage
-
-# build
-dist
-out
-.turbo
-*.tsbuildinfo
-
-# local env files
+# Local env files
 .env.local
 .env.*.local
 
-# logs
+# Testing
+coverage/
+
+# Tools
+.turbo/
+.tsup/
+
+# Build Outputs
+dist/
+out/
+*.tsbuildinfo
+
+# Logs
 npm-debug.log*
 .pnpm-debug.log*
 
-# misc
+# Misc
 .DS_Store
+*.pem

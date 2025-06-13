@@ -1,2 +1,12 @@
 packages:
-  - 'tooling/*'
+  - tooling/*
+catalog:
+  '@types/node': ^22.15.31
+  'eslint': ^9.29.0
+  'prettier': ^3.5.3
+  'tsup': ^8.5.0
+  'typescript': ^5.8.3
+nodeOptions: '--experimental-strip-types'
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver

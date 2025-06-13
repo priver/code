@@ -1,8 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
   "tasks": {
-    "lint": {},
-    "typecheck": {},
+    "//#root:check": {},
+    "//#root:format": {},
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
+    "lint": {
+      "dependsOn": ["topo"]
+    },
+    "check-types": {
+      "dependsOn": ["topo"]
+    },
     "test": {
       "outputs": ["coverage/**"]
     },
