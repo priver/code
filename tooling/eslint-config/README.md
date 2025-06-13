@@ -36,18 +36,19 @@ pnpm add --save-dev eslint @priver/eslint-config
 
 This configuration includes several powerful ESLint plugins to enhance your development experience:
 
-| Plugin                                                                                                               | Description                                    |
-| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| [typescript-eslint](https://typescript-eslint.io/)                                                                   | TypeScript specific linting rules              |
-| [eslint-plugin-import-x](https://github.com/un-ts/eslint-plugin-import-x)                                            | Import/export syntax validation                |
-| [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)                                               | Node.js specific linting rules                 |
-| [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                       | Various awesome ESLint rules                   |
-| [@eslint-react/eslint-plugin](https://eslint-react.xyz/)                                                             | React specific linting rules                   |
-| [eslint-plugin-react-hooks](https://reactjs.org/docs/hooks-rules.html)                                               | React Hooks rules                              |
-| [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh)                            | React Fast Refresh rules                       |
-| [eslint-plugin-storybook](https://github.com/storybookjs/eslint-plugin-storybook)                                    | Storybook specific rules                       |
-| [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)                                            | Browser compatibility checking                 |
-| [@eslint-community/eslint-plugin-eslint-comments](https://eslint-community.github.io/eslint-plugin-eslint-comments/) | Additional rules for ESLint directive comments |
+| Plugin                                                                                                               | Description                                     |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [@eslint-community/eslint-plugin-eslint-comments](https://eslint-community.github.io/eslint-plugin-eslint-comments/) | Additional rules for ESLint directive comments  |
+| [@eslint-react/eslint-plugin](https://eslint-react.xyz/)                                                             | React specific linting rules                    |
+| [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)                                            | Browser compatibility checking                  |
+| [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend)                                           | Detect dependency bloat and redundant polyfills |
+| [eslint-plugin-import-x](https://github.com/un-ts/eslint-plugin-import-x)                                            | Import/export syntax validation                 |
+| [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)                                               | Node.js specific linting rules                  |
+| [eslint-plugin-react-hooks](https://reactjs.org/docs/hooks-rules.html)                                               | React Hooks rules                               |
+| [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh)                            | React Fast Refresh rules                        |
+| [eslint-plugin-storybook](https://github.com/storybookjs/eslint-plugin-storybook)                                    | Storybook specific rules                        |
+| [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                       | Various awesome ESLint rules                    |
+| [typescript-eslint](https://typescript-eslint.io/)                                                                   | TypeScript specific linting rules               |
 
 ## Usage
 
@@ -60,17 +61,17 @@ setup examples:
 import { defineConfig } from 'eslint/config';
 import { base, browser } from '@priver/eslint-config';
 
-export default defineConfig(base, browser);
+export default defineConfig([base, browser]);
 ```
 
 ### Node.js Application with TypeScript
 
 ```js
-import { defineConfig } from 'eslint-define-config';
+import { defineConfig, globalIgnores } from 'eslint-define-config';
 import { base, node, typescript } from '@priver/eslint-config';
 
-export default defineConfig(
-  { ignores: ['scripts/**/*'] }, // Ignore specific directories
+export default defineConfig([
+  globalIgnores(['scripts/']), // Ignore specific directories
   base,
   node,
   {
@@ -82,17 +83,17 @@ export default defineConfig(
       },
     },
   },
-);
+]);
 ```
 
 ### React Application with TypeScript and Storybook
 
 ```js
-import { defineConfig } from 'eslint-define-config';
+import { defineConfig, globalIgnores } from 'eslint-define-config';
 import { base, browser, node, react, storybook, typescript } from '@priver/eslint-config';
 
 export default defineConfig([
-  { ignores: ['.next/**/*', 'next-env.d.ts'] },
+  globalIgnores(['.next/', 'next-env.d.ts']),
   base,
   browser,
   {
