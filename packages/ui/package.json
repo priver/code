@@ -1,34 +1,33 @@
 {
-  "name": "@priver/split-circle-web",
+  "name": "@priver/ui",
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": "./src/index.ts",
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
-    "check-types": "tsc --noEmit",
-    "build": "vite build",
-    "dev": "vite",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@priver/ui": "workspace:*",
-    "react": "catalog:",
-    "react-dom": "catalog:"
+    "check-types": "tsc --noEmit"
   },
   "devDependencies": {
     "@priver/eslint-config": "workspace:*",
     "@priver/tsconfig": "workspace:*",
-    "@tailwindcss/vite": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "@vitejs/plugin-react": "catalog:",
     "eslint": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "tailwindcss": "catalog:",
-    "typescript": "catalog:",
-    "vite": "catalog:"
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "engines": {
     "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "class-variance-authority": "catalog:"
   }
 }
