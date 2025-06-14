@@ -8,6 +8,7 @@ import reactWebAPI from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
 
 export const react = {
+  name: 'priver/react',
   plugins: {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
     'react-x': reactX as unknown as ESLint.Plugin,

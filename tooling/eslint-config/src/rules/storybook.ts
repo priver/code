@@ -2,6 +2,7 @@ import type { ESLint, Linter } from 'eslint';
 import storybookPlugin from 'eslint-plugin-storybook';
 
 export const storybook = {
+  name: 'priver/storybook',
   plugins: {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
     storybook: storybookPlugin as unknown as ESLint.Plugin,
