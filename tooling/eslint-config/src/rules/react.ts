@@ -22,20 +22,6 @@ export const react = {
     'react-hooks': reactHooks,
     'react-refresh': reactRefresh,
   },
-  settings: {
-    'react-x': {
-      version: 'detect',
-      importSource: 'react',
-      strict: true,
-      skipImportCheck: true,
-      polymorphicPropName: 'as',
-      additionalComponents: [],
-      additionalHooks: {
-        useEffect: ['useIsomorphicLayoutEffect'],
-        useLayoutEffect: ['useIsomorphicLayoutEffect'],
-      },
-    },
-  },
   rules: {
     // React
     'react-x/avoid-shorthand-boolean': 'off',
