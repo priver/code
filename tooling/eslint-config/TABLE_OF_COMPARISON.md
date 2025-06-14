@@ -1,8 +1,11 @@
-# Table of Comparison
+# ESLint Configuration Comparison
 
-This is how this ruleset compares to recommended configurations.
+This document provides a comprehensive comparison between @priver/eslint-config and the recommended
+configurations from included ESLint plugins. It serves as a reference to understand how our
+configuration differs from recommended configurations and helps identify areas where we've made
+opinionated choices.
 
-Table of Contents:
+**Table of Contents:**
 
 - [@eslint/js](#eslintjs)
 - [@eslint-community/eslint-comments](#eslint-communityeslint-comments)
@@ -22,21 +25,21 @@ Table of Contents:
 - [react-refresh](#react-refresh)
 - [storybook](#storybook)
 
-Emojis:
+The following symbols indicate how each rule is configured:
 
-- ✅ – error
-- ⚠️ - warning
-- 🚫 - disabled
+- ✅ **Error** - Rule is enabled and will cause lint failures
+- ⚠️ **Warning** - Rule is enabled but only shows warnings
+- 🚫 **Disabled** - Rule is turned off
 
 <!-- This comparison is created using `pnpm compare` script. -->
 
 ## @eslint/js
 
-Configurations:
+Configurations compared:
 
-- P - @priver/eslint-config
-- R -
-  [recommended](https://eslint.org/docs/latest/use/configure/configuration-files#using-predefined-configurations)
+- **P** - @priver/eslint-config
+- **R** -
+  [ESLint recommended configuration](https://eslint.org/docs/latest/use/configure/configuration-files#using-predefined-configurations)
 
 <!-- START eslint -->
 
@@ -241,40 +244,40 @@ Configurations:
 | [`vars-on-top` <a id="summary-vars-on-top"></a>](https://eslint.org/docs/latest/rules/vars-on-top)                                                             | 🚫                                                     | 🚫  |
 | [`yoda` <a id="summary-yoda"></a>](https://eslint.org/docs/latest/rules/yoda)                                                                                  | ✅                                                     | 🚫  |
 
-<table><tr><th colspan="2" align="left"><code>no-cond-assign</code> (<a href="#summary-no-cond-assign"> ⬆️ back to summary table</a>) <a id="rule-no-cond-assign"></a></th></tr>
+<table><tr><th colspan="2" align="left"><code>no-cond-assign</code> <a href="#summary-no-cond-assign">⬆️ back to summary table</a> <a id="rule-no-cond-assign"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   "always"
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>no-empty</code> (<a href="#summary-no-empty"> ⬆️ back to summary table</a>) <a id="rule-no-empty"></a></th></tr>
+<tr><th colspan="2" align="left"><code>no-empty</code> <a href="#summary-no-empty">⬆️ back to summary table</a> <a id="rule-no-empty"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
     "allowEmptyCatch": true
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>no-extra-boolean-cast</code> (<a href="#summary-no-extra-boolean-cast"> ⬆️ back to summary table</a>) <a id="rule-no-extra-boolean-cast"></a></th></tr>
+<tr><th colspan="2" align="left"><code>no-extra-boolean-cast</code> <a href="#summary-no-extra-boolean-cast">⬆️ back to summary table</a> <a id="rule-no-extra-boolean-cast"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
     "enforceForInnerExpressions": true
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>no-unsafe-negation</code> (<a href="#summary-no-unsafe-negation"> ⬆️ back to summary table</a>) <a id="rule-no-unsafe-negation"></a></th></tr>
+<tr><th colspan="2" align="left"><code>no-unsafe-negation</code> <a href="#summary-no-unsafe-negation">⬆️ back to summary table</a> <a id="rule-no-unsafe-negation"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
     "enforceForOrderingRelations": true
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>no-unsafe-optional-chaining</code> (<a href="#summary-no-unsafe-optional-chaining"> ⬆️ back to summary table</a>) <a id="rule-no-unsafe-optional-chaining"></a></th></tr>
+<tr><th colspan="2" align="left"><code>no-unsafe-optional-chaining</code> <a href="#summary-no-unsafe-optional-chaining">⬆️ back to summary table</a> <a id="rule-no-unsafe-optional-chaining"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
     "disallowArithmeticOperators": true
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>no-unused-vars</code> (<a href="#summary-no-unused-vars"> ⬆️ back to summary table</a>) <a id="rule-no-unused-vars"></a></th></tr>
+<tr><th colspan="2" align="left"><code>no-unused-vars</code> <a href="#summary-no-unused-vars">⬆️ back to summary table</a> <a id="rule-no-unused-vars"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
@@ -285,11 +288,11 @@ Configurations:
 
 ## @eslint-community/eslint-comments
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
-  [recommended](https://eslint-community.github.io/eslint-plugin-eslint-comments/#%F0%9F%93%96-usage)
+- **P** – @priver/eslint-config
+- **R** –
+  [eslint-comments recommended configuration](https://eslint-community.github.io/eslint-plugin-eslint-comments/#%F0%9F%93%96-usage)
 
 <!-- START @eslint-community/eslint-comments -->
 
@@ -309,10 +312,10 @@ Configurations:
 
 ## import-x
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [recommended](https://github.com/un-ts/eslint-plugin-import-x/blob/master/README.md#configuration-legacy-eslintrc)
 
 <!-- START import-x -->
@@ -365,7 +368,7 @@ Configurations:
 | [`import-x/prefer-default-export` <a id="summary-import-x/prefer-default-export"></a>](https://github.com/un-ts/eslint-plugin-import-x/blob/v4.15.2/docs/rules/prefer-default-export.md)                               | 🚫                                                | 🚫  |
 | [`import-x/unambiguous` <a id="summary-import-x/unambiguous"></a>](https://github.com/un-ts/eslint-plugin-import-x/blob/v4.15.2/docs/rules/unambiguous.md)                                                             | 🚫                                                | 🚫  |
 
-<table><tr><th colspan="2" align="left"><code>import-x/no-duplicates</code> (<a href="#summary-import-x/no-duplicates"> ⬆️ back to summary table</a>) <a id="rule-import-x/no-duplicates"></a></th></tr>
+<table><tr><th colspan="2" align="left"><code>import-x/no-duplicates</code> <a href="#summary-import-x/no-duplicates">⬆️ back to summary table</a> <a id="rule-import-x/no-duplicates"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
@@ -376,10 +379,10 @@ Configurations:
 
 ## unicorn
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [recommended](https://github.com/sindresorhus/eslint-plugin-unicorn?tab=readme-ov-file#recommended-config)
 
 <!-- START unicorn -->
@@ -517,14 +520,14 @@ Configurations:
 | [`unicorn/text-encoding-identifier-case` <a id="summary-unicorn/text-encoding-identifier-case"></a>](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v59.0.1/docs/rules/text-encoding-identifier-case.md)                               | ✅                                                        | ✅  |
 | [`unicorn/throw-new-error` <a id="summary-unicorn/throw-new-error"></a>](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v59.0.1/docs/rules/throw-new-error.md)                                                                         | ✅                                                        | ✅  |
 
-<table><tr><th colspan="2" align="left"><code>unicorn/expiring-todo-comments</code> (<a href="#summary-unicorn/expiring-todo-comments"> ⬆️ back to summary table</a>) <a id="rule-unicorn/expiring-todo-comments"></a></th></tr>
+<table><tr><th colspan="2" align="left"><code>unicorn/expiring-todo-comments</code> <a href="#summary-unicorn/expiring-todo-comments">⬆️ back to summary table</a> <a id="rule-unicorn/expiring-todo-comments"></a></th></tr>
 <tr><td><pre><code>[
   "warn",
   {
     "allowWarningComments": false
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>unicorn/import-style</code> (<a href="#summary-unicorn/import-style"> ⬆️ back to summary table</a>) <a id="rule-unicorn/import-style"></a></th></tr>
+<tr><th colspan="2" align="left"><code>unicorn/import-style</code> <a href="#summary-unicorn/import-style">⬆️ back to summary table</a> <a id="rule-unicorn/import-style"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
@@ -535,7 +538,7 @@ Configurations:
     }
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>unicorn/switch-case-braces</code> (<a href="#summary-unicorn/switch-case-braces"> ⬆️ back to summary table</a>) <a id="rule-unicorn/switch-case-braces"></a></th></tr>
+<tr><th colspan="2" align="left"><code>unicorn/switch-case-braces</code> <a href="#summary-unicorn/switch-case-braces">⬆️ back to summary table</a> <a id="rule-unicorn/switch-case-braces"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   "avoid"
@@ -544,10 +547,10 @@ Configurations:
 
 ## depend
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [flat/recommended](https://github.com/es-tooling/eslint-plugin-depend/blob/main/README.md#usage)
 
 <!-- START depend -->
@@ -560,10 +563,10 @@ Configurations:
 
 ## compat
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [flat/recommended](https://github.com/amilajack/eslint-plugin-compat?tab=readme-ov-file#new-config-eslintconfigmjs)
 
 <!-- START compat -->
@@ -576,10 +579,10 @@ Configurations:
 
 ## n
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [recommended-module](https://github.com/eslint-community/eslint-plugin-n?tab=readme-ov-file#-configs)
 
 <!-- START n -->
@@ -618,10 +621,10 @@ Configurations:
 
 ## @typescript-eslint
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R – [strict-type-checked](https://typescript-eslint.io/users/configs/#strict-type-checked) +
+- **P** – @priver/eslint-config
+- **R** – [strict-type-checked](https://typescript-eslint.io/users/configs/#strict-type-checked) +
   [stylistic-type-checked](https://typescript-eslint.io/users/configs/#stylistic-type-checked)
 
 <!-- START @typescript-eslint -->
@@ -753,21 +756,21 @@ Configurations:
 | [`@typescript-eslint/unified-signatures` <a id="summary-@typescript-eslint/unified-signatures"></a>](https://typescript-eslint.io/rules/unified-signatures)                                                                               | ✅                                                                        | ✅  |
 | [`@typescript-eslint/use-unknown-in-catch-callback-variable` <a id="summary-@typescript-eslint/use-unknown-in-catch-callback-variable"></a>](https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable)                   | ✅                                                                        | ✅  |
 
-<table><tr><th colspan="2" align="left"><code>@typescript-eslint/array-type</code> (<a href="#summary-@typescript-eslint/array-type"> ⬆️ back to summary table</a>) <a id="rule-@typescript-eslint/array-type"></a></th></tr>
+<table><tr><th colspan="2" align="left"><code>@typescript-eslint/array-type</code> <a href="#summary-@typescript-eslint/array-type">⬆️ back to summary table</a> <a id="rule-@typescript-eslint/array-type"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
     "default": "array-simple"
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>@typescript-eslint/ban-ts-comment</code> (<a href="#summary-@typescript-eslint/ban-ts-comment"> ⬆️ back to summary table</a>) <a id="rule-@typescript-eslint/ban-ts-comment"></a></th></tr>
+<tr><th colspan="2" align="left"><code>@typescript-eslint/ban-ts-comment</code> <a href="#summary-@typescript-eslint/ban-ts-comment">⬆️ back to summary table</a> <a id="rule-@typescript-eslint/ban-ts-comment"></a></th></tr>
 <tr><td><pre><code>"error"</code></pre></td><td><pre><code>[
   "error",
   {
     "minimumDescriptionLength": 10
   }
 ]</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>@typescript-eslint/consistent-type-assertions</code> (<a href="#summary-@typescript-eslint/consistent-type-assertions"> ⬆️ back to summary table</a>) <a id="rule-@typescript-eslint/consistent-type-assertions"></a></th></tr>
+<tr><th colspan="2" align="left"><code>@typescript-eslint/consistent-type-assertions</code> <a href="#summary-@typescript-eslint/consistent-type-assertions">⬆️ back to summary table</a> <a id="rule-@typescript-eslint/consistent-type-assertions"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
@@ -775,12 +778,12 @@ Configurations:
     "objectLiteralTypeAssertions": "never"
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>@typescript-eslint/consistent-type-definitions</code> (<a href="#summary-@typescript-eslint/consistent-type-definitions"> ⬆️ back to summary table</a>) <a id="rule-@typescript-eslint/consistent-type-definitions"></a></th></tr>
+<tr><th colspan="2" align="left"><code>@typescript-eslint/consistent-type-definitions</code> <a href="#summary-@typescript-eslint/consistent-type-definitions">⬆️ back to summary table</a> <a id="rule-@typescript-eslint/consistent-type-definitions"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   "type"
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>@typescript-eslint/return-await</code> (<a href="#summary-@typescript-eslint/return-await"> ⬆️ back to summary table</a>) <a id="rule-@typescript-eslint/return-await"></a></th></tr>
+<tr><th colspan="2" align="left"><code>@typescript-eslint/return-await</code> <a href="#summary-@typescript-eslint/return-await">⬆️ back to summary table</a> <a id="rule-@typescript-eslint/return-await"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   "in-try-catch"
@@ -788,7 +791,7 @@ Configurations:
   "error",
   "error-handling-correctness-only"
 ]</code></pre></td></tr>
-<tr><th colspan="2" align="left"><code>@typescript-eslint/triple-slash-reference</code> (<a href="#summary-@typescript-eslint/triple-slash-reference"> ⬆️ back to summary table</a>) <a id="rule-@typescript-eslint/triple-slash-reference"></a></th></tr>
+<tr><th colspan="2" align="left"><code>@typescript-eslint/triple-slash-reference</code> <a href="#summary-@typescript-eslint/triple-slash-reference">⬆️ back to summary table</a> <a id="rule-@typescript-eslint/triple-slash-reference"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   {
@@ -801,10 +804,10 @@ Configurations:
 
 ## @eslint-react
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R – [recommended-type-checked](https://eslint-react.xyz/docs/presets#typescript-specialized)
+- **P** – @priver/eslint-config
+- **R** – [recommended-type-checked](https://eslint-react.xyz/docs/presets#typescript-specialized)
 
 ### react-x
 
@@ -953,10 +956,10 @@ Configurations:
 
 ## react-hooks
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [recommended](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#flat-config-eslintconfigjsts)
 
 <!-- START react-hooks -->
@@ -970,10 +973,10 @@ Configurations:
 
 ## react-refresh
 
-Configurations:
+Configurations compared:
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [vite](https://github.com/ArnaudBarre/eslint-plugin-react-refresh?tab=readme-ov-file#vite-config)
 
 <!-- START react-refresh -->
@@ -986,10 +989,10 @@ Configurations:
 
 ## storybook
 
-Configurations:
+**Configurations:**
 
-- P – @priver/eslint-config
-- R –
+- **P** – @priver/eslint-config
+- **R** –
   [flat/recommended](https://github.com/storybookjs/eslint-plugin-storybook?tab=readme-ov-file#configuration-eslintconfigcmjs)
 
 <!-- START storybook -->

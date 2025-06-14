@@ -313,7 +313,7 @@ function comparePlugin(
       if (hasIncompatibleValue) {
         incompatibleTable.push(
           htmlTableHeaderRow(
-            `${htmlCode(ruleName)} (${htmlLink(`#${summaryID(ruleName)}`, ' ⬆️ back to summary table')}) ${htmlAnchor(ruleID(ruleName))}`,
+            `${htmlCode(ruleName)} ${htmlLink(`#${summaryID(ruleName)}`, '⬆️ back to summary table')} ${htmlAnchor(ruleID(ruleName))}`,
           ),
           htmlTableRow([
             htmlCodeBlock(toJSON(ruleEntry)),
