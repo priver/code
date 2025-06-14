@@ -1,4 +1,4 @@
-# ESLint Configuration Comparison
+# Table of Comparison
 
 This document provides a comprehensive comparison between @priver/eslint-config and the recommended
 configurations from included ESLint plugins. It serves as a reference to understand how our
@@ -27,9 +27,9 @@ opinionated choices.
 
 The following symbols indicate how each rule is configured:
 
-- ✅ **Error** - Rule is enabled and will cause lint failures
-- ⚠️ **Warning** - Rule is enabled but only shows warnings
-- 🚫 **Disabled** - Rule is turned off
+- ✅ - Error
+- ⚠️ - Warning
+- 🚫 - Disabled
 
 <!-- This comparison is created using `pnpm compare` script. -->
 
