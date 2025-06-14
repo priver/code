@@ -4,5 +4,5 @@ Monorepo for my pet projects.
 
 ## Tooling
 
-- [`@priver/eslint-config`](packages/eslint-config)
-- [`@priver/tsconfig`](packages/tsconfig)
+- [`@priver/eslint-config`](tooling/eslint-config)
+- [`@priver/tsconfig`](tooling/tsconfig)
