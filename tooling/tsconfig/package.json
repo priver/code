@@ -1,5 +1,6 @@
 {
   "name": "@priver/tsconfig",
+  "version": "0.0.0",
   "private": true,
   "exports": {
     ".": "./tsconfig.json",
