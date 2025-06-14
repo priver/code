@@ -1,7 +1,7 @@
 # @priver/eslint-config
 
-[![npm version](https://img.shields.io/npm/v/@priver/eslint-config.svg)](https://www.npmjs.com/package/@priver/eslint-config)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![NPM Version](https://img.shields.io/npm/v/%40priver%2Feslint-config)](https://www.npmjs.com/package/@priver/eslint-config)
+[![NPM License](https://img.shields.io/npm/l/%40priver%2Feslint-config)](https://opensource.org/licenses/MIT)
 
 A comprehensive, modern ESLint configuration package that provides a set of pre-configured rules and
 plugins for various JavaScript/TypeScript projects. This configuration leverages
