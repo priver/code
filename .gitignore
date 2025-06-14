@@ -8,8 +8,9 @@ node_modules
 # Testing
 coverage/
 
-# Turbo
+# Tools
 .turbo/
+.tsup/
 
 # Build Outputs
 dist/

@@ -67,7 +67,7 @@ export default defineConfig([base, browser]);
 ### Node.js Application with TypeScript
 
 ```js
-import { defineConfig, globalIgnores } from 'eslint-define-config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import { base, node, typescript } from '@priver/eslint-config';
 
 export default defineConfig([
@@ -89,7 +89,7 @@ export default defineConfig([
 ### React Application with TypeScript and Storybook
 
 ```js
-import { defineConfig, globalIgnores } from 'eslint-define-config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import { base, browser, node, react, storybook, typescript } from '@priver/eslint-config';
 
 export default defineConfig([
@@ -105,9 +105,9 @@ export default defineConfig([
       },
     },
   },
-  { files: ['**/*.tsx'], ...react },
-  { files: ['**/*.stories.tsx'], ...storybook },
-  { files: ['**/*.config.js'], ...node },
+  { files: ['**/*.tsx'], extends: [react] },
+  { files: ['**/*.stories.tsx'], extends: [storybook] },
+  { files: ['**/*.config.js'], extends: [node] },
 ]);
 ```
 

@@ -22,19 +22,23 @@
     "dist"
   ],
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+  "exports": "./src/index.ts",
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
     }
   },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
     "check-types": "tsc --noEmit",
     "test": "node scripts/find-rules.ts && node scripts/compare.ts",
-    "build": "tsup src/index.ts --format cjs,esm --dts && node scripts/compare.ts --update",
-    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+    "build:compare": "node scripts/compare.ts --update",
+    "build:tsup": "tsup",
+    "build": "pnpm run '/^build:.*/'",
+    "dev": "tsup --watch"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
@@ -59,7 +63,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
-    "@priver/tsconfig": "workspace:^",
+    "@priver/tsconfig": "workspace:*",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "catalog:",
     "eslint": "catalog:",
