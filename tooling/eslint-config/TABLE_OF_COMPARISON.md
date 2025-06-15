@@ -874,7 +874,7 @@ Configurations compared:
 | [`react-x/no-useless-fragment` <a id="summary-react-x/no-useless-fragment"></a>](https://eslint-react.xyz/docs/rules/no-useless-fragment)                                                          | ✅  | 🚫  |
 | [`react-x/prefer-destructuring-assignment` <a id="summary-react-x/prefer-destructuring-assignment"></a>](https://eslint-react.xyz/docs/rules/prefer-destructuring-assignment)                      | 🚫  | 🚫  |
 | [`react-x/prefer-react-namespace-import` <a id="summary-react-x/prefer-react-namespace-import"></a>](https://eslint-react.xyz/docs/rules/prefer-react-namespace-import)                            | 🚫  | 🚫  |
-| [`react-x/prefer-read-only-props` <a id="summary-react-x/prefer-read-only-props"></a>](https://eslint-react.xyz/docs/rules/prefer-read-only-props)                                                 | ✅  | 🚫  |
+| [`react-x/prefer-read-only-props` <a id="summary-react-x/prefer-read-only-props"></a>](https://eslint-react.xyz/docs/rules/prefer-read-only-props)                                                 | 🚫  | 🚫  |
 | [`react-x/prefer-shorthand-boolean` <a id="summary-react-x/prefer-shorthand-boolean"></a>](https://eslint-react.xyz/docs/rules/prefer-shorthand-boolean)                                           | ✅  | 🚫  |
 | [`react-x/prefer-shorthand-fragment` <a id="summary-react-x/prefer-shorthand-fragment"></a>](https://eslint-react.xyz/docs/rules/prefer-shorthand-fragment)                                        | ✅  | 🚫  |
 | [`react-x/use-jsx-vars` <a id="summary-react-x/use-jsx-vars"></a>](https://eslint-react.xyz/docs/rules/jsx-uses-vars)                                                                              | 🚫  | 🚫  |

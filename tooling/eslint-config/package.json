@@ -33,12 +33,12 @@
   },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
-    "check-types": "tsc --noEmit",
+    "check-types": "tsc",
     "test": "node scripts/find-rules.ts && node scripts/compare.ts",
     "build:compare": "node scripts/compare.ts --update",
-    "build:tsup": "tsup",
+    "build:tsc": "del-cli dist *.tsbuildinfo && tsc -b tsconfig.build.json",
     "build": "pnpm run '/^build:.*/'",
-    "dev": "tsup --watch"
+    "dev": "tsc --watch"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
@@ -56,7 +56,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-react-web-api": "^1.52.2",
     "eslint-plugin-react-x": "^1.52.2",
-    "eslint-plugin-storybook": "^9.0.9",
+    "eslint-plugin-storybook": "^9.0.10",
     "eslint-plugin-unicorn": "^59.0.1",
     "globals": "^16.2.0",
     "typescript-eslint": "^8.34.0"
@@ -66,10 +66,10 @@
     "@priver/tsconfig": "workspace:*",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "catalog:",
+    "del-cli": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.5",
     "prettier": "catalog:",
-    "tsup": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {

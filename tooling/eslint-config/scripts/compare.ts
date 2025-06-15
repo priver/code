@@ -1,8 +1,9 @@
 import fs from 'node:fs/promises';
 
+// @ts-expect-error -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
 import eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
 import js from '@eslint/js';
-import type { Linter, Rule } from 'eslint';
+import type { ESLint, Linter, Rule } from 'eslint';
 import compat from 'eslint-plugin-compat';
 import * as depend from 'eslint-plugin-depend';
 import { importX } from 'eslint-plugin-import-x';
@@ -61,7 +62,9 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: '@eslint-community/eslint-comments',
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
     rulesDefinitions: eslintComments.rules,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
     recommended: eslintComments.configs.recommended.rules,
     rules: base.rules,
   },
@@ -156,8 +159,13 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   {
     prefix: 'storybook',
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: storybookPlugin.rules as unknown as Record<string, Rule.RuleModule>,
-    recommended: mergeRules([...storybookPlugin.configs['flat/recommended']]),
+    rulesDefinitions: (storybookPlugin as ESLint.Plugin).rules,
+    recommended: mergeRules([
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion, @typescript-eslint/no-non-null-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
+      ...((storybookPlugin as ESLint.Plugin).configs![
+        'flat/recommended'
+      ] as unknown as Linter.Config[]),
+    ]),
     rules: storybook.rules,
   },
 ];

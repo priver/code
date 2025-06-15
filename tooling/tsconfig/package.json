@@ -4,6 +4,7 @@
   "private": true,
   "exports": {
     ".": "./tsconfig.json",
+    "./library": "./library.json",
     "./react": "./tsconfig.react.json",
     "./vite": "./tsconfig.vite.json"
   }
