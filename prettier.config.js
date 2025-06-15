@@ -20,7 +20,7 @@ const config = {
   singleAttributePerLine: false,
   proseWrap: 'always',
 
-  plugins: ['@ianvs/prettier-plugin-sort-imports'],
+  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
 
   // @ianvs/prettier-plugin-sort-imports
   importOrder: [
@@ -36,6 +36,9 @@ const config = {
   ],
   importOrderCaseSensitive: true,
   importOrderTypeScriptVersion: '5.8.3',
+
+  // prettier-plugin-tailwindcss
+  tailwindFunctions: ['cva', 'cx'],
 };
 
 export default config;

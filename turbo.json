@@ -16,14 +16,15 @@
     "test": {
       "outputs": ["coverage/**"]
     },
-    "clean": {
-      "cache": false
-    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
     "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "preview": {
       "cache": false,
       "persistent": true
     }

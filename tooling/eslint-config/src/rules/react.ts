@@ -84,7 +84,7 @@ export const react = {
     'react-x/no-useless-fragment': ['error', { allowExpressions: false }],
     'react-x/prefer-destructuring-assignment': 'off',
     'react-x/prefer-react-namespace-import': 'off',
-    'react-x/prefer-read-only-props': 'error',
+    'react-x/prefer-read-only-props': 'off',
     'react-x/prefer-shorthand-boolean': 'error',
     'react-x/prefer-shorthand-fragment': 'error',
     'react-x/use-jsx-vars': 'off',

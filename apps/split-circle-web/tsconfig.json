@@ -1,0 +1,4 @@
+{
+  "extends": ["@priver/tsconfig", "@priver/tsconfig/react", "@priver/tsconfig/vite"],
+  "include": ["src/**/*", "*.config.ts"]
+}
