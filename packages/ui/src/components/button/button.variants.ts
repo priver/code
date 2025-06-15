@@ -1,19 +1,18 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 
-export const buttonVariants = cva('font-semibold border rounded', {
+export const buttonVariants = cva('rounded border font-semibold', {
   variants: {
     intent: {
-      primary: 'bg-blue-500 text-white border-transparent',
-      secondary: 'bg-white text-gray-800 border-gray-400',
+      primary: 'border-transparent bg-blue-500 text-white',
+      secondary: 'border-gray-400 bg-white text-gray-800',
     },
     size: {
-      small: 'text-sm py-1 px-2',
-      medium: 'text-base py-2 px-4',
+      small: 'px-2 py-1 text-sm',
+      medium: 'px-4 py-2 text-base',
     },
-    // `boolean` variants are also supported!
     disabled: {
       false: undefined,
-      true: 'opacity-50 cursor-not-allowed',
+      true: 'cursor-not-allowed opacity-50',
     },
   },
   compoundVariants: [
@@ -33,6 +32,7 @@ export const buttonVariants = cva('font-semibold border rounded', {
       className: 'uppercase',
     },
   ],
+
   defaultVariants: {
     intent: 'primary',
     size: 'medium',

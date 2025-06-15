@@ -36,6 +36,9 @@ const config = {
   ],
   importOrderCaseSensitive: true,
   importOrderTypeScriptVersion: '5.8.3',
+
+  // prettier-plugin-tailwindcss
+  tailwindFunctions: ['cva', 'cx'],
 };
 
 export default config;
