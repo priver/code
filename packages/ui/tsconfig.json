@@ -1,4 +1,4 @@
 {
-  "extends": ["@priver/tsconfig", "@priver/tsconfig/library", "@priver/tsconfig/react"],
+  "extends": ["@priver/tsconfig", "@priver/tsconfig/react"],
   "include": ["src/**/*", "*.config.ts"]
 }
