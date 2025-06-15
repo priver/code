@@ -13,9 +13,7 @@
     "check-types": {
       "dependsOn": ["topo"]
     },
-    "test": {
-      "outputs": ["coverage/**"]
-    },
+    "test": {},
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
