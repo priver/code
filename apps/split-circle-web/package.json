@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
-    "check-types": "tsc --noEmit",
+    "check-types": "tsc",
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview"

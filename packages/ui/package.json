@@ -9,7 +9,10 @@
   },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc"
+  },
+  "dependencies": {
+    "cva": "catalog:"
   },
   "dependencies": {
     "cva": "catalog:"
