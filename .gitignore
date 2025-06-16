@@ -15,13 +15,19 @@ coverage/
 # Build Outputs
 dist/
 dist-ssr/
+storybook-static/
 out/
 *.tsbuildinfo
 
 # Logs
 npm-debug.log*
 .pnpm-debug.log*
+*storybook.log
 
 # Misc
 .DS_Store
 *.pem
+
+
+
+

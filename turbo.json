@@ -16,15 +16,15 @@
     "test": {},
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**", "*.tsbuildinfo", "storybook-static/**"]
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
     "preview": {
-      "cache": false,
-      "persistent": true
+      "dependsOn": ["^build"],
+      "cache": false
     }
   }
 }

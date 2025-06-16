@@ -12,7 +12,8 @@
     "test": "turbo run test",
     "check": "turbo run root:check lint check-types test",
     "build": "turbo run build",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "preview": "turbo run preview"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",

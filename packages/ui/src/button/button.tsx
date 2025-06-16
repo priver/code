@@ -1,6 +1,14 @@
-import { cva, type VariantProps } from 'class-variance-authority';
+import { cva } from 'cva';
+import * as React from 'react';
 
-export const buttonVariants = cva('rounded border font-semibold', {
+export type ButtonProps = {
+  intent?: 'primary' | 'secondary';
+  size?: 'small' | 'medium';
+  disabled?: boolean;
+} & Omit<React.ComponentProps<'button'>, 'disabled'>;
+
+const buttonVariants = cva({
+  base: 'rounded border font-semibold',
   variants: {
     intent: {
       primary: 'border-transparent bg-blue-500 text-white',
@@ -32,7 +40,6 @@ export const buttonVariants = cva('rounded border font-semibold', {
       className: 'uppercase',
     },
   ],
-
   defaultVariants: {
     intent: 'primary',
     size: 'medium',
@@ -40,4 +47,15 @@ export const buttonVariants = cva('rounded border font-semibold', {
   },
 });
 
-export type ButtonVariantProps = VariantProps<typeof buttonVariants>;
+export function Button(props: ButtonProps): React.ReactNode {
+  const { className, disabled, intent, size, type = 'button', ...buttonProps } = props;
+
+  return (
+    <button
+      type={type}
+      disabled={disabled ?? undefined}
+      className={buttonVariants({ intent, size, disabled, className })}
+      {...buttonProps}
+    />
+  );
+}
