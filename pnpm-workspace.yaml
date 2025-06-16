@@ -4,18 +4,18 @@ packages:
   - tooling/*
 
 catalog:
-  '@tailwindcss/vite': ^4.1.10
+  '@tailwindcss/vite': 4.1.10
   '@types/node': ^22.15.31
   '@types/react': ^19.1.8
   '@types/react-dom': ^19.1.6
   '@vitejs/plugin-react': ^4.5.2
-  class-variance-authority: ^0.7.1
+  cva: 1.0.0-beta.4
   del-cli: ^6.0.0
   eslint: ^9.29.0
   prettier: ^3.5.3
   react: ^19.1.0
   react-dom: ^19.1.0
-  tailwindcss: ^4.1.10
+  tailwindcss: 4.1.10
   tsup: ^8.5.0
   typescript: ^5.8.3
   vite: ^6.3.5
@@ -28,3 +28,6 @@ onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - esbuild
   - unrs-resolver
+
+publicHoistPattern:
+  - '*storybook*'
