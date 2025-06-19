@@ -9,13 +9,13 @@
     "javascript",
     "typescript"
   ],
-  "homepage": "https://github.com/priver/code/tooling/eslint-config#readme",
+  "homepage": "https://github.com/priver/code/packages/eslint-config#readme",
   "bugs": "https://github.com/priver/code/issues",
   "author": "Mikhail Priver <m.priver@gmail.com> (https://github.com/priver)",
   "repository": {
     "type": "git",
     "url": "https://github.com/priver/code.git",
-    "directory": "tooling/eslint-config"
+    "directory": "packages/eslint-config"
   },
   "license": "MIT",
   "files": [
