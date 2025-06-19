@@ -14,9 +14,6 @@
   "dependencies": {
     "cva": "catalog:"
   },
-  "dependencies": {
-    "cva": "catalog:"
-  },
   "devDependencies": {
     "@priver/eslint-config": "workspace:*",
     "@priver/tsconfig": "workspace:*",
