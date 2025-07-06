@@ -4,6 +4,7 @@ import * as React from 'react';
 export type ButtonProps = {
   /**
    * Visual hierarchy level of the button, with primary being the most prominent.
+   *
    * Use higher hierarchy for main actions, lower for secondary actions.
    *
    * @default "secondary"
@@ -11,15 +12,18 @@ export type ButtonProps = {
   variant?: 'primary' | 'secondary' | 'tertiary';
 
   /**
-   * Physical size of the button, affecting padding and font scaling.
+   * Physical size of the button, affecting padding, height, and font scaling.
+   *
+   * Choose based on the button's importance and surrounding content density.
    *
    * @default "md"
    */
   size?: 'sm' | 'md' | 'lg' | 'xl';
 
   /**
-   * Whether this button performs a destructive or irreversible action.
-   * Affects styling to warn users of potentially dangerous operations.
+   * Indicates whether this button performs a destructive or irreversible action.
+   *
+   * When `true`, applies warning styling to alert users about potentially dangerous operations.
    *
    * @default false
    */
@@ -28,12 +32,19 @@ export type ButtonProps = {
   /**
    * Whether the button is disabled and non-interactive.
    *
+   * When `true`, the button becomes non-clickable, applies disabled styling, and is excluded from
+   * keyboard navigation.
+   *
+   * **Note**: Disabled buttons should be mostly avoided as they create poor user experience and
+   * accessibility issues. Instead, consider keeping buttons enabled and showing validation errors
+   * or loading states.
+   *
    * @default false
    */
   disabled?: boolean;
 
   /**
-   * HTML button type for form interactions.
+   * HTML button type attribute for form interactions.
    *
    * @default "button"
    */
