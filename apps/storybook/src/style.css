@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@import '@priver/ui/theme.css';
+
+@source '../../../packages/ui';
+
+:root.light {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+body,
+.docs-story {
+  @apply bg-primary text-base font-normal text-primary antialiased;
+}

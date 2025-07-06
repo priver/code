@@ -2,59 +2,150 @@ import { cva } from 'cva';
 import * as React from 'react';
 
 export type ButtonProps = {
-  intent?: 'primary' | 'secondary';
-  size?: 'small' | 'medium';
+  /**
+   * Visual hierarchy level of the button, with primary being the most prominent.
+   * Use higher hierarchy for main actions, lower for secondary actions.
+   *
+   * @default "primary"
+   */
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'test';
+
+  /**
+   * Physical size of the button, affecting padding and font scaling.
+   *
+   * @default "md"
+   */
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+
+  /**
+   * Whether this button performs a destructive or irreversible action.
+   * Affects styling to warn users of potentially dangerous operations.
+   *
+   * @default false
+   */
+  destructive?: boolean;
+
+  /**
+   * Whether the button is disabled and non-interactive.
+   *
+   * @default false
+   */
   disabled?: boolean;
-} & Omit<React.ComponentProps<'button'>, 'disabled'>;
+
+  /**
+   * HTML button type for form interactions.
+   *
+   * @default "button"
+   */
+  type?: 'button' | 'submit' | 'reset';
+} & Omit<React.ComponentProps<'button'>, 'disabled' | 'type'>;
 
 const buttonVariants = cva({
-  base: 'rounded border font-semibold',
+  base: 'relative inline-flex shrink-0 items-center justify-center rounded-md font-medium whitespace-nowrap outline-offset-2 outline-primary transition-all select-none focus-visible:outline-2',
   variants: {
-    intent: {
-      primary: 'border-transparent bg-blue-500 text-white',
-      secondary: 'border-gray-400 bg-white text-gray-800',
+    variant: {
+      primary: 'shadow-xs inset-ring-1',
+      test: '',
+      secondary: 'shadow-xs inset-ring-1',
+      tertiary: 'bg-primary',
     },
     size: {
-      small: 'px-2 py-1 text-sm',
-      medium: 'px-4 py-2 text-base',
+      sm: 'h-9 gap-x-1.5 px-3.5 text-sm',
+      md: 'h-10 gap-x-1.5 px-4 text-sm',
+      lg: 'h-11 gap-x-2 px-4.5 text-base',
+      xl: 'h-12 gap-x-2 px-5 text-base',
+    },
+    destructive: {
+      true: '',
     },
     disabled: {
-      false: undefined,
-      true: 'cursor-not-allowed opacity-50',
+      true: 'cursor-not-allowed',
     },
   },
   compoundVariants: [
     {
-      intent: 'primary',
+      variant: 'primary',
+      destructive: false,
       disabled: false,
-      className: 'hover:bg-blue-600',
+      className: 'bg-accent text-on-accent hover:bg-accent-hover',
     },
     {
-      intent: 'secondary',
+      variant: 'primary',
+      destructive: true,
       disabled: false,
-      className: 'hover:bg-gray-100',
+      className: 'bg-negative text-on-negative hover:bg-negative-hover',
     },
     {
-      intent: 'primary',
-      size: 'medium',
-      className: 'uppercase',
+      variant: 'primary',
+      disabled: false,
+      className:
+        'inset-shadow-skeuo-xs inset-ring-primary-alpha before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:bg-skeuo-border before:mask-bg-border-2',
+    },
+    {
+      variant: 'primary',
+      disabled: true,
+      className: 'bg-disabled text-disabled inset-ring-disabled',
+    },
+    {
+      variant: 'secondary',
+      destructive: false,
+      disabled: false,
+      className:
+        'text-secondary inset-ring-primary hover:bg-control-hover hover:text-secondary-hover',
+    },
+    {
+      variant: 'secondary',
+      destructive: true,
+      disabled: false,
+      className:
+        'text-negative inset-ring-negative hover:bg-control-negative-hover hover:text-negative-hover',
+    },
+    {
+      variant: 'secondary',
+      disabled: false,
+      className: 'bg-control inset-shadow-skeuo-xs',
+    },
+    {
+      variant: 'secondary',
+      disabled: true,
+      className: 'bg-primary text-disabled inset-ring-disabled',
+    },
+    {
+      variant: 'tertiary',
+      destructive: false,
+      disabled: false,
+      className: 'text-secondary hover:bg-control-hover hover:text-secondary-hover',
+    },
+    {
+      variant: 'tertiary',
+      destructive: true,
+      disabled: false,
+      className: 'text-negative hover:bg-control-negative-hover hover:text-negative-hover',
+    },
+    {
+      variant: 'tertiary',
+      disabled: true,
+      className: 'text-disabled',
     },
   ],
-  defaultVariants: {
-    intent: 'primary',
-    size: 'medium',
-    disabled: false,
-  },
 });
 
 export function Button(props: ButtonProps): React.ReactNode {
-  const { className, disabled, intent, size, type = 'button', ...buttonProps } = props;
+  const {
+    variant = 'secondary',
+    size = 'md',
+    destructive = false,
+    disabled = false,
+    type = 'button',
+    className,
+    ...buttonProps
+  } = props;
 
   return (
     <button
       type={type}
-      disabled={disabled ?? undefined}
-      className={buttonVariants({ intent, size, disabled, className })}
+      disabled={disabled}
+      className={buttonVariants({ variant, size, destructive, disabled, className })}
       {...buttonProps}
     />
   );

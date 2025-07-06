@@ -1,0 +1,8 @@
+{
+  "extends": ["@priver/tsconfig", "@priver/tsconfig/react", "@priver/tsconfig/library"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"]
+}
