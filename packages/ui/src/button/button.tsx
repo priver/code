@@ -6,9 +6,9 @@ export type ButtonProps = {
    * Visual hierarchy level of the button, with primary being the most prominent.
    * Use higher hierarchy for main actions, lower for secondary actions.
    *
-   * @default "primary"
+   * @default "secondary"
    */
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'test';
+  variant?: 'primary' | 'secondary' | 'tertiary';
 
   /**
    * Physical size of the button, affecting padding and font scaling.
@@ -45,7 +45,6 @@ const buttonVariants = cva({
   variants: {
     variant: {
       primary: 'shadow-xs inset-ring-1',
-      test: '',
       secondary: 'shadow-xs inset-ring-1',
       tertiary: 'bg-primary',
     },
