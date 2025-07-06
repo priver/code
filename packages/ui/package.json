@@ -14,7 +14,7 @@
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
     "check-types": "tsc --noEmit",
     "clean": "del-cli dist *.tsbuildinfo",
-    "build:styles": "tailwindcss -i ./src/styles.css -o ./dist/styles.css",
+    "build:styles": "tailwindcss -i ./src/style.css -o ./dist/style.css",
     "build:tsc": "tsc -b tsconfig.build.json",
     "build": "pnpm run clean && pnpm run '/^build:.*/'",
     "dev": "tsc --watch"
