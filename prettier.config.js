@@ -39,6 +39,7 @@ const config = {
 
   // prettier-plugin-tailwindcss
   tailwindFunctions: ['cva', 'cx'],
+  tailwindStylesheet: './packages/ui/src/style.css',
 };
 
 export default config;

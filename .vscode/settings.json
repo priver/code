@@ -28,6 +28,10 @@
     "no-inline-html": false
   },
   "tailwindCSS.classFunctions": ["cva", "cx"],
+  "tailwindCSS.experimental.configFile": {
+    "apps/storybook/src/style.css": "apps/storybook/src/**",
+    "packages/ui/src/style.css": "packages/ui/src/**"
+  },
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.importModuleSpecifierEnding": "auto",
   "typescript.tsdk": "node_modules/typescript/lib",

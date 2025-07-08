@@ -2,14 +2,22 @@
   "name": "@priver/ui",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css"
+  ],
   "type": "module",
   "exports": {
+    "./theme.css": "./src/theme.css",
     "./button": "./src/button/button.tsx"
   },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "clean": "del-cli dist *.tsbuildinfo",
+    "build:styles": "tailwindcss -i ./src/style.css -o ./dist/style.css",
+    "build:tsc": "tsc -b tsconfig.build.json",
+    "build": "pnpm run clean && pnpm run '/^build:.*/'",
+    "dev": "tsc --watch"
   },
   "dependencies": {
     "cva": "catalog:"
@@ -17,9 +25,11 @@
   "devDependencies": {
     "@priver/eslint-config": "workspace:*",
     "@priver/tsconfig": "workspace:*",
+    "@tailwindcss/cli": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
+    "del-cli": "catalog:",
     "eslint": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
