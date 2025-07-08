@@ -18,7 +18,7 @@ export type ButtonProps = {
    *
    * @default "md"
    */
-  size?: 'sm' | 'md' | 'lg' | 'xl';
+  size?: 'sm' | 'md' | 'lg';
 
   /**
    * Indicates whether this button performs a destructive or irreversible action.
@@ -55,15 +55,14 @@ const buttonVariants = cva({
   base: 'relative inline-flex shrink-0 items-center justify-center rounded-md font-medium whitespace-nowrap outline-offset-2 outline-primary transition-all select-none focus-visible:outline-2',
   variants: {
     variant: {
-      primary: 'shadow-xs inset-ring-1',
-      secondary: 'shadow-xs inset-ring-1',
+      primary: '',
+      secondary: '',
       tertiary: 'bg-primary',
     },
     size: {
-      sm: 'h-9 gap-x-1.5 px-3.5 text-sm',
+      sm: 'h-8 gap-x-1 px-3 text-xs',
       md: 'h-10 gap-x-1.5 px-4 text-sm',
-      lg: 'h-11 gap-x-2 px-4.5 text-base',
-      xl: 'h-12 gap-x-2 px-5 text-base',
+      lg: 'h-12 gap-x-2 px-5 text-base',
     },
     destructive: {
       true: '',
@@ -73,6 +72,25 @@ const buttonVariants = cva({
     },
   },
   compoundVariants: [
+    {
+      variant: ['primary', 'secondary'],
+      className: 'shadow-xs inset-ring-1',
+    },
+    {
+      variant: ['primary', 'secondary'],
+      disabled: false,
+      className: 'active:shadow-none',
+    },
+    {
+      disabled: false,
+      className: 'active:translate-y-px',
+    },
+    {
+      variant: 'primary',
+      disabled: false,
+      className:
+        'inset-shadow-skeuo-xs inset-ring-primary-alpha before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:bg-skeuo-border before:mask-bg-border-2',
+    },
     {
       variant: 'primary',
       destructive: false,
@@ -87,28 +105,8 @@ const buttonVariants = cva({
     },
     {
       variant: 'primary',
-      disabled: false,
-      className:
-        'inset-shadow-skeuo-xs inset-ring-primary-alpha before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:bg-skeuo-border before:mask-bg-border-2',
-    },
-    {
-      variant: 'primary',
       disabled: true,
       className: 'bg-disabled text-disabled inset-ring-disabled',
-    },
-    {
-      variant: 'secondary',
-      destructive: false,
-      disabled: false,
-      className:
-        'text-secondary inset-ring-primary hover:bg-control-hover hover:text-secondary-hover',
-    },
-    {
-      variant: 'secondary',
-      destructive: true,
-      disabled: false,
-      className:
-        'text-negative inset-ring-negative hover:bg-control-negative-hover hover:text-negative-hover',
     },
     {
       variant: 'secondary',
@@ -116,30 +114,46 @@ const buttonVariants = cva({
       className: 'bg-control inset-shadow-skeuo-xs',
     },
     {
-      variant: 'secondary',
-      disabled: true,
-      className: 'bg-primary text-disabled inset-ring-disabled',
-    },
-    {
-      variant: 'tertiary',
+      variant: ['secondary', 'tertiary'],
       destructive: false,
       disabled: false,
       className: 'text-secondary hover:bg-control-hover hover:text-secondary-hover',
     },
     {
-      variant: 'tertiary',
+      variant: 'secondary',
+      destructive: false,
+      disabled: false,
+      className: 'inset-ring-primary',
+    },
+    {
+      variant: ['secondary', 'tertiary'],
       destructive: true,
       disabled: false,
       className: 'text-negative hover:bg-control-negative-hover hover:text-negative-hover',
     },
     {
-      variant: 'tertiary',
+      variant: 'secondary',
+      destructive: true,
+      disabled: false,
+      className: 'inset-ring-negative',
+    },
+    {
+      variant: ['secondary', 'tertiary'],
       disabled: true,
       className: 'text-disabled',
+    },
+    {
+      variant: 'secondary',
+      disabled: true,
+      className: 'bg-primary inset-ring-disabled',
     },
   ],
 });
 
+/**
+ * Button component implementing the
+ * [WAI-ARIA Button Pattern⁠](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
+ */
 export function Button(props: ButtonProps): React.ReactNode {
   const {
     variant = 'secondary',

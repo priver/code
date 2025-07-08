@@ -2,51 +2,32 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 import { Button } from '@priver/ui/button';
 
-const SIZES = ['sm', 'md', 'lg', 'xl'] as const;
+const SIZES = ['sm', 'md', 'lg'] as const;
 const VARIANTS = ['primary', 'secondary', 'tertiary'] as const;
 
 const meta = {
   title: 'UI/Button',
   component: Button,
-  parameters: {
-    layout: 'centered',
-    docs: {
-      description: {
-        component:
-          'A flexible button component with multiple variants, sizes, and states. Supports primary, secondary, and tertiary visual hierarchies with destructive styling options.',
-      },
-    },
-  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Interactive playground
+/**
+ * Interactive playground to test different button configurations.
+ * Use the controls panel to experiment with different props.
+ */
 export const Playground: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Interactive playground to test different button configurations. Use the controls panel to experiment with different props.',
-      },
-    },
-  },
   args: {
     children: 'Button',
   },
 };
 
-// Basic variant stories
+/**
+ * The three visual hierarchy levels: primary for main actions, secondary for supporting actions,
+ * and tertiary for minimal emphasis.
+ */
 export const Variants: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The three visual hierarchy levels: primary for main actions, secondary for supporting actions, and tertiary for minimal emphasis.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -67,15 +48,8 @@ export const Variants: Story = {
   ),
 };
 
-// Size variations
+/** The three physical sizes: small, medium, and large. */
 export const Sizes: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'Different button sizes available: `sm`, `md` (default), `lg`, and `xl`.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     size: { control: false },
@@ -84,31 +58,20 @@ export const Sizes: Story = {
   render: (args) => (
     <div className="flex items-center gap-2">
       <Button {...args} size="sm">
-        Small
+        Medium
       </Button>
       <Button {...args} size="md">
         Medium
       </Button>
       <Button {...args} size="lg">
-        Large
-      </Button>
-      <Button {...args} size="xl">
-        Extra Large
+        Medium
       </Button>
     </div>
   ),
 };
 
-// Destructive variants
+/** Destructive buttons use warning colors to indicate potentially dangerous operations. */
 export const Destructive: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Destructive buttons use warning colors to indicate potentially dangerous operations.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -130,16 +93,11 @@ export const Destructive: Story = {
   ),
 };
 
-// Disabled states
+/**
+ * Disabled buttons are non-interactive and use muted colors.
+ * Consider avoiding disabled states when possible for better UX.
+ */
 export const Disabled: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Disabled buttons are non-interactive and use muted colors. Consider avoiding disabled states when possible for better UX.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -161,15 +119,8 @@ export const Disabled: Story = {
   ),
 };
 
-// Content variations
+/** Examples of buttons with different content lengths and types. */
 export const ContentVariations: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'Examples of buttons with different content lengths and types.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     type: { control: false },
@@ -190,7 +141,6 @@ export const ContentVariations: Story = {
   ),
 };
 
-// Complete matrix for testing
 function Matrix(props: {
   title: string;
   destructive?: boolean;
@@ -220,15 +170,8 @@ function Matrix(props: {
   );
 }
 
+/** Complete matrix of all button combinations for visual testing and regression testing. */
 export const AllCombinations: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Complete matrix of all button combinations for visual testing and regression testing.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -247,15 +190,8 @@ export const AllCombinations: Story = {
   ),
 };
 
-// Form context examples
+/** Examples of buttons in form context with different type attributes. */
 export const FormButtons: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'Examples of buttons in form context with different type attributes.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -288,15 +224,8 @@ export const FormButtons: Story = {
   ),
 };
 
-// Real-world usage examples
+/** Real-world usage examples showing how buttons work together in different contexts. */
 export const UsageExamples: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'Real-world usage examples showing how buttons work together in different contexts.',
-      },
-    },
-  },
   argTypes: {
     children: { control: false },
     variant: { control: false },

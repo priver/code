@@ -7,12 +7,9 @@ import '../src/style.css';
 
 const preview: Preview = {
   parameters: {
-    a11y: {
-      test: 'todo',
-    },
-    docs: {
-      toc: true,
-    },
+    layout: 'centered',
+    docs: { toc: true },
+    a11y: { test: 'todo' },
   },
   tags: ['autodocs'],
   decorators: [
