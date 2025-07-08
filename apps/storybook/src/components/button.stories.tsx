@@ -2,8 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
 import { Button } from '@priver/ui/button';
 
-const SIZES = ['sm', 'md', 'lg'] as const;
 const VARIANTS = ['primary', 'secondary', 'tertiary'] as const;
+const SIZES = ['sm', 'md', 'lg'] as const;
 
 const meta = {
   title: 'UI/Button',
@@ -58,13 +58,13 @@ export const Sizes: Story = {
   render: (args) => (
     <div className="flex items-center gap-2">
       <Button {...args} size="sm">
-        Medium
+        Small
       </Button>
       <Button {...args} size="md">
         Medium
       </Button>
       <Button {...args} size="lg">
-        Medium
+        Large
       </Button>
     </div>
   ),
