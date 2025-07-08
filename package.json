@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "root:check:format": "prettier --check .",
+    "root:check:format": "prettier --experimental-cli --check .",
     "root:check:deps": "sherif",
     "root:check": "pnpm run '/^root:check:.*/'",
-    "root:format": "prettier --write .",
+    "root:format": "prettier --experimental-cli --write .",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types",
     "test": "turbo run test",
@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "catalog:",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
     "prettier": "catalog:",
-    "prettier-plugin-tailwindcss": "^0.6.12",
-    "sherif": "^1.5.0",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "sherif": "catalog:",
     "tailwindcss": "catalog:",
     "turbo": "^2.5.4",
     "typescript": "catalog:"
