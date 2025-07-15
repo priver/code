@@ -404,7 +404,7 @@ async function main() {
     } else {
       // Check mode: compare content and exit with error if different
       console.error(
-        `Error: ${FILENAME} is out of date. Run "pnpm run compare --update" to update it.`,
+        `Error: ${FILENAME} is out of date. Run "pnpm run build:compare --update" to update it.`,
       );
       process.exitCode = 1;
     }

@@ -44,37 +44,43 @@
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
     "confusing-browser-globals": "^1.0.11",
-    "eslint-import-resolver-typescript": "^4.4.3",
+    "eslint-import-resolver-typescript": "catalog:",
     "eslint-plugin-compat": "^6.0.2",
     "eslint-plugin-depend": "^1.2.0",
-    "eslint-plugin-import-x": "^4.15.2",
+    "eslint-plugin-import-x": "catalog:",
     "eslint-plugin-jest-formatting": "^3.1.0",
-    "eslint-plugin-n": "^17.20.0",
-    "eslint-plugin-react-dom": "^1.52.2",
+    "eslint-plugin-n": "catalog:",
+    "eslint-plugin-react-dom": "catalog:",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-hooks-extra": "^1.52.2",
-    "eslint-plugin-react-naming-convention": "^1.52.2",
+    "eslint-plugin-react-hooks-extra": "catalog:",
+    "eslint-plugin-react-naming-convention": "catalog:",
     "eslint-plugin-react-refresh": "^0.4.20",
-    "eslint-plugin-react-web-api": "^1.52.2",
-    "eslint-plugin-react-x": "^1.52.2",
-    "eslint-plugin-storybook": "^9.0.10",
+    "eslint-plugin-react-web-api": "catalog:",
+    "eslint-plugin-react-x": "catalog:",
     "eslint-plugin-unicorn": "^59.0.1",
-    "globals": "^16.2.0",
-    "typescript-eslint": "^8.34.0"
+    "globals": "catalog:",
+    "typescript-eslint": "catalog:"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
+    "@eslint/js": "catalog:",
     "@priver/tsconfig": "workspace:*",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "catalog:",
     "del-cli": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-storybook": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "eslint": "catalog:"
+    "eslint": "catalog:",
+    "eslint-plugin-storybook": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-storybook": {
+      "optional": true
+    }
   },
   "engines": {
     "node": "^20.12.0 || >=22.0.0"
