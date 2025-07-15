@@ -337,6 +337,7 @@ export const base = {
     'import-x/no-unassigned-import': 'off',
     'import-x/order': 'off',
     'import-x/prefer-default-export': 'off',
+    'import-x/prefer-namespace-import': 'off', // unicorn/import-style
 
     // Unicorn
     'unicorn/better-regex': 'off',

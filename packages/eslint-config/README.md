@@ -8,29 +8,16 @@ plugins for various JavaScript/TypeScript projects. This configuration leverages
 [ESLint's new flat config system](https://eslint.org/docs/latest/use/configure/configuration-files)
 to provide a more maintainable and flexible linting setup.
 
-## Features
+## What's Included
 
-- 🚀 Modern flat config system for better performance and maintainability
-- 🔧 Highly customizable and modular configuration
-- 🛠️ Extensive plugin support for various use cases
-- 📝 TypeScript support out of the box
-- ⚛️ React support with modern best practices
-- 📚 Storybook integration for component development
-- 🎯 Strict type checking and code quality rules
-- 🌐 Browser compatibility checking
-
-## Installation
-
-```sh
-# Using npm
-npm install --save-dev eslint @priver/eslint-config
-
-# Using yarn
-yarn add --dev eslint @priver/eslint-config
-
-# Using pnpm
-pnpm add --save-dev eslint @priver/eslint-config
-```
+- 🚀 Uses ESLint's flat config system (required for ESLint 9+)
+- 🔧 Modular configuration that can be combined based on project needs
+- 📦 Pre-configured rules for JavaScript, TypeScript, React, and Node.js environments
+- 📝 TypeScript support with type-aware linting rules
+- ⚛️ React-specific rules including hooks and refresh compatibility
+- 📚 Optional Storybook configuration for component stories
+- 🌐 Browser compatibility checking via eslint-plugin-compat
+- 📋 Import/export validation and dependency analysis
 
 ## Included Plugins
 
@@ -49,6 +36,44 @@ This configuration includes several powerful ESLint plugins to enhance your deve
 | [eslint-plugin-storybook](https://github.com/storybookjs/eslint-plugin-storybook)                                    | Storybook specific rules                        |
 | [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                       | Various awesome ESLint rules                    |
 | [typescript-eslint](https://typescript-eslint.io/)                                                                   | TypeScript specific linting rules               |
+
+## Available Configurations
+
+This package provides six modular configurations that can be combined based on your project's needs:
+
+| Configuration    | Description                                                                                      | When to Use                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| **`base`**       | Core ESLint rules and essential plugins including unicorn, import-x, eslint-comments, and depend | **Required** - Foundation for all projects. Use as the base for any JavaScript/TypeScript project |
+| **`browser`**    | Browser-specific globals, compatibility checking, and restrictions on confusing browser globals  | Web applications, client-side code, and any code that runs in browsers                            |
+| **`node`**       | Node.js-specific globals and rules via eslint-plugin-n                                           | Server-side applications, CLI tools, build scripts, and any Node.js environments                  |
+| **`typescript`** | TypeScript support with type-aware linting and proper import resolution                          | Any project using TypeScript files (`.ts`, `.tsx`, `.cts`, `.mts`)                                |
+| **`react`**      | Comprehensive React rules including hooks, refresh, DOM, web API, and naming conventions         | React applications and components (requires TypeScript config when using `.tsx` files)            |
+| **`storybook`**  | Storybook-specific rules for component stories and testing                                       | Storybook story files (`.stories.ts`, `.stories.tsx`)                                             |
+
+### Configuration Dependencies
+
+- **`base`** is required for all setups
+- **`typescript`** should be applied to TypeScript files (`**/*.ts`, `**/*.tsx`)
+- **`react`** should be applied to React component files (`**/*.tsx`)
+- **`browser`** and **`node`** are mutually exclusive (choose based on your runtime environment)
+- **`storybook`** should only be applied to story files (`**/*.stories.*`)
+
+## Installation
+
+```sh
+# Using npm
+npm install --save-dev eslint @priver/eslint-config
+
+# Using yarn
+yarn add --dev eslint @priver/eslint-config
+
+# Using pnpm
+pnpm add --save-dev eslint @priver/eslint-config
+```
+
+**Note:** `eslint-plugin-storybook` is not installed by default because it requires a specific
+version of Storybook. If you wish to use the Storybook configuration, please install the plugin
+manually.
 
 ## Usage
 
@@ -74,15 +99,7 @@ export default defineConfig([
   globalIgnores(['scripts/']), // Ignore specific directories
   base,
   node,
-  {
-    files: ['**/*.ts'],
-    extends: [typescript],
-    languageOptions: {
-      parserOptions: {
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
+  { files: ['**/*.ts'], extends: [typescript] },
 ]);
 ```
 
@@ -96,15 +113,7 @@ export default defineConfig([
   globalIgnores(['.next/', 'next-env.d.ts']),
   base,
   browser,
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    extends: [typescript],
-    languageOptions: {
-      parserOptions: {
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
+  { files: ['**/*.ts', '**/*.tsx'], extends: [typescript] },
   { files: ['**/*.tsx'], extends: [react] },
   { files: ['**/*.stories.tsx'], extends: [storybook] },
   { files: ['**/*.config.js'], extends: [node] },
