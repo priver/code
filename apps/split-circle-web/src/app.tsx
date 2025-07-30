@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button } from '@priver/ui';
+import { Button } from '@priver/ui/button';
 
 function App(): React.ReactNode {
   const [count, setCount] = React.useState(0);
