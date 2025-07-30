@@ -22,6 +22,11 @@ catalog:
   eslint-import-resolver-typescript: ^4.4.4
   eslint-plugin-import-x: ^4.16.1
   eslint-plugin-n: ^17.21.0
+  eslint-plugin-react-dom: ^1.52.3
+  eslint-plugin-react-hooks-extra: ^1.52.3
+  eslint-plugin-react-naming-convention: ^1.52.3
+  eslint-plugin-react-web-api: ^1.52.3
+  eslint-plugin-react-x: ^1.52.3
   eslint-plugin-storybook: ^9.0.17
   eslint: ^9.31.0
   globals: ^16.3.0
@@ -33,14 +38,10 @@ catalog:
   storybook: ^9.0.17
   tailwindcss: ^4.1.11
   tsup: ^8.5.0
+  turbo: ^2.5.5
   typescript-eslint: ^8.37.0
   typescript: ^5.8.3
   vite: ^6.3.5
-  eslint-plugin-react-dom: ^1.52.3
-  eslint-plugin-react-hooks-extra: ^1.52.3
-  eslint-plugin-react-naming-convention: ^1.52.3
-  eslint-plugin-react-web-api: ^1.52.3
-  eslint-plugin-react-x: ^1.52.3
 
 catalogMode: strict
 
