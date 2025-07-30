@@ -251,12 +251,16 @@ function htmlTableRow(columns: string[]) {
 }
 
 function htmlTable(rows: string[]) {
-  return `<table>${rows.join('\n')}</table>`;
+  return `<table>${rows.join('\n')}</table>\n`;
 }
 
 // Markdown utilities
 function markdownLink(title: string, url?: string) {
-  return url ? `[${title}](${url})` : title;
+  return url ? `[${title}](${url})` : `[${title}]`;
+}
+
+function markdownReferenceLink(title: string, url: string) {
+  return `[${title}]: ${url}`;
 }
 
 function markdownCode(text: string) {
@@ -300,6 +304,7 @@ function comparePlugin(
 
   const markdownLines = [markdownTableRow('Rule', 'P', 'R'), markdownTableRow('---', '---', '---')];
   const incompatibleTable: string[] = [];
+  const links: string[] = [];
 
   for (const ruleName of Object.keys(rules).sort()) {
     const ruleNameParts = rsplitOne(ruleName, '/');
@@ -330,9 +335,15 @@ function comparePlugin(
         );
       }
 
+      let ruleNameMarkdown = markdownCode(ruleName);
+      if (ruleURL) {
+        links.push(markdownReferenceLink(ruleNameMarkdown, ruleURL));
+        ruleNameMarkdown = markdownLink(ruleNameMarkdown);
+      }
+
       markdownLines.push(
         markdownTableRow(
-          markdownLink(`${markdownCode(ruleName)} ${htmlAnchor(summaryID(ruleName))}`, ruleURL),
+          `${ruleNameMarkdown} ${htmlAnchor(summaryID(ruleName))}`,
           severityEmoji(rules[ruleName]) +
             (hasIncompatibleValue ? ` ${htmlLink(`#${ruleID(ruleName)}`, '(?)')}` : ''),
           severityEmoji(recommendedRules[ruleName]),
@@ -344,6 +355,8 @@ function comparePlugin(
   if (incompatibleTable.length > 0) {
     markdownLines.push(htmlTable(incompatibleTable));
   }
+
+  markdownLines.push(links.join('\n'));
 
   const start = htmlCommentStart(pluginPrefix);
   const end = htmlCommentEnd(pluginPrefix);
@@ -393,7 +406,12 @@ async function main() {
     for (const { prefix, rulesDefinitions, recommended, rules } of PLUGIN_COMPARISONS) {
       updatedContent = comparePlugin(prefix, rulesDefinitions, recommended, rules, updatedContent);
     }
-    updatedContent = await prettier.format(updatedContent, { filepath: FILENAME });
+
+    const prettierOptions = await prettier.resolveConfig(FILENAME);
+    updatedContent = await prettier.format(updatedContent, {
+      ...prettierOptions,
+      filepath: FILENAME,
+    });
 
     if (originalContent === updatedContent) {
       console.log(`${FILENAME} is up to date.`);
