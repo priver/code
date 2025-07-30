@@ -406,7 +406,12 @@ async function main() {
     for (const { prefix, rulesDefinitions, recommended, rules } of PLUGIN_COMPARISONS) {
       updatedContent = comparePlugin(prefix, rulesDefinitions, recommended, rules, updatedContent);
     }
-    updatedContent = await prettier.format(updatedContent, { filepath: FILENAME });
+
+    const prettierOptions = await prettier.resolveConfig(FILENAME);
+    updatedContent = await prettier.format(updatedContent, {
+      ...prettierOptions,
+      filepath: FILENAME,
+    });
 
     if (originalContent === updatedContent) {
       console.log(`${FILENAME} is up to date.`);

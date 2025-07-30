@@ -334,7 +334,8 @@ Configurations compared:
 [`no-cond-assign`]: https://eslint.org/docs/latest/rules/no-cond-assign
 [`no-console`]: https://eslint.org/docs/latest/rules/no-console
 [`no-const-assign`]: https://eslint.org/docs/latest/rules/no-const-assign
-[`no-constant-binary-expression`]: https://eslint.org/docs/latest/rules/no-constant-binary-expression
+[`no-constant-binary-expression`]:
+  https://eslint.org/docs/latest/rules/no-constant-binary-expression
 [`no-constant-condition`]: https://eslint.org/docs/latest/rules/no-constant-condition
 [`no-constructor-return`]: https://eslint.org/docs/latest/rules/no-constructor-return
 [`no-continue`]: https://eslint.org/docs/latest/rules/no-continue
@@ -381,7 +382,8 @@ Configurations compared:
 [`no-loop-func`]: https://eslint.org/docs/latest/rules/no-loop-func
 [`no-loss-of-precision`]: https://eslint.org/docs/latest/rules/no-loss-of-precision
 [`no-magic-numbers`]: https://eslint.org/docs/latest/rules/no-magic-numbers
-[`no-misleading-character-class`]: https://eslint.org/docs/latest/rules/no-misleading-character-class
+[`no-misleading-character-class`]:
+  https://eslint.org/docs/latest/rules/no-misleading-character-class
 [`no-multi-assign`]: https://eslint.org/docs/latest/rules/no-multi-assign
 [`no-multi-str`]: https://eslint.org/docs/latest/rules/no-multi-str
 [`no-negated-condition`]: https://eslint.org/docs/latest/rules/no-negated-condition
@@ -435,7 +437,8 @@ Configurations compared:
 [`no-unsafe-optional-chaining`]: https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining
 [`no-unused-expressions`]: https://eslint.org/docs/latest/rules/no-unused-expressions
 [`no-unused-labels`]: https://eslint.org/docs/latest/rules/no-unused-labels
-[`no-unused-private-class-members`]: https://eslint.org/docs/latest/rules/no-unused-private-class-members
+[`no-unused-private-class-members`]:
+  https://eslint.org/docs/latest/rules/no-unused-private-class-members
 [`no-unused-vars`]: https://eslint.org/docs/latest/rules/no-unused-vars
 [`no-use-before-define`]: https://eslint.org/docs/latest/rules/no-use-before-define
 [`no-useless-assignment`]: https://eslint.org/docs/latest/rules/no-useless-assignment
@@ -458,7 +461,8 @@ Configurations compared:
 [`prefer-arrow-callback`]: https://eslint.org/docs/latest/rules/prefer-arrow-callback
 [`prefer-const`]: https://eslint.org/docs/latest/rules/prefer-const
 [`prefer-destructuring`]: https://eslint.org/docs/latest/rules/prefer-destructuring
-[`prefer-exponentiation-operator`]: https://eslint.org/docs/latest/rules/prefer-exponentiation-operator
+[`prefer-exponentiation-operator`]:
+  https://eslint.org/docs/latest/rules/prefer-exponentiation-operator
 [`prefer-named-capture-group`]: https://eslint.org/docs/latest/rules/prefer-named-capture-group
 [`prefer-numeric-literals`]: https://eslint.org/docs/latest/rules/prefer-numeric-literals
 [`prefer-object-has-own`]: https://eslint.org/docs/latest/rules/prefer-object-has-own
@@ -508,15 +512,24 @@ Configurations compared:
 | [`@eslint-community/eslint-comments/no-use`] <a id="summary-@eslint-community/eslint-comments/no-use"></a>                               | 🚫  | 🚫  |
 | [`@eslint-community/eslint-comments/require-description`] <a id="summary-@eslint-community/eslint-comments/require-description"></a>     | ✅  | 🚫  |
 
-[`@eslint-community/eslint-comments/disable-enable-pair`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/disable-enable-pair.html
-[`@eslint-community/eslint-comments/no-aggregating-enable`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-aggregating-enable.html
-[`@eslint-community/eslint-comments/no-duplicate-disable`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-duplicate-disable.html
-[`@eslint-community/eslint-comments/no-restricted-disable`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-restricted-disable.html
-[`@eslint-community/eslint-comments/no-unlimited-disable`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unlimited-disable.html
-[`@eslint-community/eslint-comments/no-unused-disable`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
-[`@eslint-community/eslint-comments/no-unused-enable`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-enable.html
-[`@eslint-community/eslint-comments/no-use`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-use.html
-[`@eslint-community/eslint-comments/require-description`]: https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/require-description.html
+[`@eslint-community/eslint-comments/disable-enable-pair`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/disable-enable-pair.html
+[`@eslint-community/eslint-comments/no-aggregating-enable`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-aggregating-enable.html
+[`@eslint-community/eslint-comments/no-duplicate-disable`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-duplicate-disable.html
+[`@eslint-community/eslint-comments/no-restricted-disable`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-restricted-disable.html
+[`@eslint-community/eslint-comments/no-unlimited-disable`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unlimited-disable.html
+[`@eslint-community/eslint-comments/no-unused-disable`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
+[`@eslint-community/eslint-comments/no-unused-enable`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-enable.html
+[`@eslint-community/eslint-comments/no-use`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-use.html
+[`@eslint-community/eslint-comments/require-description`]:
+  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/require-description.html
 
 <!-- END @eslint-community/eslint-comments -->
 
@@ -587,52 +600,95 @@ Configurations compared:
   }
 ]</code></pre></td><td><pre><code>"warn"</code></pre></td></tr></table>
 
-[`import-x/consistent-type-specifier-style`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/consistent-type-specifier-style.md
-[`import-x/default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/default.md
-[`import-x/dynamic-import-chunkname`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/dynamic-import-chunkname.md
-[`import-x/export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/export.md
-[`import-x/exports-last`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/exports-last.md
-[`import-x/extensions`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/extensions.md
+[`import-x/consistent-type-specifier-style`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/consistent-type-specifier-style.md
+[`import-x/default`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/default.md
+[`import-x/dynamic-import-chunkname`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/dynamic-import-chunkname.md
+[`import-x/export`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/export.md
+[`import-x/exports-last`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/exports-last.md
+[`import-x/extensions`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/extensions.md
 [`import-x/first`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/first.md
-[`import-x/group-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/group-exports.md
-[`import-x/max-dependencies`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/max-dependencies.md
+[`import-x/group-exports`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/group-exports.md
+[`import-x/max-dependencies`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/max-dependencies.md
 [`import-x/named`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/named.md
-[`import-x/namespace`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/namespace.md
-[`import-x/newline-after-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/newline-after-import.md
-[`import-x/no-absolute-path`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-absolute-path.md
-[`import-x/no-amd`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-amd.md
-[`import-x/no-anonymous-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-anonymous-default-export.md
-[`import-x/no-commonjs`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-commonjs.md
-[`import-x/no-cycle`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-cycle.md
-[`import-x/no-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-default-export.md
-[`import-x/no-deprecated`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-deprecated.md
-[`import-x/no-duplicates`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-duplicates.md
-[`import-x/no-dynamic-require`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-dynamic-require.md
-[`import-x/no-empty-named-blocks`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-empty-named-blocks.md
-[`import-x/no-extraneous-dependencies`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-extraneous-dependencies.md
-[`import-x/no-import-module-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-import-module-exports.md
-[`import-x/no-internal-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-internal-modules.md
-[`import-x/no-mutable-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-mutable-exports.md
-[`import-x/no-named-as-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-as-default.md
-[`import-x/no-named-as-default-member`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-as-default-member.md
-[`import-x/no-named-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-default.md
-[`import-x/no-named-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-export.md
-[`import-x/no-namespace`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-namespace.md
-[`import-x/no-nodejs-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-nodejs-modules.md
-[`import-x/no-relative-packages`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-relative-packages.md
-[`import-x/no-relative-parent-imports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-relative-parent-imports.md
-[`import-x/no-rename-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-rename-default.md
-[`import-x/no-restricted-paths`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-restricted-paths.md
-[`import-x/no-self-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-self-import.md
-[`import-x/no-unassigned-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unassigned-import.md
-[`import-x/no-unresolved`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unresolved.md
-[`import-x/no-unused-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unused-modules.md
-[`import-x/no-useless-path-segments`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-useless-path-segments.md
-[`import-x/no-webpack-loader-syntax`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-webpack-loader-syntax.md
+[`import-x/namespace`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/namespace.md
+[`import-x/newline-after-import`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/newline-after-import.md
+[`import-x/no-absolute-path`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-absolute-path.md
+[`import-x/no-amd`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-amd.md
+[`import-x/no-anonymous-default-export`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-anonymous-default-export.md
+[`import-x/no-commonjs`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-commonjs.md
+[`import-x/no-cycle`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-cycle.md
+[`import-x/no-default-export`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-default-export.md
+[`import-x/no-deprecated`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-deprecated.md
+[`import-x/no-duplicates`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-duplicates.md
+[`import-x/no-dynamic-require`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-dynamic-require.md
+[`import-x/no-empty-named-blocks`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-empty-named-blocks.md
+[`import-x/no-extraneous-dependencies`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-extraneous-dependencies.md
+[`import-x/no-import-module-exports`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-import-module-exports.md
+[`import-x/no-internal-modules`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-internal-modules.md
+[`import-x/no-mutable-exports`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-mutable-exports.md
+[`import-x/no-named-as-default`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-as-default.md
+[`import-x/no-named-as-default-member`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-as-default-member.md
+[`import-x/no-named-default`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-default.md
+[`import-x/no-named-export`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-export.md
+[`import-x/no-namespace`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-namespace.md
+[`import-x/no-nodejs-modules`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-nodejs-modules.md
+[`import-x/no-relative-packages`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-relative-packages.md
+[`import-x/no-relative-parent-imports`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-relative-parent-imports.md
+[`import-x/no-rename-default`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-rename-default.md
+[`import-x/no-restricted-paths`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-restricted-paths.md
+[`import-x/no-self-import`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-self-import.md
+[`import-x/no-unassigned-import`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unassigned-import.md
+[`import-x/no-unresolved`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unresolved.md
+[`import-x/no-unused-modules`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unused-modules.md
+[`import-x/no-useless-path-segments`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-useless-path-segments.md
+[`import-x/no-webpack-loader-syntax`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-webpack-loader-syntax.md
 [`import-x/order`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/order.md
-[`import-x/prefer-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/prefer-default-export.md
-[`import-x/prefer-namespace-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/prefer-namespace-import.md
-[`import-x/unambiguous`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/unambiguous.md
+[`import-x/prefer-default-export`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/prefer-default-export.md
+[`import-x/prefer-namespace-import`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/prefer-namespace-import.md
+[`import-x/unambiguous`]:
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/unambiguous.md
 
 <!-- END import-x -->
 
@@ -807,140 +863,274 @@ Configurations compared:
   "avoid"
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr></table>
 
-[`unicorn/better-regex`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/better-regex.md
-[`unicorn/catch-error-name`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/catch-error-name.md
-[`unicorn/consistent-assert`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-assert.md
-[`unicorn/consistent-date-clone`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-date-clone.md
-[`unicorn/consistent-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-destructuring.md
-[`unicorn/consistent-empty-array-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-empty-array-spread.md
-[`unicorn/consistent-existence-index-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-existence-index-check.md
-[`unicorn/consistent-function-scoping`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-function-scoping.md
-[`unicorn/custom-error-definition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/custom-error-definition.md
-[`unicorn/empty-brace-spaces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/empty-brace-spaces.md
-[`unicorn/error-message`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/error-message.md
-[`unicorn/escape-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/escape-case.md
-[`unicorn/expiring-todo-comments`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/expiring-todo-comments.md
-[`unicorn/explicit-length-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/explicit-length-check.md
-[`unicorn/filename-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/filename-case.md
-[`unicorn/import-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/import-style.md
-[`unicorn/new-for-builtins`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/new-for-builtins.md
-[`unicorn/no-abusive-eslint-disable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-abusive-eslint-disable.md
-[`unicorn/no-accessor-recursion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-accessor-recursion.md
-[`unicorn/no-anonymous-default-export`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-anonymous-default-export.md
-[`unicorn/no-array-callback-reference`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-callback-reference.md
-[`unicorn/no-array-for-each`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-for-each.md
-[`unicorn/no-array-method-this-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-method-this-argument.md
-[`unicorn/no-array-reduce`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-reduce.md
-[`unicorn/no-array-reverse`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-reverse.md
-[`unicorn/no-await-expression-member`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-await-expression-member.md
-[`unicorn/no-await-in-promise-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-await-in-promise-methods.md
-[`unicorn/no-console-spaces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-console-spaces.md
-[`unicorn/no-document-cookie`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-document-cookie.md
-[`unicorn/no-empty-file`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-empty-file.md
-[`unicorn/no-for-loop`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-for-loop.md
-[`unicorn/no-hex-escape`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-hex-escape.md
-[`unicorn/no-instanceof-builtins`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-instanceof-builtins.md
-[`unicorn/no-invalid-fetch-options`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-invalid-fetch-options.md
-[`unicorn/no-invalid-remove-event-listener`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-invalid-remove-event-listener.md
-[`unicorn/no-keyword-prefix`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-keyword-prefix.md
-[`unicorn/no-lonely-if`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-lonely-if.md
-[`unicorn/no-magic-array-flat-depth`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-magic-array-flat-depth.md
-[`unicorn/no-named-default`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-named-default.md
-[`unicorn/no-negated-condition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-negated-condition.md
-[`unicorn/no-negation-in-equality-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-negation-in-equality-check.md
-[`unicorn/no-nested-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-nested-ternary.md
-[`unicorn/no-new-array`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-new-array.md
-[`unicorn/no-new-buffer`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-new-buffer.md
-[`unicorn/no-null`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-null.md
-[`unicorn/no-object-as-default-parameter`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-object-as-default-parameter.md
-[`unicorn/no-process-exit`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-process-exit.md
-[`unicorn/no-single-promise-in-promise-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-single-promise-in-promise-methods.md
-[`unicorn/no-static-only-class`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-static-only-class.md
-[`unicorn/no-thenable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-thenable.md
-[`unicorn/no-this-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-this-assignment.md
-[`unicorn/no-typeof-undefined`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-typeof-undefined.md
-[`unicorn/no-unnecessary-array-flat-depth`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-array-flat-depth.md
-[`unicorn/no-unnecessary-array-splice-count`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-array-splice-count.md
-[`unicorn/no-unnecessary-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-await.md
-[`unicorn/no-unnecessary-polyfills`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-polyfills.md
-[`unicorn/no-unnecessary-slice-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-slice-end.md
-[`unicorn/no-unreadable-array-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unreadable-array-destructuring.md
-[`unicorn/no-unreadable-iife`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unreadable-iife.md
-[`unicorn/no-unused-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unused-properties.md
-[`unicorn/no-useless-error-capture-stack-trace`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-error-capture-stack-trace.md
-[`unicorn/no-useless-fallback-in-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-fallback-in-spread.md
-[`unicorn/no-useless-length-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-length-check.md
-[`unicorn/no-useless-promise-resolve-reject`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-promise-resolve-reject.md
-[`unicorn/no-useless-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-spread.md
-[`unicorn/no-useless-switch-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-switch-case.md
-[`unicorn/no-useless-undefined`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-undefined.md
-[`unicorn/no-zero-fractions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-zero-fractions.md
-[`unicorn/number-literal-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/number-literal-case.md
-[`unicorn/numeric-separators-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/numeric-separators-style.md
-[`unicorn/prefer-add-event-listener`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-add-event-listener.md
-[`unicorn/prefer-array-find`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-find.md
-[`unicorn/prefer-array-flat`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-flat.md
-[`unicorn/prefer-array-flat-map`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-flat-map.md
-[`unicorn/prefer-array-index-of`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-index-of.md
-[`unicorn/prefer-array-some`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-some.md
-[`unicorn/prefer-at`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-at.md
-[`unicorn/prefer-blob-reading-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-blob-reading-methods.md
-[`unicorn/prefer-class-fields`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-class-fields.md
-[`unicorn/prefer-code-point`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-code-point.md
-[`unicorn/prefer-date-now`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-date-now.md
-[`unicorn/prefer-default-parameters`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-default-parameters.md
-[`unicorn/prefer-dom-node-append`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-append.md
-[`unicorn/prefer-dom-node-dataset`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-dataset.md
-[`unicorn/prefer-dom-node-remove`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-remove.md
-[`unicorn/prefer-dom-node-text-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-text-content.md
-[`unicorn/prefer-event-target`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-event-target.md
-[`unicorn/prefer-export-from`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-export-from.md
-[`unicorn/prefer-global-this`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-global-this.md
-[`unicorn/prefer-import-meta-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-import-meta-properties.md
-[`unicorn/prefer-includes`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-includes.md
-[`unicorn/prefer-json-parse-buffer`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-json-parse-buffer.md
-[`unicorn/prefer-keyboard-event-key`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-keyboard-event-key.md
-[`unicorn/prefer-logical-operator-over-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-logical-operator-over-ternary.md
-[`unicorn/prefer-math-min-max`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-math-min-max.md
-[`unicorn/prefer-math-trunc`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-math-trunc.md
-[`unicorn/prefer-modern-dom-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-modern-dom-apis.md
-[`unicorn/prefer-modern-math-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-modern-math-apis.md
-[`unicorn/prefer-module`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-module.md
-[`unicorn/prefer-native-coercion-functions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-native-coercion-functions.md
-[`unicorn/prefer-negative-index`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-negative-index.md
-[`unicorn/prefer-node-protocol`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-node-protocol.md
-[`unicorn/prefer-number-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-number-properties.md
-[`unicorn/prefer-object-from-entries`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-object-from-entries.md
-[`unicorn/prefer-optional-catch-binding`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-optional-catch-binding.md
-[`unicorn/prefer-prototype-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-prototype-methods.md
-[`unicorn/prefer-query-selector`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-query-selector.md
-[`unicorn/prefer-reflect-apply`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-reflect-apply.md
-[`unicorn/prefer-regexp-test`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-regexp-test.md
-[`unicorn/prefer-set-has`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-set-has.md
-[`unicorn/prefer-set-size`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-set-size.md
-[`unicorn/prefer-single-call`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-single-call.md
-[`unicorn/prefer-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-spread.md
-[`unicorn/prefer-string-raw`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-raw.md
-[`unicorn/prefer-string-replace-all`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-replace-all.md
-[`unicorn/prefer-string-slice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-slice.md
-[`unicorn/prefer-string-starts-ends-with`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-starts-ends-with.md
-[`unicorn/prefer-string-trim-start-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-trim-start-end.md
-[`unicorn/prefer-structured-clone`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-structured-clone.md
-[`unicorn/prefer-switch`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-switch.md
-[`unicorn/prefer-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-ternary.md
-[`unicorn/prefer-top-level-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-top-level-await.md
-[`unicorn/prefer-type-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-type-error.md
-[`unicorn/prevent-abbreviations`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prevent-abbreviations.md
-[`unicorn/relative-url-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/relative-url-style.md
-[`unicorn/require-array-join-separator`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-array-join-separator.md
-[`unicorn/require-module-specifiers`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-module-specifiers.md
-[`unicorn/require-number-to-fixed-digits-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-number-to-fixed-digits-argument.md
-[`unicorn/require-post-message-target-origin`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-post-message-target-origin.md
-[`unicorn/string-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/string-content.md
-[`unicorn/switch-case-braces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/switch-case-braces.md
-[`unicorn/template-indent`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/template-indent.md
-[`unicorn/text-encoding-identifier-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/text-encoding-identifier-case.md
-[`unicorn/throw-new-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/throw-new-error.md
+[`unicorn/better-regex`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/better-regex.md
+[`unicorn/catch-error-name`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/catch-error-name.md
+[`unicorn/consistent-assert`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-assert.md
+[`unicorn/consistent-date-clone`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-date-clone.md
+[`unicorn/consistent-destructuring`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-destructuring.md
+[`unicorn/consistent-empty-array-spread`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-empty-array-spread.md
+[`unicorn/consistent-existence-index-check`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-existence-index-check.md
+[`unicorn/consistent-function-scoping`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/consistent-function-scoping.md
+[`unicorn/custom-error-definition`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/custom-error-definition.md
+[`unicorn/empty-brace-spaces`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/empty-brace-spaces.md
+[`unicorn/error-message`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/error-message.md
+[`unicorn/escape-case`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/escape-case.md
+[`unicorn/expiring-todo-comments`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/expiring-todo-comments.md
+[`unicorn/explicit-length-check`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/explicit-length-check.md
+[`unicorn/filename-case`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/filename-case.md
+[`unicorn/import-style`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/import-style.md
+[`unicorn/new-for-builtins`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/new-for-builtins.md
+[`unicorn/no-abusive-eslint-disable`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-abusive-eslint-disable.md
+[`unicorn/no-accessor-recursion`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-accessor-recursion.md
+[`unicorn/no-anonymous-default-export`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-anonymous-default-export.md
+[`unicorn/no-array-callback-reference`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-callback-reference.md
+[`unicorn/no-array-for-each`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-for-each.md
+[`unicorn/no-array-method-this-argument`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-method-this-argument.md
+[`unicorn/no-array-reduce`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-reduce.md
+[`unicorn/no-array-reverse`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-array-reverse.md
+[`unicorn/no-await-expression-member`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-await-expression-member.md
+[`unicorn/no-await-in-promise-methods`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-await-in-promise-methods.md
+[`unicorn/no-console-spaces`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-console-spaces.md
+[`unicorn/no-document-cookie`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-document-cookie.md
+[`unicorn/no-empty-file`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-empty-file.md
+[`unicorn/no-for-loop`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-for-loop.md
+[`unicorn/no-hex-escape`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-hex-escape.md
+[`unicorn/no-instanceof-builtins`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-instanceof-builtins.md
+[`unicorn/no-invalid-fetch-options`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-invalid-fetch-options.md
+[`unicorn/no-invalid-remove-event-listener`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-invalid-remove-event-listener.md
+[`unicorn/no-keyword-prefix`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-keyword-prefix.md
+[`unicorn/no-lonely-if`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-lonely-if.md
+[`unicorn/no-magic-array-flat-depth`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-magic-array-flat-depth.md
+[`unicorn/no-named-default`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-named-default.md
+[`unicorn/no-negated-condition`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-negated-condition.md
+[`unicorn/no-negation-in-equality-check`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-negation-in-equality-check.md
+[`unicorn/no-nested-ternary`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-nested-ternary.md
+[`unicorn/no-new-array`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-new-array.md
+[`unicorn/no-new-buffer`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-new-buffer.md
+[`unicorn/no-null`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-null.md
+[`unicorn/no-object-as-default-parameter`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-object-as-default-parameter.md
+[`unicorn/no-process-exit`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-process-exit.md
+[`unicorn/no-single-promise-in-promise-methods`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-single-promise-in-promise-methods.md
+[`unicorn/no-static-only-class`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-static-only-class.md
+[`unicorn/no-thenable`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-thenable.md
+[`unicorn/no-this-assignment`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-this-assignment.md
+[`unicorn/no-typeof-undefined`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-typeof-undefined.md
+[`unicorn/no-unnecessary-array-flat-depth`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-array-flat-depth.md
+[`unicorn/no-unnecessary-array-splice-count`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-array-splice-count.md
+[`unicorn/no-unnecessary-await`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-await.md
+[`unicorn/no-unnecessary-polyfills`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-polyfills.md
+[`unicorn/no-unnecessary-slice-end`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unnecessary-slice-end.md
+[`unicorn/no-unreadable-array-destructuring`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unreadable-array-destructuring.md
+[`unicorn/no-unreadable-iife`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unreadable-iife.md
+[`unicorn/no-unused-properties`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-unused-properties.md
+[`unicorn/no-useless-error-capture-stack-trace`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-error-capture-stack-trace.md
+[`unicorn/no-useless-fallback-in-spread`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-fallback-in-spread.md
+[`unicorn/no-useless-length-check`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-length-check.md
+[`unicorn/no-useless-promise-resolve-reject`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-promise-resolve-reject.md
+[`unicorn/no-useless-spread`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-spread.md
+[`unicorn/no-useless-switch-case`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-switch-case.md
+[`unicorn/no-useless-undefined`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-useless-undefined.md
+[`unicorn/no-zero-fractions`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/no-zero-fractions.md
+[`unicorn/number-literal-case`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/number-literal-case.md
+[`unicorn/numeric-separators-style`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/numeric-separators-style.md
+[`unicorn/prefer-add-event-listener`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-add-event-listener.md
+[`unicorn/prefer-array-find`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-find.md
+[`unicorn/prefer-array-flat`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-flat.md
+[`unicorn/prefer-array-flat-map`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-flat-map.md
+[`unicorn/prefer-array-index-of`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-index-of.md
+[`unicorn/prefer-array-some`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-array-some.md
+[`unicorn/prefer-at`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-at.md
+[`unicorn/prefer-blob-reading-methods`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-blob-reading-methods.md
+[`unicorn/prefer-class-fields`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-class-fields.md
+[`unicorn/prefer-code-point`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-code-point.md
+[`unicorn/prefer-date-now`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-date-now.md
+[`unicorn/prefer-default-parameters`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-default-parameters.md
+[`unicorn/prefer-dom-node-append`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-append.md
+[`unicorn/prefer-dom-node-dataset`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-dataset.md
+[`unicorn/prefer-dom-node-remove`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-remove.md
+[`unicorn/prefer-dom-node-text-content`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-dom-node-text-content.md
+[`unicorn/prefer-event-target`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-event-target.md
+[`unicorn/prefer-export-from`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-export-from.md
+[`unicorn/prefer-global-this`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-global-this.md
+[`unicorn/prefer-import-meta-properties`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-import-meta-properties.md
+[`unicorn/prefer-includes`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-includes.md
+[`unicorn/prefer-json-parse-buffer`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-json-parse-buffer.md
+[`unicorn/prefer-keyboard-event-key`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-keyboard-event-key.md
+[`unicorn/prefer-logical-operator-over-ternary`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-logical-operator-over-ternary.md
+[`unicorn/prefer-math-min-max`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-math-min-max.md
+[`unicorn/prefer-math-trunc`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-math-trunc.md
+[`unicorn/prefer-modern-dom-apis`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-modern-dom-apis.md
+[`unicorn/prefer-modern-math-apis`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-modern-math-apis.md
+[`unicorn/prefer-module`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-module.md
+[`unicorn/prefer-native-coercion-functions`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-native-coercion-functions.md
+[`unicorn/prefer-negative-index`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-negative-index.md
+[`unicorn/prefer-node-protocol`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-node-protocol.md
+[`unicorn/prefer-number-properties`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-number-properties.md
+[`unicorn/prefer-object-from-entries`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-object-from-entries.md
+[`unicorn/prefer-optional-catch-binding`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-optional-catch-binding.md
+[`unicorn/prefer-prototype-methods`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-prototype-methods.md
+[`unicorn/prefer-query-selector`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-query-selector.md
+[`unicorn/prefer-reflect-apply`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-reflect-apply.md
+[`unicorn/prefer-regexp-test`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-regexp-test.md
+[`unicorn/prefer-set-has`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-set-has.md
+[`unicorn/prefer-set-size`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-set-size.md
+[`unicorn/prefer-single-call`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-single-call.md
+[`unicorn/prefer-spread`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-spread.md
+[`unicorn/prefer-string-raw`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-raw.md
+[`unicorn/prefer-string-replace-all`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-replace-all.md
+[`unicorn/prefer-string-slice`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-slice.md
+[`unicorn/prefer-string-starts-ends-with`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-starts-ends-with.md
+[`unicorn/prefer-string-trim-start-end`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-string-trim-start-end.md
+[`unicorn/prefer-structured-clone`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-structured-clone.md
+[`unicorn/prefer-switch`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-switch.md
+[`unicorn/prefer-ternary`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-ternary.md
+[`unicorn/prefer-top-level-await`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-top-level-await.md
+[`unicorn/prefer-type-error`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prefer-type-error.md
+[`unicorn/prevent-abbreviations`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/prevent-abbreviations.md
+[`unicorn/relative-url-style`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/relative-url-style.md
+[`unicorn/require-array-join-separator`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-array-join-separator.md
+[`unicorn/require-module-specifiers`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-module-specifiers.md
+[`unicorn/require-number-to-fixed-digits-argument`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-number-to-fixed-digits-argument.md
+[`unicorn/require-post-message-target-origin`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/require-post-message-target-origin.md
+[`unicorn/string-content`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/string-content.md
+[`unicorn/switch-case-braces`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/switch-case-braces.md
+[`unicorn/template-indent`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/template-indent.md
+[`unicorn/text-encoding-identifier-case`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/text-encoding-identifier-case.md
+[`unicorn/throw-new-error`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v60.0.0/docs/rules/throw-new-error.md
 
 <!-- END unicorn -->
 
@@ -958,7 +1148,8 @@ Configurations compared:
 | ------------------------------------------------------------------------ | --- | --- |
 | [`depend/ban-dependencies`] <a id="summary-depend/ban-dependencies"></a> | ✅  | ✅  |
 
-[`depend/ban-dependencies`]: https://github.com/es-tooling/eslint-plugin-depend/blob/main/docs/rules/ban-dependencies.md
+[`depend/ban-dependencies`]:
+  https://github.com/es-tooling/eslint-plugin-depend/blob/main/docs/rules/ban-dependencies.md
 
 <!-- END depend -->
 
@@ -976,7 +1167,8 @@ Configurations compared:
 | ---------------------------------------------------- | --- | --- |
 | [`compat/compat`] <a id="summary-compat/compat"></a> | ✅  | ✅  |
 
-[`compat/compat`]: https://github.com/amilajack/eslint-plugin-compat/blob/master/docs/rules/compat.md
+[`compat/compat`]:
+  https://github.com/amilajack/eslint-plugin-compat/blob/master/docs/rules/compat.md
 
 <!-- END compat -->
 
@@ -1020,33 +1212,58 @@ Configurations compared:
 | [`n/prefer-node-protocol`] <a id="summary-n/prefer-node-protocol"></a>         | ✅  | 🚫  |
 | [`n/process-exit-as-throw`] <a id="summary-n/process-exit-as-throw"></a>       | ✅  | ✅  |
 
-[`n/callback-return`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md
-[`n/exports-style`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/exports-style.md
-[`n/file-extension-in-import`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/file-extension-in-import.md
-[`n/global-require`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md
-[`n/handle-callback-err`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md
+[`n/callback-return`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md
+[`n/exports-style`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/exports-style.md
+[`n/file-extension-in-import`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/file-extension-in-import.md
+[`n/global-require`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md
+[`n/handle-callback-err`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md
 [`n/hashbang`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md
-[`n/no-callback-literal`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-callback-literal.md
-[`n/no-deprecated-api`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md
-[`n/no-exports-assign`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md
-[`n/no-extraneous-import`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md
-[`n/no-extraneous-require`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md
-[`n/no-missing-import`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md
-[`n/no-missing-require`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md
-[`n/no-mixed-requires`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md
-[`n/no-new-require`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md
-[`n/no-path-concat`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md
-[`n/no-process-env`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md
-[`n/no-process-exit`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md
-[`n/no-restricted-import`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md
-[`n/no-restricted-require`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md
+[`n/no-callback-literal`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-callback-literal.md
+[`n/no-deprecated-api`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-deprecated-api.md
+[`n/no-exports-assign`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md
+[`n/no-extraneous-import`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-import.md
+[`n/no-extraneous-require`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-extraneous-require.md
+[`n/no-missing-import`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-import.md
+[`n/no-missing-require`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-missing-require.md
+[`n/no-mixed-requires`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md
+[`n/no-new-require`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md
+[`n/no-path-concat`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md
+[`n/no-process-env`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md
+[`n/no-process-exit`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md
+[`n/no-restricted-import`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md
+[`n/no-restricted-require`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md
 [`n/no-sync`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-sync.md
-[`n/no-top-level-await`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-top-level-await.md
-[`n/no-unpublished-bin`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md
-[`n/no-unpublished-import`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md
-[`n/no-unpublished-require`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md
-[`n/prefer-node-protocol`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-node-protocol.md
-[`n/process-exit-as-throw`]: https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md
+[`n/no-top-level-await`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-top-level-await.md
+[`n/no-unpublished-bin`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md
+[`n/no-unpublished-import`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md
+[`n/no-unpublished-require`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md
+[`n/prefer-node-protocol`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/prefer-node-protocol.md
+[`n/process-exit-as-throw`]:
+  https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md
 
 <!-- END n -->
 
@@ -1232,130 +1449,196 @@ Configurations compared:
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr></table>
 
-[`@typescript-eslint/adjacent-overload-signatures`]: https://typescript-eslint.io/rules/adjacent-overload-signatures
+[`@typescript-eslint/adjacent-overload-signatures`]:
+  https://typescript-eslint.io/rules/adjacent-overload-signatures
 [`@typescript-eslint/array-type`]: https://typescript-eslint.io/rules/array-type
 [`@typescript-eslint/await-thenable`]: https://typescript-eslint.io/rules/await-thenable
 [`@typescript-eslint/ban-ts-comment`]: https://typescript-eslint.io/rules/ban-ts-comment
 [`@typescript-eslint/ban-tslint-comment`]: https://typescript-eslint.io/rules/ban-tslint-comment
-[`@typescript-eslint/class-literal-property-style`]: https://typescript-eslint.io/rules/class-literal-property-style
-[`@typescript-eslint/class-methods-use-this`]: https://typescript-eslint.io/rules/class-methods-use-this
-[`@typescript-eslint/consistent-generic-constructors`]: https://typescript-eslint.io/rules/consistent-generic-constructors
-[`@typescript-eslint/consistent-indexed-object-style`]: https://typescript-eslint.io/rules/consistent-indexed-object-style
+[`@typescript-eslint/class-literal-property-style`]:
+  https://typescript-eslint.io/rules/class-literal-property-style
+[`@typescript-eslint/class-methods-use-this`]:
+  https://typescript-eslint.io/rules/class-methods-use-this
+[`@typescript-eslint/consistent-generic-constructors`]:
+  https://typescript-eslint.io/rules/consistent-generic-constructors
+[`@typescript-eslint/consistent-indexed-object-style`]:
+  https://typescript-eslint.io/rules/consistent-indexed-object-style
 [`@typescript-eslint/consistent-return`]: https://typescript-eslint.io/rules/consistent-return
-[`@typescript-eslint/consistent-type-assertions`]: https://typescript-eslint.io/rules/consistent-type-assertions
-[`@typescript-eslint/consistent-type-definitions`]: https://typescript-eslint.io/rules/consistent-type-definitions
-[`@typescript-eslint/consistent-type-exports`]: https://typescript-eslint.io/rules/consistent-type-exports
-[`@typescript-eslint/consistent-type-imports`]: https://typescript-eslint.io/rules/consistent-type-imports
+[`@typescript-eslint/consistent-type-assertions`]:
+  https://typescript-eslint.io/rules/consistent-type-assertions
+[`@typescript-eslint/consistent-type-definitions`]:
+  https://typescript-eslint.io/rules/consistent-type-definitions
+[`@typescript-eslint/consistent-type-exports`]:
+  https://typescript-eslint.io/rules/consistent-type-exports
+[`@typescript-eslint/consistent-type-imports`]:
+  https://typescript-eslint.io/rules/consistent-type-imports
 [`@typescript-eslint/default-param-last`]: https://typescript-eslint.io/rules/default-param-last
 [`@typescript-eslint/dot-notation`]: https://typescript-eslint.io/rules/dot-notation
-[`@typescript-eslint/explicit-function-return-type`]: https://typescript-eslint.io/rules/explicit-function-return-type
-[`@typescript-eslint/explicit-member-accessibility`]: https://typescript-eslint.io/rules/explicit-member-accessibility
-[`@typescript-eslint/explicit-module-boundary-types`]: https://typescript-eslint.io/rules/explicit-module-boundary-types
+[`@typescript-eslint/explicit-function-return-type`]:
+  https://typescript-eslint.io/rules/explicit-function-return-type
+[`@typescript-eslint/explicit-member-accessibility`]:
+  https://typescript-eslint.io/rules/explicit-member-accessibility
+[`@typescript-eslint/explicit-module-boundary-types`]:
+  https://typescript-eslint.io/rules/explicit-module-boundary-types
 [`@typescript-eslint/init-declarations`]: https://typescript-eslint.io/rules/init-declarations
 [`@typescript-eslint/max-params`]: https://typescript-eslint.io/rules/max-params
 [`@typescript-eslint/member-ordering`]: https://typescript-eslint.io/rules/member-ordering
-[`@typescript-eslint/method-signature-style`]: https://typescript-eslint.io/rules/method-signature-style
+[`@typescript-eslint/method-signature-style`]:
+  https://typescript-eslint.io/rules/method-signature-style
 [`@typescript-eslint/naming-convention`]: https://typescript-eslint.io/rules/naming-convention
 [`@typescript-eslint/no-array-constructor`]: https://typescript-eslint.io/rules/no-array-constructor
 [`@typescript-eslint/no-array-delete`]: https://typescript-eslint.io/rules/no-array-delete
 [`@typescript-eslint/no-base-to-string`]: https://typescript-eslint.io/rules/no-base-to-string
-[`@typescript-eslint/no-confusing-non-null-assertion`]: https://typescript-eslint.io/rules/no-confusing-non-null-assertion
-[`@typescript-eslint/no-confusing-void-expression`]: https://typescript-eslint.io/rules/no-confusing-void-expression
+[`@typescript-eslint/no-confusing-non-null-assertion`]:
+  https://typescript-eslint.io/rules/no-confusing-non-null-assertion
+[`@typescript-eslint/no-confusing-void-expression`]:
+  https://typescript-eslint.io/rules/no-confusing-void-expression
 [`@typescript-eslint/no-deprecated`]: https://typescript-eslint.io/rules/no-deprecated
-[`@typescript-eslint/no-dupe-class-members`]: https://typescript-eslint.io/rules/no-dupe-class-members
-[`@typescript-eslint/no-duplicate-enum-values`]: https://typescript-eslint.io/rules/no-duplicate-enum-values
-[`@typescript-eslint/no-duplicate-type-constituents`]: https://typescript-eslint.io/rules/no-duplicate-type-constituents
+[`@typescript-eslint/no-dupe-class-members`]:
+  https://typescript-eslint.io/rules/no-dupe-class-members
+[`@typescript-eslint/no-duplicate-enum-values`]:
+  https://typescript-eslint.io/rules/no-duplicate-enum-values
+[`@typescript-eslint/no-duplicate-type-constituents`]:
+  https://typescript-eslint.io/rules/no-duplicate-type-constituents
 [`@typescript-eslint/no-dynamic-delete`]: https://typescript-eslint.io/rules/no-dynamic-delete
 [`@typescript-eslint/no-empty-function`]: https://typescript-eslint.io/rules/no-empty-function
 [`@typescript-eslint/no-empty-object-type`]: https://typescript-eslint.io/rules/no-empty-object-type
 [`@typescript-eslint/no-explicit-any`]: https://typescript-eslint.io/rules/no-explicit-any
-[`@typescript-eslint/no-extra-non-null-assertion`]: https://typescript-eslint.io/rules/no-extra-non-null-assertion
+[`@typescript-eslint/no-extra-non-null-assertion`]:
+  https://typescript-eslint.io/rules/no-extra-non-null-assertion
 [`@typescript-eslint/no-extraneous-class`]: https://typescript-eslint.io/rules/no-extraneous-class
 [`@typescript-eslint/no-floating-promises`]: https://typescript-eslint.io/rules/no-floating-promises
 [`@typescript-eslint/no-for-in-array`]: https://typescript-eslint.io/rules/no-for-in-array
 [`@typescript-eslint/no-implied-eval`]: https://typescript-eslint.io/rules/no-implied-eval
-[`@typescript-eslint/no-import-type-side-effects`]: https://typescript-eslint.io/rules/no-import-type-side-effects
+[`@typescript-eslint/no-import-type-side-effects`]:
+  https://typescript-eslint.io/rules/no-import-type-side-effects
 [`@typescript-eslint/no-inferrable-types`]: https://typescript-eslint.io/rules/no-inferrable-types
 [`@typescript-eslint/no-invalid-this`]: https://typescript-eslint.io/rules/no-invalid-this
 [`@typescript-eslint/no-invalid-void-type`]: https://typescript-eslint.io/rules/no-invalid-void-type
 [`@typescript-eslint/no-loop-func`]: https://typescript-eslint.io/rules/no-loop-func
 [`@typescript-eslint/no-magic-numbers`]: https://typescript-eslint.io/rules/no-magic-numbers
-[`@typescript-eslint/no-meaningless-void-operator`]: https://typescript-eslint.io/rules/no-meaningless-void-operator
+[`@typescript-eslint/no-meaningless-void-operator`]:
+  https://typescript-eslint.io/rules/no-meaningless-void-operator
 [`@typescript-eslint/no-misused-new`]: https://typescript-eslint.io/rules/no-misused-new
 [`@typescript-eslint/no-misused-promises`]: https://typescript-eslint.io/rules/no-misused-promises
 [`@typescript-eslint/no-misused-spread`]: https://typescript-eslint.io/rules/no-misused-spread
 [`@typescript-eslint/no-mixed-enums`]: https://typescript-eslint.io/rules/no-mixed-enums
 [`@typescript-eslint/no-namespace`]: https://typescript-eslint.io/rules/no-namespace
-[`@typescript-eslint/no-non-null-asserted-nullish-coalescing`]: https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing
-[`@typescript-eslint/no-non-null-asserted-optional-chain`]: https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain
-[`@typescript-eslint/no-non-null-assertion`]: https://typescript-eslint.io/rules/no-non-null-assertion
+[`@typescript-eslint/no-non-null-asserted-nullish-coalescing`]:
+  https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing
+[`@typescript-eslint/no-non-null-asserted-optional-chain`]:
+  https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain
+[`@typescript-eslint/no-non-null-assertion`]:
+  https://typescript-eslint.io/rules/no-non-null-assertion
 [`@typescript-eslint/no-redeclare`]: https://typescript-eslint.io/rules/no-redeclare
-[`@typescript-eslint/no-redundant-type-constituents`]: https://typescript-eslint.io/rules/no-redundant-type-constituents
+[`@typescript-eslint/no-redundant-type-constituents`]:
+  https://typescript-eslint.io/rules/no-redundant-type-constituents
 [`@typescript-eslint/no-require-imports`]: https://typescript-eslint.io/rules/no-require-imports
-[`@typescript-eslint/no-restricted-imports`]: https://typescript-eslint.io/rules/no-restricted-imports
+[`@typescript-eslint/no-restricted-imports`]:
+  https://typescript-eslint.io/rules/no-restricted-imports
 [`@typescript-eslint/no-restricted-types`]: https://typescript-eslint.io/rules/no-restricted-types
 [`@typescript-eslint/no-shadow`]: https://typescript-eslint.io/rules/no-shadow
 [`@typescript-eslint/no-this-alias`]: https://typescript-eslint.io/rules/no-this-alias
-[`@typescript-eslint/no-unnecessary-boolean-literal-compare`]: https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
-[`@typescript-eslint/no-unnecessary-condition`]: https://typescript-eslint.io/rules/no-unnecessary-condition
-[`@typescript-eslint/no-unnecessary-parameter-property-assignment`]: https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment
-[`@typescript-eslint/no-unnecessary-qualifier`]: https://typescript-eslint.io/rules/no-unnecessary-qualifier
-[`@typescript-eslint/no-unnecessary-template-expression`]: https://typescript-eslint.io/rules/no-unnecessary-template-expression
-[`@typescript-eslint/no-unnecessary-type-arguments`]: https://typescript-eslint.io/rules/no-unnecessary-type-arguments
-[`@typescript-eslint/no-unnecessary-type-assertion`]: https://typescript-eslint.io/rules/no-unnecessary-type-assertion
-[`@typescript-eslint/no-unnecessary-type-constraint`]: https://typescript-eslint.io/rules/no-unnecessary-type-constraint
-[`@typescript-eslint/no-unnecessary-type-conversion`]: https://typescript-eslint.io/rules/no-unnecessary-type-conversion
-[`@typescript-eslint/no-unnecessary-type-parameters`]: https://typescript-eslint.io/rules/no-unnecessary-type-parameters
+[`@typescript-eslint/no-unnecessary-boolean-literal-compare`]:
+  https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
+[`@typescript-eslint/no-unnecessary-condition`]:
+  https://typescript-eslint.io/rules/no-unnecessary-condition
+[`@typescript-eslint/no-unnecessary-parameter-property-assignment`]:
+  https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment
+[`@typescript-eslint/no-unnecessary-qualifier`]:
+  https://typescript-eslint.io/rules/no-unnecessary-qualifier
+[`@typescript-eslint/no-unnecessary-template-expression`]:
+  https://typescript-eslint.io/rules/no-unnecessary-template-expression
+[`@typescript-eslint/no-unnecessary-type-arguments`]:
+  https://typescript-eslint.io/rules/no-unnecessary-type-arguments
+[`@typescript-eslint/no-unnecessary-type-assertion`]:
+  https://typescript-eslint.io/rules/no-unnecessary-type-assertion
+[`@typescript-eslint/no-unnecessary-type-constraint`]:
+  https://typescript-eslint.io/rules/no-unnecessary-type-constraint
+[`@typescript-eslint/no-unnecessary-type-conversion`]:
+  https://typescript-eslint.io/rules/no-unnecessary-type-conversion
+[`@typescript-eslint/no-unnecessary-type-parameters`]:
+  https://typescript-eslint.io/rules/no-unnecessary-type-parameters
 [`@typescript-eslint/no-unsafe-argument`]: https://typescript-eslint.io/rules/no-unsafe-argument
 [`@typescript-eslint/no-unsafe-assignment`]: https://typescript-eslint.io/rules/no-unsafe-assignment
 [`@typescript-eslint/no-unsafe-call`]: https://typescript-eslint.io/rules/no-unsafe-call
-[`@typescript-eslint/no-unsafe-declaration-merging`]: https://typescript-eslint.io/rules/no-unsafe-declaration-merging
-[`@typescript-eslint/no-unsafe-enum-comparison`]: https://typescript-eslint.io/rules/no-unsafe-enum-comparison
-[`@typescript-eslint/no-unsafe-function-type`]: https://typescript-eslint.io/rules/no-unsafe-function-type
-[`@typescript-eslint/no-unsafe-member-access`]: https://typescript-eslint.io/rules/no-unsafe-member-access
+[`@typescript-eslint/no-unsafe-declaration-merging`]:
+  https://typescript-eslint.io/rules/no-unsafe-declaration-merging
+[`@typescript-eslint/no-unsafe-enum-comparison`]:
+  https://typescript-eslint.io/rules/no-unsafe-enum-comparison
+[`@typescript-eslint/no-unsafe-function-type`]:
+  https://typescript-eslint.io/rules/no-unsafe-function-type
+[`@typescript-eslint/no-unsafe-member-access`]:
+  https://typescript-eslint.io/rules/no-unsafe-member-access
 [`@typescript-eslint/no-unsafe-return`]: https://typescript-eslint.io/rules/no-unsafe-return
-[`@typescript-eslint/no-unsafe-type-assertion`]: https://typescript-eslint.io/rules/no-unsafe-type-assertion
-[`@typescript-eslint/no-unsafe-unary-minus`]: https://typescript-eslint.io/rules/no-unsafe-unary-minus
-[`@typescript-eslint/no-unused-expressions`]: https://typescript-eslint.io/rules/no-unused-expressions
+[`@typescript-eslint/no-unsafe-type-assertion`]:
+  https://typescript-eslint.io/rules/no-unsafe-type-assertion
+[`@typescript-eslint/no-unsafe-unary-minus`]:
+  https://typescript-eslint.io/rules/no-unsafe-unary-minus
+[`@typescript-eslint/no-unused-expressions`]:
+  https://typescript-eslint.io/rules/no-unused-expressions
 [`@typescript-eslint/no-unused-vars`]: https://typescript-eslint.io/rules/no-unused-vars
 [`@typescript-eslint/no-use-before-define`]: https://typescript-eslint.io/rules/no-use-before-define
-[`@typescript-eslint/no-useless-constructor`]: https://typescript-eslint.io/rules/no-useless-constructor
-[`@typescript-eslint/no-useless-empty-export`]: https://typescript-eslint.io/rules/no-useless-empty-export
-[`@typescript-eslint/no-wrapper-object-types`]: https://typescript-eslint.io/rules/no-wrapper-object-types
-[`@typescript-eslint/non-nullable-type-assertion-style`]: https://typescript-eslint.io/rules/non-nullable-type-assertion-style
+[`@typescript-eslint/no-useless-constructor`]:
+  https://typescript-eslint.io/rules/no-useless-constructor
+[`@typescript-eslint/no-useless-empty-export`]:
+  https://typescript-eslint.io/rules/no-useless-empty-export
+[`@typescript-eslint/no-wrapper-object-types`]:
+  https://typescript-eslint.io/rules/no-wrapper-object-types
+[`@typescript-eslint/non-nullable-type-assertion-style`]:
+  https://typescript-eslint.io/rules/non-nullable-type-assertion-style
 [`@typescript-eslint/only-throw-error`]: https://typescript-eslint.io/rules/only-throw-error
 [`@typescript-eslint/parameter-properties`]: https://typescript-eslint.io/rules/parameter-properties
 [`@typescript-eslint/prefer-as-const`]: https://typescript-eslint.io/rules/prefer-as-const
 [`@typescript-eslint/prefer-destructuring`]: https://typescript-eslint.io/rules/prefer-destructuring
-[`@typescript-eslint/prefer-enum-initializers`]: https://typescript-eslint.io/rules/prefer-enum-initializers
+[`@typescript-eslint/prefer-enum-initializers`]:
+  https://typescript-eslint.io/rules/prefer-enum-initializers
 [`@typescript-eslint/prefer-find`]: https://typescript-eslint.io/rules/prefer-find
 [`@typescript-eslint/prefer-for-of`]: https://typescript-eslint.io/rules/prefer-for-of
 [`@typescript-eslint/prefer-function-type`]: https://typescript-eslint.io/rules/prefer-function-type
 [`@typescript-eslint/prefer-includes`]: https://typescript-eslint.io/rules/prefer-includes
-[`@typescript-eslint/prefer-literal-enum-member`]: https://typescript-eslint.io/rules/prefer-literal-enum-member
-[`@typescript-eslint/prefer-namespace-keyword`]: https://typescript-eslint.io/rules/prefer-namespace-keyword
-[`@typescript-eslint/prefer-nullish-coalescing`]: https://typescript-eslint.io/rules/prefer-nullish-coalescing
-[`@typescript-eslint/prefer-optional-chain`]: https://typescript-eslint.io/rules/prefer-optional-chain
-[`@typescript-eslint/prefer-promise-reject-errors`]: https://typescript-eslint.io/rules/prefer-promise-reject-errors
+[`@typescript-eslint/prefer-literal-enum-member`]:
+  https://typescript-eslint.io/rules/prefer-literal-enum-member
+[`@typescript-eslint/prefer-namespace-keyword`]:
+  https://typescript-eslint.io/rules/prefer-namespace-keyword
+[`@typescript-eslint/prefer-nullish-coalescing`]:
+  https://typescript-eslint.io/rules/prefer-nullish-coalescing
+[`@typescript-eslint/prefer-optional-chain`]:
+  https://typescript-eslint.io/rules/prefer-optional-chain
+[`@typescript-eslint/prefer-promise-reject-errors`]:
+  https://typescript-eslint.io/rules/prefer-promise-reject-errors
 [`@typescript-eslint/prefer-readonly`]: https://typescript-eslint.io/rules/prefer-readonly
-[`@typescript-eslint/prefer-readonly-parameter-types`]: https://typescript-eslint.io/rules/prefer-readonly-parameter-types
-[`@typescript-eslint/prefer-reduce-type-parameter`]: https://typescript-eslint.io/rules/prefer-reduce-type-parameter
+[`@typescript-eslint/prefer-readonly-parameter-types`]:
+  https://typescript-eslint.io/rules/prefer-readonly-parameter-types
+[`@typescript-eslint/prefer-reduce-type-parameter`]:
+  https://typescript-eslint.io/rules/prefer-reduce-type-parameter
 [`@typescript-eslint/prefer-regexp-exec`]: https://typescript-eslint.io/rules/prefer-regexp-exec
-[`@typescript-eslint/prefer-return-this-type`]: https://typescript-eslint.io/rules/prefer-return-this-type
-[`@typescript-eslint/prefer-string-starts-ends-with`]: https://typescript-eslint.io/rules/prefer-string-starts-ends-with
-[`@typescript-eslint/promise-function-async`]: https://typescript-eslint.io/rules/promise-function-async
-[`@typescript-eslint/related-getter-setter-pairs`]: https://typescript-eslint.io/rules/related-getter-setter-pairs
-[`@typescript-eslint/require-array-sort-compare`]: https://typescript-eslint.io/rules/require-array-sort-compare
+[`@typescript-eslint/prefer-return-this-type`]:
+  https://typescript-eslint.io/rules/prefer-return-this-type
+[`@typescript-eslint/prefer-string-starts-ends-with`]:
+  https://typescript-eslint.io/rules/prefer-string-starts-ends-with
+[`@typescript-eslint/promise-function-async`]:
+  https://typescript-eslint.io/rules/promise-function-async
+[`@typescript-eslint/related-getter-setter-pairs`]:
+  https://typescript-eslint.io/rules/related-getter-setter-pairs
+[`@typescript-eslint/require-array-sort-compare`]:
+  https://typescript-eslint.io/rules/require-array-sort-compare
 [`@typescript-eslint/require-await`]: https://typescript-eslint.io/rules/require-await
-[`@typescript-eslint/restrict-plus-operands`]: https://typescript-eslint.io/rules/restrict-plus-operands
-[`@typescript-eslint/restrict-template-expressions`]: https://typescript-eslint.io/rules/restrict-template-expressions
+[`@typescript-eslint/restrict-plus-operands`]:
+  https://typescript-eslint.io/rules/restrict-plus-operands
+[`@typescript-eslint/restrict-template-expressions`]:
+  https://typescript-eslint.io/rules/restrict-template-expressions
 [`@typescript-eslint/return-await`]: https://typescript-eslint.io/rules/return-await
-[`@typescript-eslint/strict-boolean-expressions`]: https://typescript-eslint.io/rules/strict-boolean-expressions
-[`@typescript-eslint/switch-exhaustiveness-check`]: https://typescript-eslint.io/rules/switch-exhaustiveness-check
-[`@typescript-eslint/triple-slash-reference`]: https://typescript-eslint.io/rules/triple-slash-reference
+[`@typescript-eslint/strict-boolean-expressions`]:
+  https://typescript-eslint.io/rules/strict-boolean-expressions
+[`@typescript-eslint/switch-exhaustiveness-check`]:
+  https://typescript-eslint.io/rules/switch-exhaustiveness-check
+[`@typescript-eslint/triple-slash-reference`]:
+  https://typescript-eslint.io/rules/triple-slash-reference
 [`@typescript-eslint/unbound-method`]: https://typescript-eslint.io/rules/unbound-method
 [`@typescript-eslint/unified-signatures`]: https://typescript-eslint.io/rules/unified-signatures
-[`@typescript-eslint/use-unknown-in-catch-callback-variable`]: https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable
+[`@typescript-eslint/use-unknown-in-catch-callback-variable`]:
+  https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable
 
 <!-- END @typescript-eslint -->
 
@@ -1445,7 +1728,8 @@ Configurations compared:
 [`react-x/jsx-no-undef`]: https://eslint-react.xyz/docs/rules/jsx-no-undef
 [`react-x/jsx-uses-react`]: https://eslint-react.xyz/docs/rules/jsx-uses-react
 [`react-x/jsx-uses-vars`]: https://eslint-react.xyz/docs/rules/jsx-uses-vars
-[`react-x/no-access-state-in-setstate`]: https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
+[`react-x/no-access-state-in-setstate`]:
+  https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
 [`react-x/no-array-index-key`]: https://eslint-react.xyz/docs/rules/no-array-index-key
 [`react-x/no-children-count`]: https://eslint-react.xyz/docs/rules/no-children-count
 [`react-x/no-children-for-each`]: https://eslint-react.xyz/docs/rules/no-children-for-each
@@ -1456,10 +1740,13 @@ Configurations compared:
 [`react-x/no-class-component`]: https://eslint-react.xyz/docs/rules/no-class-component
 [`react-x/no-clone-element`]: https://eslint-react.xyz/docs/rules/no-clone-element
 [`react-x/no-comment-textnodes`]: https://eslint-react.xyz/docs/rules/no-comment-textnodes
-[`react-x/no-complex-conditional-rendering`]: https://eslint-react.xyz/docs/rules/no-complex-conditional-rendering
-[`react-x/no-complicated-conditional-rendering`]: https://eslint-react.xyz/docs/rules/no-complex-conditional-rendering
+[`react-x/no-complex-conditional-rendering`]:
+  https://eslint-react.xyz/docs/rules/no-complex-conditional-rendering
+[`react-x/no-complicated-conditional-rendering`]:
+  https://eslint-react.xyz/docs/rules/no-complex-conditional-rendering
 [`react-x/no-component-will-mount`]: https://eslint-react.xyz/docs/rules/no-component-will-mount
-[`react-x/no-component-will-receive-props`]: https://eslint-react.xyz/docs/rules/no-component-will-receive-props
+[`react-x/no-component-will-receive-props`]:
+  https://eslint-react.xyz/docs/rules/no-component-will-receive-props
 [`react-x/no-component-will-update`]: https://eslint-react.xyz/docs/rules/no-component-will-update
 [`react-x/no-context-provider`]: https://eslint-react.xyz/docs/rules/no-context-provider
 [`react-x/no-create-ref`]: https://eslint-react.xyz/docs/rules/no-create-ref
@@ -1469,32 +1756,49 @@ Configurations compared:
 [`react-x/no-duplicate-key`]: https://eslint-react.xyz/docs/rules/no-duplicate-key
 [`react-x/no-forward-ref`]: https://eslint-react.xyz/docs/rules/no-forward-ref
 [`react-x/no-implicit-key`]: https://eslint-react.xyz/docs/rules/no-implicit-key
-[`react-x/no-leaked-conditional-rendering`]: https://eslint-react.xyz/docs/rules/no-leaked-conditional-rendering
-[`react-x/no-missing-component-display-name`]: https://eslint-react.xyz/docs/rules/no-missing-component-display-name
-[`react-x/no-missing-context-display-name`]: https://eslint-react.xyz/docs/rules/no-missing-context-display-name
+[`react-x/no-leaked-conditional-rendering`]:
+  https://eslint-react.xyz/docs/rules/no-leaked-conditional-rendering
+[`react-x/no-missing-component-display-name`]:
+  https://eslint-react.xyz/docs/rules/no-missing-component-display-name
+[`react-x/no-missing-context-display-name`]:
+  https://eslint-react.xyz/docs/rules/no-missing-context-display-name
 [`react-x/no-missing-key`]: https://eslint-react.xyz/docs/rules/no-missing-key
-[`react-x/no-misused-capture-owner-stack`]: https://eslint-react.xyz/docs/rules/no-misused-capture-owner-stack
-[`react-x/no-nested-component-definitions`]: https://eslint-react.xyz/docs/rules/no-nested-component-definitions
-[`react-x/no-nested-components`]: https://eslint-react.xyz/docs/rules/no-nested-component-definitions
-[`react-x/no-nested-lazy-component-declarations`]: https://eslint-react.xyz/docs/rules/no-nested-component-definitions
+[`react-x/no-misused-capture-owner-stack`]:
+  https://eslint-react.xyz/docs/rules/no-misused-capture-owner-stack
+[`react-x/no-nested-component-definitions`]:
+  https://eslint-react.xyz/docs/rules/no-nested-component-definitions
+[`react-x/no-nested-components`]:
+  https://eslint-react.xyz/docs/rules/no-nested-component-definitions
+[`react-x/no-nested-lazy-component-declarations`]:
+  https://eslint-react.xyz/docs/rules/no-nested-component-definitions
 [`react-x/no-prop-types`]: https://eslint-react.xyz/docs/rules/no-prop-types
-[`react-x/no-redundant-should-component-update`]: https://eslint-react.xyz/docs/rules/no-redundant-should-component-update
-[`react-x/no-set-state-in-component-did-mount`]: https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-mount
-[`react-x/no-set-state-in-component-did-update`]: https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-update
-[`react-x/no-set-state-in-component-will-update`]: https://eslint-react.xyz/docs/rules/no-set-state-in-component-will-update
+[`react-x/no-redundant-should-component-update`]:
+  https://eslint-react.xyz/docs/rules/no-redundant-should-component-update
+[`react-x/no-set-state-in-component-did-mount`]:
+  https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-mount
+[`react-x/no-set-state-in-component-did-update`]:
+  https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-update
+[`react-x/no-set-state-in-component-will-update`]:
+  https://eslint-react.xyz/docs/rules/no-set-state-in-component-will-update
 [`react-x/no-string-refs`]: https://eslint-react.xyz/docs/rules/no-string-refs
-[`react-x/no-unsafe-component-will-mount`]: https://eslint-react.xyz/docs/rules/no-unsafe-component-will-mount
-[`react-x/no-unsafe-component-will-receive-props`]: https://eslint-react.xyz/docs/rules/no-unsafe-component-will-receive-props
-[`react-x/no-unsafe-component-will-update`]: https://eslint-react.xyz/docs/rules/no-unsafe-component-will-update
+[`react-x/no-unsafe-component-will-mount`]:
+  https://eslint-react.xyz/docs/rules/no-unsafe-component-will-mount
+[`react-x/no-unsafe-component-will-receive-props`]:
+  https://eslint-react.xyz/docs/rules/no-unsafe-component-will-receive-props
+[`react-x/no-unsafe-component-will-update`]:
+  https://eslint-react.xyz/docs/rules/no-unsafe-component-will-update
 [`react-x/no-unstable-context-value`]: https://eslint-react.xyz/docs/rules/no-unstable-context-value
 [`react-x/no-unstable-default-props`]: https://eslint-react.xyz/docs/rules/no-unstable-default-props
-[`react-x/no-unused-class-component-members`]: https://eslint-react.xyz/docs/rules/no-unused-class-component-members
+[`react-x/no-unused-class-component-members`]:
+  https://eslint-react.xyz/docs/rules/no-unused-class-component-members
 [`react-x/no-unused-state`]: https://eslint-react.xyz/docs/rules/no-unused-state
 [`react-x/no-use-context`]: https://eslint-react.xyz/docs/rules/no-use-context
 [`react-x/no-useless-forward-ref`]: https://eslint-react.xyz/docs/rules/no-useless-forward-ref
 [`react-x/no-useless-fragment`]: https://eslint-react.xyz/docs/rules/no-useless-fragment
-[`react-x/prefer-destructuring-assignment`]: https://eslint-react.xyz/docs/rules/prefer-destructuring-assignment
-[`react-x/prefer-react-namespace-import`]: https://eslint-react.xyz/docs/rules/prefer-react-namespace-import
+[`react-x/prefer-destructuring-assignment`]:
+  https://eslint-react.xyz/docs/rules/prefer-destructuring-assignment
+[`react-x/prefer-react-namespace-import`]:
+  https://eslint-react.xyz/docs/rules/prefer-react-namespace-import
 [`react-x/prefer-read-only-props`]: https://eslint-react.xyz/docs/rules/prefer-read-only-props
 [`react-x/prefer-shorthand-boolean`]: https://eslint-react.xyz/docs/rules/prefer-shorthand-boolean
 [`react-x/prefer-shorthand-fragment`]: https://eslint-react.xyz/docs/rules/prefer-shorthand-fragment
@@ -1526,23 +1830,29 @@ Configurations compared:
 | [`react-dom/no-use-form-state`] <a id="summary-react-dom/no-use-form-state"></a>                                                   | ✅  | ✅  |
 | [`react-dom/no-void-elements-with-children`] <a id="summary-react-dom/no-void-elements-with-children"></a>                         | ✅  | ✅  |
 
-[`react-dom/no-children-in-void-dom-elements`]: https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
-[`react-dom/no-dangerously-set-innerhtml`]: https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
-[`react-dom/no-dangerously-set-innerhtml-with-children`]: https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml-with-children
+[`react-dom/no-children-in-void-dom-elements`]:
+  https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
+[`react-dom/no-dangerously-set-innerhtml`]:
+  https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
+[`react-dom/no-dangerously-set-innerhtml-with-children`]:
+  https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml-with-children
 [`react-dom/no-find-dom-node`]: https://eslint-react.xyz/docs/rules/dom-no-find-dom-node
 [`react-dom/no-flush-sync`]: https://eslint-react.xyz/docs/rules/dom-no-flush-sync
 [`react-dom/no-hydrate`]: https://eslint-react.xyz/docs/rules/dom-no-hydrate
 [`react-dom/no-missing-button-type`]: https://eslint-react.xyz/docs/rules/dom-no-missing-button-type
-[`react-dom/no-missing-iframe-sandbox`]: https://eslint-react.xyz/docs/rules/dom-no-missing-iframe-sandbox
+[`react-dom/no-missing-iframe-sandbox`]:
+  https://eslint-react.xyz/docs/rules/dom-no-missing-iframe-sandbox
 [`react-dom/no-namespace`]: https://eslint-react.xyz/docs/rules/dom-no-namespace
 [`react-dom/no-render`]: https://eslint-react.xyz/docs/rules/dom-no-render
 [`react-dom/no-render-return-value`]: https://eslint-react.xyz/docs/rules/dom-no-render-return-value
 [`react-dom/no-script-url`]: https://eslint-react.xyz/docs/rules/dom-no-script-url
 [`react-dom/no-unknown-property`]: https://eslint-react.xyz/docs/rules/dom-no-unknown-property
-[`react-dom/no-unsafe-iframe-sandbox`]: https://eslint-react.xyz/docs/rules/dom-no-unsafe-iframe-sandbox
+[`react-dom/no-unsafe-iframe-sandbox`]:
+  https://eslint-react.xyz/docs/rules/dom-no-unsafe-iframe-sandbox
 [`react-dom/no-unsafe-target-blank`]: https://eslint-react.xyz/docs/rules/dom-no-unsafe-target-blank
 [`react-dom/no-use-form-state`]: https://eslint-react.xyz/docs/rules/dom-no-use-form-state
-[`react-dom/no-void-elements-with-children`]: https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
+[`react-dom/no-void-elements-with-children`]:
+  https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
 
 <!-- END react-dom -->
 
@@ -1557,9 +1867,11 @@ Configurations compared:
 | [`react-web-api/no-leaked-resize-observer`] <a id="summary-react-web-api/no-leaked-resize-observer"></a> | ✅  | ⚠️  |
 | [`react-web-api/no-leaked-timeout`] <a id="summary-react-web-api/no-leaked-timeout"></a>                 | ✅  | ⚠️  |
 
-[`react-web-api/no-leaked-event-listener`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-event-listener
+[`react-web-api/no-leaked-event-listener`]:
+  https://eslint-react.xyz/docs/rules/web-api-no-leaked-event-listener
 [`react-web-api/no-leaked-interval`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-interval
-[`react-web-api/no-leaked-resize-observer`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-resize-observer
+[`react-web-api/no-leaked-resize-observer`]:
+  https://eslint-react.xyz/docs/rules/web-api-no-leaked-resize-observer
 [`react-web-api/no-leaked-timeout`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-timeout
 
 <!-- END react-web-api -->
@@ -1582,17 +1894,28 @@ Configurations compared:
 | [`react-hooks-extra/no-useless-custom-hooks`] <a id="summary-react-hooks-extra/no-useless-custom-hooks"></a>                                   | 🚫  | 🚫  |
 | [`react-hooks-extra/prefer-use-state-lazy-initialization`] <a id="summary-react-hooks-extra/prefer-use-state-lazy-initialization"></a>         | ✅  | ⚠️  |
 
-[`react-hooks-extra/ensure-custom-hooks-using-other-hooks`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
-[`react-hooks-extra/ensure-use-callback-has-non-empty-deps`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-callback
-[`react-hooks-extra/ensure-use-memo-has-non-empty-deps`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-memo
-[`react-hooks-extra/no-direct-set-state-in-use-effect`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-direct-set-state-in-use-effect
-[`react-hooks-extra/no-direct-set-state-in-use-layout-effect`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-direct-set-state-in-use-layout-effect
-[`react-hooks-extra/no-redundant-custom-hook`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
-[`react-hooks-extra/no-unnecessary-use-callback`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-callback
-[`react-hooks-extra/no-unnecessary-use-memo`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-memo
-[`react-hooks-extra/no-unnecessary-use-prefix`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
-[`react-hooks-extra/no-useless-custom-hooks`]: https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
-[`react-hooks-extra/prefer-use-state-lazy-initialization`]: https://eslint-react.xyz/docs/rules/hooks-extra-prefer-use-state-lazy-initialization
+[`react-hooks-extra/ensure-custom-hooks-using-other-hooks`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
+[`react-hooks-extra/ensure-use-callback-has-non-empty-deps`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-callback
+[`react-hooks-extra/ensure-use-memo-has-non-empty-deps`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-memo
+[`react-hooks-extra/no-direct-set-state-in-use-effect`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-direct-set-state-in-use-effect
+[`react-hooks-extra/no-direct-set-state-in-use-layout-effect`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-direct-set-state-in-use-layout-effect
+[`react-hooks-extra/no-redundant-custom-hook`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
+[`react-hooks-extra/no-unnecessary-use-callback`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-callback
+[`react-hooks-extra/no-unnecessary-use-memo`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-memo
+[`react-hooks-extra/no-unnecessary-use-prefix`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
+[`react-hooks-extra/no-useless-custom-hooks`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-no-unnecessary-use-prefix
+[`react-hooks-extra/prefer-use-state-lazy-initialization`]:
+  https://eslint-react.xyz/docs/rules/hooks-extra-prefer-use-state-lazy-initialization
 
 <!-- END react-hooks-extra -->
 
@@ -1608,11 +1931,15 @@ Configurations compared:
 | [`react-naming-convention/filename-extension`] <a id="summary-react-naming-convention/filename-extension"></a> | 🚫  | 🚫  |
 | [`react-naming-convention/use-state`] <a id="summary-react-naming-convention/use-state"></a>                   | ✅  | 🚫  |
 
-[`react-naming-convention/component-name`]: https://eslint-react.xyz/docs/rules/naming-convention-component-name
-[`react-naming-convention/context-name`]: https://eslint-react.xyz/docs/rules/naming-convention-context-name
+[`react-naming-convention/component-name`]:
+  https://eslint-react.xyz/docs/rules/naming-convention-component-name
+[`react-naming-convention/context-name`]:
+  https://eslint-react.xyz/docs/rules/naming-convention-context-name
 [`react-naming-convention/filename`]: https://eslint-react.xyz/docs/rules/naming-convention-filename
-[`react-naming-convention/filename-extension`]: https://eslint-react.xyz/docs/rules/naming-convention-filename-extension
-[`react-naming-convention/use-state`]: https://eslint-react.xyz/docs/rules/naming-convention-use-state
+[`react-naming-convention/filename-extension`]:
+  https://eslint-react.xyz/docs/rules/naming-convention-filename-extension
+[`react-naming-convention/use-state`]:
+  https://eslint-react.xyz/docs/rules/naming-convention-use-state
 
 <!-- END react-naming-convention -->
 
@@ -1681,21 +2008,37 @@ Configurations compared:
 | [`storybook/use-storybook-expect`] <a id="summary-storybook/use-storybook-expect"></a>                   | ✅  | ✅  |
 | [`storybook/use-storybook-testing-library`] <a id="summary-storybook/use-storybook-testing-library"></a> | ✅  | ✅  |
 
-[`storybook/await-interactions`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/await-interactions.md
-[`storybook/context-in-play-function`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/context-in-play-function.md
-[`storybook/csf-component`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/csf-component.md
-[`storybook/default-exports`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/default-exports.md
-[`storybook/hierarchy-separator`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/hierarchy-separator.md
-[`storybook/meta-inline-properties`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/meta-inline-properties.md
-[`storybook/meta-satisfies-type`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/meta-satisfies-type.md
-[`storybook/no-redundant-story-name`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-redundant-story-name.md
-[`storybook/no-renderer-packages`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-renderer-packages.md
-[`storybook/no-stories-of`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-stories-of.md
-[`storybook/no-title-property-in-meta`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-title-property-in-meta.md
-[`storybook/no-uninstalled-addons`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-uninstalled-addons.md
-[`storybook/prefer-pascal-case`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/prefer-pascal-case.md
-[`storybook/story-exports`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/story-exports.md
-[`storybook/use-storybook-expect`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/use-storybook-expect.md
-[`storybook/use-storybook-testing-library`]: https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/use-storybook-testing-library.md
+[`storybook/await-interactions`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/await-interactions.md
+[`storybook/context-in-play-function`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/context-in-play-function.md
+[`storybook/csf-component`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/csf-component.md
+[`storybook/default-exports`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/default-exports.md
+[`storybook/hierarchy-separator`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/hierarchy-separator.md
+[`storybook/meta-inline-properties`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/meta-inline-properties.md
+[`storybook/meta-satisfies-type`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/meta-satisfies-type.md
+[`storybook/no-redundant-story-name`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-redundant-story-name.md
+[`storybook/no-renderer-packages`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-renderer-packages.md
+[`storybook/no-stories-of`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-stories-of.md
+[`storybook/no-title-property-in-meta`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-title-property-in-meta.md
+[`storybook/no-uninstalled-addons`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-uninstalled-addons.md
+[`storybook/prefer-pascal-case`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/prefer-pascal-case.md
+[`storybook/story-exports`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/story-exports.md
+[`storybook/use-storybook-expect`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/use-storybook-expect.md
+[`storybook/use-storybook-testing-library`]:
+  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/use-storybook-testing-library.md
 
 <!-- END storybook -->
