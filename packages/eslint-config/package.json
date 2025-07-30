@@ -57,7 +57,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-react-web-api": "catalog:",
     "eslint-plugin-react-x": "catalog:",
-    "eslint-plugin-unicorn": "^59.0.1",
+    "eslint-plugin-unicorn": "catalog:",
     "globals": "catalog:",
     "typescript-eslint": "catalog:"
   },
@@ -68,7 +68,7 @@
     "@types/node": "catalog:",
     "del-cli": "catalog:",
     "eslint": "catalog:",
-    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-prettier": "catalog:",
     "eslint-plugin-storybook": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
