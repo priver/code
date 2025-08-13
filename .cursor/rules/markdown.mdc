@@ -1,0 +1,10 @@
+---
+globs: *.md
+alwaysApply: false
+---
+
+# Markdown files
+
+- Documentation and README files should focus less on marketing language and more on accurately
+  reflecting the actual functionality.
+- Emojis can be added optionally.
