@@ -1,0 +1,76 @@
+---
+alwaysApply: true
+---
+
+# Code repo
+
+This monorepository contains multiple projects with a TypeScript frontend and a Node.js backend. The
+repository is managed by Turborepo and PNPM workspaces. Every project lives in own package inside
+workspace. Application packages are in `apps/` folder, library packages are in `packages/` folder.
+Inside each package the core functionality lives in the `src/` folder.
+
+## General instructions
+
+- Important: try to fix things at the cause, not the symptom.
+- Be very detailed with summarization and do not miss out things that are important.
+
+## Build & Commands
+
+- Typecheck and lint everything: `pnpm run check`
+- Lint workspace: `pnpm run lint --filter=<package_name>`
+- Fix linting: `pnpm run lint --filter=<package_name> -- --fix`
+- Typecheck workspace: `pnpm run check-types --filter=<package_name>`
+- Run tests in workspace: `pnpm run test --filter=<package_name>`
+- Start development server: `pnpm run dev --filter=<package_name>`
+- Build for production: `pnpm run build --filter=<package_name>`
+- Preview production build: `pnpm run preview --filter=<package_name>`
+- Install dependencies: `pnpm --filter=<package_name> add <dependancy>`
+
+### Development Environment
+
+- Storybook dev server: <http://localhost:6006>
+
+## Code Style
+
+- TypeScript: Strict mode with `noUncheckedIndexedAccess`
+- Use JSDoc docstrings for documenting TypeScript definitions, not `//` comments
+- Use descriptive variable/function names
+- In CamelCase names, use "URL" (not "Url"), "API" (not "Api"), "ID" (not "Id")
+- Prefer functional programming patterns
+- Prefer `type` over `interface` for object shapes
+- Use explicit return types for top-level functions of a module
+- Avoid `any` type — use `unknown` or proper typing
+- Use `const` assertions where appropriate
+- Prefer `readonly` arrays and objects when data shouldn't be mutated
+- Use optional properties extremely sparingly; only use them when the property is truly optional,
+  and consider whether bugs may be caused by a failure to pass the property
+- NEVER use `@ts-expect-error` or `@ts-ignore` to suppress type errors
+
+## Naming Convention
+
+- Use kebab-case for file names (e.g., `my-component.ts`)
+- Use camelCase for variables and function names (e.g., `myVariable`, `myFunction()`)
+- Use UpperCamelCase (PascalCase) for classes, types, and React components (e.g., `MyClass`,
+  `MyComponent`)
+- Use ALL_CAPS for constants and enum values (e.g., `MAX_COUNT`, `Color.RED`)
+- Inside generic types, functions or classes, prefix type parameters with `T` (e.g., `TKey`,
+  `TValue`); if it is the only parameter it could be just `T`
+- In camelCase and PascalCase names, use "URL" (not "Url"), "API" (not "Api"), "ID" (not "Id")
+
+## Architecture
+
+- Frontend: React with TypeScript
+- Styling: Tailwind CSS v4
+- Build tool: Vite for apps and tsc for libraries
+- Package manager: pnpm
+- Package versioning: Changesets
+- Build system: Turborepo
+
+## Security
+
+- Use appropriate data types that limit exposure of sensitive information
+- Never commit secrets or API keys to repository
+- Use environment variables for sensitive data
+- Validate all user inputs on both client and server
+- Use HTTPS in production
+- Follow principle of least privilege
