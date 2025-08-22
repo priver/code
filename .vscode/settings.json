@@ -30,6 +30,7 @@
   "tailwindCSS.classFunctions": ["cva", "cx"],
   "tailwindCSS.experimental.configFile": {
     "apps/storybook/src/style.css": "apps/storybook/src/**",
+    "packages/editor/src/style.css": "packages/editor/src/**",
     "packages/ui/src/style.css": "packages/ui/src/**"
   },
   "typescript.enablePromptUseWorkspaceTsdk": true,

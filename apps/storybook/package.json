@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource-variable/inter": "catalog:",
     "@fontsource-variable/jetbrains-mono": "catalog:",
+    "@priver/editor": "workspace:*",
     "@priver/ui": "workspace:*",
     "@tailwindcss/vite": "catalog:",
     "react": "^19.1.0",
