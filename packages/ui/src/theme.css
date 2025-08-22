@@ -103,6 +103,14 @@
   --default-mono-font-feature-settings: 'calt' 0;
 }
 
+@utility tab-* {
+  tab-size: --value(integer);
+}
+
+@utility underline-strikethrough {
+  text-decoration: underline line-through;
+}
+
 @utility mask-bg-border-* {
   padding: calc(--value(integer) * 1px);
   mask-clip: content-box, border-box;

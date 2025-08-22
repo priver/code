@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import '@priver/ui/theme.css';
 
+@source '../../../packages/editor';
 @source '../../../packages/ui';
 
 :root.light {
