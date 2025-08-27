@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Editor } from '@priver/editor';
+
+import { Editor } from './editor.tsx';
 
 const meta = {
   title: 'Editor/Editor',

@@ -28,6 +28,7 @@
   "devDependencies": {
     "@priver/eslint-config": "workspace:*",
     "@priver/tsconfig": "workspace:*",
+    "@storybook/react-vite": "catalog:",
     "@tailwindcss/cli": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",

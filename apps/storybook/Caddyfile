@@ -1,0 +1,5 @@
+storybook.priver.dev:443 {
+	reverse_proxy localhost:6006 {
+		header_up Host {upstream_hostport}
+	}
+}

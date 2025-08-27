@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
     "check-types": "tsc --noEmit",
-    "build": "storybook build",
-    "dev": "storybook dev -p 6006"
+    "build:storybook": "storybook build",
+    "dev": "storybook dev -p 6006 --no-open"
   },
   "dependencies": {
     "@fontsource-variable/inter": "catalog:",

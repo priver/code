@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
-import { Button } from '@priver/ui/button';
+
+import { Button } from './button.tsx';
 
 const VARIANTS = ['primary', 'secondary', 'tertiary'] as const;
 const SIZES = ['sm', 'md', 'lg'] as const;

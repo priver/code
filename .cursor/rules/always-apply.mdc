@@ -17,13 +17,13 @@ Inside each package the core functionality lives in the `src/` folder.
 ## Build & Commands
 
 - Typecheck and lint everything: `pnpm run check`
-- Lint workspace: `pnpm run lint --filter=<package_name>`
-- Fix linting: `pnpm run lint --filter=<package_name> -- --fix`
-- Typecheck workspace: `pnpm run check-types --filter=<package_name>`
-- Run tests in workspace: `pnpm run test --filter=<package_name>`
-- Start development server: `pnpm run dev --filter=<package_name>`
-- Build for production: `pnpm run build --filter=<package_name>`
-- Preview production build: `pnpm run preview --filter=<package_name>`
+- Lint workspace: `turbo run lint --filter=<package_name>`
+- Fix linting: `turbo run lint --filter=<package_name> -- --fix`
+- Typecheck workspace: `turbo run check-types --filter=<package_name>`
+- Run tests in workspace: `turbo run test --filter=<package_name>`
+- Start development server: `turbo run dev --filter=<package_name>`
+- Build for production: `turbo run build --filter=<package_name>`
+- Preview production build: `turbo run preview --filter=<package_name>`
 - Install dependencies: `pnpm --filter=<package_name> add <dependancy>`
 
 ### Development Environment
