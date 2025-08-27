@@ -1,4 +1,4 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as tseslint from 'typescript-eslint';
 
@@ -8,15 +8,13 @@ const allExtensions = [...typeScriptExtensions, '.js', '.cjs', '.mjs'] as const;
 export const typescript = {
   name: 'priver/typescript',
   languageOptions: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    parser: tseslint.parser as Linter.Parser,
+    parser: tseslint.parser,
     parserOptions: {
       projectService: true,
     },
   },
   plugins: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    '@typescript-eslint': tseslint.plugin as ESLint.Plugin,
+    '@typescript-eslint': tseslint.plugin,
   },
   settings: {
     'import-x/extensions': allExtensions,

@@ -101,8 +101,7 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: '@typescript-eslint',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: tseslint.plugin.rules as Record<string, Rule.RuleModule>,
+    rulesDefinitions: (tseslint.plugin as ESLint.Plugin).rules,
     recommended: mergeRules([
       ...tseslint.configs.strictTypeChecked,
       ...tseslint.configs.stylisticTypeChecked,
@@ -112,35 +111,35 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   {
     prefix: 'react-x',
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: reactX.rules as unknown as Record<string, Rule.RuleModule>,
+    rulesDefinitions: (reactX as unknown as ESLint.Plugin).rules,
     recommended: reactX.configs['recommended-type-checked'].rules,
     rules: react.rules,
   },
   {
     prefix: 'react-dom',
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: reactDom.rules as unknown as Record<string, Rule.RuleModule>,
+    rulesDefinitions: (reactDom as unknown as ESLint.Plugin).rules,
     recommended: reactDom.configs.recommended.rules,
     rules: react.rules,
   },
   {
     prefix: 'react-web-api',
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: reactWebAPI.rules as unknown as Record<string, Rule.RuleModule>,
+    rulesDefinitions: (reactWebAPI as unknown as ESLint.Plugin).rules,
     recommended: reactWebAPI.configs.recommended.rules,
     rules: react.rules,
   },
   {
     prefix: 'react-hooks-extra',
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: reactHooksExtra.rules as unknown as Record<string, Rule.RuleModule>,
+    rulesDefinitions: (reactHooksExtra as unknown as ESLint.Plugin).rules,
     recommended: reactHooksExtra.configs.recommended.rules,
     rules: react.rules,
   },
   {
     prefix: 'react-naming-convention',
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: reactNamingConvention.rules as unknown as Record<string, Rule.RuleModule>,
+    rulesDefinitions: (reactNamingConvention as unknown as ESLint.Plugin).rules,
     recommended: reactNamingConvention.configs.recommended.rules,
     rules: react.rules,
   },
