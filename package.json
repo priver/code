@@ -7,7 +7,7 @@
     "format": "prettier --experimental-cli --write .",
     "check-format": "prettier --experimental-cli --check .",
     "check-deps": "sherif",
-    "check": "turbo run check lint check-types test",
+    "check": "turbo run check-format check-deps lint check-types test",
     "proxy": "caddy run",
     "dev:storybook": "turbo run dev --filter=@priver/storybook"
   },
