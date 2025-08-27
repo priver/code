@@ -2,8 +2,12 @@
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
   "tasks": {
-    "//#root:check": {},
-    "//#root:format": {},
+    "//#check-format": {},
+    "//#check-deps": {},
+    "//#run-proxy": {
+      "cache": false,
+      "persistent": true
+    },
     "topo": {
       "dependsOn": ["^topo"]
     },
@@ -16,15 +20,19 @@
     "test": {},
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", "*.tsbuildinfo", "storybook-static/**"]
+      "inputs": ["$TURBO_DEFAULT$", "!**/*.stories.{ts,tsx}"],
+      "outputs": ["dist/**", "*.tsbuildinfo"]
     },
+    "build:storybook": {},
     "dev": {
+      "with": ["//#serve"],
       "cache": false,
       "persistent": true
     },
     "preview": {
-      "dependsOn": ["^build"],
-      "cache": false
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
     }
   }
 }

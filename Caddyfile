@@ -1,0 +1,9 @@
+*.priver.dev:80 {
+	redir https://{host}{uri} permanent
+}
+
+*.priver.dev:443 {
+	tls _wildcard.priver.dev.pem _wildcard.priver.dev-key.pem
+}
+
+import apps/storybook/Caddyfile
