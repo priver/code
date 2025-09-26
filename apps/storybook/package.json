@@ -15,8 +15,8 @@
     "@priver/editor": "workspace:*",
     "@priver/ui": "workspace:*",
     "@tailwindcss/vite": "catalog:",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "tailwindcss": "catalog:"
   },
   "devDependencies": {
