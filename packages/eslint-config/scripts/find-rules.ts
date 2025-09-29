@@ -39,7 +39,7 @@ function compareRuleNames(a: string, b: string) {
 function printRules(title: string, ruleNames: string[], rules: Map<string, Rule.RuleModule>) {
   console.log(styleText(['red', 'bold'], title));
 
-  for (const ruleName of ruleNames.sort(compareRuleNames)) {
+  for (const ruleName of ruleNames.toSorted(compareRuleNames)) {
     const parts = [styleText(['dim'], '*'), ruleName];
     const docsURL = rules.get(ruleName)?.meta?.docs?.url;
     if (docsURL) {

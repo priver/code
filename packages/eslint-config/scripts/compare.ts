@@ -110,36 +110,31 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'react-x',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: (reactX as unknown as ESLint.Plugin).rules,
+    rulesDefinitions: reactX.rules,
     recommended: reactX.configs['recommended-type-checked'].rules,
     rules: react.rules,
   },
   {
     prefix: 'react-dom',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: (reactDom as unknown as ESLint.Plugin).rules,
+    rulesDefinitions: reactDom.rules,
     recommended: reactDom.configs.recommended.rules,
     rules: react.rules,
   },
   {
     prefix: 'react-web-api',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: (reactWebAPI as unknown as ESLint.Plugin).rules,
+    rulesDefinitions: reactWebAPI.rules,
     recommended: reactWebAPI.configs.recommended.rules,
     rules: react.rules,
   },
   {
     prefix: 'react-hooks-extra',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: (reactHooksExtra as unknown as ESLint.Plugin).rules,
+    rulesDefinitions: reactHooksExtra.rules,
     recommended: reactHooksExtra.configs.recommended.rules,
     rules: react.rules,
   },
   {
     prefix: 'react-naming-convention',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: (reactNamingConvention as unknown as ESLint.Plugin).rules,
+    rulesDefinitions: reactNamingConvention.rules,
     recommended: reactNamingConvention.configs.recommended.rules,
     rules: react.rules,
   },
@@ -305,7 +300,7 @@ function comparePlugin(
   const incompatibleTable: string[] = [];
   const links: string[] = [];
 
-  for (const ruleName of Object.keys(rules).sort()) {
+  for (const ruleName of Object.keys(rules).toSorted()) {
     const ruleNameParts = rsplitOne(ruleName, '/');
     const rulePrefix = ruleNameParts.length === 1 ? 'eslint' : ruleNameParts[0];
     const unprefixedRuleName = ruleNameParts.length === 1 ? ruleNameParts[0] : ruleNameParts[1];
@@ -372,6 +367,7 @@ async function readComparisonFile() {
   } catch (error) {
     throw new Error(
       `Failed to read ${FILENAME}: ${error instanceof Error ? error.message : String(error)}`,
+      { cause: error },
     );
   }
 }
@@ -382,6 +378,7 @@ async function writeComparisonFile(content: string) {
   } catch (error) {
     throw new Error(
       `Failed to write ${FILENAME}: ${error instanceof Error ? error.message : String(error)}`,
+      { cause: error },
     );
   }
 }
