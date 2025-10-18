@@ -18,7 +18,6 @@
     "prettier": "catalog:",
     "prettier-plugin-tailwindcss": "catalog:",
     "sherif": "catalog:",
-    "tailwindcss": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:"
   },

@@ -14,10 +14,8 @@
     "@fontsource-variable/jetbrains-mono": "catalog:",
     "@priver/editor": "workspace:*",
     "@priver/ui": "workspace:*",
-    "@tailwindcss/vite": "catalog:",
     "react": "catalog:",
-    "react-dom": "catalog:",
-    "tailwindcss": "catalog:"
+    "react-dom": "catalog:"
   },
   "devDependencies": {
     "@priver/eslint-config": "workspace:*",
@@ -26,11 +24,13 @@
     "@storybook/addon-docs": "catalog:",
     "@storybook/addon-themes": "catalog:",
     "@storybook/react-vite": "catalog:",
+    "@tailwindcss/vite": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "catalog:",
     "eslint": "catalog:",
     "storybook": "catalog:",
+    "tailwindcss": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:"
   },
