@@ -9,7 +9,7 @@ import * as depend from 'eslint-plugin-depend';
 import { importX } from 'eslint-plugin-import-x';
 import n from 'eslint-plugin-n';
 import reactDom from 'eslint-plugin-react-dom';
-import * as reactHooks from 'eslint-plugin-react-hooks';
+import reactHooks from 'eslint-plugin-react-hooks';
 import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import reactRefresh from 'eslint-plugin-react-refresh';
@@ -70,8 +70,7 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'import-x',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: importX.rules as unknown as Record<string, Rule.RuleModule>,
+    rulesDefinitions: importX.rules,
     recommended: importX.flatConfigs.recommended.rules,
     rules: base.rules,
   },
@@ -111,13 +110,13 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   {
     prefix: 'react-x',
     rulesDefinitions: reactX.rules,
-    recommended: reactX.configs['recommended-type-checked'].rules,
+    recommended: reactX.configs['strict-type-checked'].rules,
     rules: react.rules,
   },
   {
     prefix: 'react-dom',
     rulesDefinitions: reactDom.rules,
-    recommended: reactDom.configs.recommended.rules,
+    recommended: reactDom.configs.strict.rules,
     rules: react.rules,
   },
   {
@@ -140,8 +139,11 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'react-hooks',
-    rulesDefinitions: reactHooks.rules,
-    recommended: reactHooks.configs['recommended-latest'].rules,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/issues/34801
+    rulesDefinitions: (reactHooks as unknown as typeof reactHooks.default).rules,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/issues/34801
+    recommended: (reactHooks as unknown as typeof reactHooks.default).configs['recommended-latest']
+      .rules,
     rules: react.rules,
   },
   {

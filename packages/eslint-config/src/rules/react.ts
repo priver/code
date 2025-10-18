@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 import reactDom from 'eslint-plugin-react-dom';
-import * as reactHooks from 'eslint-plugin-react-hooks';
+import reactHooks from 'eslint-plugin-react-hooks';
 import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import reactRefresh from 'eslint-plugin-react-refresh';
@@ -15,7 +15,8 @@ export const react = {
     'react-web-api': reactWebAPI,
     'react-hooks-extra': reactHooksExtra,
     'react-naming-convention': reactNamingConvention,
-    'react-hooks': reactHooks,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/issues/34801
+    'react-hooks': reactHooks as ESLint.Plugin,
     'react-refresh': reactRefresh,
   },
   rules: {
@@ -23,7 +24,7 @@ export const react = {
     'react-x/jsx-key-before-spread': 'error',
     'react-x/jsx-no-comment-textnodes': 'error',
     'react-x/jsx-no-duplicate-props': 'off',
-    'react-x/jsx-no-iife': 'off',
+    'react-x/jsx-no-iife': 'error',
     'react-x/jsx-no-undef': 'off',
     'react-x/jsx-shorthand-boolean': 'error',
     'react-x/jsx-shorthand-fragment': 'error',
@@ -55,7 +56,7 @@ export const react = {
     'react-x/no-missing-context-display-name': 'error',
     'react-x/no-missing-key': 'error',
     'react-x/no-misused-capture-owner-stack': 'error',
-    'react-x/no-nested-component-definitions': 'error',
+    'react-x/no-nested-component-definitions': 'off', // react-hooks/component-hook-factories
     'react-x/no-nested-lazy-component-declarations': 'error',
     'react-x/no-prop-types': 'error',
     'react-x/no-redundant-should-component-update': 'error',
@@ -89,18 +90,19 @@ export const react = {
     'react-dom/no-find-dom-node': 'error',
     'react-dom/no-flush-sync': 'error',
     'react-dom/no-hydrate': 'error',
-    'react-dom/no-missing-button-type': 'off',
+    'react-dom/no-missing-button-type': 'error',
     'react-dom/no-missing-iframe-sandbox': 'error',
     'react-dom/no-namespace': 'error',
     'react-dom/no-render-return-value': 'error',
     'react-dom/no-render': 'error',
     'react-dom/no-script-url': 'error',
-    'react-dom/no-string-style-prop': 'error',
+    'react-dom/no-string-style-prop': 'off',
     'react-dom/no-unknown-property': 'off',
     'react-dom/no-unsafe-iframe-sandbox': 'error',
     'react-dom/no-unsafe-target-blank': 'off',
     'react-dom/no-use-form-state': 'error',
     'react-dom/no-void-elements-with-children': 'error',
+    'react-dom/prefer-namespace-import': 'off',
 
     // React Web API
     'react-web-api/no-leaked-event-listener': 'error',
@@ -109,10 +111,10 @@ export const react = {
     'react-web-api/no-leaked-timeout': 'error',
 
     // React hooks extra
-    'react-hooks-extra/no-direct-set-state-in-use-effect': 'error',
+    'react-hooks-extra/no-direct-set-state-in-use-effect': 'off', // react-hooks/set-state-in-effect
 
     // React naming convention
-    'react-naming-convention/component-name': 'error',
+    'react-naming-convention/component-name': 'off',
     'react-naming-convention/context-name': 'error',
     'react-naming-convention/filename-extension': 'off',
     'react-naming-convention/filename': 'off',
@@ -121,6 +123,35 @@ export const react = {
     // React hooks
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
+
+    // React Compiler
+    'react-hooks/automatic-effect-dependencies': 'off',
+    'react-hooks/capitalized-calls': 'off',
+    'react-hooks/component-hook-factories': 'error',
+    'react-hooks/config': 'off',
+    'react-hooks/error-boundaries': 'error',
+    'react-hooks/fbt': 'off',
+    'react-hooks/fire': 'off',
+    'react-hooks/gating': 'off',
+    'react-hooks/globals': 'error',
+    'react-hooks/hooks': 'off',
+    'react-hooks/immutability': 'error',
+    'react-hooks/incompatible-library': 'error',
+    'react-hooks/invariant': 'off',
+    'react-hooks/memoized-effect-dependencies': 'off',
+    'react-hooks/no-deriving-state-in-effects': 'off',
+    'react-hooks/preserve-manual-memoization': 'error',
+    'react-hooks/purity': 'error',
+    'react-hooks/refs': 'error',
+    'react-hooks/rule-suppression': 'off',
+    'react-hooks/set-state-in-effect': 'error',
+    'react-hooks/set-state-in-render': 'error',
+    'react-hooks/static-components': 'error',
+    'react-hooks/syntax': 'off',
+    'react-hooks/todo': 'off',
+    'react-hooks/unsupported-syntax': 'error',
+    'react-hooks/use-memo': 'error',
+    'react-hooks/void-use-memo': 'error',
 
     // React refresh
     'react-refresh/only-export-components': ['error', { allowConstantExport: true }],
