@@ -859,6 +859,9 @@ Configurations compared:
     "styles": {
       "react": {
         "namespace": true
+      },
+      "react-dom": {
+        "namespace": true
       }
     }
   }
@@ -1661,76 +1664,84 @@ Configurations compared:
 Configurations compared:
 
 - **P** – @priver/eslint-config
-- **R** – [recommended-type-checked](https://eslint-react.xyz/docs/presets#typescript-specialized)
+- **R** – [strict-type-checked](https://eslint-react.xyz/docs/presets#typescript-specialized)
 
 ### react-x
 
 <!-- START react-x -->
 
-| Rule                                                                                                                   | P   | R   |
-| ---------------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-x/jsx-key-before-spread`] <a id="summary-react-x/jsx-key-before-spread"></a>                                   | ✅  | 🚫  |
-| [`react-x/jsx-no-comment-textnodes`] <a id="summary-react-x/jsx-no-comment-textnodes"></a>                             | ✅  | ⚠️  |
-| [`react-x/jsx-no-duplicate-props`] <a id="summary-react-x/jsx-no-duplicate-props"></a>                                 | 🚫  | 🚫  |
-| [`react-x/jsx-no-iife`] <a id="summary-react-x/jsx-no-iife"></a>                                                       | 🚫  | 🚫  |
-| [`react-x/jsx-no-undef`] <a id="summary-react-x/jsx-no-undef"></a>                                                     | 🚫  | 🚫  |
-| [`react-x/jsx-shorthand-boolean`] <a id="summary-react-x/jsx-shorthand-boolean"></a>                                   | ✅  | 🚫  |
-| [`react-x/jsx-shorthand-fragment`] <a id="summary-react-x/jsx-shorthand-fragment"></a>                                 | ✅  | 🚫  |
-| [`react-x/jsx-uses-react`] <a id="summary-react-x/jsx-uses-react"></a>                                                 | 🚫  | 🚫  |
-| [`react-x/jsx-uses-vars`] <a id="summary-react-x/jsx-uses-vars"></a>                                                   | 🚫  | 🚫  |
-| [`react-x/no-access-state-in-setstate`] <a id="summary-react-x/no-access-state-in-setstate"></a>                       | ✅  | ✅  |
-| [`react-x/no-array-index-key`] <a id="summary-react-x/no-array-index-key"></a>                                         | ✅  | ⚠️  |
-| [`react-x/no-children-count`] <a id="summary-react-x/no-children-count"></a>                                           | ✅  | ⚠️  |
-| [`react-x/no-children-for-each`] <a id="summary-react-x/no-children-for-each"></a>                                     | ✅  | ⚠️  |
-| [`react-x/no-children-map`] <a id="summary-react-x/no-children-map"></a>                                               | ✅  | ⚠️  |
-| [`react-x/no-children-only`] <a id="summary-react-x/no-children-only"></a>                                             | ✅  | ⚠️  |
-| [`react-x/no-children-prop`] <a id="summary-react-x/no-children-prop"></a>                                             | ✅  | 🚫  |
-| [`react-x/no-children-to-array`] <a id="summary-react-x/no-children-to-array"></a>                                     | ✅  | ⚠️  |
-| [`react-x/no-class-component`] <a id="summary-react-x/no-class-component"></a>                                         | ✅  | 🚫  |
-| [`react-x/no-clone-element`] <a id="summary-react-x/no-clone-element"></a>                                             | ✅  | ⚠️  |
-| [`react-x/no-component-will-mount`] <a id="summary-react-x/no-component-will-mount"></a>                               | ✅  | ✅  |
-| [`react-x/no-component-will-receive-props`] <a id="summary-react-x/no-component-will-receive-props"></a>               | ✅  | ✅  |
-| [`react-x/no-component-will-update`] <a id="summary-react-x/no-component-will-update"></a>                             | ✅  | ✅  |
-| [`react-x/no-context-provider`] <a id="summary-react-x/no-context-provider"></a>                                       | ✅  | ⚠️  |
-| [`react-x/no-create-ref`] <a id="summary-react-x/no-create-ref"></a>                                                   | ✅  | ✅  |
-| [`react-x/no-default-props`] <a id="summary-react-x/no-default-props"></a>                                             | ✅  | ✅  |
-| [`react-x/no-direct-mutation-state`] <a id="summary-react-x/no-direct-mutation-state"></a>                             | ✅  | ✅  |
-| [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | ✅  | ✅  |
-| [`react-x/no-forbidden-props`] <a id="summary-react-x/no-forbidden-props"></a>                                         | 🚫  | 🚫  |
-| [`react-x/no-forward-ref`] <a id="summary-react-x/no-forward-ref"></a>                                                 | ✅  | ⚠️  |
-| [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | ✅  | ⚠️  |
-| [`react-x/no-leaked-conditional-rendering`] <a id="summary-react-x/no-leaked-conditional-rendering"></a>               | ✅  | ⚠️  |
-| [`react-x/no-missing-component-display-name`] <a id="summary-react-x/no-missing-component-display-name"></a>           | ✅  | 🚫  |
-| [`react-x/no-missing-context-display-name`] <a id="summary-react-x/no-missing-context-display-name"></a>               | ✅  | 🚫  |
-| [`react-x/no-missing-key`] <a id="summary-react-x/no-missing-key"></a>                                                 | ✅  | ✅  |
-| [`react-x/no-misused-capture-owner-stack`] <a id="summary-react-x/no-misused-capture-owner-stack"></a>                 | ✅  | 🚫  |
-| [`react-x/no-nested-component-definitions`] <a id="summary-react-x/no-nested-component-definitions"></a>               | ✅  | ✅  |
-| [`react-x/no-nested-lazy-component-declarations`] <a id="summary-react-x/no-nested-lazy-component-declarations"></a>   | ✅  | ✅  |
-| [`react-x/no-prop-types`] <a id="summary-react-x/no-prop-types"></a>                                                   | ✅  | ✅  |
-| [`react-x/no-redundant-should-component-update`] <a id="summary-react-x/no-redundant-should-component-update"></a>     | ✅  | ✅  |
-| [`react-x/no-set-state-in-component-did-mount`] <a id="summary-react-x/no-set-state-in-component-did-mount"></a>       | ✅  | ⚠️  |
-| [`react-x/no-set-state-in-component-did-update`] <a id="summary-react-x/no-set-state-in-component-did-update"></a>     | ✅  | ⚠️  |
-| [`react-x/no-set-state-in-component-will-update`] <a id="summary-react-x/no-set-state-in-component-will-update"></a>   | ✅  | ⚠️  |
-| [`react-x/no-string-refs`] <a id="summary-react-x/no-string-refs"></a>                                                 | ✅  | ✅  |
-| [`react-x/no-unnecessary-key`] <a id="summary-react-x/no-unnecessary-key"></a>                                         | ✅  | 🚫  |
-| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | ✅  | 🚫  |
-| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | ✅  | 🚫  |
-| [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅  | ⚠️  |
-| [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅  | ⚠️  |
-| [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅  | ⚠️  |
-| [`react-x/no-unsafe-component-will-update`] <a id="summary-react-x/no-unsafe-component-will-update"></a>               | ✅  | ⚠️  |
-| [`react-x/no-unstable-context-value`] <a id="summary-react-x/no-unstable-context-value"></a>                           | ✅  | ⚠️  |
-| [`react-x/no-unstable-default-props`] <a id="summary-react-x/no-unstable-default-props"></a>                           | ✅  | ⚠️  |
-| [`react-x/no-unused-class-component-members`] <a id="summary-react-x/no-unused-class-component-members"></a>           | ✅  | ⚠️  |
-| [`react-x/no-unused-props`] <a id="summary-react-x/no-unused-props"></a>                                               | ✅  | ⚠️  |
-| [`react-x/no-unused-state`] <a id="summary-react-x/no-unused-state"></a>                                               | ✅  | ⚠️  |
-| [`react-x/no-use-context`] <a id="summary-react-x/no-use-context"></a>                                                 | ✅  | ⚠️  |
-| [`react-x/no-useless-forward-ref`] <a id="summary-react-x/no-useless-forward-ref"></a>                                 | ✅  | ⚠️  |
-| [`react-x/no-useless-fragment`] <a id="summary-react-x/no-useless-fragment"></a>                                       | ✅  | 🚫  |
-| [`react-x/prefer-destructuring-assignment`] <a id="summary-react-x/prefer-destructuring-assignment"></a>               | 🚫  | 🚫  |
-| [`react-x/prefer-namespace-import`] <a id="summary-react-x/prefer-namespace-import"></a>                               | 🚫  | 🚫  |
-| [`react-x/prefer-read-only-props`] <a id="summary-react-x/prefer-read-only-props"></a>                                 | 🚫  | 🚫  |
-| [`react-x/prefer-use-state-lazy-initialization`] <a id="summary-react-x/prefer-use-state-lazy-initialization"></a>     | ✅  | ⚠️  |
+| Rule                                                                                                                   | P                                                      | R   |
+| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --- |
+| [`react-x/jsx-key-before-spread`] <a id="summary-react-x/jsx-key-before-spread"></a>                                   | ✅                                                     | 🚫  |
+| [`react-x/jsx-no-comment-textnodes`] <a id="summary-react-x/jsx-no-comment-textnodes"></a>                             | ✅                                                     | ⚠️  |
+| [`react-x/jsx-no-duplicate-props`] <a id="summary-react-x/jsx-no-duplicate-props"></a>                                 | 🚫                                                     | 🚫  |
+| [`react-x/jsx-no-iife`] <a id="summary-react-x/jsx-no-iife"></a>                                                       | ✅                                                     | ✅  |
+| [`react-x/jsx-no-undef`] <a id="summary-react-x/jsx-no-undef"></a>                                                     | 🚫                                                     | 🚫  |
+| [`react-x/jsx-shorthand-boolean`] <a id="summary-react-x/jsx-shorthand-boolean"></a>                                   | ✅                                                     | 🚫  |
+| [`react-x/jsx-shorthand-fragment`] <a id="summary-react-x/jsx-shorthand-fragment"></a>                                 | ✅                                                     | 🚫  |
+| [`react-x/jsx-uses-react`] <a id="summary-react-x/jsx-uses-react"></a>                                                 | 🚫                                                     | 🚫  |
+| [`react-x/jsx-uses-vars`] <a id="summary-react-x/jsx-uses-vars"></a>                                                   | 🚫                                                     | 🚫  |
+| [`react-x/no-access-state-in-setstate`] <a id="summary-react-x/no-access-state-in-setstate"></a>                       | ✅                                                     | ✅  |
+| [`react-x/no-array-index-key`] <a id="summary-react-x/no-array-index-key"></a>                                         | ✅                                                     | ⚠️  |
+| [`react-x/no-children-count`] <a id="summary-react-x/no-children-count"></a>                                           | ✅                                                     | ⚠️  |
+| [`react-x/no-children-for-each`] <a id="summary-react-x/no-children-for-each"></a>                                     | ✅                                                     | ⚠️  |
+| [`react-x/no-children-map`] <a id="summary-react-x/no-children-map"></a>                                               | ✅                                                     | ⚠️  |
+| [`react-x/no-children-only`] <a id="summary-react-x/no-children-only"></a>                                             | ✅                                                     | ⚠️  |
+| [`react-x/no-children-prop`] <a id="summary-react-x/no-children-prop"></a>                                             | ✅                                                     | ⚠️  |
+| [`react-x/no-children-to-array`] <a id="summary-react-x/no-children-to-array"></a>                                     | ✅                                                     | ⚠️  |
+| [`react-x/no-class-component`] <a id="summary-react-x/no-class-component"></a>                                         | ✅                                                     | ✅  |
+| [`react-x/no-clone-element`] <a id="summary-react-x/no-clone-element"></a>                                             | ✅                                                     | ⚠️  |
+| [`react-x/no-component-will-mount`] <a id="summary-react-x/no-component-will-mount"></a>                               | ✅                                                     | ✅  |
+| [`react-x/no-component-will-receive-props`] <a id="summary-react-x/no-component-will-receive-props"></a>               | ✅                                                     | ✅  |
+| [`react-x/no-component-will-update`] <a id="summary-react-x/no-component-will-update"></a>                             | ✅                                                     | ✅  |
+| [`react-x/no-context-provider`] <a id="summary-react-x/no-context-provider"></a>                                       | ✅                                                     | ⚠️  |
+| [`react-x/no-create-ref`] <a id="summary-react-x/no-create-ref"></a>                                                   | ✅                                                     | ✅  |
+| [`react-x/no-default-props`] <a id="summary-react-x/no-default-props"></a>                                             | ✅                                                     | ✅  |
+| [`react-x/no-direct-mutation-state`] <a id="summary-react-x/no-direct-mutation-state"></a>                             | ✅                                                     | ✅  |
+| [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | ✅                                                     | ✅  |
+| [`react-x/no-forbidden-props`] <a id="summary-react-x/no-forbidden-props"></a>                                         | 🚫                                                     | 🚫  |
+| [`react-x/no-forward-ref`] <a id="summary-react-x/no-forward-ref"></a>                                                 | ✅                                                     | ⚠️  |
+| [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | ✅                                                     | ⚠️  |
+| [`react-x/no-leaked-conditional-rendering`] <a id="summary-react-x/no-leaked-conditional-rendering"></a>               | ✅                                                     | ✅  |
+| [`react-x/no-missing-component-display-name`] <a id="summary-react-x/no-missing-component-display-name"></a>           | ✅                                                     | 🚫  |
+| [`react-x/no-missing-context-display-name`] <a id="summary-react-x/no-missing-context-display-name"></a>               | ✅                                                     | 🚫  |
+| [`react-x/no-missing-key`] <a id="summary-react-x/no-missing-key"></a>                                                 | ✅                                                     | ✅  |
+| [`react-x/no-misused-capture-owner-stack`] <a id="summary-react-x/no-misused-capture-owner-stack"></a>                 | ✅                                                     | ✅  |
+| [`react-x/no-nested-component-definitions`] <a id="summary-react-x/no-nested-component-definitions"></a>               | 🚫                                                     | ✅  |
+| [`react-x/no-nested-lazy-component-declarations`] <a id="summary-react-x/no-nested-lazy-component-declarations"></a>   | ✅                                                     | ✅  |
+| [`react-x/no-prop-types`] <a id="summary-react-x/no-prop-types"></a>                                                   | ✅                                                     | ✅  |
+| [`react-x/no-redundant-should-component-update`] <a id="summary-react-x/no-redundant-should-component-update"></a>     | ✅                                                     | ✅  |
+| [`react-x/no-set-state-in-component-did-mount`] <a id="summary-react-x/no-set-state-in-component-did-mount"></a>       | ✅                                                     | ⚠️  |
+| [`react-x/no-set-state-in-component-did-update`] <a id="summary-react-x/no-set-state-in-component-did-update"></a>     | ✅                                                     | ⚠️  |
+| [`react-x/no-set-state-in-component-will-update`] <a id="summary-react-x/no-set-state-in-component-will-update"></a>   | ✅                                                     | ⚠️  |
+| [`react-x/no-string-refs`] <a id="summary-react-x/no-string-refs"></a>                                                 | ✅                                                     | ✅  |
+| [`react-x/no-unnecessary-key`] <a id="summary-react-x/no-unnecessary-key"></a>                                         | ✅                                                     | ⚠️  |
+| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | ✅                                                     | ⚠️  |
+| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | ✅                                                     | ⚠️  |
+| [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅                                                     | ⚠️  |
+| [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅                                                     | ⚠️  |
+| [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅                                                     | ⚠️  |
+| [`react-x/no-unsafe-component-will-update`] <a id="summary-react-x/no-unsafe-component-will-update"></a>               | ✅                                                     | ⚠️  |
+| [`react-x/no-unstable-context-value`] <a id="summary-react-x/no-unstable-context-value"></a>                           | ✅                                                     | ⚠️  |
+| [`react-x/no-unstable-default-props`] <a id="summary-react-x/no-unstable-default-props"></a>                           | ✅                                                     | ⚠️  |
+| [`react-x/no-unused-class-component-members`] <a id="summary-react-x/no-unused-class-component-members"></a>           | ✅                                                     | ⚠️  |
+| [`react-x/no-unused-props`] <a id="summary-react-x/no-unused-props"></a>                                               | ✅                                                     | ⚠️  |
+| [`react-x/no-unused-state`] <a id="summary-react-x/no-unused-state"></a>                                               | ✅                                                     | ⚠️  |
+| [`react-x/no-use-context`] <a id="summary-react-x/no-use-context"></a>                                                 | ✅                                                     | ⚠️  |
+| [`react-x/no-useless-forward-ref`] <a id="summary-react-x/no-useless-forward-ref"></a>                                 | ✅                                                     | ⚠️  |
+| [`react-x/no-useless-fragment`] <a id="summary-react-x/no-useless-fragment"></a>                                       | ✅ <a href="#rule-react-x/no-useless-fragment">(?)</a> | ⚠️  |
+| [`react-x/prefer-destructuring-assignment`] <a id="summary-react-x/prefer-destructuring-assignment"></a>               | 🚫                                                     | ⚠️  |
+| [`react-x/prefer-namespace-import`] <a id="summary-react-x/prefer-namespace-import"></a>                               | 🚫                                                     | 🚫  |
+| [`react-x/prefer-read-only-props`] <a id="summary-react-x/prefer-read-only-props"></a>                                 | 🚫                                                     | 🚫  |
+| [`react-x/prefer-use-state-lazy-initialization`] <a id="summary-react-x/prefer-use-state-lazy-initialization"></a>     | ✅                                                     | ⚠️  |
+
+<table><tr><th colspan="2" align="left"><code>react-x/no-useless-fragment</code> <a href="#summary-react-x/no-useless-fragment">⬆️ back to summary table</a> <a id="rule-react-x/no-useless-fragment"></a></th></tr>
+<tr><td><pre><code>[
+  "error",
+  {
+    "allowExpressions": false
+  }
+]</code></pre></td><td><pre><code>"warn"</code></pre></td></tr></table>
 
 [`react-x/jsx-key-before-spread`]: https://eslint-react.xyz/docs/rules/jsx-key-before-spread
 [`react-x/jsx-no-comment-textnodes`]: https://eslint-react.xyz/docs/rules/jsx-no-comment-textnodes
@@ -1827,18 +1838,19 @@ Configurations compared:
 | [`react-dom/no-find-dom-node`] <a id="summary-react-dom/no-find-dom-node"></a>                                                     | ✅  | ✅  |
 | [`react-dom/no-flush-sync`] <a id="summary-react-dom/no-flush-sync"></a>                                                           | ✅  | ✅  |
 | [`react-dom/no-hydrate`] <a id="summary-react-dom/no-hydrate"></a>                                                                 | ✅  | ✅  |
-| [`react-dom/no-missing-button-type`] <a id="summary-react-dom/no-missing-button-type"></a>                                         | 🚫  | ⚠️  |
+| [`react-dom/no-missing-button-type`] <a id="summary-react-dom/no-missing-button-type"></a>                                         | ✅  | ⚠️  |
 | [`react-dom/no-missing-iframe-sandbox`] <a id="summary-react-dom/no-missing-iframe-sandbox"></a>                                   | ✅  | ⚠️  |
 | [`react-dom/no-namespace`] <a id="summary-react-dom/no-namespace"></a>                                                             | ✅  | ✅  |
 | [`react-dom/no-render`] <a id="summary-react-dom/no-render"></a>                                                                   | ✅  | ✅  |
 | [`react-dom/no-render-return-value`] <a id="summary-react-dom/no-render-return-value"></a>                                         | ✅  | ✅  |
 | [`react-dom/no-script-url`] <a id="summary-react-dom/no-script-url"></a>                                                           | ✅  | ⚠️  |
-| [`react-dom/no-string-style-prop`] <a id="summary-react-dom/no-string-style-prop"></a>                                             | ✅  | ✅  |
+| [`react-dom/no-string-style-prop`] <a id="summary-react-dom/no-string-style-prop"></a>                                             | 🚫  | 🚫  |
 | [`react-dom/no-unknown-property`] <a id="summary-react-dom/no-unknown-property"></a>                                               | 🚫  | 🚫  |
 | [`react-dom/no-unsafe-iframe-sandbox`] <a id="summary-react-dom/no-unsafe-iframe-sandbox"></a>                                     | ✅  | ⚠️  |
 | [`react-dom/no-unsafe-target-blank`] <a id="summary-react-dom/no-unsafe-target-blank"></a>                                         | 🚫  | ⚠️  |
 | [`react-dom/no-use-form-state`] <a id="summary-react-dom/no-use-form-state"></a>                                                   | ✅  | ✅  |
 | [`react-dom/no-void-elements-with-children`] <a id="summary-react-dom/no-void-elements-with-children"></a>                         | ✅  | ✅  |
+| [`react-dom/prefer-namespace-import`] <a id="summary-react-dom/prefer-namespace-import"></a>                                       | 🚫  | 🚫  |
 
 [`react-dom/no-dangerously-set-innerhtml`]:
   https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
@@ -1862,6 +1874,8 @@ Configurations compared:
 [`react-dom/no-use-form-state`]: https://eslint-react.xyz/docs/rules/dom-no-use-form-state
 [`react-dom/no-void-elements-with-children`]:
   https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
+[`react-dom/prefer-namespace-import`]:
+  https://eslint-react.xyz/docs/rules/dom-prefer-namespace-import
 
 <!-- END react-dom -->
 
@@ -1891,7 +1905,7 @@ Configurations compared:
 
 | Rule                                                                                                                             | P   | R   |
 | -------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-hooks-extra/no-direct-set-state-in-use-effect`] <a id="summary-react-hooks-extra/no-direct-set-state-in-use-effect"></a> | ✅  | ⚠️  |
+| [`react-hooks-extra/no-direct-set-state-in-use-effect`] <a id="summary-react-hooks-extra/no-direct-set-state-in-use-effect"></a> | 🚫  | ⚠️  |
 
 [`react-hooks-extra/no-direct-set-state-in-use-effect`]:
   https://eslint-react.xyz/docs/rules/hooks-extra-no-direct-set-state-in-use-effect
@@ -1904,11 +1918,11 @@ Configurations compared:
 
 | Rule                                                                                                           | P   | R   |
 | -------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-naming-convention/component-name`] <a id="summary-react-naming-convention/component-name"></a>         | ✅  | 🚫  |
+| [`react-naming-convention/component-name`] <a id="summary-react-naming-convention/component-name"></a>         | 🚫  | 🚫  |
 | [`react-naming-convention/context-name`] <a id="summary-react-naming-convention/context-name"></a>             | ✅  | ⚠️  |
 | [`react-naming-convention/filename`] <a id="summary-react-naming-convention/filename"></a>                     | 🚫  | 🚫  |
 | [`react-naming-convention/filename-extension`] <a id="summary-react-naming-convention/filename-extension"></a> | 🚫  | 🚫  |
-| [`react-naming-convention/use-state`] <a id="summary-react-naming-convention/use-state"></a>                   | ✅  | 🚫  |
+| [`react-naming-convention/use-state`] <a id="summary-react-naming-convention/use-state"></a>                   | ✅  | ⚠️  |
 
 [`react-naming-convention/component-name`]:
   https://eslint-react.xyz/docs/rules/naming-convention-component-name
@@ -1928,17 +1942,44 @@ Configurations compared:
 
 - **P** – @priver/eslint-config
 - **R** –
-  [recommended](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#flat-config-eslintconfigjsts)
+  [recommended-latest](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#flat-config-eslintconfigjsts)
 
 <!-- START react-hooks -->
 
-| Rule                                                                             | P   | R   |
-| -------------------------------------------------------------------------------- | --- | --- |
-| [`react-hooks/exhaustive-deps`] <a id="summary-react-hooks/exhaustive-deps"></a> | ✅  | ⚠️  |
-| [`react-hooks/rules-of-hooks`] <a id="summary-react-hooks/rules-of-hooks"></a>   | ✅  | ✅  |
+| Rule                                                                                                       | P   | R   |
+| ---------------------------------------------------------------------------------------------------------- | --- | --- |
+| `react-hooks/automatic-effect-dependencies` <a id="summary-react-hooks/automatic-effect-dependencies"></a> | 🚫  | 🚫  |
+| `react-hooks/capitalized-calls` <a id="summary-react-hooks/capitalized-calls"></a>                         | 🚫  | 🚫  |
+| `react-hooks/component-hook-factories` <a id="summary-react-hooks/component-hook-factories"></a>           | ✅  | ✅  |
+| `react-hooks/config` <a id="summary-react-hooks/config"></a>                                               | 🚫  | ✅  |
+| `react-hooks/error-boundaries` <a id="summary-react-hooks/error-boundaries"></a>                           | ✅  | ✅  |
+| [`react-hooks/exhaustive-deps`] <a id="summary-react-hooks/exhaustive-deps"></a>                           | ✅  | ⚠️  |
+| `react-hooks/fbt` <a id="summary-react-hooks/fbt"></a>                                                     | 🚫  | 🚫  |
+| `react-hooks/fire` <a id="summary-react-hooks/fire"></a>                                                   | 🚫  | 🚫  |
+| `react-hooks/gating` <a id="summary-react-hooks/gating"></a>                                               | 🚫  | ✅  |
+| `react-hooks/globals` <a id="summary-react-hooks/globals"></a>                                             | ✅  | ✅  |
+| `react-hooks/hooks` <a id="summary-react-hooks/hooks"></a>                                                 | 🚫  | 🚫  |
+| `react-hooks/immutability` <a id="summary-react-hooks/immutability"></a>                                   | ✅  | ✅  |
+| `react-hooks/incompatible-library` <a id="summary-react-hooks/incompatible-library"></a>                   | ✅  | ⚠️  |
+| `react-hooks/invariant` <a id="summary-react-hooks/invariant"></a>                                         | 🚫  | 🚫  |
+| `react-hooks/memoized-effect-dependencies` <a id="summary-react-hooks/memoized-effect-dependencies"></a>   | 🚫  | 🚫  |
+| `react-hooks/no-deriving-state-in-effects` <a id="summary-react-hooks/no-deriving-state-in-effects"></a>   | 🚫  | 🚫  |
+| `react-hooks/preserve-manual-memoization` <a id="summary-react-hooks/preserve-manual-memoization"></a>     | ✅  | ✅  |
+| `react-hooks/purity` <a id="summary-react-hooks/purity"></a>                                               | ✅  | ✅  |
+| `react-hooks/refs` <a id="summary-react-hooks/refs"></a>                                                   | ✅  | ✅  |
+| `react-hooks/rule-suppression` <a id="summary-react-hooks/rule-suppression"></a>                           | 🚫  | 🚫  |
+| [`react-hooks/rules-of-hooks`] <a id="summary-react-hooks/rules-of-hooks"></a>                             | ✅  | ✅  |
+| `react-hooks/set-state-in-effect` <a id="summary-react-hooks/set-state-in-effect"></a>                     | ✅  | ✅  |
+| `react-hooks/set-state-in-render` <a id="summary-react-hooks/set-state-in-render"></a>                     | ✅  | ✅  |
+| `react-hooks/static-components` <a id="summary-react-hooks/static-components"></a>                         | ✅  | ✅  |
+| `react-hooks/syntax` <a id="summary-react-hooks/syntax"></a>                                               | 🚫  | 🚫  |
+| `react-hooks/todo` <a id="summary-react-hooks/todo"></a>                                                   | 🚫  | 🚫  |
+| `react-hooks/unsupported-syntax` <a id="summary-react-hooks/unsupported-syntax"></a>                       | ✅  | ⚠️  |
+| `react-hooks/use-memo` <a id="summary-react-hooks/use-memo"></a>                                           | ✅  | ✅  |
+| `react-hooks/void-use-memo` <a id="summary-react-hooks/void-use-memo"></a>                                 | ✅  | ✅  |
 
 [`react-hooks/exhaustive-deps`]: https://github.com/facebook/react/issues/14920
-[`react-hooks/rules-of-hooks`]: https://reactjs.org/docs/hooks-rules.html
+[`react-hooks/rules-of-hooks`]: https://react.dev/reference/rules/rules-of-hooks
 
 <!-- END react-hooks -->
 

@@ -51,7 +51,7 @@
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-n": "catalog:",
     "eslint-plugin-react-dom": "catalog:",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-hooks-extra": "catalog:",
     "eslint-plugin-react-naming-convention": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",

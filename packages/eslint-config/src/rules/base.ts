@@ -360,7 +360,8 @@ export const base = {
       'error',
       {
         styles: {
-          react: { namespace: true },
+          'react': { namespace: true },
+          'react-dom': { namespace: true },
         },
       },
     ],
