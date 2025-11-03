@@ -20,10 +20,8 @@
     "test": {},
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", "!**/*.stories.{ts,tsx}"],
       "outputs": ["dist/**", "*.tsbuildinfo"]
     },
-    "build:storybook": {},
     "dev": {
       "with": ["//#serve"],
       "cache": false,

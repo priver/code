@@ -1,34 +1,31 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as React from 'react';
+import { Button } from '@priver/ui/button';
 
-import { Button } from './button.tsx';
+import preview from '#.storybook/preview.ts';
 
 const VARIANTS = ['primary', 'secondary', 'tertiary'] as const;
 const SIZES = ['sm', 'md', 'lg'] as const;
 
-const meta = {
+const meta = preview.meta({
   title: 'UI/Button',
   component: Button,
-} satisfies Meta<typeof Button>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
+});
 
 /**
  * Interactive playground to test different button configurations.
  * Use the controls panel to experiment with different props.
  */
-export const Playground: Story = {
+export const Playground = meta.story({
   args: {
     children: 'Button',
   },
-};
+});
 
 /**
  * The three visual hierarchy levels: primary for main actions, secondary for supporting actions,
  * and tertiary for minimal emphasis.
  */
-export const Variants: Story = {
+export const Variants = meta.story({
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -47,10 +44,10 @@ export const Variants: Story = {
       </Button>
     </div>
   ),
-};
+});
 
 /** The three physical sizes: small, medium, and large. */
-export const Sizes: Story = {
+export const Sizes = meta.story({
   argTypes: {
     children: { control: false },
     size: { control: false },
@@ -69,10 +66,10 @@ export const Sizes: Story = {
       </Button>
     </div>
   ),
-};
+});
 
 /** Destructive buttons use warning colors to indicate potentially dangerous operations. */
-export const Destructive: Story = {
+export const Destructive = meta.story({
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -92,13 +89,13 @@ export const Destructive: Story = {
       </Button>
     </div>
   ),
-};
+});
 
 /**
  * Disabled buttons are non-interactive and use muted colors.
  * Consider avoiding disabled states when possible for better UX.
  */
-export const Disabled: Story = {
+export const Disabled = meta.story({
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -118,10 +115,10 @@ export const Disabled: Story = {
       </Button>
     </div>
   ),
-};
+});
 
 /** Examples of buttons with different content lengths and types. */
-export const ContentVariations: Story = {
+export const ContentVariations = meta.story({
   argTypes: {
     children: { control: false },
     type: { control: false },
@@ -140,7 +137,7 @@ export const ContentVariations: Story = {
       </div>
     </div>
   ),
-};
+});
 
 function Matrix(props: {
   title: string;
@@ -172,7 +169,7 @@ function Matrix(props: {
 }
 
 /** Complete matrix of all button combinations for visual testing and regression testing. */
-export const AllCombinations: Story = {
+export const AllCombinations = meta.story({
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -189,10 +186,10 @@ export const AllCombinations: Story = {
       <Matrix title="Destructive + Disabled" destructive disabled />
     </div>
   ),
-};
+});
 
 /** Examples of buttons in form context with different type attributes. */
-export const FormButtons: Story = {
+export const FormButtons = meta.story({
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -223,10 +220,10 @@ export const FormButtons: Story = {
       </div>
     </form>
   ),
-};
+});
 
 /** Real-world usage examples showing how buttons work together in different contexts. */
-export const UsageExamples: Story = {
+export const UsageExamples = meta.story({
   argTypes: {
     children: { control: false },
     variant: { control: false },
@@ -272,4 +269,4 @@ export const UsageExamples: Story = {
       </div>
     </div>
   ),
-};
+});

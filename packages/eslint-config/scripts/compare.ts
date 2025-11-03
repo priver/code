@@ -16,7 +16,6 @@ import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import reactWebAPI from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
-import * as storybookPlugin from 'eslint-plugin-storybook';
 import unicorn from 'eslint-plugin-unicorn';
 import { builtinRules } from 'eslint/use-at-your-own-risk';
 import * as prettier from 'prettier';
@@ -26,7 +25,6 @@ import { base } from '../src/rules/base.ts';
 import { browser } from '../src/rules/browser.ts';
 import { node } from '../src/rules/node.ts';
 import { react } from '../src/rules/react.ts';
-import { storybook } from '../src/rules/storybook.ts';
 import { typescript } from '../src/rules/typescript.ts';
 
 const FILENAME = 'TABLE_OF_COMPARISON.md';
@@ -152,12 +150,6 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rulesDefinitions: reactRefresh.rules,
     recommended: reactRefresh.configs.vite.rules,
     rules: react.rules,
-  },
-  {
-    prefix: 'storybook',
-    rulesDefinitions: storybookPlugin.rules,
-    recommended: mergeRules([...storybookPlugin.configs['flat/recommended']]),
-    rules: storybook.rules,
   },
 ];
 
