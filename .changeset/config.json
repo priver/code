@@ -3,7 +3,7 @@
   "commit": false,
   "access": "public",
   "baseBranch": "main",
-  "ignore": ["@priver/editor", "@priver/ui"],
+  "ignore": ["@priver/editor", "@priver/ui", "@priver/storybook"],
   "fixed": [],
   "linked": [],
   "updateInternalDependencies": "patch",
