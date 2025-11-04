@@ -1,12 +1,39 @@
 {
   "name": "@priver/editor",
   "version": "0.0.0",
+  "description": "Rich text editor React components",
+  "keywords": [
+    "react",
+    "lexical",
+    "editor",
+    "rich-text"
+  ],
+  "homepage": "https://github.com/priver/code/packages/editor#readme",
+  "bugs": "https://github.com/priver/code/issues",
+  "author": "Mikhail Priver <m.priver@gmail.com> (https://github.com/priver)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/editor"
+  },
+  "license": "MIT",
   "sideEffects": [
     "*.css"
+  ],
+  "files": [
+    "dist"
   ],
   "type": "module",
   "exports": {
     ".": "./src/editor.tsx"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/editor.d.ts",
+        "import": "./dist/editor.js"
+      }
+    }
   },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
