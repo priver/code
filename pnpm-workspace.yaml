@@ -36,7 +36,7 @@ catalog:
   eslint-plugin-react-refresh: ^0.4.24
   eslint-plugin-react-web-api: ^2.2.2
   eslint-plugin-react-x: ^2.2.2
-  eslint-plugin-storybook: 10.0.3
+  eslint-plugin-storybook: ^10.0.3
   eslint-plugin-unicorn: ^61.0.2
   globals: ^16.4.0
   lexical: ^0.37.0
