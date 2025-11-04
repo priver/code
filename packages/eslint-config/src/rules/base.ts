@@ -21,7 +21,7 @@ export const base = {
     '@eslint-community/eslint-comments': eslintComments,
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
     'import-x': importX as unknown as ESLint.Plugin,
-    'unicorn': unicorn,
+    'unicorn': unicorn as ESLint.Plugin, // TS2742
     'depend': depend,
   },
   rules: {

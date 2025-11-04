@@ -4,7 +4,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import { base, browser, node, react, typescript } from '@priver/eslint-config';
 
 export default defineConfig([
-  globalIgnores(['dist/', 'storybook-static/', '!.storybook']),
+  globalIgnores(['dist/', '!.storybook']),
   {
     plugins: {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899

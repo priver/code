@@ -1,4 +1,4 @@
-import type { Linter } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 import n from 'eslint-plugin-n';
 import globals from 'globals';
 
@@ -11,7 +11,7 @@ export const node = {
     },
   },
   plugins: {
-    n,
+    n: n as ESLint.Plugin, // TS2742
   },
   rules: {
     // Disable core rules

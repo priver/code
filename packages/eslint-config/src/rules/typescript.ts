@@ -1,4 +1,4 @@
-import type { Linter } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as tseslint from 'typescript-eslint';
 
@@ -8,13 +8,13 @@ const allExtensions = [...typeScriptExtensions, '.js', '.cjs', '.mjs'] as const;
 export const typescript = {
   name: 'priver/typescript',
   languageOptions: {
-    parser: tseslint.parser,
+    parser: tseslint.parser as unknown, // TS2742
     parserOptions: {
       projectService: true,
     },
   },
   plugins: {
-    '@typescript-eslint': tseslint.plugin,
+    '@typescript-eslint': tseslint.plugin as ESLint.Plugin, // TS2742
   },
   settings: {
     'import-x/extensions': allExtensions,
@@ -26,32 +26,28 @@ export const typescript = {
   },
   rules: {
     // Disable base rules
-    'consistent-return': 'off', // ts(2366) & ts(2322)
-    'constructor-super': 'off', // ts(2335) & ts(2377)
-    'getter-return': 'off', // ts(2378)
-    'no-class-assign': 'off', // ts(2629)
-    'no-const-assign': 'off', // ts(2588)
-    'no-dupe-args': 'off', // ts(2300)
-    'no-dupe-class-members': 'off', // ts(2393) & ts(2300)
-    'no-dupe-keys': 'off', // ts(1117)
-    'no-func-assign': 'off', // ts(2630)
-    'no-import-assign': 'off', // ts(2632) & ts(2540)
-    'no-new-native-nonconstructor': 'off', // ts(7009)
-    'no-obj-calls': 'off', // ts(2349)
-    'no-redeclare': 'off', // ts(2451)
-    'no-setter-return': 'off', // ts(2408)
-    'no-this-before-super': 'off', // ts(2376) & ts(17009)
-    'no-undef': 'off', // ts(2304) & ts(2552)
-    'no-unreachable': 'off', // ts(7027)
-    'no-unsafe-negation': 'off', // ts(2365) & ts(2322) & ts(2358)
-    'no-unused-vars': 'off', // ts(6133)
-    'no-with': 'off', // ts(1101) & ts(2410)
-    'import-x/named': 'off', // ts(2724)
-    'import-x/no-unresolved': 'off', // ts(2307)
-
-    // TypeScript might have features not supported in a specific Node.js version.
-    // 'node/no-unsupported-features/es-syntax': 'off',
-    // 'node/no-unsupported-features/es-builtins': 'off',
+    'consistent-return': 'off', // TS2366 & TS2322
+    'constructor-super': 'off', // TS2335 & TS2377
+    'getter-return': 'off', // TS2378
+    'no-class-assign': 'off', // TS2629
+    'no-const-assign': 'off', // TS2588
+    'no-dupe-args': 'off', // TS2300
+    'no-dupe-class-members': 'off', // TS2393 & TS2300
+    'no-dupe-keys': 'off', // TS1117
+    'no-func-assign': 'off', // TS2630
+    'no-import-assign': 'off', // TS2632 & TS2540
+    'no-new-native-nonconstructor': 'off', // TS7009
+    'no-obj-calls': 'off', // TS2349
+    'no-redeclare': 'off', // TS2451
+    'no-setter-return': 'off', // TS2408
+    'no-this-before-super': 'off', // TS2376 & TS17009
+    'no-undef': 'off', // TS2304 & TS2552
+    'no-unreachable': 'off', // TS7027
+    'no-unsafe-negation': 'off', // TS2365 & TS2322 & TS2358
+    'no-unused-vars': 'off', // TS6133
+    'no-with': 'off', // TS1101 & TS2410
+    'import-x/named': 'off', // TS2724
+    'import-x/no-unresolved': 'off', // TS2307
 
     'camelcase': 'off', // @typescript-eslint/naming-convention
     'default-case': 'off', // @typescript-eslint/switch-exhaustiveness-check
