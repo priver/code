@@ -1,14 +1,40 @@
 {
   "name": "@priver/ui",
   "version": "0.0.0",
-  "private": true,
+  "description": "React components library",
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
+  "homepage": "https://github.com/priver/code/packages/ui#readme",
+  "bugs": "https://github.com/priver/code/issues",
+  "author": "Mikhail Priver <m.priver@gmail.com> (https://github.com/priver)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/ui"
+  },
+  "license": "MIT",
   "sideEffects": [
     "*.css"
+  ],
+  "files": [
+    "dist"
   ],
   "type": "module",
   "exports": {
     "./theme.css": "./src/theme.css",
     "./button": "./src/button/button.tsx"
+  },
+  "publishConfig": {
+    "exports": {
+      "./theme.css": "./src/theme.css",
+      "./button": {
+        "types": "./dist/button/button.d.ts",
+        "import": "./dist/button/button.js"
+      }
+    }
   },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
