@@ -1,16 +1,17 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import { defineMain } from '@storybook/react-vite/node';
 
-const config: StorybookConfig = {
-  stories: [
-    '../src/**/*.mdx',
-    '../../../packages/ui/src/**/*.stories.@(ts|tsx)',
-    '../../../packages/editor/src/**/*.stories.@(ts|tsx)',
-  ],
+export default defineMain({
   framework: '@storybook/react-vite',
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(ts|tsx)'],
+  addons: ['@storybook/addon-docs', '@storybook/addon-a11y', '@storybook/addon-themes'],
   core: {
     disableWhatsNewNotifications: true,
   },
-  addons: ['@storybook/addon-docs', '@storybook/addon-a11y', '@storybook/addon-themes'],
-};
+  async viteFinal(config) {
+    const { mergeConfig } = await import('vite');
 
-export default config;
+    return mergeConfig(config, {
+      server: { hmr: { port: 443 } },
+    });
+  },
+});

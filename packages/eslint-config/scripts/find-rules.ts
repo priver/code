@@ -8,7 +8,6 @@ import { base } from '../src/rules/base.ts';
 import { browser } from '../src/rules/browser.ts';
 import { node } from '../src/rules/node.ts';
 import { react } from '../src/rules/react.ts';
-import { storybook } from '../src/rules/storybook.ts';
 import { typescript } from '../src/rules/typescript.ts';
 
 type Config = {
@@ -16,7 +15,7 @@ type Config = {
   rules: Record<string, Linter.RuleEntry>;
 };
 
-const CONFIGS: Config[] = [base, browser, node, react, storybook, typescript];
+const CONFIGS: Config[] = [base, browser, node, react, typescript];
 const PLUGINS = CONFIGS.map((module) => module.plugins);
 const RULES = CONFIGS.map((module) => module.rules);
 

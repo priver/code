@@ -15,7 +15,6 @@ to provide a more maintainable and flexible linting setup.
 - 📦 Pre-configured rules for JavaScript, TypeScript, React, and Node.js environments
 - 📝 TypeScript support with type-aware linting rules
 - ⚛️ React-specific rules including hooks and refresh compatibility
-- 📚 Optional Storybook configuration for component stories
 - 🌐 Browser compatibility checking via eslint-plugin-compat
 - 📋 Import/export validation and dependency analysis
 
@@ -33,7 +32,6 @@ This configuration includes several powerful ESLint plugins to enhance your deve
 | [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)                                               | Node.js specific linting rules                  |
 | [eslint-plugin-react-hooks](https://reactjs.org/docs/hooks-rules.html)                                               | React Hooks rules                               |
 | [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh)                            | React Fast Refresh rules                        |
-| [eslint-plugin-storybook](https://github.com/storybookjs/eslint-plugin-storybook)                                    | Storybook specific rules                        |
 | [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                       | Various awesome ESLint rules                    |
 | [typescript-eslint](https://typescript-eslint.io/)                                                                   | TypeScript specific linting rules               |
 
@@ -48,7 +46,6 @@ This package provides six modular configurations that can be combined based on y
 | **`node`**       | Node.js-specific globals and rules via eslint-plugin-n                                           | Server-side applications, CLI tools, build scripts, and any Node.js environments                  |
 | **`typescript`** | TypeScript support with type-aware linting and proper import resolution                          | Any project using TypeScript files (`.ts`, `.tsx`, `.cts`, `.mts`)                                |
 | **`react`**      | Comprehensive React rules including hooks, refresh, DOM, web API, and naming conventions         | React applications and components (requires TypeScript config when using `.tsx` files)            |
-| **`storybook`**  | Storybook-specific rules for component stories and testing                                       | Storybook story files (`.stories.ts`, `.stories.tsx`)                                             |
 
 ### Configuration Dependencies
 
@@ -56,7 +53,6 @@ This package provides six modular configurations that can be combined based on y
 - **`typescript`** should be applied to TypeScript files (`**/*.ts`, `**/*.tsx`)
 - **`react`** should be applied to React component files (`**/*.tsx`)
 - **`browser`** and **`node`** are mutually exclusive (choose based on your runtime environment)
-- **`storybook`** should only be applied to story files (`**/*.stories.*`)
 
 ## Installation
 
@@ -70,10 +66,6 @@ yarn add --dev eslint @priver/eslint-config
 # Using pnpm
 pnpm add --save-dev eslint @priver/eslint-config
 ```
-
-**Note:** `eslint-plugin-storybook` is not installed by default because it requires a specific
-version of Storybook. If you wish to use the Storybook configuration, please install the plugin
-manually.
 
 ## Usage
 
@@ -103,11 +95,11 @@ export default defineConfig([
 ]);
 ```
 
-### React Application with TypeScript and Storybook
+### React Application with TypeScript
 
 ```js
 import { defineConfig, globalIgnores } from 'eslint/config';
-import { base, browser, node, react, storybook, typescript } from '@priver/eslint-config';
+import { base, browser, node, react, typescript } from '@priver/eslint-config';
 
 export default defineConfig([
   globalIgnores(['.next/', 'next-env.d.ts']),
@@ -115,7 +107,6 @@ export default defineConfig([
   browser,
   { files: ['**/*.ts', '**/*.tsx'], extends: [typescript] },
   { files: ['**/*.tsx'], extends: [react] },
-  { files: ['**/*.stories.tsx'], extends: [storybook] },
   { files: ['**/*.config.js'], extends: [node] },
 ]);
 ```

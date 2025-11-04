@@ -23,7 +23,6 @@ opinionated choices.
   - [react-naming-convention](#react-naming-convention)
 - [react-hooks](#react-hooks)
 - [react-refresh](#react-refresh)
-- [storybook](#storybook)
 
 The following symbols indicate how each rule is configured:
 
@@ -1998,67 +1997,3 @@ Configurations compared:
 | `react-refresh/only-export-components` <a id="summary-react-refresh/only-export-components"></a> | ✅  | ✅  |
 
 <!-- END react-refresh -->
-
-## storybook
-
-**Configurations:**
-
-- **P** – @priver/eslint-config
-- **R** –
-  [flat/recommended](https://github.com/storybookjs/eslint-plugin-storybook?tab=readme-ov-file#configuration-eslintconfigcmjs)
-
-<!-- START storybook -->
-
-| Rule                                                                                                     | P   | R   |
-| -------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`storybook/await-interactions`] <a id="summary-storybook/await-interactions"></a>                       | ✅  | ✅  |
-| [`storybook/context-in-play-function`] <a id="summary-storybook/context-in-play-function"></a>           | ✅  | ✅  |
-| [`storybook/csf-component`] <a id="summary-storybook/csf-component"></a>                                 | ✅  | 🚫  |
-| [`storybook/default-exports`] <a id="summary-storybook/default-exports"></a>                             | ✅  | ✅  |
-| [`storybook/hierarchy-separator`] <a id="summary-storybook/hierarchy-separator"></a>                     | ✅  | ⚠️  |
-| [`storybook/meta-inline-properties`] <a id="summary-storybook/meta-inline-properties"></a>               | ✅  | 🚫  |
-| [`storybook/meta-satisfies-type`] <a id="summary-storybook/meta-satisfies-type"></a>                     | ✅  | 🚫  |
-| [`storybook/no-redundant-story-name`] <a id="summary-storybook/no-redundant-story-name"></a>             | ✅  | ⚠️  |
-| [`storybook/no-renderer-packages`] <a id="summary-storybook/no-renderer-packages"></a>                   | ✅  | ✅  |
-| [`storybook/no-stories-of`] <a id="summary-storybook/no-stories-of"></a>                                 | ✅  | 🚫  |
-| [`storybook/no-title-property-in-meta`] <a id="summary-storybook/no-title-property-in-meta"></a>         | ✅  | 🚫  |
-| [`storybook/no-uninstalled-addons`] <a id="summary-storybook/no-uninstalled-addons"></a>                 | 🚫  | ✅  |
-| [`storybook/prefer-pascal-case`] <a id="summary-storybook/prefer-pascal-case"></a>                       | ✅  | ⚠️  |
-| [`storybook/story-exports`] <a id="summary-storybook/story-exports"></a>                                 | ✅  | ✅  |
-| [`storybook/use-storybook-expect`] <a id="summary-storybook/use-storybook-expect"></a>                   | ✅  | ✅  |
-| [`storybook/use-storybook-testing-library`] <a id="summary-storybook/use-storybook-testing-library"></a> | ✅  | ✅  |
-
-[`storybook/await-interactions`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/await-interactions.md
-[`storybook/context-in-play-function`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/context-in-play-function.md
-[`storybook/csf-component`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/csf-component.md
-[`storybook/default-exports`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/default-exports.md
-[`storybook/hierarchy-separator`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/hierarchy-separator.md
-[`storybook/meta-inline-properties`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/meta-inline-properties.md
-[`storybook/meta-satisfies-type`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/meta-satisfies-type.md
-[`storybook/no-redundant-story-name`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-redundant-story-name.md
-[`storybook/no-renderer-packages`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-renderer-packages.md
-[`storybook/no-stories-of`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-stories-of.md
-[`storybook/no-title-property-in-meta`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-title-property-in-meta.md
-[`storybook/no-uninstalled-addons`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/no-uninstalled-addons.md
-[`storybook/prefer-pascal-case`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/prefer-pascal-case.md
-[`storybook/story-exports`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/story-exports.md
-[`storybook/use-storybook-expect`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/use-storybook-expect.md
-[`storybook/use-storybook-testing-library`]:
-  https://github.com/storybookjs/storybook/blob/next/code/lib/eslint-plugin/docs/rules/use-storybook-testing-library.md
-
-<!-- END storybook -->

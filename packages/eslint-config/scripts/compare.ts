@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 // @ts-expect-error -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
 import eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
 import js from '@eslint/js';
+import type { TSESLint } from '@typescript-eslint/utils';
 import type { ESLint, Linter, Rule } from 'eslint';
 import compat from 'eslint-plugin-compat';
 import * as depend from 'eslint-plugin-depend';
@@ -15,7 +16,6 @@ import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import reactWebAPI from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
-import storybookPlugin from 'eslint-plugin-storybook';
 import unicorn from 'eslint-plugin-unicorn';
 import { builtinRules } from 'eslint/use-at-your-own-risk';
 import * as prettier from 'prettier';
@@ -25,7 +25,6 @@ import { base } from '../src/rules/base.ts';
 import { browser } from '../src/rules/browser.ts';
 import { node } from '../src/rules/node.ts';
 import { react } from '../src/rules/react.ts';
-import { storybook } from '../src/rules/storybook.ts';
 import { typescript } from '../src/rules/typescript.ts';
 
 const FILENAME = 'TABLE_OF_COMPARISON.md';
@@ -48,7 +47,7 @@ const SEVERITY_EMOJI = {
 // Plugin configurations
 type PluginComparison = {
   prefix: string;
-  rulesDefinitions?: Record<string, Rule.RuleModule>;
+  rulesDefinitions?: Record<string, Rule.RuleModule | TSESLint.AnyRuleModule>;
   recommended?: Partial<Linter.RulesRecord>;
   rules: Partial<Linter.RulesRecord>;
 };
@@ -151,18 +150,6 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rulesDefinitions: reactRefresh.rules,
     recommended: reactRefresh.configs.vite.rules,
     rules: react.rules,
-  },
-  {
-    prefix: 'storybook',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    rulesDefinitions: (storybookPlugin as ESLint.Plugin).rules,
-    recommended: mergeRules([
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion, @typescript-eslint/no-non-null-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-      ...((storybookPlugin as ESLint.Plugin).configs![
-        'flat/recommended'
-      ] as unknown as Linter.Config[]),
-    ]),
-    rules: storybook.rules,
   },
 ];
 
@@ -285,7 +272,7 @@ function mergeRules(
 // Plugin comparison logic
 function comparePlugin(
   pluginPrefix: string,
-  ruleDefinitions: Record<string, Rule.RuleModule> | undefined,
+  ruleDefinitions: Record<string, Rule.RuleModule | TSESLint.AnyRuleModule> | undefined,
   recommendedRules: Partial<Linter.RulesRecord> | undefined,
   rules: Partial<Linter.RulesRecord>,
   content: string,

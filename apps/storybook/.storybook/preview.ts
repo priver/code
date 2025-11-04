@@ -1,14 +1,19 @@
-import { withThemeByClassName } from '@storybook/addon-themes';
-import type { Preview } from '@storybook/react-vite';
+import addonA11y from '@storybook/addon-a11y';
+import addonDocs from '@storybook/addon-docs';
+import addonThemes, { withThemeByClassName } from '@storybook/addon-themes';
+import { definePreview } from '@storybook/react-vite';
+
+import theme from './theme.ts';
 
 import '@fontsource-variable/inter/opsz.css';
 import '@fontsource-variable/jetbrains-mono';
-import '../src/style.css';
+import '#src/style.css';
 
-const preview: Preview = {
+export default definePreview({
+  addons: [addonA11y(), addonDocs(), addonThemes()],
   parameters: {
     layout: 'centered',
-    docs: { toc: true },
+    docs: { theme, toc: true },
     a11y: { test: 'todo' },
   },
   tags: ['autodocs'],
@@ -21,6 +26,4 @@ const preview: Preview = {
       defaultTheme: 'light',
     }),
   ],
-};
-
-export default preview;
+});

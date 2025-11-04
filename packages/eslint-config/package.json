@@ -66,21 +66,15 @@
     "@priver/tsconfig": "workspace:*",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "catalog:",
+    "@typescript-eslint/utils": "catalog:",
     "del-cli": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "catalog:",
-    "eslint-plugin-storybook": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "eslint": "catalog:",
-    "eslint-plugin-storybook": "catalog:"
-  },
-  "peerDependenciesMeta": {
-    "eslint-plugin-storybook": {
-      "optional": true
-    }
+    "eslint": "catalog:"
   },
   "engines": {
     "node": "^20.12.0 || ^22.13.0 || >=24.0.0"
