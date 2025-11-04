@@ -15,12 +15,13 @@ export const react = {
     'react-web-api': reactWebAPI as ESLint.Plugin, // TS2742
     'react-hooks-extra': reactHooksExtra as ESLint.Plugin, // TS2742
     'react-naming-convention': reactNamingConvention as ESLint.Plugin, // TS2742
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/issues/34801
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/pull/34994
     'react-hooks': reactHooks as ESLint.Plugin,
     'react-refresh': reactRefresh,
   },
   rules: {
     // React
+    'react-x/jsx-dollar': 'off',
     'react-x/jsx-key-before-spread': 'error',
     'react-x/jsx-no-comment-textnodes': 'error',
     'react-x/jsx-no-duplicate-props': 'off',

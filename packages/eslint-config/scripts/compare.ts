@@ -138,11 +138,8 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'react-hooks',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/issues/34801
-    rulesDefinitions: (reactHooks as unknown as typeof reactHooks.default).rules,
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/issues/34801
-    recommended: (reactHooks as unknown as typeof reactHooks.default).configs['recommended-latest']
-      .rules,
+    rulesDefinitions: reactHooks.rules,
+    recommended: reactHooks.configs['recommended-latest'].rules,
     rules: react.rules,
   },
   {
