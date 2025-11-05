@@ -11,7 +11,7 @@
     "build": "turbo run build",
     "serve": "caddy run",
     "dev:storybook": "turbo run dev --filter=@priver/storybook",
-    "version": "changeset version && pnpm install --lockfile-only"
+    "version": "changeset version && pnpm install --lockfile-only && pnpm run format"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
