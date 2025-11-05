@@ -1,5 +1,5 @@
 ---
-'@priver/eslint-config': patch
+'@priver/eslint-config': minor
 ---
 
 Update ESLint plugins to latest versions and add new unicorn rules

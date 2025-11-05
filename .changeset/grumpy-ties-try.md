@@ -1,5 +1,5 @@
 ---
-'@priver/eslint-config': patch
+'@priver/eslint-config': major
 ---
 
 Remove eslint-plugin-storybook.
