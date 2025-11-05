@@ -1,5 +1,6 @@
 {
   "name": "@priver/editor",
+  "private": true,
   "version": "0.0.0",
   "description": "Rich text editor React components",
   "keywords": [
