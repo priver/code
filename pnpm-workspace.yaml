@@ -9,19 +9,19 @@ catalog:
   '@fontsource-variable/inter': ^5.2.8
   '@fontsource-variable/jetbrains-mono': ^5.2.8
   '@ianvs/prettier-plugin-sort-imports': ^4.7.0
-  '@lexical/react': ^0.37.0
-  '@lexical/utils': ^0.37.0
-  '@storybook/addon-a11y': ^10.0.3
-  '@storybook/addon-docs': ^10.0.3
-  '@storybook/addon-themes': ^10.0.3
-  '@storybook/react-vite': ^10.0.3
-  '@tailwindcss/cli': ^4.1.16
-  '@tailwindcss/vite': ^4.1.16
+  '@lexical/react': ^0.39.0
+  '@lexical/utils': ^0.39.0
+  '@storybook/addon-a11y': ^10.1.11
+  '@storybook/addon-docs': ^10.1.11
+  '@storybook/addon-themes': ^10.1.11
+  '@storybook/react-vite': ^10.1.11
+  '@tailwindcss/cli': ^4.1.18
+  '@tailwindcss/vite': ^4.1.18
   '@types/node': ^24.10.0
-  '@types/react': ^19.2.2
-  '@types/react-dom': ^19.2.2
+  '@types/react': ^19.2.8
+  '@types/react-dom': ^19.2.3
   '@typescript-eslint/utils': ^8.46.3
-  '@vitejs/plugin-react': ^5.1.0
+  '@vitejs/plugin-react': ^5.1.2
   cva: 1.0.0-beta.4
   del-cli: ^7.0.0
   eslint: ^9.39.1
@@ -37,22 +37,22 @@ catalog:
   eslint-plugin-react-refresh: ^0.4.24
   eslint-plugin-react-web-api: ^2.3.1
   eslint-plugin-react-x: ^2.3.1
-  eslint-plugin-storybook: ^10.0.3
+  eslint-plugin-storybook: ^10.1.11
   eslint-plugin-unicorn: ^62.0.0
   globals: ^16.5.0
-  lexical: ^0.37.0
-  lucide-react: ^0.552.0
+  lexical: ^0.39.0
+  lucide-react: ^0.562.0
   prettier: ^3.8.0
   prettier-plugin-tailwindcss: ^0.7.2
-  react: ^19.2.0
-  react-dom: ^19.2.0
+  react: ^19.2.3
+  react-dom: ^19.2.3
   sherif: ^1.9.0
-  storybook: ^10.0.3
-  tailwindcss: ^4.1.16
+  storybook: ^10.1.11
+  tailwindcss: ^4.1.18
   turbo: ^2.7.4
   typescript: ^5.9.3
   typescript-eslint: ^8.46.3
-  vite: ^7.1.12
+  vite: ^7.3.1
 
 catalogMode: strict
 
@@ -63,6 +63,7 @@ engineStrict: true
 nodeOptions: '--experimental-strip-types'
 
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - '@tailwindcss/oxide'
   - esbuild
   - unrs-resolver
