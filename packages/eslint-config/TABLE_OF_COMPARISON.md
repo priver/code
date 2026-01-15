@@ -1389,9 +1389,11 @@ Configurations compared:
 | [`@typescript-eslint/no-unsafe-type-assertion`] <a id="summary-@typescript-eslint/no-unsafe-type-assertion"></a>                                         | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/no-unsafe-unary-minus`] <a id="summary-@typescript-eslint/no-unsafe-unary-minus"></a>                                               | ✅                                                                        | ✅  |
 | [`@typescript-eslint/no-unused-expressions`] <a id="summary-@typescript-eslint/no-unused-expressions"></a>                                               | ✅                                                                        | ✅  |
+| [`@typescript-eslint/no-unused-private-class-members`] <a id="summary-@typescript-eslint/no-unused-private-class-members"></a>                           | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/no-unused-vars`] <a id="summary-@typescript-eslint/no-unused-vars"></a>                                                             | 🚫                                                                        | ✅  |
 | [`@typescript-eslint/no-use-before-define`] <a id="summary-@typescript-eslint/no-use-before-define"></a>                                                 | 🚫                                                                        | 🚫  |
 | [`@typescript-eslint/no-useless-constructor`] <a id="summary-@typescript-eslint/no-useless-constructor"></a>                                             | ✅                                                                        | ✅  |
+| [`@typescript-eslint/no-useless-default-assignment`] <a id="summary-@typescript-eslint/no-useless-default-assignment"></a>                               | ✅                                                                        | ✅  |
 | [`@typescript-eslint/no-useless-empty-export`] <a id="summary-@typescript-eslint/no-useless-empty-export"></a>                                           | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/no-wrapper-object-types`] <a id="summary-@typescript-eslint/no-wrapper-object-types"></a>                                           | ✅                                                                        | ✅  |
 | [`@typescript-eslint/non-nullable-type-assertion-style`] <a id="summary-@typescript-eslint/non-nullable-type-assertion-style"></a>                       | ✅                                                                        | ✅  |
@@ -1423,6 +1425,7 @@ Configurations compared:
 | [`@typescript-eslint/restrict-template-expressions`] <a id="summary-@typescript-eslint/restrict-template-expressions"></a>                               | ✅                                                                        | ✅  |
 | [`@typescript-eslint/return-await`] <a id="summary-@typescript-eslint/return-await"></a>                                                                 | ✅ <a href="#rule-@typescript-eslint/return-await">(?)</a>                | ✅  |
 | [`@typescript-eslint/strict-boolean-expressions`] <a id="summary-@typescript-eslint/strict-boolean-expressions"></a>                                     | 🚫                                                                        | 🚫  |
+| [`@typescript-eslint/strict-void-return`] <a id="summary-@typescript-eslint/strict-void-return"></a>                                                     | 🚫                                                                        | 🚫  |
 | [`@typescript-eslint/switch-exhaustiveness-check`] <a id="summary-@typescript-eslint/switch-exhaustiveness-check"></a>                                   | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/triple-slash-reference`] <a id="summary-@typescript-eslint/triple-slash-reference"></a>                                             | ✅ <a href="#rule-@typescript-eslint/triple-slash-reference">(?)</a>      | ✅  |
 | [`@typescript-eslint/unbound-method`] <a id="summary-@typescript-eslint/unbound-method"></a>                                                             | ✅                                                                        | ✅  |
@@ -1602,10 +1605,14 @@ Configurations compared:
   https://typescript-eslint.io/rules/no-unsafe-unary-minus
 [`@typescript-eslint/no-unused-expressions`]:
   https://typescript-eslint.io/rules/no-unused-expressions
+[`@typescript-eslint/no-unused-private-class-members`]:
+  https://typescript-eslint.io/rules/no-unused-private-class-members
 [`@typescript-eslint/no-unused-vars`]: https://typescript-eslint.io/rules/no-unused-vars
 [`@typescript-eslint/no-use-before-define`]: https://typescript-eslint.io/rules/no-use-before-define
 [`@typescript-eslint/no-useless-constructor`]:
   https://typescript-eslint.io/rules/no-useless-constructor
+[`@typescript-eslint/no-useless-default-assignment`]:
+  https://typescript-eslint.io/rules/no-useless-default-assignment
 [`@typescript-eslint/no-useless-empty-export`]:
   https://typescript-eslint.io/rules/no-useless-empty-export
 [`@typescript-eslint/no-wrapper-object-types`]:
@@ -1656,6 +1663,7 @@ Configurations compared:
 [`@typescript-eslint/return-await`]: https://typescript-eslint.io/rules/return-await
 [`@typescript-eslint/strict-boolean-expressions`]:
   https://typescript-eslint.io/rules/strict-boolean-expressions
+[`@typescript-eslint/strict-void-return`]: https://typescript-eslint.io/rules/strict-void-return
 [`@typescript-eslint/switch-exhaustiveness-check`]:
   https://typescript-eslint.io/rules/switch-exhaustiveness-check
 [`@typescript-eslint/triple-slash-reference`]:
@@ -1707,8 +1715,7 @@ Configurations compared:
 | [`react-x/no-create-ref`] <a id="summary-react-x/no-create-ref"></a>                                                   | ✅                                                     | ✅  |
 | [`react-x/no-default-props`] <a id="summary-react-x/no-default-props"></a>                                             | ✅                                                     | ✅  |
 | [`react-x/no-direct-mutation-state`] <a id="summary-react-x/no-direct-mutation-state"></a>                             | ✅                                                     | ✅  |
-| [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | ✅                                                     | ✅  |
-| [`react-x/no-forbidden-props`] <a id="summary-react-x/no-forbidden-props"></a>                                         | 🚫                                                     | 🚫  |
+| [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | 🚫                                                     | 🚫  |
 | [`react-x/no-forward-ref`] <a id="summary-react-x/no-forward-ref"></a>                                                 | ✅                                                     | ⚠️  |
 | [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | ✅                                                     | ⚠️  |
 | [`react-x/no-leaked-conditional-rendering`] <a id="summary-react-x/no-leaked-conditional-rendering"></a>               | ✅                                                     | ✅  |
@@ -1724,10 +1731,11 @@ Configurations compared:
 | [`react-x/no-set-state-in-component-did-update`] <a id="summary-react-x/no-set-state-in-component-did-update"></a>     | ✅                                                     | ⚠️  |
 | [`react-x/no-set-state-in-component-will-update`] <a id="summary-react-x/no-set-state-in-component-will-update"></a>   | ✅                                                     | ⚠️  |
 | [`react-x/no-string-refs`] <a id="summary-react-x/no-string-refs"></a>                                                 | ✅                                                     | ✅  |
-| [`react-x/no-unnecessary-key`] <a id="summary-react-x/no-unnecessary-key"></a>                                         | ✅                                                     | ⚠️  |
-| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | ✅                                                     | ⚠️  |
-| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | ✅                                                     | ⚠️  |
+| [`react-x/no-unnecessary-key`] <a id="summary-react-x/no-unnecessary-key"></a>                                         | 🚫                                                     | 🚫  |
+| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | 🚫                                                     | ⚠️  |
+| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | 🚫                                                     | ⚠️  |
 | [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅                                                     | ⚠️  |
+| [`react-x/no-unnecessary-use-ref`] <a id="summary-react-x/no-unnecessary-use-ref"></a>                                 | 🚫                                                     | ⚠️  |
 | [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅                                                     | ⚠️  |
 | [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅                                                     | ⚠️  |
 | [`react-x/no-unsafe-component-will-update`] <a id="summary-react-x/no-unsafe-component-will-update"></a>               | ✅                                                     | ⚠️  |
@@ -1782,7 +1790,6 @@ Configurations compared:
 [`react-x/no-default-props`]: https://eslint-react.xyz/docs/rules/no-default-props
 [`react-x/no-direct-mutation-state`]: https://eslint-react.xyz/docs/rules/no-direct-mutation-state
 [`react-x/no-duplicate-key`]: https://eslint-react.xyz/docs/rules/no-duplicate-key
-[`react-x/no-forbidden-props`]: https://eslint-react.xyz/docs/rules/no-forbidden-props
 [`react-x/no-forward-ref`]: https://eslint-react.xyz/docs/rules/no-forward-ref
 [`react-x/no-implicit-key`]: https://eslint-react.xyz/docs/rules/no-implicit-key
 [`react-x/no-leaked-conditional-rendering`]:
@@ -1813,6 +1820,7 @@ Configurations compared:
   https://eslint-react.xyz/docs/rules/no-unnecessary-use-callback
 [`react-x/no-unnecessary-use-memo`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-memo
 [`react-x/no-unnecessary-use-prefix`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-prefix
+[`react-x/no-unnecessary-use-ref`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-ref
 [`react-x/no-unsafe-component-will-mount`]:
   https://eslint-react.xyz/docs/rules/no-unsafe-component-will-mount
 [`react-x/no-unsafe-component-will-receive-props`]:
@@ -1932,6 +1940,7 @@ Configurations compared:
 | [`react-naming-convention/context-name`] <a id="summary-react-naming-convention/context-name"></a>             | ✅  | ⚠️  |
 | [`react-naming-convention/filename`] <a id="summary-react-naming-convention/filename"></a>                     | 🚫  | 🚫  |
 | [`react-naming-convention/filename-extension`] <a id="summary-react-naming-convention/filename-extension"></a> | 🚫  | 🚫  |
+| [`react-naming-convention/ref-name`] <a id="summary-react-naming-convention/ref-name"></a>                     | ✅  | ⚠️  |
 | [`react-naming-convention/use-state`] <a id="summary-react-naming-convention/use-state"></a>                   | ✅  | ⚠️  |
 
 [`react-naming-convention/component-name`]:
@@ -1941,6 +1950,7 @@ Configurations compared:
 [`react-naming-convention/filename`]: https://eslint-react.xyz/docs/rules/naming-convention-filename
 [`react-naming-convention/filename-extension`]:
   https://eslint-react.xyz/docs/rules/naming-convention-filename-extension
+[`react-naming-convention/ref-name`]: https://eslint-react.xyz/docs/rules/naming-convention-ref-name
 [`react-naming-convention/use-state`]:
   https://eslint-react.xyz/docs/rules/naming-convention-use-state
 

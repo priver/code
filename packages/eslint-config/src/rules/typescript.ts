@@ -60,6 +60,7 @@ export const typescript = {
     'no-shadow': 'off', // @typescript-eslint/no-shadow
     'no-throw-literal': 'off', // @typescript-eslint/only-throw-error
     'no-unused-expressions': 'off', // @typescript-eslint/no-unused-expressions
+    'no-unused-private-class-members': 'off', // @typescript-eslint/no-unused-private-class-members
     'no-useless-constructor': 'off', // @typescript-eslint/no-useless-constructor
     'prefer-destructuring': 'off', // @typescript-eslint/prefer-destructuring
     'prefer-promise-reject-errors': 'off', // @typescript-eslint/prefer-promise-reject-errors
@@ -220,9 +221,11 @@ export const typescript = {
     '@typescript-eslint/no-unsafe-type-assertion': 'error',
     '@typescript-eslint/no-unsafe-unary-minus': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
+    '@typescript-eslint/no-unused-private-class-members': 'error',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/no-useless-default-assignment': 'error',
     '@typescript-eslint/no-useless-empty-export': 'error',
     '@typescript-eslint/no-wrapper-object-types': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
@@ -286,6 +289,7 @@ export const typescript = {
     ],
     '@typescript-eslint/return-await': ['error', 'in-try-catch'],
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/strict-void-return': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': [
       'error',
       {

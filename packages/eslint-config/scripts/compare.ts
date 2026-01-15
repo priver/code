@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 
-// @ts-expect-error -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
-import eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
+import * as eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
 import js from '@eslint/js';
 import type { TSESLint } from '@typescript-eslint/utils';
 import type { ESLint, Linter, Rule } from 'eslint';
@@ -61,9 +60,7 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: '@eslint-community/eslint-comments',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
     rulesDefinitions: eslintComments.rules,
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
     recommended: eslintComments.configs.recommended.rules,
     rules: base.rules,
   },

@@ -39,7 +39,7 @@
     "dev": "tsc --watch"
   },
   "dependencies": {
-    "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "catalog:",
     "confusing-browser-globals": "^1.0.11",
     "eslint-import-resolver-typescript": "catalog:",
     "eslint-plugin-compat": "^6.0.2",
