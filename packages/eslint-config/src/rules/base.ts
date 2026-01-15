@@ -1,6 +1,4 @@
-// @ts-expect-error -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
-
-import eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
+import * as eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
 import type { ESLint, Linter } from 'eslint';
 import * as depend from 'eslint-plugin-depend';
 import { importX } from 'eslint-plugin-import-x';
@@ -17,7 +15,6 @@ export const base = {
     reportUnusedInlineConfigs: 'error',
   },
   plugins: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- https://github.com/eslint-community/eslint-plugin-eslint-comments/pull/246
     '@eslint-community/eslint-comments': eslintComments,
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
     'import-x': importX as unknown as ESLint.Plugin,
