@@ -17,6 +17,7 @@ opinionated choices.
 - [@typescript-eslint](#typescript-eslint)
 - [@eslint-react](#eslint-react)
   - [react-x](#react-x)
+  - [react-rsc](#react-rsc)
   - [react-dom](#react-dom)
   - [react-web-api](#react-web-api)
   - [react-hooks-extra](#react-hooks-extra)
@@ -1192,8 +1193,7 @@ Configurations compared:
 | ---------------------------------------------------- | --- | --- |
 | [`compat/compat`] <a id="summary-compat/compat"></a> | ✅  | ✅  |
 
-[`compat/compat`]:
-  https://github.com/amilajack/eslint-plugin-compat/blob/master/docs/rules/compat.md
+[`compat/compat`]: https://github.com/amilajack/eslint-plugin-compat/blob/main/docs/rules/compat.md
 
 <!-- END compat -->
 
@@ -1717,7 +1717,7 @@ Configurations compared:
 | [`react-x/no-direct-mutation-state`] <a id="summary-react-x/no-direct-mutation-state"></a>                             | ✅                                                     | ✅  |
 | [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | 🚫                                                     | 🚫  |
 | [`react-x/no-forward-ref`] <a id="summary-react-x/no-forward-ref"></a>                                                 | ✅                                                     | ⚠️  |
-| [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | ✅                                                     | ⚠️  |
+| [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | ✅                                                     | ✅  |
 | [`react-x/no-leaked-conditional-rendering`] <a id="summary-react-x/no-leaked-conditional-rendering"></a>               | ✅                                                     | ✅  |
 | [`react-x/no-missing-component-display-name`] <a id="summary-react-x/no-missing-component-display-name"></a>           | ✅                                                     | 🚫  |
 | [`react-x/no-missing-context-display-name`] <a id="summary-react-x/no-missing-context-display-name"></a>               | ✅                                                     | 🚫  |
@@ -1735,7 +1735,7 @@ Configurations compared:
 | [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | 🚫                                                     | ⚠️  |
 | [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | 🚫                                                     | ⚠️  |
 | [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅                                                     | ⚠️  |
-| [`react-x/no-unnecessary-use-ref`] <a id="summary-react-x/no-unnecessary-use-ref"></a>                                 | 🚫                                                     | ⚠️  |
+| [`react-x/no-unnecessary-use-ref`] <a id="summary-react-x/no-unnecessary-use-ref"></a>                                 | 🚫                                                     | 🚫  |
 | [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅                                                     | ⚠️  |
 | [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅                                                     | ⚠️  |
 | [`react-x/no-unsafe-component-will-update`] <a id="summary-react-x/no-unsafe-component-will-update"></a>               | ✅                                                     | ⚠️  |
@@ -1844,6 +1844,18 @@ Configurations compared:
   https://eslint-react.xyz/docs/rules/prefer-use-state-lazy-initialization
 
 <!-- END react-x -->
+
+### react-rsc
+
+<!-- START react-rsc -->
+
+| Rule                                                                                 | P   | R   |
+| ------------------------------------------------------------------------------------ | --- | --- |
+| [`react-rsc/function-definition`] <a id="summary-react-rsc/function-definition"></a> | ✅  | ✅  |
+
+[`react-rsc/function-definition`]: https://eslint-react.xyz/docs/rules/function-definition
+
+<!-- END react-rsc -->
 
 ### react-dom
 

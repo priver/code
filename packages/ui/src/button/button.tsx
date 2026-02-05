@@ -64,7 +64,7 @@ export type ButtonProps = {
    * @default "start"
    */
   iconPosition?: 'start' | 'end';
-} & Omit<React.ComponentProps<'button'>, 'disabled' | 'type'>;
+} & Omit<React.ComponentProps<'button'>, 'key' | 'disabled' | 'type'>;
 
 const buttonVariants = cva({
   base: 'relative inline-flex shrink-0 items-center justify-center rounded-lg font-medium whitespace-nowrap outline-offset-2 transition-all select-none focus-visible:outline-2 active:enabled:translate-y-px',

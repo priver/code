@@ -12,7 +12,8 @@ import reactDom from 'eslint-plugin-react-dom';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
-import reactRefresh from 'eslint-plugin-react-refresh';
+import { reactRefresh } from 'eslint-plugin-react-refresh';
+import reactRSC from 'eslint-plugin-react-rsc';
 import reactWebAPI from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
 import unicorn from 'eslint-plugin-unicorn';
@@ -110,6 +111,12 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rules: react.rules,
   },
   {
+    prefix: 'react-rsc',
+    rulesDefinitions: reactRSC.rules,
+    recommended: reactRSC.configs.strict.rules,
+    rules: react.rules,
+  },
+  {
     prefix: 'react-dom',
     rulesDefinitions: reactDom.rules,
     recommended: reactDom.configs.strict.rules,
@@ -141,8 +148,8 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'react-refresh',
-    rulesDefinitions: reactRefresh.rules,
-    recommended: reactRefresh.configs.vite.rules,
+    rulesDefinitions: reactRefresh.plugin.rules,
+    recommended: reactRefresh.configs.vite().rules,
     rules: react.rules,
   },
 ];
