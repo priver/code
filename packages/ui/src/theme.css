@@ -56,7 +56,7 @@
 @theme inline {
   --font-*: initial;
 
-  --color-*: initial;
+  /* --color-*: initial; */
 
   --border-color-primary: light-dark(var(--neu300), var(--neu700));
   --border-color-primary-alpha: oklch(from var(--neu950) l c h / 0.18);
