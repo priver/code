@@ -1,8 +1,4 @@
 pnpm-lock.yaml
 
-# Changesets
-.changeset
-CHANGELOG.md
-
 # https://github.com/prettier/prettier/issues/5246
 **/*.html

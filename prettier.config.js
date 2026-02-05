@@ -20,6 +20,15 @@ const config = {
   singleAttributePerLine: false,
   proseWrap: 'always',
 
+  overrides: [
+    {
+      files: ['.changeset/*.md', 'CHANGELOG.md'],
+      options: {
+        proseWrap: 'never',
+      },
+    },
+  ],
+
   plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
 
   // @ianvs/prettier-plugin-sort-imports

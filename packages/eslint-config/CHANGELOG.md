@@ -15,10 +15,8 @@
 - [#43](https://github.com/priver/code/pull/43) [`c0d89fc`](https://github.com/priver/code/commit/c0d89fc1bf639c916105171974651945031c1ed1) Thanks [@priver](https://github.com/priver)! - Update the react-x plugin to version 2.
 
   Additionally, update the other dependencies:
-
   - Update eslint to v9.36.0 and enable `preserve-caught-error` rule.
   - Update eslint-plugin-unicorn to v61.0.2 and enable following rules:
-
     - `unicorn/no-array-sort`
     - `unicorn/prefer-bigint-literals`
     - `unicorn/prefer-classlist-toggle`
@@ -27,7 +25,6 @@
 - [#43](https://github.com/priver/code/pull/43) [`c0d89fc`](https://github.com/priver/code/commit/c0d89fc1bf639c916105171974651945031c1ed1) Thanks [@priver](https://github.com/priver)! - Update ESLint to v9
 
   This is a major update that migrates the ESLint configuration to the new flat config format introduced in ESLint v9. The changes include:
-
   - Complete migration to the new flat config format (eslint.config.js)
   - Conversion of all config files from JavaScript to TypeScript for better type safety
   - Addition of comprehensive comparison documentation (TABLE_OF_COMPARISON.md)
@@ -41,7 +38,6 @@
 - [#43](https://github.com/priver/code/pull/43) [`c0d89fc`](https://github.com/priver/code/commit/c0d89fc1bf639c916105171974651945031c1ed1) Thanks [@priver](https://github.com/priver)! - Update ESLint plugins to latest versions and add new unicorn rules
 
   Added new eslint-plugin-unicorn ESLint rules:
-
   - `unicorn/no-array-reverse`: Prevent usage of Array.reverse() which mutates the original array
   - `unicorn/no-useless-error-capture-stack-trace`: Prevent useless Error.captureStackTrace() calls
   - `unicorn/prefer-class-fields`: Prefer class fields over constructor assignments
@@ -58,19 +54,15 @@
 ### Patch Changes
 
 - [#43](https://github.com/priver/code/pull/43) [`c0d89fc`](https://github.com/priver/code/commit/c0d89fc1bf639c916105171974651945031c1ed1) Thanks [@priver](https://github.com/priver)! - Update ESLint plugins to their latest versions
-
   - `@eslint/js` to version 9.34.0
-  - `eslint-plugin-react-dom`, `eslint-plugin-react-hooks-extra`,
-    `eslint-plugin-react-naming-convention`, `eslint-plugin-react-web-api`, and
-    `eslint-plugin-react-x` to version 1.52.6
+  - `eslint-plugin-react-dom`, `eslint-plugin-react-hooks-extra`, `eslint-plugin-react-naming-convention`, `eslint-plugin-react-web-api`, and `eslint-plugin-react-x` to version 1.52.6
   - `typescript-eslint` to version 8.41.0
 
 ## 8.0.0
 
 ### Major Changes
 
-- a77d096: Update to
-  [ESLint's new config system](https://eslint.org/docs/latest/use/configure/configuration-files-new)
+- a77d096: Update to [ESLint's new config system](https://eslint.org/docs/latest/use/configure/configuration-files-new)
 
 ### Minor Changes
 
