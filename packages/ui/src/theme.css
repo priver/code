@@ -4,96 +4,147 @@
   --black: #000;
   --white: #fff;
 
-  --neutral-50: oklch(0.985 0 0);
-  --neutral-100: oklch(0.97 0 0);
-  --neutral-200: oklch(0.922 0 0);
-  --neutral-300: oklch(0.87 0 0);
-  --neutral-400: oklch(0.708 0 0);
-  --neutral-500: oklch(0.556 0 0);
-  --neutral-600: oklch(0.439 0 0);
-  --neutral-700: oklch(0.371 0 0);
-  --neutral-800: oklch(0.269 0 0);
-  --neutral-900: oklch(0.205 0 0);
-  --neutral-950: oklch(0.145 0 0);
+  --neu50: oklch(0.985 0 0);
+  --neu100: oklch(0.97 0 0);
+  --neu200: oklch(0.922 0 0);
+  --neu300: oklch(0.87 0 0);
+  --neu400: oklch(0.708 0 0);
+  --neu500: oklch(0.556 0 0);
+  --neu600: oklch(0.439 0 0);
+  --neu700: oklch(0.371 0 0);
+  --neu800: oklch(0.269 0 0);
+  --neu900: oklch(0.205 0 0);
+  --neu950: oklch(0.145 0 0);
 
-  --accent-50: oklch(0.97 0.014 254.604);
-  --accent-100: oklch(0.932 0.032 255.585);
-  --accent-200: oklch(0.882 0.059 254.128);
-  --accent-300: oklch(0.809 0.105 251.813);
-  --accent-400: oklch(0.707 0.165 254.624);
-  --accent-500: oklch(0.623 0.214 259.815);
-  --accent-600: oklch(0.546 0.245 262.881);
-  --accent-700: oklch(0.488 0.243 264.376);
-  --accent-800: oklch(0.424 0.199 265.638);
-  --accent-900: oklch(0.379 0.146 265.522);
-  --accent-950: oklch(0.282 0.091 267.935);
+  --acc50: oklch(0.97 0.014 254.604);
+  --acc100: oklch(0.932 0.032 255.585);
+  --acc200: oklch(0.882 0.059 254.128);
+  --acc300: oklch(0.809 0.105 251.813);
+  --acc400: oklch(0.707 0.165 254.624);
+  --acc500: oklch(0.623 0.214 259.815);
+  --acc600: oklch(0.546 0.245 262.881);
+  --acc700: oklch(0.488 0.243 264.376);
+  --acc800: oklch(0.424 0.199 265.638);
+  --acc900: oklch(0.379 0.146 265.522);
+  --acc950: oklch(0.282 0.091 267.935);
 
-  --negative-50: oklch(0.971 0.013 17.38);
-  --negative-100: oklch(0.936 0.032 17.717);
-  --negative-200: oklch(0.885 0.062 18.334);
-  --negative-300: oklch(0.808 0.114 19.571);
-  --negative-400: oklch(0.704 0.191 22.216);
-  --negative-500: oklch(0.637 0.237 25.331);
-  --negative-600: oklch(0.577 0.245 27.325);
-  --negative-700: oklch(0.505 0.213 27.518);
-  --negative-800: oklch(0.444 0.177 26.899);
-  --negative-900: oklch(0.396 0.141 25.723);
-  --negative-950: oklch(0.258 0.092 26.042);
+  --neg50: oklch(0.971 0.013 17.38);
+  --neg100: oklch(0.936 0.032 17.717);
+  --neg200: oklch(0.885 0.062 18.334);
+  --neg300: oklch(0.808 0.114 19.571);
+  --neg400: oklch(0.704 0.191 22.216);
+  --neg500: oklch(0.637 0.237 25.331);
+  --neg600: oklch(0.577 0.245 27.325);
+  --neg700: oklch(0.505 0.213 27.518);
+  --neg800: oklch(0.444 0.177 26.899);
+  --neg900: oklch(0.396 0.141 25.723);
+  --neg950: oklch(0.258 0.092 26.042);
 
-  --positive-50: oklch(0.982 0.018 155.826);
-  --positive-100: oklch(0.962 0.044 156.743);
-  --positive-200: oklch(0.925 0.084 155.995);
-  --positive-300: oklch(0.871 0.15 154.449);
-  --positive-400: oklch(0.792 0.209 151.711);
-  --positive-500: oklch(0.723 0.219 149.579);
-  --positive-600: oklch(0.627 0.194 149.214);
-  --positive-700: oklch(0.527 0.154 150.069);
-  --positive-800: oklch(0.448 0.119 151.328);
-  --positive-900: oklch(0.393 0.095 152.535);
-  --positive-950: oklch(0.266 0.065 152.934);
+  --pos50: oklch(0.982 0.018 155.826);
+  --pos100: oklch(0.962 0.044 156.743);
+  --pos200: oklch(0.925 0.084 155.995);
+  --pos300: oklch(0.871 0.15 154.449);
+  --pos400: oklch(0.792 0.209 151.711);
+  --pos500: oklch(0.723 0.219 149.579);
+  --pos600: oklch(0.627 0.194 149.214);
+  --pos700: oklch(0.527 0.154 150.069);
+  --pos800: oklch(0.448 0.119 151.328);
+  --pos900: oklch(0.393 0.095 152.535);
+  --pos950: oklch(0.266 0.065 152.934);
 }
 
 @theme inline {
+  --font-*: initial;
+
   /* --color-*: initial; */
-  --border-color-primary: light-dark(var(--neutral-300), var(--neutral-700));
-  --border-color-primary-alpha: oklch(0 0 0 / 0.18);
-  --border-color-negative: light-dark(var(--negative-300), var(--negative-500));
-  --border-color-disabled: light-dark(var(--neutral-200), var(--neutral-800));
 
-  --background-color-primary: light-dark(var(--white), var(--neutral-950));
-  --background-color-secondary: light-dark(var(--neutral-100), var(--neutral-800));
-  --background-color-control: light-dark(var(--white), var(--neutral-900));
-  --background-color-control-hover: light-dark(var(--neutral-100), var(--neutral-800));
-  --background-color-control-negative-hover: light-dark(var(--negative-50), var(--negative-950));
-  --background-color-accent: var(--accent-600);
-  --background-color-accent-hover: light-dark(var(--accent-700), var(--accent-500));
-  --background-color-negative: var(--negative-600);
-  --background-color-negative-hover: light-dark(var(--negative-700), var(--negative-500));
-  --background-color-disabled: light-dark(var(--neutral-100), var(--neutral-800));
+  --border-color-primary: light-dark(var(--neu300), var(--neu700));
+  --border-color-primary-alpha: oklch(from var(--neu950) l c h / 0.18);
+  --border-color-negative: light-dark(var(--neg300), var(--neg500));
+  --border-color-disabled: light-dark(var(--neu200), var(--neu800));
+  --border-color-skeumorphic: oklch(1 0 0 / 0.12);
 
-  --background-image-skeuo-border: linear-gradient(
-    to bottom in oklab,
-    oklch(1 0 0 / 0.12),
-    transparent
-  );
+  --background-color-primary: light-dark(var(--white), var(--neu950));
+  --background-color-primary-hover: light-dark(var(--neu50), var(--neu800));
+  --background-color-accent-solid: var(--acc600);
+  --background-color-accent-solid-hover: light-dark(var(--acc700), var(--acc500));
+  --background-color-negative-hover: light-dark(var(--neg50), var(--neg950));
+  --background-color-negative-solid: var(--neg600);
+  --background-color-negative-solid-hover: light-dark(var(--neg700), var(--neg500));
+  --background-color-disabled: light-dark(var(--neu100), var(--neu800));
 
-  --text-color-primary: light-dark(var(--neutral-950), var(--neutral-50));
-  --text-color-secondary: light-dark(var(--neutral-700), var(--neutral-300));
-  --text-color-secondary-hover: light-dark(var(--neutral-800), var(--neutral-200));
-  --text-color-negative: light-dark(var(--negative-600), var(--negative-400));
-  --text-color-negative-hover: light-dark(var(--negative-700), var(--negative-300));
+  --text-color-primary: light-dark(var(--neu950), var(--neu50));
+  --text-color-secondary: light-dark(var(--neu700), var(--neu300));
+  --text-color-secondary-hover: light-dark(var(--neu800), var(--neu200));
+  --text-color-negative: light-dark(var(--neg600), var(--neg400));
+  --text-color-negative-hover: light-dark(var(--neg700), var(--neg300));
   --text-color-on-accent: var(--white);
   --text-color-on-negative: var(--white);
-  --text-color-disabled: light-dark(var(--neutral-400), var(--neutral-500));
+  --text-color-disabled: light-dark(var(--neu400), var(--neu500));
 
-  --outline-color-primary: var(--accent-500);
+  --outline-color-accent: var(--acc500);
+  --outline-color-negative: var(--neg500);
 
   --ring-color-primary: var(--border-color-primary);
   --ring-color-primary-alpha: var(--border-color-primary-alpha);
   --ring-color-negative: var(--border-color-negative);
   --ring-color-disabled: var(--border-color-disabled);
 
-  --inset-shadow-skeuo-xs: inset 0 -2px oklch(0 0 0 / 0.05);
+  --radius-lg-minus-px: calc(var(--radius-lg) - 1px);
+
+  --shadow-*: initial;
+  --shadow-2xs: 0 1px oklch(from var(--neu950) l c h / 0.05);
+  --shadow-xs: 0 1px 2px oklch(from var(--neu950) l c h / 0.05);
+  --shadow-sm:
+    0 1px 3px oklch(from var(--neu950) l c h / 0.1),
+    0 1px 2px -1px oklch(from var(--neu950) l c h / 0.1);
+  --shadow-md:
+    0 4px 6px -1px oklch(from var(--neu950) l c h / 0.1),
+    0 2px 4px -2px oklch(from var(--neu950) l c h / 0.06);
+  --shadow-lg:
+    0 12px 16px -4px oklch(from var(--neu950) l c h / 0.08),
+    0 4px 6px -2px oklch(from var(--neu950) l c h / 0.03),
+    0 2px 2px -1px oklch(from var(--neu950) l c h / 0.04);
+  --shadow-xl:
+    0 20px 24px -4px oklch(from var(--neu950) l c h / 0.08),
+    0 8px 8px -4px oklch(from var(--neu950) l c h / 0.03),
+    0 3px 3px -1.5px oklch(from var(--neu950) l c h / 0.04);
+  --shadow-2xl:
+    0 24px 48px -12px oklch(from var(--neu950) l c h / 0.18),
+    0 4px 4px -2px oklch(from var(--neu950) l c h / 0.04);
+  --shadow-3xl:
+    0 32px 64px -12px oklch(from var(--neu950) l c h / 0.14),
+    0 5px 5px -2.5px oklch(from var(--neu950) l c h / 0.04);
+
+  --inset-shadow-*: initial;
+  --inset-shadow-2xs: inset 0 1px oklch(from var(--neu950) l c h / 0.05);
+  --inset-shadow-xs: inset 0 1px 1px oklch(from var(--neu950) l c h / 0.05);
+  --inset-shadow-sm: inset 0 2px 4px oklch(from var(--neu950) l c h / 0.05);
+  --inset-shadow-skeumorphic: inset 0 -2px oklch(from var(--neu950) l c h / 0.05);
+
+  --drop-shadow-*: initial;
+  --drop-shadow-xs: 0 1px 1px oklch(from var(--neu950) l c h / 0.05);
+  --drop-shadow-sm: 0 1px 2px oklch(from var(--neu950) l c h / 0.15);
+  --drop-shadow-md: 0 3px 3px oklch(from var(--neu950) l c h / 0.12);
+  --drop-shadow-lg: 0 4px 4px oklch(from var(--neu950) l c h / 0.15);
+  --drop-shadow-xl: 0 9px 7px oklch(from var(--neu950) l c h / 0.1);
+  --drop-shadow-2xl: 0 25px 25px oklch(from var(--neu950) l c h / 0.15);
+
+  --text-shadow-*: initial;
+  --text-shadow-2xs: 0px 1px 0px oklch(from var(--neu950) l c h / 0.15);
+  --text-shadow-xs: 0px 1px 1px oklch(from var(--neu950) l c h / 0.2);
+  --text-shadow-sm:
+    0px 1px 0px oklch(from var(--neu950) l c h / 0.075),
+    0px 1px 1px oklch(from var(--neu950) l c h / 0.075),
+    0px 2px 2px oklch(from var(--neu950) l c h / 0.075);
+  --text-shadow-md:
+    0px 1px 1px oklch(from var(--neu950) l c h / 0.1),
+    0px 1px 2px oklch(from var(--neu950) l c h / 0.1),
+    0px 2px 4px oklch(from var(--neu950) l c h / 0.1);
+  --text-shadow-lg:
+    0px 1px 2px oklch(from var(--neu950) l c h / 0.1),
+    0px 3px 2px oklch(from var(--neu950) l c h / 0.1),
+    0px 4px 8px oklch(from var(--neu950) l c h / 0.1);
 }
 
 @theme {
@@ -109,11 +160,4 @@
 
 @utility underline-strikethrough {
   text-decoration: underline line-through;
-}
-
-@utility mask-bg-border-* {
-  padding: calc(--value(integer) * 1px);
-  mask-clip: content-box, border-box;
-  mask-composite: exclude;
-  mask-image: linear-gradient(#000), linear-gradient(#000);
 }

@@ -1,7 +1,15 @@
+import { Button as ButtonPrimitive } from '@base-ui/react/button';
 import { cva } from 'cva';
 import * as React from 'react';
 
 export type ButtonProps = {
+  /**
+   * HTML button type attribute for form interactions.
+   *
+   * @default "button"
+   */
+  type?: 'button' | 'submit' | 'reset';
+
   /**
    * Visual hierarchy level of the button, with primary being the most prominent.
    *
@@ -18,7 +26,7 @@ export type ButtonProps = {
    *
    * @default "md"
    */
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'xs' | 'sm' | 'md' | 'lg';
 
   /**
    * Indicates whether this button performs a destructive or irreversible action.
@@ -44,111 +52,58 @@ export type ButtonProps = {
   disabled?: boolean;
 
   /**
-   * HTML button type attribute for form interactions.
+   * Icon component to render alongside the button label.
    *
-   * @default "button"
+   * When the button has no label it to icon-only sizing.
    */
-  type?: 'button' | 'submit' | 'reset';
+  icon?: React.ComponentType<{ size?: number | string } & React.ComponentProps<'svg'>>;
+
+  /**
+   * Placement of the icon relative to the label.
+   *
+   * @default "start"
+   */
+  iconPosition?: 'start' | 'end';
 } & Omit<React.ComponentProps<'button'>, 'disabled' | 'type'>;
 
 const buttonVariants = cva({
-  base: 'relative inline-flex shrink-0 items-center justify-center rounded-md font-medium whitespace-nowrap outline-offset-2 outline-primary transition-all select-none focus-visible:outline-2',
+  base: 'relative inline-flex shrink-0 items-center justify-center rounded-lg font-medium whitespace-nowrap outline-offset-2 transition-all select-none focus-visible:outline-2 active:enabled:translate-y-px',
   variants: {
     variant: {
-      primary: '',
-      secondary: '',
-      tertiary: 'bg-primary',
+      'primary':
+        'bg-accent-solid text-on-accent shadow-xs ring-1 inset-shadow-skeumorphic ring-primary-alpha outline-accent ring-inset before:absolute before:inset-px before:rounded-lg-minus-px before:border before:border-skeumorphic before:mask-b-from-0% hover:bg-accent-solid-hover',
+      'secondary':
+        'bg-primary text-secondary shadow-xs ring-1 inset-shadow-skeumorphic ring-primary outline-accent ring-inset hover:bg-primary-hover hover:text-secondary-hover',
+      'tertiary': 'text-secondary outline-accent hover:bg-primary-hover hover:text-secondary-hover',
+      'primary-destructive':
+        'bg-negative-solid text-on-negative shadow-xs ring-1 inset-shadow-skeumorphic ring-primary-alpha outline-negative ring-inset before:absolute before:inset-px before:rounded-lg-minus-px before:border before:border-skeumorphic before:mask-b-from-0% hover:bg-negative-solid-hover',
+      'secondary-destructive':
+        'bg-primary text-negative shadow-xs ring-1 inset-shadow-skeumorphic ring-negative outline-negative ring-inset hover:bg-negative-hover hover:text-negative-hover',
+      'tertiary-destructive':
+        'text-negative outline-negative hover:bg-negative-hover hover:text-negative-hover',
+      'primary-disabled': 'bg-disabled text-disabled shadow-xs ring-1 ring-disabled ring-inset',
+      'secondary-disabled': 'bg-primary text-disabled shadow-xs ring-1 ring-disabled ring-inset',
+      'tertiary-disabled': 'text-disabled',
     },
     size: {
-      sm: 'h-8 gap-x-1 px-3 text-xs',
-      md: 'h-10 gap-x-1.5 px-4 text-sm',
-      lg: 'h-12 gap-x-2 px-5 text-base',
-    },
-    destructive: {
-      true: '',
-    },
-    disabled: {
-      true: 'cursor-not-allowed',
+      'xs': 'h-8 gap-1 px-2.5 text-sm',
+      'sm': 'h-9 gap-1 px-3 text-sm',
+      'md': 'h-10 gap-1 px-3.5 text-sm',
+      'lg': 'h-11 gap-1.5 px-4 text-base',
+      'xs-icon': 'size-8',
+      'sm-icon': 'size-9',
+      'md-icon': 'size-10',
+      'lg-icon': 'size-11',
     },
   },
-  compoundVariants: [
-    {
-      variant: ['primary', 'secondary'],
-      className: 'shadow-xs inset-ring-1',
-    },
-    {
-      variant: ['primary', 'secondary'],
-      disabled: false,
-      className: 'active:shadow-none',
-    },
-    {
-      disabled: false,
-      className: 'active:translate-y-px',
-    },
-    {
-      variant: 'primary',
-      disabled: false,
-      className:
-        'inset-shadow-skeuo-xs inset-ring-primary-alpha before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:bg-skeuo-border before:mask-bg-border-2',
-    },
-    {
-      variant: 'primary',
-      destructive: false,
-      disabled: false,
-      className: 'bg-accent text-on-accent hover:bg-accent-hover',
-    },
-    {
-      variant: 'primary',
-      destructive: true,
-      disabled: false,
-      className: 'bg-negative text-on-negative hover:bg-negative-hover',
-    },
-    {
-      variant: 'primary',
-      disabled: true,
-      className: 'bg-disabled text-disabled inset-ring-disabled',
-    },
-    {
-      variant: 'secondary',
-      disabled: false,
-      className: 'bg-control inset-shadow-skeuo-xs',
-    },
-    {
-      variant: ['secondary', 'tertiary'],
-      destructive: false,
-      disabled: false,
-      className: 'text-secondary hover:bg-control-hover hover:text-secondary-hover',
-    },
-    {
-      variant: 'secondary',
-      destructive: false,
-      disabled: false,
-      className: 'inset-ring-primary',
-    },
-    {
-      variant: ['secondary', 'tertiary'],
-      destructive: true,
-      disabled: false,
-      className: 'text-negative hover:bg-control-negative-hover hover:text-negative-hover',
-    },
-    {
-      variant: 'secondary',
-      destructive: true,
-      disabled: false,
-      className: 'inset-ring-negative',
-    },
-    {
-      variant: ['secondary', 'tertiary'],
-      disabled: true,
-      className: 'text-disabled',
-    },
-    {
-      variant: 'secondary',
-      disabled: true,
-      className: 'bg-primary inset-ring-disabled',
-    },
-  ],
 });
+
+const iconSize = {
+  xs: 16,
+  sm: 16,
+  md: 18,
+  lg: 20,
+} as const;
 
 /**
  * Button component implementing the
@@ -161,16 +116,37 @@ export function Button(props: ButtonProps): React.ReactNode {
     destructive = false,
     disabled = false,
     type = 'button',
+    icon: Icon,
+    iconPosition = 'start',
     className,
+    children,
     ...buttonProps
   } = props;
 
+  const finalVariant =
+    disabled ? (`${variant}-disabled` as const)
+    : destructive ? (`${variant}-destructive` as const)
+    : variant;
+
+  const finalSize = Icon && !children ? (`${size}-icon` as const) : size;
+
+  const icon =
+    Icon ?
+      <Icon aria-hidden size={iconSize[size]} className="pointer-events-none shrink-0" />
+    : undefined;
+
   return (
-    <button
+    <ButtonPrimitive
       type={type}
       disabled={disabled}
-      className={buttonVariants({ variant, size, destructive, disabled, className })}
+      className={buttonVariants({ variant: finalVariant, size: finalSize, className })}
       {...buttonProps}
-    />
+    >
+      {iconPosition === 'start' && icon}
+      {children ?
+        <span className="px-0.5">{children}</span>
+      : undefined}
+      {iconPosition === 'end' && icon}
+    </ButtonPrimitive>
   );
 }

@@ -91,7 +91,7 @@ export default function ToolbarPlugin(): React.ReactNode {
   );
 
   return (
-    <div className="vertical-middle mb-px flex rounded-t-lg bg-white p-1" ref={toolbarRef}>
+    <div className="mb-px flex rounded-t-lg bg-primary p-1 align-middle" ref={toolbarRef}>
       <button
         type="button"
         disabled={!canUndo}

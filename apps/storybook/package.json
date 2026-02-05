@@ -17,6 +17,7 @@
     "@fontsource-variable/jetbrains-mono": "catalog:",
     "@priver/editor": "workspace:*",
     "@priver/ui": "workspace:*",
+    "lucide-react": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:"
   },
