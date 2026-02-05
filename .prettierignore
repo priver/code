@@ -1,4 +1,7 @@
 pnpm-lock.yaml
 
+# Changesets
+.changeset/README.md
+
 # https://github.com/prettier/prettier/issues/5246
 **/*.html

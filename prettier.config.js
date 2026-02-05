@@ -22,7 +22,7 @@ const config = {
 
   overrides: [
     {
-      files: ['.changeset/*.md', 'CHANGELOG.md'],
+      files: ['**/CHANGELOG.md', '.changeset/*.md'],
       options: {
         proseWrap: 'never',
       },
