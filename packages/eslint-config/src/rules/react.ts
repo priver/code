@@ -3,7 +3,8 @@ import reactDom from 'eslint-plugin-react-dom';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
-import reactRefresh from 'eslint-plugin-react-refresh';
+import { reactRefresh } from 'eslint-plugin-react-refresh';
+import reactRSC from 'eslint-plugin-react-rsc';
 import reactWebAPI from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
 
@@ -11,13 +12,14 @@ export const react = {
   name: 'priver/react',
   plugins: {
     'react-x': reactX as ESLint.Plugin, // TS2742
+    'react-rsc': reactRSC as ESLint.Plugin, // TS2742
     'react-dom': reactDom as ESLint.Plugin, // TS2742
     'react-web-api': reactWebAPI as ESLint.Plugin, // TS2742
     'react-hooks-extra': reactHooksExtra as ESLint.Plugin, // TS2742
     'react-naming-convention': reactNamingConvention as ESLint.Plugin, // TS2742
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/pull/34994
     'react-hooks': reactHooks as ESLint.Plugin,
-    'react-refresh': reactRefresh,
+    'react-refresh': reactRefresh.plugin,
   },
   rules: {
     // React
@@ -84,6 +86,9 @@ export const react = {
     'react-x/prefer-namespace-import': 'off',
     'react-x/prefer-read-only-props': 'off',
     'react-x/prefer-use-state-lazy-initialization': 'error',
+
+    // React RSC
+    'react-rsc/function-definition': 'error',
 
     // React DOM
     'react-dom/no-dangerously-set-innerhtml-with-children': 'error',
