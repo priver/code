@@ -1,14 +1,44 @@
+import {
+  ArrowRightIcon,
+  CircleArrowDownIcon,
+  CircleArrowLeftIcon,
+  CircleArrowRightIcon,
+  PlusIcon,
+  ShapesIcon,
+  Trash2Icon,
+} from 'lucide-react';
 import * as React from 'react';
-import { Button } from '@priver/ui/button';
+import { Button, type ButtonProps } from '@priver/ui/button';
 
 import preview from '#.storybook/preview.ts';
 
 const VARIANTS = ['primary', 'secondary', 'tertiary'] as const;
-const SIZES = ['sm', 'md', 'lg'] as const;
+
+const SIZES = ['xs', 'sm', 'md', 'lg'] as const;
+
+const ICONS = {
+  start: CircleArrowLeftIcon,
+  end: CircleArrowRightIcon,
+  only: CircleArrowDownIcon,
+} as const;
+
+const ICON_OPTIONS = {
+  None: undefined,
+  PlusIcon,
+  ShapesIcon,
+  Trash2Icon,
+} as const;
 
 const meta = preview.meta({
   title: 'UI/Button',
   component: Button,
+  argTypes: {
+    icon: {
+      options: Object.keys(ICON_OPTIONS),
+      mapping: ICON_OPTIONS,
+      control: { type: 'radio' },
+    },
+  },
 });
 
 /**
@@ -28,8 +58,8 @@ export const Playground = meta.story({
 export const Variants = meta.story({
   argTypes: {
     children: { control: false },
-    variant: { control: false },
     type: { control: false },
+    variant: { control: false },
   },
   render: (args) => (
     <div className="flex gap-2">
@@ -50,11 +80,14 @@ export const Variants = meta.story({
 export const Sizes = meta.story({
   argTypes: {
     children: { control: false },
-    size: { control: false },
     type: { control: false },
+    size: { control: false },
   },
   render: (args) => (
     <div className="flex items-center gap-2">
+      <Button {...args} size="xs">
+        Extra small
+      </Button>
       <Button {...args} size="sm">
         Small
       </Button>
@@ -72,9 +105,9 @@ export const Sizes = meta.story({
 export const Destructive = meta.story({
   argTypes: {
     children: { control: false },
+    type: { control: false },
     variant: { control: false },
     destructive: { control: false },
-    type: { control: false },
   },
   render: (args) => (
     <div className="flex gap-2">
@@ -91,6 +124,27 @@ export const Destructive = meta.story({
   ),
 });
 
+/** Icon placement options: start, end, and icon-only button. */
+export const Icons = meta.story({
+  argTypes: {
+    children: { control: false },
+    type: { control: false },
+    icon: { control: false },
+    iconPosition: { control: false },
+  },
+  render: (args) => (
+    <div className="flex gap-2">
+      <Button {...args} icon={ShapesIcon}>
+        Start
+      </Button>
+      <Button {...args} icon={ArrowRightIcon} iconPosition="end">
+        End
+      </Button>
+      <Button {...args} icon={CircleArrowDownIcon} />
+    </div>
+  ),
+});
+
 /**
  * Disabled buttons are non-interactive and use muted colors.
  * Consider avoiding disabled states when possible for better UX.
@@ -98,9 +152,9 @@ export const Destructive = meta.story({
 export const Disabled = meta.story({
   argTypes: {
     children: { control: false },
+    type: { control: false },
     variant: { control: false },
     disabled: { control: false },
-    type: { control: false },
   },
   render: (args) => (
     <div className="flex gap-2">
@@ -117,52 +171,68 @@ export const Disabled = meta.story({
   ),
 });
 
-/** Examples of buttons with different content lengths and types. */
-export const ContentVariations = meta.story({
-  argTypes: {
-    children: { control: false },
-    type: { control: false },
-  },
-  render: (args) => (
-    <div className="flex flex-col gap-2">
-      <div className="flex gap-2">
-        <Button {...args}>Short</Button>
-        <Button {...args}>Medium Length Text</Button>
-        <Button {...args}>This is a very long button text that might wrap</Button>
-      </div>
-      <div className="flex gap-2">
-        <Button {...args}>🚀 With Emoji</Button>
-        <Button {...args}>Save Changes</Button>
-        <Button {...args}>→ Next Step</Button>
-      </div>
-    </div>
-  ),
-});
-
-function Matrix(props: {
-  title: string;
+function VariantsMatrix(props: {
+  size: ButtonProps['size'];
   destructive?: boolean;
   disabled?: boolean;
+  icon?: 'start' | 'end' | 'only';
 }): React.ReactNode {
-  const { title, destructive, disabled } = props;
+  const { size, destructive, disabled, icon } = props;
+
+  return (
+    <>
+      {VARIANTS.map((variant) => (
+        <Button
+          key={variant}
+          variant={variant}
+          size={size}
+          destructive={destructive}
+          disabled={disabled}
+          icon={icon ? ICONS[icon] : undefined}
+          iconPosition={icon === 'only' ? undefined : icon}
+        >
+          {icon === 'only' ? undefined : variant.charAt(0).toUpperCase() + variant.slice(1)}
+        </Button>
+      ))}
+    </>
+  );
+}
+
+function StatesMatrix(props: {
+  size: ButtonProps['size'];
+  destructive?: boolean;
+  icon?: 'start' | 'end' | 'only';
+}): React.ReactNode {
+  const { size, destructive, icon } = props;
+
+  return (
+    <div className="flex gap-2">
+      <VariantsMatrix size={size} destructive={destructive} icon={icon} />
+      <VariantsMatrix size={size} destructive={destructive} icon={icon} disabled />
+    </div>
+  );
+}
+
+function SizesMatrix(props: {
+  destructive?: boolean;
+  icon?: 'start' | 'end' | 'only';
+}): React.ReactNode {
+  const { destructive, icon } = props;
+
+  return SIZES.map((size) => (
+    <StatesMatrix key={size} size={size} icon={icon} destructive={destructive} />
+  ));
+}
+
+function Matrix(props: { title: string; icon?: 'start' | 'end' | 'only' }): React.ReactNode {
+  const { title, icon } = props;
 
   return (
     <div>
-      <h3 className="mb-4 text-lg font-semibold">{title}</h3>
-      <div className="grid grid-cols-3 gap-2">
-        {SIZES.map((size) =>
-          VARIANTS.map((variant) => (
-            <Button
-              key={`${variant}-${size}`}
-              variant={variant}
-              size={size}
-              destructive={destructive}
-              disabled={disabled}
-            >
-              {variant.charAt(0).toUpperCase() + variant.slice(1)}
-            </Button>
-          )),
-        )}
+      <h3 className="mb-2 text-lg font-medium">{title}</h3>
+      <div className="flex flex-col gap-2">
+        <SizesMatrix icon={icon} />
+        <SizesMatrix icon={icon} destructive />
       </div>
     </div>
   );
@@ -172,18 +242,20 @@ function Matrix(props: {
 export const AllCombinations = meta.story({
   argTypes: {
     children: { control: false },
+    type: { control: false },
     variant: { control: false },
     size: { control: false },
     destructive: { control: false },
     disabled: { control: false },
-    type: { control: false },
+    icon: { control: false },
+    iconPosition: { control: false },
   },
   render: () => (
     <div className="space-y-8">
-      <Matrix title="Normal States" />
-      <Matrix title="Destructive States" destructive />
-      <Matrix title="Disabled States" disabled />
-      <Matrix title="Destructive + Disabled" destructive disabled />
+      <Matrix title="Variants & Sizes" />
+      <Matrix title="Icon Start" icon="start" />
+      <Matrix title="Icon End" icon="end" />
+      <Matrix title="Icon Only" icon="only" />
     </div>
   ),
 });
@@ -230,20 +302,26 @@ export const UsageExamples = meta.story({
     size: { control: false },
     destructive: { control: false },
     disabled: { control: false },
+    icon: { control: false },
+    iconPosition: { control: false },
     type: { control: false },
   },
   render: () => (
     <div className="space-y-8">
       <div>
-        <h3 className="mb-4 text-lg font-semibold">Navigation</h3>
+        <h3 className="mb-2 text-lg font-medium">Navigation</h3>
         <div className="flex gap-2">
-          <Button variant="primary">Get Started →</Button>
-          <Button variant="tertiary">Learn More</Button>
+          <Button variant="primary" size="lg" icon={ArrowRightIcon} iconPosition="end">
+            Get Started
+          </Button>
+          <Button variant="tertiary" size="lg">
+            Learn More
+          </Button>
         </div>
       </div>
 
       <div>
-        <h3 className="mb-4 text-lg font-semibold">Action Buttons</h3>
+        <h3 className="mb-2 text-lg font-medium">Action Buttons</h3>
         <div className="flex justify-end gap-2">
           <Button>Cancel</Button>
           <Button variant="primary">Save</Button>
@@ -251,7 +329,7 @@ export const UsageExamples = meta.story({
       </div>
 
       <div>
-        <h3 className="mb-4 text-lg font-semibold">Destructive Actions</h3>
+        <h3 className="mb-2 text-lg font-medium">Destructive Actions</h3>
         <div className="flex justify-end gap-2">
           <Button>Cancel</Button>
           <Button destructive>Delete Account</Button>
@@ -259,7 +337,7 @@ export const UsageExamples = meta.story({
       </div>
 
       <div>
-        <h3 className="mb-4 text-lg font-semibold">Loading States</h3>
+        <h3 className="mb-2 text-lg font-medium">Loading States</h3>
         <div className="flex justify-end gap-2">
           <Button disabled>Cancel</Button>
           <Button variant="primary" disabled>
