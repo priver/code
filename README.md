@@ -8,7 +8,6 @@ Monorepo for my Mikhail Priver's projects.
 
 ## Packages
 
-- [`@priver/editor`](packages/editor) - Rich text editor components
 - [`@priver/ui`](packages/ui) - Shared UI components
 - [`@priver/eslint-config`](packages/eslint-config) - ESLint configuration
 - [`@priver/tsconfig`](packages/tsconfig) - TypeScript configuration
