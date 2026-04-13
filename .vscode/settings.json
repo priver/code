@@ -4,6 +4,7 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
   "editor.rulers": [100],
   "editor.tabSize": 2,
   "eslint.runtime": "node",
@@ -20,13 +21,9 @@
   },
   "files.eol": "\n",
   "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "javascript.preferences.importModuleSpecifierEnding": "js",
-  "markdown.extension.toc.levels": "2..4",
-  "markdownlint.config": {
-    "line-length": false,
-    "no-inline-html": false
-  },
   "tailwindCSS.classFunctions": ["cva", "cx"],
   "tailwindCSS.experimental.configFile": {
     "apps/storybook/src/style.css": "apps/storybook/src/**",
