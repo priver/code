@@ -1,4 +1,4 @@
-import type { Linter } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as tseslint from 'typescript-eslint';
 
@@ -8,13 +8,13 @@ const allExtensions = [...typeScriptExtensions, '.js', '.cjs', '.mjs'] as const;
 export const typescript = {
   name: 'priver/typescript',
   languageOptions: {
-    parser: tseslint.parser,
+    parser: tseslint.parser as unknown, // TS2742
     parserOptions: {
       projectService: true,
     },
   },
   plugins: {
-    '@typescript-eslint': tseslint.plugin,
+    '@typescript-eslint': tseslint.plugin as ESLint.Plugin, // TS2742
   },
   settings: {
     'import-x/extensions': allExtensions,
