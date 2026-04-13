@@ -17,12 +17,11 @@ opinionated choices.
 - [@typescript-eslint](#typescript-eslint)
 - [@eslint-react](#eslint-react)
   - [react-x](#react-x)
+  - [react-jsx](#react-jsx)
   - [react-rsc](#react-rsc)
   - [react-dom](#react-dom)
   - [react-web-api](#react-web-api)
-  - [react-hooks-extra](#react-hooks-extra)
   - [react-naming-convention](#react-naming-convention)
-- [react-hooks](#react-hooks)
 - [react-refresh](#react-refresh)
 
 The following symbols indicate how each rule is configured:
@@ -180,7 +179,7 @@ Configurations compared:
 | [`no-ternary`] <a id="summary-no-ternary"></a>                                           | 🚫                                                     | 🚫  |
 | [`no-this-before-super`] <a id="summary-no-this-before-super"></a>                       | ✅                                                     | ✅  |
 | [`no-throw-literal`] <a id="summary-no-throw-literal"></a>                               | ✅                                                     | 🚫  |
-| [`no-unassigned-vars`] <a id="summary-no-unassigned-vars"></a>                           | ✅                                                     | 🚫  |
+| [`no-unassigned-vars`] <a id="summary-no-unassigned-vars"></a>                           | ✅                                                     | ✅  |
 | [`no-undef`] <a id="summary-no-undef"></a>                                               | ✅                                                     | ✅  |
 | [`no-undef-init`] <a id="summary-no-undef-init"></a>                                     | ✅                                                     | 🚫  |
 | [`no-undefined`] <a id="summary-no-undefined"></a>                                       | 🚫                                                     | 🚫  |
@@ -198,7 +197,7 @@ Configurations compared:
 | [`no-unused-private-class-members`] <a id="summary-no-unused-private-class-members"></a> | ✅                                                     | ✅  |
 | [`no-unused-vars`] <a id="summary-no-unused-vars"></a>                                   | ✅ <a href="#rule-no-unused-vars">(?)</a>              | ✅  |
 | [`no-use-before-define`] <a id="summary-no-use-before-define"></a>                       | 🚫                                                     | 🚫  |
-| [`no-useless-assignment`] <a id="summary-no-useless-assignment"></a>                     | ✅                                                     | 🚫  |
+| [`no-useless-assignment`] <a id="summary-no-useless-assignment"></a>                     | ✅                                                     | ✅  |
 | [`no-useless-backreference`] <a id="summary-no-useless-backreference"></a>               | ✅                                                     | ✅  |
 | [`no-useless-call`] <a id="summary-no-useless-call"></a>                                 | ✅                                                     | 🚫  |
 | [`no-useless-catch`] <a id="summary-no-useless-catch"></a>                               | ✅                                                     | ✅  |
@@ -228,7 +227,7 @@ Configurations compared:
 | [`prefer-rest-params`] <a id="summary-prefer-rest-params"></a>                           | ✅                                                     | 🚫  |
 | [`prefer-spread`] <a id="summary-prefer-spread"></a>                                     | ✅                                                     | 🚫  |
 | [`prefer-template`] <a id="summary-prefer-template"></a>                                 | 🚫                                                     | 🚫  |
-| [`preserve-caught-error`] <a id="summary-preserve-caught-error"></a>                     | ✅                                                     | 🚫  |
+| [`preserve-caught-error`] <a id="summary-preserve-caught-error"></a>                     | ✅                                                     | ✅  |
 | [`radix`] <a id="summary-radix"></a>                                                     | ✅                                                     | 🚫  |
 | [`require-atomic-updates`] <a id="summary-require-atomic-updates"></a>                   | ✅                                                     | 🚫  |
 | [`require-await`] <a id="summary-require-await"></a>                                     | 🚫                                                     | 🚫  |
@@ -711,6 +710,7 @@ Configurations compared:
 | [`unicorn/consistent-empty-array-spread`] <a id="summary-unicorn/consistent-empty-array-spread"></a>                     | ✅                                                        | ✅  |
 | [`unicorn/consistent-existence-index-check`] <a id="summary-unicorn/consistent-existence-index-check"></a>               | ✅                                                        | ✅  |
 | [`unicorn/consistent-function-scoping`] <a id="summary-unicorn/consistent-function-scoping"></a>                         | ✅                                                        | ✅  |
+| [`unicorn/consistent-template-literal-escape`] <a id="summary-unicorn/consistent-template-literal-escape"></a>           | ✅                                                        | ✅  |
 | [`unicorn/custom-error-definition`] <a id="summary-unicorn/custom-error-definition"></a>                                 | ✅                                                        | 🚫  |
 | [`unicorn/empty-brace-spaces`] <a id="summary-unicorn/empty-brace-spaces"></a>                                           | 🚫                                                        | ✅  |
 | [`unicorn/error-message`] <a id="summary-unicorn/error-message"></a>                                                     | ✅                                                        | ✅  |
@@ -719,6 +719,7 @@ Configurations compared:
 | [`unicorn/explicit-length-check`] <a id="summary-unicorn/explicit-length-check"></a>                                     | ✅                                                        | ✅  |
 | [`unicorn/filename-case`] <a id="summary-unicorn/filename-case"></a>                                                     | ✅                                                        | ✅  |
 | [`unicorn/import-style`] <a id="summary-unicorn/import-style"></a>                                                       | ✅ <a href="#rule-unicorn/import-style">(?)</a>           | ✅  |
+| [`unicorn/isolated-functions`] <a id="summary-unicorn/isolated-functions"></a>                                           | ✅                                                        | ✅  |
 | [`unicorn/new-for-builtins`] <a id="summary-unicorn/new-for-builtins"></a>                                               | ✅                                                        | ✅  |
 | [`unicorn/no-abusive-eslint-disable`] <a id="summary-unicorn/no-abusive-eslint-disable"></a>                             | 🚫                                                        | ✅  |
 | [`unicorn/no-accessor-recursion`] <a id="summary-unicorn/no-accessor-recursion"></a>                                     | ✅                                                        | ✅  |
@@ -768,6 +769,7 @@ Configurations compared:
 | [`unicorn/no-useless-collection-argument`] <a id="summary-unicorn/no-useless-collection-argument"></a>                   | ✅                                                        | ✅  |
 | [`unicorn/no-useless-error-capture-stack-trace`] <a id="summary-unicorn/no-useless-error-capture-stack-trace"></a>       | ✅                                                        | ✅  |
 | [`unicorn/no-useless-fallback-in-spread`] <a id="summary-unicorn/no-useless-fallback-in-spread"></a>                     | ✅                                                        | ✅  |
+| [`unicorn/no-useless-iterator-to-array`] <a id="summary-unicorn/no-useless-iterator-to-array"></a>                       | ✅                                                        | ✅  |
 | [`unicorn/no-useless-length-check`] <a id="summary-unicorn/no-useless-length-check"></a>                                 | ✅                                                        | ✅  |
 | [`unicorn/no-useless-promise-resolve-reject`] <a id="summary-unicorn/no-useless-promise-resolve-reject"></a>             | ✅                                                        | ✅  |
 | [`unicorn/no-useless-spread`] <a id="summary-unicorn/no-useless-spread"></a>                                             | ✅                                                        | ✅  |
@@ -820,6 +822,7 @@ Configurations compared:
 | [`unicorn/prefer-response-static-json`] <a id="summary-unicorn/prefer-response-static-json"></a>                         | ✅                                                        | ✅  |
 | [`unicorn/prefer-set-has`] <a id="summary-unicorn/prefer-set-has"></a>                                                   | ✅                                                        | ✅  |
 | [`unicorn/prefer-set-size`] <a id="summary-unicorn/prefer-set-size"></a>                                                 | ✅                                                        | ✅  |
+| [`unicorn/prefer-simple-condition-first`] <a id="summary-unicorn/prefer-simple-condition-first"></a>                     | ✅                                                        | ✅  |
 | [`unicorn/prefer-single-call`] <a id="summary-unicorn/prefer-single-call"></a>                                           | ✅                                                        | ✅  |
 | [`unicorn/prefer-spread`] <a id="summary-unicorn/prefer-spread"></a>                                                     | ✅                                                        | ✅  |
 | [`unicorn/prefer-string-raw`] <a id="summary-unicorn/prefer-string-raw"></a>                                             | ✅                                                        | ✅  |
@@ -841,6 +844,7 @@ Configurations compared:
 | [`unicorn/require-post-message-target-origin`] <a id="summary-unicorn/require-post-message-target-origin"></a>           | 🚫                                                        | 🚫  |
 | [`unicorn/string-content`] <a id="summary-unicorn/string-content"></a>                                                   | 🚫                                                        | 🚫  |
 | [`unicorn/switch-case-braces`] <a id="summary-unicorn/switch-case-braces"></a>                                           | ✅ <a href="#rule-unicorn/switch-case-braces">(?)</a>     | ✅  |
+| [`unicorn/switch-case-break-position`] <a id="summary-unicorn/switch-case-break-position"></a>                           | ✅                                                        | ✅  |
 | [`unicorn/template-indent`] <a id="summary-unicorn/template-indent"></a>                                                 | 🚫                                                        | ✅  |
 | [`unicorn/text-encoding-identifier-case`] <a id="summary-unicorn/text-encoding-identifier-case"></a>                     | ✅                                                        | ✅  |
 | [`unicorn/throw-new-error`] <a id="summary-unicorn/throw-new-error"></a>                                                 | ✅                                                        | ✅  |
@@ -873,287 +877,297 @@ Configurations compared:
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr></table>
 
 [`unicorn/better-regex`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/better-regex.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/better-regex.md
 [`unicorn/catch-error-name`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/catch-error-name.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/catch-error-name.md
 [`unicorn/consistent-assert`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-assert.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-assert.md
 [`unicorn/consistent-date-clone`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-date-clone.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-date-clone.md
 [`unicorn/consistent-destructuring`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-destructuring.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-destructuring.md
 [`unicorn/consistent-empty-array-spread`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-empty-array-spread.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-empty-array-spread.md
 [`unicorn/consistent-existence-index-check`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-existence-index-check.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-existence-index-check.md
 [`unicorn/consistent-function-scoping`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-function-scoping.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-function-scoping.md
+[`unicorn/consistent-template-literal-escape`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-template-literal-escape.md
 [`unicorn/custom-error-definition`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/custom-error-definition.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/custom-error-definition.md
 [`unicorn/empty-brace-spaces`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/empty-brace-spaces.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/empty-brace-spaces.md
 [`unicorn/error-message`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/error-message.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/error-message.md
 [`unicorn/escape-case`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/escape-case.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/escape-case.md
 [`unicorn/expiring-todo-comments`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/expiring-todo-comments.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/expiring-todo-comments.md
 [`unicorn/explicit-length-check`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/explicit-length-check.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/explicit-length-check.md
 [`unicorn/filename-case`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/filename-case.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/filename-case.md
 [`unicorn/import-style`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/import-style.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/import-style.md
+[`unicorn/isolated-functions`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/isolated-functions.md
 [`unicorn/new-for-builtins`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/new-for-builtins.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/new-for-builtins.md
 [`unicorn/no-abusive-eslint-disable`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-abusive-eslint-disable.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-abusive-eslint-disable.md
 [`unicorn/no-accessor-recursion`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-accessor-recursion.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-accessor-recursion.md
 [`unicorn/no-anonymous-default-export`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-anonymous-default-export.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-anonymous-default-export.md
 [`unicorn/no-array-callback-reference`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-callback-reference.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-callback-reference.md
 [`unicorn/no-array-for-each`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-for-each.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-for-each.md
 [`unicorn/no-array-method-this-argument`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-method-this-argument.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-method-this-argument.md
 [`unicorn/no-array-reduce`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-reduce.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-reduce.md
 [`unicorn/no-array-reverse`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-reverse.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-reverse.md
 [`unicorn/no-array-sort`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-sort.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-sort.md
 [`unicorn/no-await-expression-member`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-await-expression-member.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-await-expression-member.md
 [`unicorn/no-await-in-promise-methods`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-await-in-promise-methods.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-await-in-promise-methods.md
 [`unicorn/no-console-spaces`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-console-spaces.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-console-spaces.md
 [`unicorn/no-document-cookie`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-document-cookie.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-document-cookie.md
 [`unicorn/no-empty-file`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-empty-file.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-empty-file.md
 [`unicorn/no-for-loop`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-for-loop.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-for-loop.md
 [`unicorn/no-hex-escape`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-hex-escape.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-hex-escape.md
 [`unicorn/no-immediate-mutation`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-immediate-mutation.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-immediate-mutation.md
 [`unicorn/no-instanceof-builtins`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-instanceof-builtins.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-instanceof-builtins.md
 [`unicorn/no-invalid-fetch-options`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-invalid-fetch-options.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-invalid-fetch-options.md
 [`unicorn/no-invalid-remove-event-listener`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-invalid-remove-event-listener.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-invalid-remove-event-listener.md
 [`unicorn/no-keyword-prefix`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-keyword-prefix.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-keyword-prefix.md
 [`unicorn/no-lonely-if`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-lonely-if.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-lonely-if.md
 [`unicorn/no-magic-array-flat-depth`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-magic-array-flat-depth.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-magic-array-flat-depth.md
 [`unicorn/no-named-default`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-named-default.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-named-default.md
 [`unicorn/no-negated-condition`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-negated-condition.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-negated-condition.md
 [`unicorn/no-negation-in-equality-check`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-negation-in-equality-check.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-negation-in-equality-check.md
 [`unicorn/no-nested-ternary`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-nested-ternary.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-nested-ternary.md
 [`unicorn/no-new-array`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-new-array.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-new-array.md
 [`unicorn/no-new-buffer`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-new-buffer.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-new-buffer.md
 [`unicorn/no-null`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-null.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-null.md
 [`unicorn/no-object-as-default-parameter`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-object-as-default-parameter.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-object-as-default-parameter.md
 [`unicorn/no-process-exit`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-process-exit.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-process-exit.md
 [`unicorn/no-single-promise-in-promise-methods`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-single-promise-in-promise-methods.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-single-promise-in-promise-methods.md
 [`unicorn/no-static-only-class`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-static-only-class.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-static-only-class.md
 [`unicorn/no-thenable`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-thenable.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-thenable.md
 [`unicorn/no-this-assignment`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-this-assignment.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-this-assignment.md
 [`unicorn/no-typeof-undefined`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-typeof-undefined.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-typeof-undefined.md
 [`unicorn/no-unnecessary-array-flat-depth`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-array-flat-depth.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-array-flat-depth.md
 [`unicorn/no-unnecessary-array-splice-count`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-array-splice-count.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-array-splice-count.md
 [`unicorn/no-unnecessary-await`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-await.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-await.md
 [`unicorn/no-unnecessary-polyfills`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-polyfills.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-polyfills.md
 [`unicorn/no-unnecessary-slice-end`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-slice-end.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-slice-end.md
 [`unicorn/no-unreadable-array-destructuring`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unreadable-array-destructuring.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unreadable-array-destructuring.md
 [`unicorn/no-unreadable-iife`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unreadable-iife.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unreadable-iife.md
 [`unicorn/no-unused-properties`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unused-properties.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unused-properties.md
 [`unicorn/no-useless-collection-argument`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-collection-argument.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-collection-argument.md
 [`unicorn/no-useless-error-capture-stack-trace`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-error-capture-stack-trace.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-error-capture-stack-trace.md
 [`unicorn/no-useless-fallback-in-spread`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-fallback-in-spread.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-fallback-in-spread.md
+[`unicorn/no-useless-iterator-to-array`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-iterator-to-array.md
 [`unicorn/no-useless-length-check`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-length-check.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-length-check.md
 [`unicorn/no-useless-promise-resolve-reject`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-promise-resolve-reject.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-promise-resolve-reject.md
 [`unicorn/no-useless-spread`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-spread.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-spread.md
 [`unicorn/no-useless-switch-case`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-switch-case.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-switch-case.md
 [`unicorn/no-useless-undefined`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-undefined.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-undefined.md
 [`unicorn/no-zero-fractions`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-zero-fractions.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-zero-fractions.md
 [`unicorn/number-literal-case`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/number-literal-case.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/number-literal-case.md
 [`unicorn/numeric-separators-style`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/numeric-separators-style.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/numeric-separators-style.md
 [`unicorn/prefer-add-event-listener`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-add-event-listener.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-add-event-listener.md
 [`unicorn/prefer-array-find`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-find.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-find.md
 [`unicorn/prefer-array-flat`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-flat.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-flat.md
 [`unicorn/prefer-array-flat-map`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-flat-map.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-flat-map.md
 [`unicorn/prefer-array-index-of`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-index-of.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-index-of.md
 [`unicorn/prefer-array-some`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-some.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-some.md
 [`unicorn/prefer-at`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-at.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-at.md
 [`unicorn/prefer-bigint-literals`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-bigint-literals.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-bigint-literals.md
 [`unicorn/prefer-blob-reading-methods`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-blob-reading-methods.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-blob-reading-methods.md
 [`unicorn/prefer-class-fields`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-class-fields.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-class-fields.md
 [`unicorn/prefer-classlist-toggle`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-classlist-toggle.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-classlist-toggle.md
 [`unicorn/prefer-code-point`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-code-point.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-code-point.md
 [`unicorn/prefer-date-now`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-date-now.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-date-now.md
 [`unicorn/prefer-default-parameters`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-default-parameters.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-default-parameters.md
 [`unicorn/prefer-dom-node-append`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-append.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-append.md
 [`unicorn/prefer-dom-node-dataset`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-dataset.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-dataset.md
 [`unicorn/prefer-dom-node-remove`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-remove.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-remove.md
 [`unicorn/prefer-dom-node-text-content`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-text-content.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-text-content.md
 [`unicorn/prefer-event-target`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-event-target.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-event-target.md
 [`unicorn/prefer-export-from`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-export-from.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-export-from.md
 [`unicorn/prefer-global-this`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-global-this.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-global-this.md
 [`unicorn/prefer-import-meta-properties`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-import-meta-properties.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-import-meta-properties.md
 [`unicorn/prefer-includes`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-includes.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-includes.md
 [`unicorn/prefer-json-parse-buffer`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-json-parse-buffer.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-json-parse-buffer.md
 [`unicorn/prefer-keyboard-event-key`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-keyboard-event-key.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-keyboard-event-key.md
 [`unicorn/prefer-logical-operator-over-ternary`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-logical-operator-over-ternary.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-logical-operator-over-ternary.md
 [`unicorn/prefer-math-min-max`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-math-min-max.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-math-min-max.md
 [`unicorn/prefer-math-trunc`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-math-trunc.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-math-trunc.md
 [`unicorn/prefer-modern-dom-apis`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-modern-dom-apis.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-modern-dom-apis.md
 [`unicorn/prefer-modern-math-apis`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-modern-math-apis.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-modern-math-apis.md
 [`unicorn/prefer-module`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-module.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-module.md
 [`unicorn/prefer-native-coercion-functions`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-native-coercion-functions.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-native-coercion-functions.md
 [`unicorn/prefer-negative-index`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-negative-index.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-negative-index.md
 [`unicorn/prefer-node-protocol`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-node-protocol.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-node-protocol.md
 [`unicorn/prefer-number-properties`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-number-properties.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-number-properties.md
 [`unicorn/prefer-object-from-entries`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-object-from-entries.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-object-from-entries.md
 [`unicorn/prefer-optional-catch-binding`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-optional-catch-binding.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-optional-catch-binding.md
 [`unicorn/prefer-prototype-methods`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-prototype-methods.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-prototype-methods.md
 [`unicorn/prefer-query-selector`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-query-selector.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-query-selector.md
 [`unicorn/prefer-reflect-apply`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-reflect-apply.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-reflect-apply.md
 [`unicorn/prefer-regexp-test`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-regexp-test.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-regexp-test.md
 [`unicorn/prefer-response-static-json`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-response-static-json.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-response-static-json.md
 [`unicorn/prefer-set-has`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-set-has.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-set-has.md
 [`unicorn/prefer-set-size`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-set-size.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-set-size.md
+[`unicorn/prefer-simple-condition-first`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
 [`unicorn/prefer-single-call`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-single-call.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-single-call.md
 [`unicorn/prefer-spread`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-spread.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-spread.md
 [`unicorn/prefer-string-raw`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-raw.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-raw.md
 [`unicorn/prefer-string-replace-all`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-replace-all.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-replace-all.md
 [`unicorn/prefer-string-slice`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-slice.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-slice.md
 [`unicorn/prefer-string-starts-ends-with`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-starts-ends-with.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-starts-ends-with.md
 [`unicorn/prefer-string-trim-start-end`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-trim-start-end.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-trim-start-end.md
 [`unicorn/prefer-structured-clone`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-structured-clone.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-structured-clone.md
 [`unicorn/prefer-switch`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-switch.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-switch.md
 [`unicorn/prefer-ternary`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-ternary.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-ternary.md
 [`unicorn/prefer-top-level-await`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-top-level-await.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-top-level-await.md
 [`unicorn/prefer-type-error`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-type-error.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-type-error.md
 [`unicorn/prevent-abbreviations`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prevent-abbreviations.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prevent-abbreviations.md
 [`unicorn/relative-url-style`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/relative-url-style.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/relative-url-style.md
 [`unicorn/require-array-join-separator`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/require-array-join-separator.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-array-join-separator.md
 [`unicorn/require-module-attributes`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/require-module-attributes.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-module-attributes.md
 [`unicorn/require-module-specifiers`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/require-module-specifiers.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-module-specifiers.md
 [`unicorn/require-number-to-fixed-digits-argument`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/require-number-to-fixed-digits-argument.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-number-to-fixed-digits-argument.md
 [`unicorn/require-post-message-target-origin`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/require-post-message-target-origin.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-post-message-target-origin.md
 [`unicorn/string-content`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/string-content.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/string-content.md
 [`unicorn/switch-case-braces`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/switch-case-braces.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-braces.md
+[`unicorn/switch-case-break-position`]:
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
 [`unicorn/template-indent`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/template-indent.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/template-indent.md
 [`unicorn/text-encoding-identifier-case`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/text-encoding-identifier-case.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/text-encoding-identifier-case.md
 [`unicorn/throw-new-error`]:
-  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/throw-new-error.md
+  https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/throw-new-error.md
 
 <!-- END unicorn -->
 
@@ -1683,90 +1697,70 @@ Configurations compared:
 
 <!-- START react-x -->
 
-| Rule                                                                                                                   | P                                                      | R   |
-| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --- |
-| [`react-x/jsx-dollar`] <a id="summary-react-x/jsx-dollar"></a>                                                         | 🚫                                                     | 🚫  |
-| [`react-x/jsx-key-before-spread`] <a id="summary-react-x/jsx-key-before-spread"></a>                                   | ✅                                                     | ⚠️  |
-| [`react-x/jsx-no-comment-textnodes`] <a id="summary-react-x/jsx-no-comment-textnodes"></a>                             | ✅                                                     | ⚠️  |
-| [`react-x/jsx-no-duplicate-props`] <a id="summary-react-x/jsx-no-duplicate-props"></a>                                 | 🚫                                                     | 🚫  |
-| [`react-x/jsx-no-iife`] <a id="summary-react-x/jsx-no-iife"></a>                                                       | ✅                                                     | ✅  |
-| [`react-x/jsx-no-undef`] <a id="summary-react-x/jsx-no-undef"></a>                                                     | 🚫                                                     | 🚫  |
-| [`react-x/jsx-shorthand-boolean`] <a id="summary-react-x/jsx-shorthand-boolean"></a>                                   | ✅                                                     | 🚫  |
-| [`react-x/jsx-shorthand-fragment`] <a id="summary-react-x/jsx-shorthand-fragment"></a>                                 | ✅                                                     | 🚫  |
-| [`react-x/jsx-uses-react`] <a id="summary-react-x/jsx-uses-react"></a>                                                 | 🚫                                                     | 🚫  |
-| [`react-x/jsx-uses-vars`] <a id="summary-react-x/jsx-uses-vars"></a>                                                   | 🚫                                                     | 🚫  |
-| [`react-x/no-access-state-in-setstate`] <a id="summary-react-x/no-access-state-in-setstate"></a>                       | ✅                                                     | ✅  |
-| [`react-x/no-array-index-key`] <a id="summary-react-x/no-array-index-key"></a>                                         | ✅                                                     | ⚠️  |
-| [`react-x/no-children-count`] <a id="summary-react-x/no-children-count"></a>                                           | ✅                                                     | ⚠️  |
-| [`react-x/no-children-for-each`] <a id="summary-react-x/no-children-for-each"></a>                                     | ✅                                                     | ⚠️  |
-| [`react-x/no-children-map`] <a id="summary-react-x/no-children-map"></a>                                               | ✅                                                     | ⚠️  |
-| [`react-x/no-children-only`] <a id="summary-react-x/no-children-only"></a>                                             | ✅                                                     | ⚠️  |
-| [`react-x/no-children-prop`] <a id="summary-react-x/no-children-prop"></a>                                             | ✅                                                     | ✅  |
-| [`react-x/no-children-to-array`] <a id="summary-react-x/no-children-to-array"></a>                                     | ✅                                                     | ⚠️  |
-| [`react-x/no-class-component`] <a id="summary-react-x/no-class-component"></a>                                         | ✅                                                     | ✅  |
-| [`react-x/no-clone-element`] <a id="summary-react-x/no-clone-element"></a>                                             | ✅                                                     | ⚠️  |
-| [`react-x/no-component-will-mount`] <a id="summary-react-x/no-component-will-mount"></a>                               | ✅                                                     | ✅  |
-| [`react-x/no-component-will-receive-props`] <a id="summary-react-x/no-component-will-receive-props"></a>               | ✅                                                     | ✅  |
-| [`react-x/no-component-will-update`] <a id="summary-react-x/no-component-will-update"></a>                             | ✅                                                     | ✅  |
-| [`react-x/no-context-provider`] <a id="summary-react-x/no-context-provider"></a>                                       | ✅                                                     | ⚠️  |
-| [`react-x/no-create-ref`] <a id="summary-react-x/no-create-ref"></a>                                                   | ✅                                                     | ✅  |
-| [`react-x/no-default-props`] <a id="summary-react-x/no-default-props"></a>                                             | ✅                                                     | ✅  |
-| [`react-x/no-direct-mutation-state`] <a id="summary-react-x/no-direct-mutation-state"></a>                             | ✅                                                     | ✅  |
-| [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | 🚫                                                     | 🚫  |
-| [`react-x/no-forward-ref`] <a id="summary-react-x/no-forward-ref"></a>                                                 | ✅                                                     | ⚠️  |
-| [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | ✅                                                     | ✅  |
-| [`react-x/no-leaked-conditional-rendering`] <a id="summary-react-x/no-leaked-conditional-rendering"></a>               | ✅                                                     | ✅  |
-| [`react-x/no-missing-component-display-name`] <a id="summary-react-x/no-missing-component-display-name"></a>           | ✅                                                     | 🚫  |
-| [`react-x/no-missing-context-display-name`] <a id="summary-react-x/no-missing-context-display-name"></a>               | ✅                                                     | 🚫  |
-| [`react-x/no-missing-key`] <a id="summary-react-x/no-missing-key"></a>                                                 | ✅                                                     | ✅  |
-| [`react-x/no-misused-capture-owner-stack`] <a id="summary-react-x/no-misused-capture-owner-stack"></a>                 | ✅                                                     | ✅  |
-| [`react-x/no-nested-component-definitions`] <a id="summary-react-x/no-nested-component-definitions"></a>               | 🚫                                                     | ✅  |
-| [`react-x/no-nested-lazy-component-declarations`] <a id="summary-react-x/no-nested-lazy-component-declarations"></a>   | ✅                                                     | ✅  |
-| [`react-x/no-prop-types`] <a id="summary-react-x/no-prop-types"></a>                                                   | ✅                                                     | ✅  |
-| [`react-x/no-redundant-should-component-update`] <a id="summary-react-x/no-redundant-should-component-update"></a>     | ✅                                                     | ✅  |
-| [`react-x/no-set-state-in-component-did-mount`] <a id="summary-react-x/no-set-state-in-component-did-mount"></a>       | ✅                                                     | ⚠️  |
-| [`react-x/no-set-state-in-component-did-update`] <a id="summary-react-x/no-set-state-in-component-did-update"></a>     | ✅                                                     | ⚠️  |
-| [`react-x/no-set-state-in-component-will-update`] <a id="summary-react-x/no-set-state-in-component-will-update"></a>   | ✅                                                     | ⚠️  |
-| [`react-x/no-string-refs`] <a id="summary-react-x/no-string-refs"></a>                                                 | ✅                                                     | ✅  |
-| [`react-x/no-unnecessary-key`] <a id="summary-react-x/no-unnecessary-key"></a>                                         | 🚫                                                     | 🚫  |
-| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | 🚫                                                     | ⚠️  |
-| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | 🚫                                                     | ⚠️  |
-| [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅                                                     | ⚠️  |
-| [`react-x/no-unnecessary-use-ref`] <a id="summary-react-x/no-unnecessary-use-ref"></a>                                 | 🚫                                                     | 🚫  |
-| [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅                                                     | ⚠️  |
-| [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅                                                     | ⚠️  |
-| [`react-x/no-unsafe-component-will-update`] <a id="summary-react-x/no-unsafe-component-will-update"></a>               | ✅                                                     | ⚠️  |
-| [`react-x/no-unstable-context-value`] <a id="summary-react-x/no-unstable-context-value"></a>                           | ✅                                                     | ⚠️  |
-| [`react-x/no-unstable-default-props`] <a id="summary-react-x/no-unstable-default-props"></a>                           | ✅                                                     | ⚠️  |
-| [`react-x/no-unused-class-component-members`] <a id="summary-react-x/no-unused-class-component-members"></a>           | ✅                                                     | ⚠️  |
-| [`react-x/no-unused-props`] <a id="summary-react-x/no-unused-props"></a>                                               | ✅                                                     | ⚠️  |
-| [`react-x/no-unused-state`] <a id="summary-react-x/no-unused-state"></a>                                               | ✅                                                     | ⚠️  |
-| [`react-x/no-use-context`] <a id="summary-react-x/no-use-context"></a>                                                 | ✅                                                     | ⚠️  |
-| [`react-x/no-useless-forward-ref`] <a id="summary-react-x/no-useless-forward-ref"></a>                                 | ✅                                                     | ⚠️  |
-| [`react-x/no-useless-fragment`] <a id="summary-react-x/no-useless-fragment"></a>                                       | ✅ <a href="#rule-react-x/no-useless-fragment">(?)</a> | ⚠️  |
-| [`react-x/prefer-destructuring-assignment`] <a id="summary-react-x/prefer-destructuring-assignment"></a>               | 🚫                                                     | ⚠️  |
-| [`react-x/prefer-namespace-import`] <a id="summary-react-x/prefer-namespace-import"></a>                               | 🚫                                                     | 🚫  |
-| [`react-x/prefer-read-only-props`] <a id="summary-react-x/prefer-read-only-props"></a>                                 | 🚫                                                     | 🚫  |
-| [`react-x/prefer-use-state-lazy-initialization`] <a id="summary-react-x/prefer-use-state-lazy-initialization"></a>     | ✅                                                     | ⚠️  |
+| Rule                                                                                                                   | P   | R   |
+| ---------------------------------------------------------------------------------------------------------------------- | --- | --- |
+| [`react-x/component-hook-factories`] <a id="summary-react-x/component-hook-factories"></a>                             | ✅  | ✅  |
+| [`react-x/error-boundaries`] <a id="summary-react-x/error-boundaries"></a>                                             | ✅  | ✅  |
+| [`react-x/exhaustive-deps`] <a id="summary-react-x/exhaustive-deps"></a>                                               | ✅  | ⚠️  |
+| [`react-x/immutability`] <a id="summary-react-x/immutability"></a>                                                     | 🚫  | 🚫  |
+| [`react-x/no-access-state-in-setstate`] <a id="summary-react-x/no-access-state-in-setstate"></a>                       | ✅  | ✅  |
+| [`react-x/no-array-index-key`] <a id="summary-react-x/no-array-index-key"></a>                                         | ✅  | ⚠️  |
+| [`react-x/no-children-count`] <a id="summary-react-x/no-children-count"></a>                                           | ✅  | ⚠️  |
+| [`react-x/no-children-for-each`] <a id="summary-react-x/no-children-for-each"></a>                                     | ✅  | ⚠️  |
+| [`react-x/no-children-map`] <a id="summary-react-x/no-children-map"></a>                                               | ✅  | ⚠️  |
+| [`react-x/no-children-only`] <a id="summary-react-x/no-children-only"></a>                                             | ✅  | ⚠️  |
+| [`react-x/no-children-to-array`] <a id="summary-react-x/no-children-to-array"></a>                                     | ✅  | ⚠️  |
+| [`react-x/no-class-component`] <a id="summary-react-x/no-class-component"></a>                                         | ✅  | ✅  |
+| [`react-x/no-clone-element`] <a id="summary-react-x/no-clone-element"></a>                                             | ✅  | ⚠️  |
+| [`react-x/no-component-will-mount`] <a id="summary-react-x/no-component-will-mount"></a>                               | ✅  | ✅  |
+| [`react-x/no-component-will-receive-props`] <a id="summary-react-x/no-component-will-receive-props"></a>               | ✅  | ✅  |
+| [`react-x/no-component-will-update`] <a id="summary-react-x/no-component-will-update"></a>                             | ✅  | ✅  |
+| [`react-x/no-context-provider`] <a id="summary-react-x/no-context-provider"></a>                                       | ✅  | ⚠️  |
+| [`react-x/no-create-ref`] <a id="summary-react-x/no-create-ref"></a>                                                   | ✅  | ✅  |
+| [`react-x/no-direct-mutation-state`] <a id="summary-react-x/no-direct-mutation-state"></a>                             | ✅  | ✅  |
+| [`react-x/no-duplicate-key`] <a id="summary-react-x/no-duplicate-key"></a>                                             | 🚫  | 🚫  |
+| [`react-x/no-forward-ref`] <a id="summary-react-x/no-forward-ref"></a>                                                 | ✅  | ⚠️  |
+| [`react-x/no-implicit-children`] <a id="summary-react-x/no-implicit-children"></a>                                     | 🚫  | 🚫  |
+| [`react-x/no-implicit-key`] <a id="summary-react-x/no-implicit-key"></a>                                               | 🚫  | 🚫  |
+| [`react-x/no-implicit-ref`] <a id="summary-react-x/no-implicit-ref"></a>                                               | 🚫  | 🚫  |
+| [`react-x/no-leaked-conditional-rendering`] <a id="summary-react-x/no-leaked-conditional-rendering"></a>               | ✅  | ✅  |
+| [`react-x/no-missing-component-display-name`] <a id="summary-react-x/no-missing-component-display-name"></a>           | ✅  | 🚫  |
+| [`react-x/no-missing-context-display-name`] <a id="summary-react-x/no-missing-context-display-name"></a>               | ✅  | 🚫  |
+| [`react-x/no-missing-key`] <a id="summary-react-x/no-missing-key"></a>                                                 | ✅  | ✅  |
+| [`react-x/no-misused-capture-owner-stack`] <a id="summary-react-x/no-misused-capture-owner-stack"></a>                 | ✅  | ✅  |
+| [`react-x/no-nested-component-definitions`] <a id="summary-react-x/no-nested-component-definitions"></a>               | ✅  | ✅  |
+| [`react-x/no-nested-lazy-component-declarations`] <a id="summary-react-x/no-nested-lazy-component-declarations"></a>   | ✅  | ✅  |
+| [`react-x/no-redundant-should-component-update`] <a id="summary-react-x/no-redundant-should-component-update"></a>     | ✅  | ✅  |
+| [`react-x/no-set-state-in-component-did-mount`] <a id="summary-react-x/no-set-state-in-component-did-mount"></a>       | ✅  | ⚠️  |
+| [`react-x/no-set-state-in-component-did-update`] <a id="summary-react-x/no-set-state-in-component-did-update"></a>     | ✅  | ⚠️  |
+| [`react-x/no-set-state-in-component-will-update`] <a id="summary-react-x/no-set-state-in-component-will-update"></a>   | ✅  | ⚠️  |
+| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | 🚫  | ⚠️  |
+| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | 🚫  | ⚠️  |
+| [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅  | ⚠️  |
+| [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅  | ⚠️  |
+| [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅  | ⚠️  |
+| [`react-x/no-unsafe-component-will-update`] <a id="summary-react-x/no-unsafe-component-will-update"></a>               | ✅  | ⚠️  |
+| [`react-x/no-unstable-context-value`] <a id="summary-react-x/no-unstable-context-value"></a>                           | ✅  | ⚠️  |
+| [`react-x/no-unstable-default-props`] <a id="summary-react-x/no-unstable-default-props"></a>                           | ✅  | ⚠️  |
+| [`react-x/no-unused-class-component-members`] <a id="summary-react-x/no-unused-class-component-members"></a>           | ✅  | ⚠️  |
+| [`react-x/no-unused-props`] <a id="summary-react-x/no-unused-props"></a>                                               | ✅  | ⚠️  |
+| [`react-x/no-unused-state`] <a id="summary-react-x/no-unused-state"></a>                                               | ✅  | ⚠️  |
+| [`react-x/no-use-context`] <a id="summary-react-x/no-use-context"></a>                                                 | ✅  | ⚠️  |
+| [`react-x/prefer-destructuring-assignment`] <a id="summary-react-x/prefer-destructuring-assignment"></a>               | ✅  | ⚠️  |
+| [`react-x/prefer-namespace-import`] <a id="summary-react-x/prefer-namespace-import"></a>                               | 🚫  | 🚫  |
+| [`react-x/purity`] <a id="summary-react-x/purity"></a>                                                                 | ✅  | ⚠️  |
+| [`react-x/refs`] <a id="summary-react-x/refs"></a>                                                                     | 🚫  | 🚫  |
+| [`react-x/rules-of-hooks`] <a id="summary-react-x/rules-of-hooks"></a>                                                 | ✅  | ✅  |
+| [`react-x/set-state-in-effect`] <a id="summary-react-x/set-state-in-effect"></a>                                       | ✅  | ⚠️  |
+| [`react-x/set-state-in-render`] <a id="summary-react-x/set-state-in-render"></a>                                       | ✅  | ✅  |
+| [`react-x/unsupported-syntax`] <a id="summary-react-x/unsupported-syntax"></a>                                         | ✅  | ✅  |
+| [`react-x/use-memo`] <a id="summary-react-x/use-memo"></a>                                                             | ✅  | ✅  |
+| [`react-x/use-state`] <a id="summary-react-x/use-state"></a>                                                           | ✅  | ⚠️  |
 
-<table><tr><th colspan="2" align="left"><code>react-x/no-useless-fragment</code> <a href="#summary-react-x/no-useless-fragment">⬆️ back to summary table</a> <a id="rule-react-x/no-useless-fragment"></a></th></tr>
-<tr><td><pre><code>[
-  "error",
-  {
-    "allowExpressions": false
-  }
-]</code></pre></td><td><pre><code>"warn"</code></pre></td></tr></table>
-
-[`react-x/jsx-dollar`]: https://eslint-react.xyz/docs/rules/jsx-dollar
-[`react-x/jsx-key-before-spread`]: https://eslint-react.xyz/docs/rules/jsx-key-before-spread
-[`react-x/jsx-no-comment-textnodes`]: https://eslint-react.xyz/docs/rules/jsx-no-comment-textnodes
-[`react-x/jsx-no-duplicate-props`]: https://eslint-react.xyz/docs/rules/jsx-no-duplicate-props
-[`react-x/jsx-no-iife`]: https://eslint-react.xyz/docs/rules/jsx-no-iife
-[`react-x/jsx-no-undef`]: https://eslint-react.xyz/docs/rules/jsx-no-undef
-[`react-x/jsx-shorthand-boolean`]: https://eslint-react.xyz/docs/rules/jsx-shorthand-boolean
-[`react-x/jsx-shorthand-fragment`]: https://eslint-react.xyz/docs/rules/jsx-shorthand-fragment
-[`react-x/jsx-uses-react`]: https://eslint-react.xyz/docs/rules/jsx-uses-react
-[`react-x/jsx-uses-vars`]: https://eslint-react.xyz/docs/rules/jsx-uses-vars
+[`react-x/component-hook-factories`]: https://eslint-react.xyz/docs/rules/component-hook-factories
+[`react-x/error-boundaries`]: https://eslint-react.xyz/docs/rules/error-boundaries
+[`react-x/exhaustive-deps`]: https://github.com/facebook/react/issues/14920
+[`react-x/immutability`]: https://eslint-react.xyz/docs/rules/immutability
 [`react-x/no-access-state-in-setstate`]:
   https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
 [`react-x/no-array-index-key`]: https://eslint-react.xyz/docs/rules/no-array-index-key
@@ -1774,7 +1768,6 @@ Configurations compared:
 [`react-x/no-children-for-each`]: https://eslint-react.xyz/docs/rules/no-children-for-each
 [`react-x/no-children-map`]: https://eslint-react.xyz/docs/rules/no-children-map
 [`react-x/no-children-only`]: https://eslint-react.xyz/docs/rules/no-children-only
-[`react-x/no-children-prop`]: https://eslint-react.xyz/docs/rules/no-children-prop
 [`react-x/no-children-to-array`]: https://eslint-react.xyz/docs/rules/no-children-to-array
 [`react-x/no-class-component`]: https://eslint-react.xyz/docs/rules/no-class-component
 [`react-x/no-clone-element`]: https://eslint-react.xyz/docs/rules/no-clone-element
@@ -1784,11 +1777,12 @@ Configurations compared:
 [`react-x/no-component-will-update`]: https://eslint-react.xyz/docs/rules/no-component-will-update
 [`react-x/no-context-provider`]: https://eslint-react.xyz/docs/rules/no-context-provider
 [`react-x/no-create-ref`]: https://eslint-react.xyz/docs/rules/no-create-ref
-[`react-x/no-default-props`]: https://eslint-react.xyz/docs/rules/no-default-props
 [`react-x/no-direct-mutation-state`]: https://eslint-react.xyz/docs/rules/no-direct-mutation-state
 [`react-x/no-duplicate-key`]: https://eslint-react.xyz/docs/rules/no-duplicate-key
 [`react-x/no-forward-ref`]: https://eslint-react.xyz/docs/rules/no-forward-ref
+[`react-x/no-implicit-children`]: https://eslint-react.xyz/docs/rules/no-implicit-children
 [`react-x/no-implicit-key`]: https://eslint-react.xyz/docs/rules/no-implicit-key
+[`react-x/no-implicit-ref`]: https://eslint-react.xyz/docs/rules/no-implicit-ref
 [`react-x/no-leaked-conditional-rendering`]:
   https://eslint-react.xyz/docs/rules/no-leaked-conditional-rendering
 [`react-x/no-missing-component-display-name`]:
@@ -1802,7 +1796,6 @@ Configurations compared:
   https://eslint-react.xyz/docs/rules/no-nested-component-definitions
 [`react-x/no-nested-lazy-component-declarations`]:
   https://eslint-react.xyz/docs/rules/no-nested-lazy-component-declarations
-[`react-x/no-prop-types`]: https://eslint-react.xyz/docs/rules/no-prop-types
 [`react-x/no-redundant-should-component-update`]:
   https://eslint-react.xyz/docs/rules/no-redundant-should-component-update
 [`react-x/no-set-state-in-component-did-mount`]:
@@ -1811,13 +1804,10 @@ Configurations compared:
   https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-update
 [`react-x/no-set-state-in-component-will-update`]:
   https://eslint-react.xyz/docs/rules/no-set-state-in-component-will-update
-[`react-x/no-string-refs`]: https://eslint-react.xyz/docs/rules/no-string-refs
-[`react-x/no-unnecessary-key`]: https://eslint-react.xyz/docs/rules/no-unnecessary-key
 [`react-x/no-unnecessary-use-callback`]:
   https://eslint-react.xyz/docs/rules/no-unnecessary-use-callback
 [`react-x/no-unnecessary-use-memo`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-memo
 [`react-x/no-unnecessary-use-prefix`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-prefix
-[`react-x/no-unnecessary-use-ref`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-ref
 [`react-x/no-unsafe-component-will-mount`]:
   https://eslint-react.xyz/docs/rules/no-unsafe-component-will-mount
 [`react-x/no-unsafe-component-will-receive-props`]:
@@ -1831,16 +1821,46 @@ Configurations compared:
 [`react-x/no-unused-props`]: https://eslint-react.xyz/docs/rules/no-unused-props
 [`react-x/no-unused-state`]: https://eslint-react.xyz/docs/rules/no-unused-state
 [`react-x/no-use-context`]: https://eslint-react.xyz/docs/rules/no-use-context
-[`react-x/no-useless-forward-ref`]: https://eslint-react.xyz/docs/rules/no-useless-forward-ref
-[`react-x/no-useless-fragment`]: https://eslint-react.xyz/docs/rules/no-useless-fragment
 [`react-x/prefer-destructuring-assignment`]:
   https://eslint-react.xyz/docs/rules/prefer-destructuring-assignment
 [`react-x/prefer-namespace-import`]: https://eslint-react.xyz/docs/rules/prefer-namespace-import
-[`react-x/prefer-read-only-props`]: https://eslint-react.xyz/docs/rules/prefer-read-only-props
-[`react-x/prefer-use-state-lazy-initialization`]:
-  https://eslint-react.xyz/docs/rules/prefer-use-state-lazy-initialization
+[`react-x/purity`]: https://eslint-react.xyz/docs/rules/purity
+[`react-x/refs`]: https://eslint-react.xyz/docs/rules/refs
+[`react-x/rules-of-hooks`]: https://react.dev/reference/rules/rules-of-hooks
+[`react-x/set-state-in-effect`]: https://eslint-react.xyz/docs/rules/set-state-in-effect
+[`react-x/set-state-in-render`]: https://eslint-react.xyz/docs/rules/set-state-in-render
+[`react-x/unsupported-syntax`]: https://eslint-react.xyz/docs/rules/unsupported-syntax
+[`react-x/use-memo`]: https://eslint-react.xyz/docs/rules/use-memo
+[`react-x/use-state`]: https://eslint-react.xyz/docs/rules/use-state
 
 <!-- END react-x -->
+
+### react-jsx
+
+<!-- START react-jsx -->
+
+| Rule                                                                                                       | P   | R   |
+| ---------------------------------------------------------------------------------------------------------- | --- | --- |
+| [`react-jsx/no-children-prop`] <a id="summary-react-jsx/no-children-prop"></a>                             | ✅  | ✅  |
+| [`react-jsx/no-children-prop-with-children`] <a id="summary-react-jsx/no-children-prop-with-children"></a> | ✅  | 🚫  |
+| [`react-jsx/no-comment-textnodes`] <a id="summary-react-jsx/no-comment-textnodes"></a>                     | ✅  | ⚠️  |
+| [`react-jsx/no-key-after-spread`] <a id="summary-react-jsx/no-key-after-spread"></a>                       | ✅  | ✅  |
+| [`react-jsx/no-leaked-dollar`] <a id="summary-react-jsx/no-leaked-dollar"></a>                             | 🚫  | ⚠️  |
+| [`react-jsx/no-leaked-semicolon`] <a id="summary-react-jsx/no-leaked-semicolon"></a>                       | ✅  | ⚠️  |
+| [`react-jsx/no-namespace`] <a id="summary-react-jsx/no-namespace"></a>                                     | ✅  | ✅  |
+| [`react-jsx/no-useless-fragment`] <a id="summary-react-jsx/no-useless-fragment"></a>                       | ✅  | ⚠️  |
+
+[`react-jsx/no-children-prop`]: https://eslint-react.xyz/docs/rules/no-children-prop
+[`react-jsx/no-children-prop-with-children`]:
+  https://eslint-react.xyz/docs/rules/no-children-prop-with-children
+[`react-jsx/no-comment-textnodes`]: https://eslint-react.xyz/docs/rules/no-comment-textnodes
+[`react-jsx/no-key-after-spread`]: https://eslint-react.xyz/docs/rules/no-key-after-spread
+[`react-jsx/no-leaked-dollar`]: https://eslint-react.xyz/docs/rules/no-leaked-dollar
+[`react-jsx/no-leaked-semicolon`]: https://eslint-react.xyz/docs/rules/no-leaked-semicolon
+[`react-jsx/no-namespace`]: https://eslint-react.xyz/docs/rules/no-namespace
+[`react-jsx/no-useless-fragment`]: https://eslint-react.xyz/docs/rules/no-useless-fragment
+
+<!-- END react-jsx -->
 
 ### react-rsc
 
@@ -1867,7 +1887,6 @@ Configurations compared:
 | [`react-dom/no-hydrate`] <a id="summary-react-dom/no-hydrate"></a>                                                                 | ✅  | ✅  |
 | [`react-dom/no-missing-button-type`] <a id="summary-react-dom/no-missing-button-type"></a>                                         | ✅  | ⚠️  |
 | [`react-dom/no-missing-iframe-sandbox`] <a id="summary-react-dom/no-missing-iframe-sandbox"></a>                                   | ✅  | ⚠️  |
-| [`react-dom/no-namespace`] <a id="summary-react-dom/no-namespace"></a>                                                             | ✅  | ✅  |
 | [`react-dom/no-render`] <a id="summary-react-dom/no-render"></a>                                                                   | ✅  | ✅  |
 | [`react-dom/no-render-return-value`] <a id="summary-react-dom/no-render-return-value"></a>                                         | ✅  | ✅  |
 | [`react-dom/no-script-url`] <a id="summary-react-dom/no-script-url"></a>                                                           | ✅  | ⚠️  |
@@ -1889,7 +1908,6 @@ Configurations compared:
 [`react-dom/no-missing-button-type`]: https://eslint-react.xyz/docs/rules/dom-no-missing-button-type
 [`react-dom/no-missing-iframe-sandbox`]:
   https://eslint-react.xyz/docs/rules/dom-no-missing-iframe-sandbox
-[`react-dom/no-namespace`]: https://eslint-react.xyz/docs/rules/dom-no-namespace
 [`react-dom/no-render`]: https://eslint-react.xyz/docs/rules/dom-no-render
 [`react-dom/no-render-return-value`]: https://eslint-react.xyz/docs/rules/dom-no-render-return-value
 [`react-dom/no-script-url`]: https://eslint-react.xyz/docs/rules/dom-no-script-url
@@ -1926,93 +1944,22 @@ Configurations compared:
 
 <!-- END react-web-api -->
 
-### react-hooks-extra
-
-<!-- START react-hooks-extra -->
-
-| Rule                                                                                                                             | P   | R   |
-| -------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-hooks-extra/no-direct-set-state-in-use-effect`] <a id="summary-react-hooks-extra/no-direct-set-state-in-use-effect"></a> | 🚫  | ⚠️  |
-
-[`react-hooks-extra/no-direct-set-state-in-use-effect`]:
-  https://eslint-react.xyz/docs/rules/hooks-extra-no-direct-set-state-in-use-effect
-
-<!-- END react-hooks-extra -->
-
 ### react-naming-convention
 
 <!-- START react-naming-convention -->
 
-| Rule                                                                                                           | P   | R   |
-| -------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-naming-convention/component-name`] <a id="summary-react-naming-convention/component-name"></a>         | 🚫  | 🚫  |
-| [`react-naming-convention/context-name`] <a id="summary-react-naming-convention/context-name"></a>             | ✅  | ⚠️  |
-| [`react-naming-convention/filename`] <a id="summary-react-naming-convention/filename"></a>                     | 🚫  | 🚫  |
-| [`react-naming-convention/filename-extension`] <a id="summary-react-naming-convention/filename-extension"></a> | 🚫  | 🚫  |
-| [`react-naming-convention/id-name`] <a id="summary-react-naming-convention/id-name"></a>                       | ✅  | ⚠️  |
-| [`react-naming-convention/ref-name`] <a id="summary-react-naming-convention/ref-name"></a>                     | ✅  | ⚠️  |
-| [`react-naming-convention/use-state`] <a id="summary-react-naming-convention/use-state"></a>                   | ✅  | ⚠️  |
+| Rule                                                                                               | P   | R   |
+| -------------------------------------------------------------------------------------------------- | --- | --- |
+| [`react-naming-convention/context-name`] <a id="summary-react-naming-convention/context-name"></a> | ✅  | ⚠️  |
+| [`react-naming-convention/id-name`] <a id="summary-react-naming-convention/id-name"></a>           | ✅  | ⚠️  |
+| [`react-naming-convention/ref-name`] <a id="summary-react-naming-convention/ref-name"></a>         | ✅  | ⚠️  |
 
-[`react-naming-convention/component-name`]:
-  https://eslint-react.xyz/docs/rules/naming-convention-component-name
 [`react-naming-convention/context-name`]:
   https://eslint-react.xyz/docs/rules/naming-convention-context-name
-[`react-naming-convention/filename`]: https://eslint-react.xyz/docs/rules/naming-convention-filename
-[`react-naming-convention/filename-extension`]:
-  https://eslint-react.xyz/docs/rules/naming-convention-filename-extension
 [`react-naming-convention/id-name`]: https://eslint-react.xyz/docs/rules/naming-convention-id-name
 [`react-naming-convention/ref-name`]: https://eslint-react.xyz/docs/rules/naming-convention-ref-name
-[`react-naming-convention/use-state`]:
-  https://eslint-react.xyz/docs/rules/naming-convention-use-state
 
 <!-- END react-naming-convention -->
-
-## react-hooks
-
-Configurations compared:
-
-- **P** – @priver/eslint-config
-- **R** –
-  [recommended-latest](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#flat-config-eslintconfigjsts)
-
-<!-- START react-hooks -->
-
-| Rule                                                                                                       | P   | R   |
-| ---------------------------------------------------------------------------------------------------------- | --- | --- |
-| `react-hooks/automatic-effect-dependencies` <a id="summary-react-hooks/automatic-effect-dependencies"></a> | 🚫  | 🚫  |
-| `react-hooks/capitalized-calls` <a id="summary-react-hooks/capitalized-calls"></a>                         | 🚫  | 🚫  |
-| `react-hooks/component-hook-factories` <a id="summary-react-hooks/component-hook-factories"></a>           | ✅  | ✅  |
-| `react-hooks/config` <a id="summary-react-hooks/config"></a>                                               | 🚫  | ✅  |
-| `react-hooks/error-boundaries` <a id="summary-react-hooks/error-boundaries"></a>                           | ✅  | ✅  |
-| [`react-hooks/exhaustive-deps`] <a id="summary-react-hooks/exhaustive-deps"></a>                           | ✅  | ⚠️  |
-| `react-hooks/fbt` <a id="summary-react-hooks/fbt"></a>                                                     | 🚫  | 🚫  |
-| `react-hooks/fire` <a id="summary-react-hooks/fire"></a>                                                   | 🚫  | 🚫  |
-| `react-hooks/gating` <a id="summary-react-hooks/gating"></a>                                               | 🚫  | ✅  |
-| `react-hooks/globals` <a id="summary-react-hooks/globals"></a>                                             | ✅  | ✅  |
-| `react-hooks/hooks` <a id="summary-react-hooks/hooks"></a>                                                 | 🚫  | 🚫  |
-| `react-hooks/immutability` <a id="summary-react-hooks/immutability"></a>                                   | ✅  | ✅  |
-| `react-hooks/incompatible-library` <a id="summary-react-hooks/incompatible-library"></a>                   | ✅  | ⚠️  |
-| `react-hooks/invariant` <a id="summary-react-hooks/invariant"></a>                                         | 🚫  | 🚫  |
-| `react-hooks/memoized-effect-dependencies` <a id="summary-react-hooks/memoized-effect-dependencies"></a>   | 🚫  | 🚫  |
-| `react-hooks/no-deriving-state-in-effects` <a id="summary-react-hooks/no-deriving-state-in-effects"></a>   | 🚫  | 🚫  |
-| `react-hooks/preserve-manual-memoization` <a id="summary-react-hooks/preserve-manual-memoization"></a>     | ✅  | ✅  |
-| `react-hooks/purity` <a id="summary-react-hooks/purity"></a>                                               | ✅  | ✅  |
-| `react-hooks/refs` <a id="summary-react-hooks/refs"></a>                                                   | ✅  | ✅  |
-| `react-hooks/rule-suppression` <a id="summary-react-hooks/rule-suppression"></a>                           | 🚫  | 🚫  |
-| [`react-hooks/rules-of-hooks`] <a id="summary-react-hooks/rules-of-hooks"></a>                             | ✅  | ✅  |
-| `react-hooks/set-state-in-effect` <a id="summary-react-hooks/set-state-in-effect"></a>                     | ✅  | ✅  |
-| `react-hooks/set-state-in-render` <a id="summary-react-hooks/set-state-in-render"></a>                     | ✅  | ✅  |
-| `react-hooks/static-components` <a id="summary-react-hooks/static-components"></a>                         | ✅  | ✅  |
-| `react-hooks/syntax` <a id="summary-react-hooks/syntax"></a>                                               | 🚫  | 🚫  |
-| `react-hooks/todo` <a id="summary-react-hooks/todo"></a>                                                   | 🚫  | 🚫  |
-| `react-hooks/unsupported-syntax` <a id="summary-react-hooks/unsupported-syntax"></a>                       | ✅  | ⚠️  |
-| `react-hooks/use-memo` <a id="summary-react-hooks/use-memo"></a>                                           | ✅  | ✅  |
-| `react-hooks/void-use-memo` <a id="summary-react-hooks/void-use-memo"></a>                                 | ✅  | ✅  |
-
-[`react-hooks/exhaustive-deps`]: https://github.com/facebook/react/issues/14920
-[`react-hooks/rules-of-hooks`]: https://react.dev/reference/rules/rules-of-hooks
-
-<!-- END react-hooks -->
 
 ## react-refresh
 

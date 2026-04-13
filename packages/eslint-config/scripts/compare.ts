@@ -8,9 +8,8 @@ import compat from 'eslint-plugin-compat';
 import * as depend from 'eslint-plugin-depend';
 import { importX } from 'eslint-plugin-import-x';
 import n from 'eslint-plugin-n';
-import reactDom from 'eslint-plugin-react-dom';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
+import reactDOM from 'eslint-plugin-react-dom';
+import reactJSX from 'eslint-plugin-react-jsx';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import { reactRefresh } from 'eslint-plugin-react-refresh';
 import reactRSC from 'eslint-plugin-react-rsc';
@@ -111,6 +110,12 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rules: react.rules,
   },
   {
+    prefix: 'react-jsx',
+    rulesDefinitions: reactJSX.rules,
+    recommended: reactJSX.configs.strict.rules,
+    rules: react.rules,
+  },
+  {
     prefix: 'react-rsc',
     rulesDefinitions: reactRSC.rules,
     recommended: reactRSC.configs.strict.rules,
@@ -118,8 +123,8 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'react-dom',
-    rulesDefinitions: reactDom.rules,
-    recommended: reactDom.configs.strict.rules,
+    rulesDefinitions: reactDOM.rules,
+    recommended: reactDOM.configs.strict.rules,
     rules: react.rules,
   },
   {
@@ -129,21 +134,9 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rules: react.rules,
   },
   {
-    prefix: 'react-hooks-extra',
-    rulesDefinitions: reactHooksExtra.rules,
-    recommended: reactHooksExtra.configs.recommended.rules,
-    rules: react.rules,
-  },
-  {
     prefix: 'react-naming-convention',
     rulesDefinitions: reactNamingConvention.rules,
     recommended: reactNamingConvention.configs.recommended.rules,
-    rules: react.rules,
-  },
-  {
-    prefix: 'react-hooks',
-    rulesDefinitions: reactHooks.rules,
-    recommended: reactHooks.configs['recommended-latest'].rules,
     rules: react.rules,
   },
   {

@@ -1,7 +1,6 @@
 import type { ESLint, Linter } from 'eslint';
-import reactDom from 'eslint-plugin-react-dom';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
+import reactDOM from 'eslint-plugin-react-dom';
+import reactJSX from 'eslint-plugin-react-jsx';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import { reactRefresh } from 'eslint-plugin-react-refresh';
 import reactRSC from 'eslint-plugin-react-rsc';
@@ -12,34 +11,25 @@ export const react = {
   name: 'priver/react',
   plugins: {
     'react-x': reactX as ESLint.Plugin, // TS2742
+    'react-jsx': reactJSX as ESLint.Plugin, // TS2742
     'react-rsc': reactRSC as ESLint.Plugin, // TS2742
-    'react-dom': reactDom as ESLint.Plugin, // TS2742
+    'react-dom': reactDOM as ESLint.Plugin, // TS2742
     'react-web-api': reactWebAPI as ESLint.Plugin, // TS2742
-    'react-hooks-extra': reactHooksExtra as ESLint.Plugin, // TS2742
     'react-naming-convention': reactNamingConvention as ESLint.Plugin, // TS2742
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/facebook/react/pull/34994
-    'react-hooks': reactHooks as ESLint.Plugin,
     'react-refresh': reactRefresh.plugin,
   },
   rules: {
     // React
-    'react-x/jsx-dollar': 'off',
-    'react-x/jsx-key-before-spread': 'error',
-    'react-x/jsx-no-comment-textnodes': 'error',
-    'react-x/jsx-no-duplicate-props': 'off',
-    'react-x/jsx-no-iife': 'error',
-    'react-x/jsx-no-undef': 'off',
-    'react-x/jsx-shorthand-boolean': 'error',
-    'react-x/jsx-shorthand-fragment': 'error',
-    'react-x/jsx-uses-react': 'off',
-    'react-x/jsx-uses-vars': 'off',
+    'react-x/component-hook-factories': 'error',
+    'react-x/error-boundaries': 'error',
+    'react-x/exhaustive-deps': 'error',
+    'react-x/immutability': 'off', // experimental
     'react-x/no-access-state-in-setstate': 'error',
     'react-x/no-array-index-key': 'error',
     'react-x/no-children-count': 'error',
     'react-x/no-children-for-each': 'error',
     'react-x/no-children-map': 'error',
     'react-x/no-children-only': 'error',
-    'react-x/no-children-prop': 'error',
     'react-x/no-children-to-array': 'error',
     'react-x/no-class-component': 'error',
     'react-x/no-clone-element': 'error',
@@ -48,47 +38,58 @@ export const react = {
     'react-x/no-component-will-update': 'error',
     'react-x/no-context-provider': 'error',
     'react-x/no-create-ref': 'error',
-    'react-x/no-default-props': 'error',
     'react-x/no-direct-mutation-state': 'error',
-    'react-x/no-duplicate-key': 'off',
+    'react-x/no-duplicate-key': 'off', // experimental
     'react-x/no-forward-ref': 'error',
-    'react-x/no-implicit-key': 'error',
+    'react-x/no-implicit-children': 'off', // experimental
+    'react-x/no-implicit-key': 'off', // experimental
+    'react-x/no-implicit-ref': 'off', // experimental
     'react-x/no-leaked-conditional-rendering': 'error',
     'react-x/no-missing-component-display-name': 'error',
     'react-x/no-missing-context-display-name': 'error',
     'react-x/no-missing-key': 'error',
-    'react-x/no-misused-capture-owner-stack': 'error',
-    'react-x/no-nested-component-definitions': 'off', // react-hooks/component-hook-factories
+    'react-x/no-misused-capture-owner-stack': 'error', // experimental
+    'react-x/no-nested-component-definitions': 'error',
     'react-x/no-nested-lazy-component-declarations': 'error',
-    'react-x/no-prop-types': 'error',
     'react-x/no-redundant-should-component-update': 'error',
     'react-x/no-set-state-in-component-did-mount': 'error',
     'react-x/no-set-state-in-component-did-update': 'error',
     'react-x/no-set-state-in-component-will-update': 'error',
-    'react-x/no-string-refs': 'error',
-    'react-x/no-unnecessary-key': 'off',
-    'react-x/no-unnecessary-use-callback': 'off',
-    'react-x/no-unnecessary-use-memo': 'off',
+    'react-x/no-unnecessary-use-callback': 'off', // experimental
+    'react-x/no-unnecessary-use-memo': 'off', // experimental
     'react-x/no-unnecessary-use-prefix': 'error',
-    'react-x/no-unnecessary-use-ref': 'off',
     'react-x/no-unsafe-component-will-mount': 'error',
     'react-x/no-unsafe-component-will-receive-props': 'error',
     'react-x/no-unsafe-component-will-update': 'error',
     'react-x/no-unstable-context-value': 'error',
     'react-x/no-unstable-default-props': 'error',
     'react-x/no-unused-class-component-members': 'error',
-    'react-x/no-unused-props': 'error',
+    'react-x/no-unused-props': 'error', // experimental
     'react-x/no-unused-state': 'error',
     'react-x/no-use-context': 'error',
-    'react-x/no-useless-forward-ref': 'error',
-    'react-x/no-useless-fragment': ['error', { allowExpressions: false }],
-    'react-x/prefer-destructuring-assignment': 'off',
+    'react-x/prefer-destructuring-assignment': 'error',
     'react-x/prefer-namespace-import': 'off',
-    'react-x/prefer-read-only-props': 'off',
-    'react-x/prefer-use-state-lazy-initialization': 'error',
+    'react-x/purity': 'error',
+    'react-x/refs': 'off', // experimental
+    'react-x/rules-of-hooks': 'error',
+    'react-x/set-state-in-effect': 'error',
+    'react-x/set-state-in-render': 'error', // experimental
+    'react-x/unsupported-syntax': 'error',
+    'react-x/use-memo': 'error',
+    'react-x/use-state': 'error',
+
+    // React JSX
+    'react-jsx/no-children-prop': 'error',
+    'react-jsx/no-children-prop-with-children': 'error',
+    'react-jsx/no-comment-textnodes': 'error',
+    'react-jsx/no-key-after-spread': 'error',
+    'react-jsx/no-leaked-dollar': 'off',
+    'react-jsx/no-leaked-semicolon': 'error',
+    'react-jsx/no-namespace': 'error',
+    'react-jsx/no-useless-fragment': 'error',
 
     // React RSC
-    'react-rsc/function-definition': 'error',
+    'react-rsc/function-definition': 'error', // experimental
 
     // React DOM
     'react-dom/no-dangerously-set-innerhtml-with-children': 'error',
@@ -98,7 +99,6 @@ export const react = {
     'react-dom/no-hydrate': 'error',
     'react-dom/no-missing-button-type': 'error',
     'react-dom/no-missing-iframe-sandbox': 'error',
-    'react-dom/no-namespace': 'error',
     'react-dom/no-render-return-value': 'error',
     'react-dom/no-render': 'error',
     'react-dom/no-script-url': 'error',
@@ -116,50 +116,10 @@ export const react = {
     'react-web-api/no-leaked-resize-observer': 'error',
     'react-web-api/no-leaked-timeout': 'error',
 
-    // React hooks extra
-    'react-hooks-extra/no-direct-set-state-in-use-effect': 'off', // react-hooks/set-state-in-effect
-
     // React naming convention
-    'react-naming-convention/component-name': 'off',
     'react-naming-convention/context-name': 'error',
-    'react-naming-convention/filename-extension': 'off',
-    'react-naming-convention/filename': 'off',
     'react-naming-convention/id-name': 'error',
     'react-naming-convention/ref-name': 'error',
-    'react-naming-convention/use-state': 'error',
-
-    // React hooks
-    'react-hooks/exhaustive-deps': 'error',
-    'react-hooks/rules-of-hooks': 'error',
-
-    // React Compiler
-    'react-hooks/automatic-effect-dependencies': 'off',
-    'react-hooks/capitalized-calls': 'off',
-    'react-hooks/component-hook-factories': 'error',
-    'react-hooks/config': 'off',
-    'react-hooks/error-boundaries': 'error',
-    'react-hooks/fbt': 'off',
-    'react-hooks/fire': 'off',
-    'react-hooks/gating': 'off',
-    'react-hooks/globals': 'error',
-    'react-hooks/hooks': 'off',
-    'react-hooks/immutability': 'error',
-    'react-hooks/incompatible-library': 'error',
-    'react-hooks/invariant': 'off',
-    'react-hooks/memoized-effect-dependencies': 'off',
-    'react-hooks/no-deriving-state-in-effects': 'off',
-    'react-hooks/preserve-manual-memoization': 'error',
-    'react-hooks/purity': 'error',
-    'react-hooks/refs': 'error',
-    'react-hooks/rule-suppression': 'off',
-    'react-hooks/set-state-in-effect': 'error',
-    'react-hooks/set-state-in-render': 'error',
-    'react-hooks/static-components': 'error',
-    'react-hooks/syntax': 'off',
-    'react-hooks/todo': 'off',
-    'react-hooks/unsupported-syntax': 'error',
-    'react-hooks/use-memo': 'error',
-    'react-hooks/void-use-memo': 'error',
 
     // React refresh
     'react-refresh/only-export-components': ['error', { allowConstantExport: true }],
