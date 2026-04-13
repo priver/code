@@ -2,7 +2,6 @@ import fs from 'node:fs/promises';
 
 import * as eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
 import js from '@eslint/js';
-import type { TSESLint } from '@typescript-eslint/utils';
 import type { ESLint, Linter, Rule } from 'eslint';
 import compat from 'eslint-plugin-compat';
 import * as depend from 'eslint-plugin-depend';
@@ -46,7 +45,7 @@ const SEVERITY_EMOJI = {
 // Plugin configurations
 type PluginComparison = {
   prefix: string;
-  rulesDefinitions?: Record<string, Rule.RuleModule | TSESLint.AnyRuleModule>;
+  rulesDefinitions?: Record<string, Rule.RuleModule>;
   recommended?: Partial<Linter.RulesRecord>;
   rules: Partial<Linter.RulesRecord>;
 };
@@ -266,7 +265,7 @@ function mergeRules(
 // Plugin comparison logic
 function comparePlugin(
   pluginPrefix: string,
-  ruleDefinitions: Record<string, Rule.RuleModule | TSESLint.AnyRuleModule> | undefined,
+  ruleDefinitions: Record<string, Rule.RuleModule> | undefined,
   recommendedRules: Partial<Linter.RulesRecord> | undefined,
   rules: Partial<Linter.RulesRecord>,
   content: string,

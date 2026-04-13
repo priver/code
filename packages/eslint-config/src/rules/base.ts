@@ -1,5 +1,5 @@
 import * as eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import * as depend from 'eslint-plugin-depend';
 import { importX } from 'eslint-plugin-import-x';
 import unicorn from 'eslint-plugin-unicorn';
@@ -17,7 +17,7 @@ export const base = {
   plugins: {
     '@eslint-community/eslint-comments': eslintComments,
     'import-x': importX,
-    'unicorn': unicorn as ESLint.Plugin, // TS2742
+    'unicorn': unicorn,
     'depend': depend,
   },
   rules: {

@@ -1,4 +1,4 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import reactDOM from 'eslint-plugin-react-dom';
 import reactJSX from 'eslint-plugin-react-jsx';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
@@ -10,12 +10,12 @@ import reactX from 'eslint-plugin-react-x';
 export const react = {
   name: 'priver/react',
   plugins: {
-    'react-x': reactX as ESLint.Plugin, // TS2742
-    'react-jsx': reactJSX as ESLint.Plugin, // TS2742
-    'react-rsc': reactRSC as ESLint.Plugin, // TS2742
-    'react-dom': reactDOM as ESLint.Plugin, // TS2742
-    'react-web-api': reactWebAPI as ESLint.Plugin, // TS2742
-    'react-naming-convention': reactNamingConvention as ESLint.Plugin, // TS2742
+    'react-x': reactX,
+    'react-jsx': reactJSX,
+    'react-rsc': reactRSC,
+    'react-dom': reactDOM,
+    'react-web-api': reactWebAPI,
+    'react-naming-convention': reactNamingConvention,
     'react-refresh': reactRefresh.plugin,
   },
   rules: {

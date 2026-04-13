@@ -63,7 +63,6 @@
     "@priver/tsconfig": "workspace:*",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "catalog:",
-    "@typescript-eslint/utils": "catalog:",
     "del-cli": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "catalog:",
