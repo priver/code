@@ -7,7 +7,7 @@ import unicorn from 'eslint-plugin-unicorn';
 export const base = {
   name: 'priver/base',
   languageOptions: {
-    ecmaVersion: 2025,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   linterOptions: {

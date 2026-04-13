@@ -4,13 +4,11 @@
 [![NPM License](https://img.shields.io/npm/l/%40priver%2Feslint-config)](https://opensource.org/licenses/MIT)
 
 A comprehensive, modern ESLint configuration package that provides a set of pre-configured rules and
-plugins for various JavaScript/TypeScript projects. This configuration leverages
-[ESLint's new flat config system](https://eslint.org/docs/latest/use/configure/configuration-files)
-to provide a more maintainable and flexible linting setup.
+plugins for various JavaScript/TypeScript projects, offering a maintainable and flexible linting
+setup.
 
 ## What's Included
 
-- 🚀 Uses ESLint's flat config system (required for ESLint 9+)
 - 🔧 Modular configuration that can be combined based on project needs
 - 📦 Pre-configured rules for JavaScript, TypeScript, React, and Node.js environments
 - 📝 TypeScript support with type-aware linting rules
