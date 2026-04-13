@@ -268,7 +268,6 @@ export const base = {
     '@eslint-community/eslint-comments/no-aggregating-enable': 'error',
     '@eslint-community/eslint-comments/no-duplicate-disable': 'error',
     '@eslint-community/eslint-comments/no-unlimited-disable': 'error',
-    '@eslint-community/eslint-comments/no-unused-disable': 'off',
     '@eslint-community/eslint-comments/no-unused-enable': 'error',
     '@eslint-community/eslint-comments/no-restricted-disable': 'off',
     '@eslint-community/eslint-comments/no-use': 'off',

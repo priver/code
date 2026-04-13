@@ -509,7 +509,6 @@ Configurations compared:
 | [`@eslint-community/eslint-comments/no-duplicate-disable`] <a id="summary-@eslint-community/eslint-comments/no-duplicate-disable"></a>   | ✅  | ✅  |
 | [`@eslint-community/eslint-comments/no-restricted-disable`] <a id="summary-@eslint-community/eslint-comments/no-restricted-disable"></a> | 🚫  | 🚫  |
 | [`@eslint-community/eslint-comments/no-unlimited-disable`] <a id="summary-@eslint-community/eslint-comments/no-unlimited-disable"></a>   | ✅  | ✅  |
-| [`@eslint-community/eslint-comments/no-unused-disable`] <a id="summary-@eslint-community/eslint-comments/no-unused-disable"></a>         | 🚫  | 🚫  |
 | [`@eslint-community/eslint-comments/no-unused-enable`] <a id="summary-@eslint-community/eslint-comments/no-unused-enable"></a>           | ✅  | ✅  |
 | [`@eslint-community/eslint-comments/no-use`] <a id="summary-@eslint-community/eslint-comments/no-use"></a>                               | 🚫  | 🚫  |
 | [`@eslint-community/eslint-comments/require-description`] <a id="summary-@eslint-community/eslint-comments/require-description"></a>     | ✅  | 🚫  |
@@ -524,8 +523,6 @@ Configurations compared:
   https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-restricted-disable.html
 [`@eslint-community/eslint-comments/no-unlimited-disable`]:
   https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unlimited-disable.html
-[`@eslint-community/eslint-comments/no-unused-disable`]:
-  https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
 [`@eslint-community/eslint-comments/no-unused-enable`]:
   https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-enable.html
 [`@eslint-community/eslint-comments/no-use`]:
@@ -603,94 +600,94 @@ Configurations compared:
 ]</code></pre></td><td><pre><code>"warn"</code></pre></td></tr></table>
 
 [`import-x/consistent-type-specifier-style`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/consistent-type-specifier-style.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/consistent-type-specifier-style.md
 [`import-x/default`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/default.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/default.md
 [`import-x/dynamic-import-chunkname`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/dynamic-import-chunkname.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/dynamic-import-chunkname.md
 [`import-x/export`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/export.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/export.md
 [`import-x/exports-last`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/exports-last.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/exports-last.md
 [`import-x/extensions`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/extensions.md
-[`import-x/first`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/first.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/extensions.md
+[`import-x/first`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/first.md
 [`import-x/group-exports`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/group-exports.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/group-exports.md
 [`import-x/max-dependencies`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/max-dependencies.md
-[`import-x/named`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/named.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/max-dependencies.md
+[`import-x/named`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/named.md
 [`import-x/namespace`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/namespace.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/namespace.md
 [`import-x/newline-after-import`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/newline-after-import.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/newline-after-import.md
 [`import-x/no-absolute-path`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-absolute-path.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-absolute-path.md
 [`import-x/no-amd`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-amd.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-amd.md
 [`import-x/no-anonymous-default-export`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-anonymous-default-export.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-anonymous-default-export.md
 [`import-x/no-commonjs`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-commonjs.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-commonjs.md
 [`import-x/no-cycle`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-cycle.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-cycle.md
 [`import-x/no-default-export`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-default-export.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-default-export.md
 [`import-x/no-deprecated`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-deprecated.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-deprecated.md
 [`import-x/no-duplicates`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-duplicates.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-duplicates.md
 [`import-x/no-dynamic-require`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-dynamic-require.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-dynamic-require.md
 [`import-x/no-empty-named-blocks`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-empty-named-blocks.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-empty-named-blocks.md
 [`import-x/no-extraneous-dependencies`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-extraneous-dependencies.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-extraneous-dependencies.md
 [`import-x/no-import-module-exports`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-import-module-exports.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-import-module-exports.md
 [`import-x/no-internal-modules`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-internal-modules.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-internal-modules.md
 [`import-x/no-mutable-exports`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-mutable-exports.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-mutable-exports.md
 [`import-x/no-named-as-default`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-as-default.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-as-default.md
 [`import-x/no-named-as-default-member`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-as-default-member.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-as-default-member.md
 [`import-x/no-named-default`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-default.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-default.md
 [`import-x/no-named-export`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-named-export.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-export.md
 [`import-x/no-namespace`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-namespace.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-namespace.md
 [`import-x/no-nodejs-modules`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-nodejs-modules.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-nodejs-modules.md
 [`import-x/no-relative-packages`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-relative-packages.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-relative-packages.md
 [`import-x/no-relative-parent-imports`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-relative-parent-imports.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-relative-parent-imports.md
 [`import-x/no-rename-default`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-rename-default.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-rename-default.md
 [`import-x/no-restricted-paths`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-restricted-paths.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-restricted-paths.md
 [`import-x/no-self-import`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-self-import.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-self-import.md
 [`import-x/no-unassigned-import`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unassigned-import.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-unassigned-import.md
 [`import-x/no-unresolved`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unresolved.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-unresolved.md
 [`import-x/no-unused-modules`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-unused-modules.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-unused-modules.md
 [`import-x/no-useless-path-segments`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-useless-path-segments.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-useless-path-segments.md
 [`import-x/no-webpack-loader-syntax`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/no-webpack-loader-syntax.md
-[`import-x/order`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/order.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-webpack-loader-syntax.md
+[`import-x/order`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/order.md
 [`import-x/prefer-default-export`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/prefer-default-export.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/prefer-default-export.md
 [`import-x/prefer-namespace-import`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/prefer-namespace-import.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/prefer-namespace-import.md
 [`import-x/unambiguous`]:
-  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.1/docs/rules/unambiguous.md
+  https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/unambiguous.md
 
 <!-- END import-x -->
 
@@ -1952,6 +1949,7 @@ Configurations compared:
 | [`react-naming-convention/context-name`] <a id="summary-react-naming-convention/context-name"></a>             | ✅  | ⚠️  |
 | [`react-naming-convention/filename`] <a id="summary-react-naming-convention/filename"></a>                     | 🚫  | 🚫  |
 | [`react-naming-convention/filename-extension`] <a id="summary-react-naming-convention/filename-extension"></a> | 🚫  | 🚫  |
+| [`react-naming-convention/id-name`] <a id="summary-react-naming-convention/id-name"></a>                       | ✅  | ⚠️  |
 | [`react-naming-convention/ref-name`] <a id="summary-react-naming-convention/ref-name"></a>                     | ✅  | ⚠️  |
 | [`react-naming-convention/use-state`] <a id="summary-react-naming-convention/use-state"></a>                   | ✅  | ⚠️  |
 
@@ -1962,6 +1960,7 @@ Configurations compared:
 [`react-naming-convention/filename`]: https://eslint-react.xyz/docs/rules/naming-convention-filename
 [`react-naming-convention/filename-extension`]:
   https://eslint-react.xyz/docs/rules/naming-convention-filename-extension
+[`react-naming-convention/id-name`]: https://eslint-react.xyz/docs/rules/naming-convention-id-name
 [`react-naming-convention/ref-name`]: https://eslint-react.xyz/docs/rules/naming-convention-ref-name
 [`react-naming-convention/use-state`]:
   https://eslint-react.xyz/docs/rules/naming-convention-use-state
