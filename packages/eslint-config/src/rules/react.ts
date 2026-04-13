@@ -124,6 +124,7 @@ export const react = {
     'react-naming-convention/context-name': 'error',
     'react-naming-convention/filename-extension': 'off',
     'react-naming-convention/filename': 'off',
+    'react-naming-convention/id-name': 'error',
     'react-naming-convention/ref-name': 'error',
     'react-naming-convention/use-state': 'error',
 
