@@ -5,6 +5,7 @@ export default defineMain({
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(ts|tsx)'],
   addons: ['@storybook/addon-docs', '@storybook/addon-a11y', '@storybook/addon-themes'],
   core: {
+    allowedHosts: ['storybook.priver.dev'],
     disableWhatsNewNotifications: true,
   },
   async viteFinal(config) {
