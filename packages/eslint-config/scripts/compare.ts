@@ -2,15 +2,13 @@ import fs from 'node:fs/promises';
 
 import * as eslintComments from '@eslint-community/eslint-plugin-eslint-comments';
 import js from '@eslint/js';
-import type { TSESLint } from '@typescript-eslint/utils';
 import type { ESLint, Linter, Rule } from 'eslint';
 import compat from 'eslint-plugin-compat';
 import * as depend from 'eslint-plugin-depend';
 import { importX } from 'eslint-plugin-import-x';
 import n from 'eslint-plugin-n';
-import reactDom from 'eslint-plugin-react-dom';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactHooksExtra from 'eslint-plugin-react-hooks-extra';
+import reactDOM from 'eslint-plugin-react-dom';
+import reactJSX from 'eslint-plugin-react-jsx';
 import reactNamingConvention from 'eslint-plugin-react-naming-convention';
 import { reactRefresh } from 'eslint-plugin-react-refresh';
 import reactRSC from 'eslint-plugin-react-rsc';
@@ -47,7 +45,7 @@ const SEVERITY_EMOJI = {
 // Plugin configurations
 type PluginComparison = {
   prefix: string;
-  rulesDefinitions?: Record<string, Rule.RuleModule | TSESLint.AnyRuleModule>;
+  rulesDefinitions?: Record<string, Rule.RuleModule>;
   recommended?: Partial<Linter.RulesRecord>;
   rules: Partial<Linter.RulesRecord>;
 };
@@ -111,6 +109,12 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rules: react.rules,
   },
   {
+    prefix: 'react-jsx',
+    rulesDefinitions: reactJSX.rules,
+    recommended: reactJSX.configs.strict.rules,
+    rules: react.rules,
+  },
+  {
     prefix: 'react-rsc',
     rulesDefinitions: reactRSC.rules,
     recommended: reactRSC.configs.strict.rules,
@@ -118,8 +122,8 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
   },
   {
     prefix: 'react-dom',
-    rulesDefinitions: reactDom.rules,
-    recommended: reactDom.configs.strict.rules,
+    rulesDefinitions: reactDOM.rules,
+    recommended: reactDOM.configs.strict.rules,
     rules: react.rules,
   },
   {
@@ -129,21 +133,9 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
     rules: react.rules,
   },
   {
-    prefix: 'react-hooks-extra',
-    rulesDefinitions: reactHooksExtra.rules,
-    recommended: reactHooksExtra.configs.recommended.rules,
-    rules: react.rules,
-  },
-  {
     prefix: 'react-naming-convention',
     rulesDefinitions: reactNamingConvention.rules,
     recommended: reactNamingConvention.configs.recommended.rules,
-    rules: react.rules,
-  },
-  {
-    prefix: 'react-hooks',
-    rulesDefinitions: reactHooks.rules,
-    recommended: reactHooks.configs['recommended-latest'].rules,
     rules: react.rules,
   },
   {
@@ -273,7 +265,7 @@ function mergeRules(
 // Plugin comparison logic
 function comparePlugin(
   pluginPrefix: string,
-  ruleDefinitions: Record<string, Rule.RuleModule | TSESLint.AnyRuleModule> | undefined,
+  ruleDefinitions: Record<string, Rule.RuleModule> | undefined,
   recommendedRules: Partial<Linter.RulesRecord> | undefined,
   rules: Partial<Linter.RulesRecord>,
   content: string,

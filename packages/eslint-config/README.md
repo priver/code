@@ -4,13 +4,11 @@
 [![NPM License](https://img.shields.io/npm/l/%40priver%2Feslint-config)](https://opensource.org/licenses/MIT)
 
 A comprehensive, modern ESLint configuration package that provides a set of pre-configured rules and
-plugins for various JavaScript/TypeScript projects. This configuration leverages
-[ESLint's new flat config system](https://eslint.org/docs/latest/use/configure/configuration-files)
-to provide a more maintainable and flexible linting setup.
+plugins for various JavaScript/TypeScript projects, offering a maintainable and flexible linting
+setup.
 
 ## What's Included
 
-- 🚀 Uses ESLint's flat config system (required for ESLint 9+)
 - 🔧 Modular configuration that can be combined based on project needs
 - 📦 Pre-configured rules for JavaScript, TypeScript, React, and Node.js environments
 - 📝 TypeScript support with type-aware linting rules
@@ -30,7 +28,6 @@ This configuration includes several powerful ESLint plugins to enhance your deve
 | [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend)                                           | Detect dependency bloat and redundant polyfills |
 | [eslint-plugin-import-x](https://github.com/un-ts/eslint-plugin-import-x)                                            | Import/export syntax validation                 |
 | [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)                                               | Node.js specific linting rules                  |
-| [eslint-plugin-react-hooks](https://reactjs.org/docs/hooks-rules.html)                                               | React Hooks rules                               |
 | [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh)                            | React Fast Refresh rules                        |
 | [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                       | Various awesome ESLint rules                    |
 | [typescript-eslint](https://typescript-eslint.io/)                                                                   | TypeScript specific linting rules               |

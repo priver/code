@@ -7,7 +7,7 @@ import unicorn from 'eslint-plugin-unicorn';
 export const base = {
   name: 'priver/base',
   languageOptions: {
-    ecmaVersion: 2025,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   linterOptions: {
@@ -16,8 +16,7 @@ export const base = {
   },
   plugins: {
     '@eslint-community/eslint-comments': eslintComments,
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- https://github.com/typescript-eslint/typescript-eslint/issues/10899
-    'import-x': importX as unknown as ESLint.Plugin,
+    'import-x': importX as ESLint.Plugin, // TS2742
     'unicorn': unicorn as ESLint.Plugin, // TS2742
     'depend': depend,
   },
@@ -345,6 +344,7 @@ export const base = {
     'unicorn/consistent-empty-array-spread': 'error',
     'unicorn/consistent-existence-index-check': 'error',
     'unicorn/consistent-function-scoping': 'error',
+    'unicorn/consistent-template-literal-escape': 'error',
     'unicorn/custom-error-definition': 'error',
     'unicorn/empty-brace-spaces': 'off',
     'unicorn/error-message': 'error',
@@ -361,6 +361,7 @@ export const base = {
         },
       },
     ],
+    'unicorn/isolated-functions': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-abusive-eslint-disable': 'off',
     'unicorn/no-accessor-recursion': 'error',
@@ -410,6 +411,7 @@ export const base = {
     'unicorn/no-useless-collection-argument': 'error',
     'unicorn/no-useless-error-capture-stack-trace': 'error',
     'unicorn/no-useless-fallback-in-spread': 'error',
+    'unicorn/no-useless-iterator-to-array': 'error',
     'unicorn/no-useless-length-check': 'error',
     'unicorn/no-useless-promise-resolve-reject': 'error',
     'unicorn/no-useless-spread': 'error',
@@ -462,6 +464,7 @@ export const base = {
     'unicorn/prefer-response-static-json': 'error',
     'unicorn/prefer-set-has': 'error',
     'unicorn/prefer-set-size': 'error',
+    'unicorn/prefer-simple-condition-first': 'error',
     'unicorn/prefer-single-call': 'error',
     'unicorn/prefer-spread': 'error',
     'unicorn/prefer-string-raw': 'error',
@@ -482,6 +485,7 @@ export const base = {
     'unicorn/require-number-to-fixed-digits-argument': 'error',
     'unicorn/require-post-message-target-origin': 'off',
     'unicorn/string-content': 'off',
+    'unicorn/switch-case-break-position': 'error',
     'unicorn/switch-case-braces': ['error', 'avoid'],
     'unicorn/template-indent': 'off',
     'unicorn/text-encoding-identifier-case': 'error',
