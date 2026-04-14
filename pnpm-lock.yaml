@@ -6,153 +6,30 @@ settings:
 
 catalogs:
   default:
-    '@base-ui/react':
-      specifier: ^1.1.0
-      version: 1.1.0
     '@changesets/changelog-github':
       specifier: ^0.6.0
       version: 0.6.0
     '@changesets/cli':
       specifier: ^2.30.0
       version: 2.30.0
-    '@eslint-community/eslint-plugin-eslint-comments':
-      specifier: ^4.7.1
-      version: 4.7.1
-    '@eslint/js':
-      specifier: ^10.0.1
-      version: 10.0.1
-    '@fontsource-variable/inter':
-      specifier: ^5.2.8
-      version: 5.2.8
-    '@fontsource-variable/jetbrains-mono':
-      specifier: ^5.2.8
-      version: 5.2.8
     '@ianvs/prettier-plugin-sort-imports':
       specifier: ^4.7.1
       version: 4.7.1
-    '@storybook/addon-a11y':
-      specifier: ^10.3.5
-      version: 10.3.5
-    '@storybook/addon-docs':
-      specifier: ^10.3.5
-      version: 10.3.5
-    '@storybook/addon-themes':
-      specifier: ^10.3.5
-      version: 10.3.5
-    '@storybook/react-vite':
-      specifier: ^10.3.5
-      version: 10.3.5
-    '@tailwindcss/cli':
-      specifier: ^4.1.18
-      version: 4.1.18
-    '@tailwindcss/vite':
-      specifier: ^4.2.2
-      version: 4.2.2
-    '@types/node':
-      specifier: ^24.12.2
-      version: 24.12.2
-    '@types/react':
-      specifier: ^19.2.14
-      version: 19.2.14
-    '@types/react-dom':
-      specifier: ^19.2.3
-      version: 19.2.3
-    '@vitejs/plugin-react':
-      specifier: ^6.0.1
-      version: 6.0.1
-    cva:
-      specifier: 1.0.0-beta.4
-      version: 1.0.0-beta.4
-    del-cli:
-      specifier: ^7.0.0
-      version: 7.0.0
-    eslint:
-      specifier: ^10.2.0
-      version: 10.2.0
-    eslint-config-prettier:
-      specifier: ^10.1.8
-      version: 10.1.8
-    eslint-import-resolver-typescript:
-      specifier: ^4.4.4
-      version: 4.4.4
-    eslint-plugin-compat:
-      specifier: ^7.0.1
-      version: 7.0.1
-    eslint-plugin-depend:
-      specifier: ^1.5.0
-      version: 1.5.0
-    eslint-plugin-import-x:
-      specifier: ^4.16.2
-      version: 4.16.2
-    eslint-plugin-n:
-      specifier: ^17.24.0
-      version: 17.24.0
-    eslint-plugin-react-dom:
-      specifier: ^4.2.3
-      version: 4.2.3
-    eslint-plugin-react-jsx:
-      specifier: ^4.2.3
-      version: 4.2.3
-    eslint-plugin-react-naming-convention:
-      specifier: ^4.2.3
-      version: 4.2.3
-    eslint-plugin-react-refresh:
-      specifier: ^0.5.2
-      version: 0.5.2
-    eslint-plugin-react-rsc:
-      specifier: ^4.2.3
-      version: 4.2.3
-    eslint-plugin-react-web-api:
-      specifier: ^4.2.3
-      version: 4.2.3
-    eslint-plugin-react-x:
-      specifier: ^4.2.3
-      version: 4.2.3
-    eslint-plugin-storybook:
-      specifier: ^10.3.5
-      version: 10.3.5
-    eslint-plugin-unicorn:
-      specifier: ^64.0.0
-      version: 64.0.0
-    globals:
-      specifier: ^17.5.0
-      version: 17.5.0
-    lucide-react:
-      specifier: ^0.563.0
-      version: 0.563.0
     prettier:
       specifier: ^3.8.2
       version: 3.8.2
     prettier-plugin-tailwindcss:
       specifier: ^0.7.2
       version: 0.7.2
-    react:
-      specifier: ^19.2.4
-      version: 19.2.4
-    react-dom:
-      specifier: ^19.2.4
-      version: 19.2.4
     sherif:
       specifier: ^1.11.1
       version: 1.11.1
-    storybook:
-      specifier: ^10.3.5
-      version: 10.3.5
-    tailwindcss:
-      specifier: ^4.2.2
-      version: 4.2.2
     turbo:
       specifier: ^2.9.6
       version: 2.9.6
     typescript:
       specifier: ^5.9.3
       version: 5.9.3
-    typescript-eslint:
-      specifier: ^8.58.2
-      version: 8.58.2
-    vite:
-      specifier: ^8.0.8
-      version: 8.0.8
 
 importers:
 
@@ -2859,8 +2736,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  picomatch@2.3.1:
-    resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
+  picomatch@2.3.2:
+    resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
     engines: {node: '>=8.6'}
 
   picomatch@4.0.4:
@@ -5618,7 +5495,7 @@ snapshots:
   micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
-      picomatch: 2.3.1
+      picomatch: 2.3.2
 
   min-indent@1.0.1: {}
 
@@ -5717,7 +5594,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picomatch@2.3.1: {}
+  picomatch@2.3.2: {}
 
   picomatch@4.0.4: {}
 
