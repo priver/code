@@ -1,5 +1,8 @@
 pnpm-lock.yaml
 
+# Skills
+.agents/skills/
+
 # Changesets
 .changeset/README.md
 
