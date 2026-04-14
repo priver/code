@@ -3,31 +3,37 @@
   "version": "9.2.0",
   "description": "Shareable config for eslint",
   "keywords": [
+    "config",
     "eslint",
     "eslintconfig",
-    "config",
     "javascript",
     "typescript"
   ],
   "homepage": "https://github.com/priver/code/packages/eslint-config#readme",
   "bugs": "https://github.com/priver/code/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/priver/code.git",
-    "directory": "packages/eslint-config"
-  },
   "license": "MIT",
   "author": {
     "name": "Mikhail Priver",
     "email": "m.priver@gmail.com",
     "url": "https://github.com/priver"
   },
-  "sideEffects": false,
-  "type": "module",
-  "exports": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/eslint-config"
+  },
   "files": [
     "dist"
   ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": "./src/index.ts",
+  "publishConfig": {
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
     "check-types": "tsc --noEmit",
@@ -66,7 +72,7 @@
     "del-cli": "catalog:",
     "eslint": "catalog:",
     "eslint-config-prettier": "catalog:",
-    "prettier": "catalog:",
+    "oxfmt": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {
@@ -74,11 +80,5 @@
   },
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
-  },
-  "publishConfig": {
-    "exports": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
   }
 }

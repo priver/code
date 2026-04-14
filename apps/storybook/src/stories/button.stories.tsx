@@ -8,6 +8,7 @@ import {
   Trash2Icon,
 } from 'lucide-react';
 import * as React from 'react';
+
 import { Button, type ButtonProps } from '@priver/ui/button';
 
 import preview from '#.storybook/preview.ts';
@@ -42,8 +43,8 @@ const meta = preview.meta({
 });
 
 /**
- * Interactive playground to test different button configurations.
- * Use the controls panel to experiment with different props.
+ * Interactive playground to test different button configurations. Use the controls panel to
+ * experiment with different props.
  */
 export const Playground = meta.story({
   args: {
@@ -146,8 +147,8 @@ export const Icons = meta.story({
 });
 
 /**
- * Disabled buttons are non-interactive and use muted colors.
- * Consider avoiding disabled states when possible for better UX.
+ * Disabled buttons are non-interactive and use muted colors. Consider avoiding disabled states when
+ * possible for better UX.
  */
 export const Disabled = meta.story({
   argTypes: {
