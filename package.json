@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "mkcert": "mkcert '*.priver.dev'",
-    "format": "prettier --experimental-cli --write .",
-    "check-format": "prettier --experimental-cli --check .",
+    "format": "oxfmt",
+    "check-format": "oxfmt --check",
     "check-deps": "sherif",
     "check": "turbo run check-format check-deps lint check-types test",
     "build": "turbo run build",
@@ -16,9 +16,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "catalog:",
     "@changesets/cli": "catalog:",
-    "@ianvs/prettier-plugin-sort-imports": "catalog:",
-    "prettier": "catalog:",
-    "prettier-plugin-tailwindcss": "catalog:",
+    "oxfmt": "catalog:",
     "sherif": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:"

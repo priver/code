@@ -4,34 +4,43 @@
   "private": true,
   "description": "React components library",
   "keywords": [
-    "react",
     "components",
+    "react",
     "ui"
   ],
   "homepage": "https://github.com/priver/code/packages/ui#readme",
   "bugs": "https://github.com/priver/code/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/priver/code.git",
-    "directory": "packages/ui"
-  },
   "license": "MIT",
   "author": {
     "name": "Mikhail Priver",
     "email": "m.priver@gmail.com",
     "url": "https://github.com/priver"
   },
-  "sideEffects": [
-    "*.css"
-  ],
-  "type": "module",
-  "exports": {
-    "./theme.css": "./src/theme.css",
-    "./button": "./src/button/button.tsx"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/ui"
   },
   "files": [
     "dist"
   ],
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    "./theme.css": "./src/theme.css",
+    "./button": "./src/button/button.tsx"
+  },
+  "publishConfig": {
+    "exports": {
+      "./theme.css": "./src/theme.css",
+      "./button": {
+        "types": "./dist/button/button.d.ts",
+        "import": "./dist/button/button.js"
+      }
+    }
+  },
   "scripts": {
     "lint": "eslint --flag unstable_native_nodejs_ts_config .",
     "check-types": "tsc --noEmit",
@@ -66,14 +75,5 @@
   },
   "engines": {
     "node": "^24.11.0 || >=25.0.0"
-  },
-  "publishConfig": {
-    "exports": {
-      "./theme.css": "./src/theme.css",
-      "./button": {
-        "types": "./dist/button/button.d.ts",
-        "import": "./dist/button/button.js"
-      }
-    }
   }
 }

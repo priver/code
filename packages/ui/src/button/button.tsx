@@ -6,7 +6,7 @@ export type ButtonProps = {
   /**
    * HTML button type attribute for form interactions.
    *
-   * @default "button"
+   * @default 'button'
    */
   type?: 'button' | 'submit' | 'reset';
 
@@ -15,7 +15,7 @@ export type ButtonProps = {
    *
    * Use higher hierarchy for main actions, lower for secondary actions.
    *
-   * @default "secondary"
+   * @default 'secondary'
    */
   variant?: 'primary' | 'secondary' | 'tertiary';
 
@@ -24,7 +24,7 @@ export type ButtonProps = {
    *
    * Choose based on the button's importance and surrounding content density.
    *
-   * @default "md"
+   * @default 'md'
    */
   size?: 'xs' | 'sm' | 'md' | 'lg';
 
@@ -61,7 +61,7 @@ export type ButtonProps = {
   /**
    * Placement of the icon relative to the label.
    *
-   * @default "start"
+   * @default 'start'
    */
   iconPosition?: 'start' | 'end';
 } & Omit<React.ComponentProps<'button'>, 'key' | 'disabled' | 'type'>;
@@ -106,8 +106,8 @@ const iconSize = {
 } as const;
 
 /**
- * Button component implementing the
- * [WAI-ARIA Button Pattern⁠](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
+ * Button component implementing the [WAI-ARIA Button
+ * Pattern⁠](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
  */
 export function Button(props: ButtonProps): React.ReactNode {
   const {
@@ -123,17 +123,17 @@ export function Button(props: ButtonProps): React.ReactNode {
     ...buttonProps
   } = props;
 
-  const finalVariant =
-    disabled ? (`${variant}-disabled` as const)
-    : destructive ? (`${variant}-destructive` as const)
-    : variant;
+  const finalVariant = disabled
+    ? (`${variant}-disabled` as const)
+    : destructive
+      ? (`${variant}-destructive` as const)
+      : variant;
 
   const finalSize = Icon && !children ? (`${size}-icon` as const) : size;
 
-  const icon =
-    Icon ?
-      <Icon aria-hidden size={iconSize[size]} className="pointer-events-none shrink-0" />
-    : undefined;
+  const icon = Icon ? (
+    <Icon aria-hidden size={iconSize[size]} className="pointer-events-none shrink-0" />
+  ) : undefined;
 
   return (
     <ButtonPrimitive
@@ -143,9 +143,7 @@ export function Button(props: ButtonProps): React.ReactNode {
       {...buttonProps}
     >
       {iconPosition === 'start' && icon}
-      {children ?
-        <span className="px-0.5">{children}</span>
-      : undefined}
+      {children ? <span className="px-0.5">{children}</span> : undefined}
       {iconPosition === 'end' && icon}
     </ButtonPrimitive>
   );

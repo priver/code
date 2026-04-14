@@ -1,6 +1,7 @@
 import type { ESLint } from 'eslint';
 import storybookPlugin from 'eslint-plugin-storybook';
 import { defineConfig, globalIgnores } from 'eslint/config';
+
 import { base, browser, node, react, typescript } from '@priver/eslint-config';
 
 export default defineConfig([

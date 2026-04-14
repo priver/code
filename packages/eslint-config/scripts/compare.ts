@@ -16,7 +16,7 @@ import reactWebAPI from 'eslint-plugin-react-web-api';
 import reactX from 'eslint-plugin-react-x';
 import unicorn from 'eslint-plugin-unicorn';
 import { builtinRules } from 'eslint/use-at-your-own-risk';
-import * as prettier from 'prettier';
+import { format } from 'oxfmt';
 import * as tseslint from 'typescript-eslint';
 
 import { base } from '../src/rules/base.ts';
@@ -149,8 +149,8 @@ const PLUGIN_COMPARISONS: PluginComparison[] = [
 // String utilities
 function rsplitOne(str: string, separator: string): [string, string] | [string] {
   const index = str.lastIndexOf(separator);
-  return index === -1 ?
-      [str]
+  return index === -1
+    ? [str]
     : [str.slice(0, Math.max(0, index)), str.slice(Math.max(0, index + separator.length))];
 }
 
@@ -385,11 +385,8 @@ async function main() {
       updatedContent = comparePlugin(prefix, rulesDefinitions, recommended, rules, updatedContent);
     }
 
-    const prettierOptions = await prettier.resolveConfig(FILENAME);
-    updatedContent = await prettier.format(updatedContent, {
-      ...prettierOptions,
-      filepath: FILENAME,
-    });
+    const formatResult = await format(FILENAME, updatedContent, { proseWrap: 'preserve' });
+    updatedContent = formatResult.code;
 
     if (originalContent === updatedContent) {
       console.log(`${FILENAME} is up to date.`);

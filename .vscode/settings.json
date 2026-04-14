@@ -2,8 +2,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "editor.insertSpaces": true,
   "editor.rulers": [100],
   "editor.tabSize": 2,
@@ -12,10 +13,10 @@
   "eslint.options": {
     "flags": ["unstable_native_nodejs_ts_config"]
   },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "eslint.workingDirectories": [{ "mode": "auto" }],
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -23,19 +24,13 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "js/ts.preferences.preferTypeOnlyAutoImports": true,
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
+  "js/ts.tsdk.path": "./node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
   "tailwindCSS.classFunctions": ["cva", "cx"],
   "tailwindCSS.experimental.configFile": {
     "apps/storybook/src/style.css": "apps/storybook/src/**",
     "packages/ui/src/style.css": "packages/ui/src/**"
-  },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.preferences.importModuleSpecifierEnding": "auto",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "[markdown]": {
-    "editor.wordWrap": "off"
   }
 }
