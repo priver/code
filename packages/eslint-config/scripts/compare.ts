@@ -329,10 +329,10 @@ function comparePlugin(
   }
 
   if (incompatibleTable.length > 0) {
-    markdownLines.push(htmlTable(incompatibleTable));
+    markdownLines.push('', htmlTable(incompatibleTable));
   }
 
-  markdownLines.push(links.join('\n'));
+  markdownLines.push('', ...links);
 
   const start = htmlCommentStart(pluginPrefix);
   const end = htmlCommentEnd(pluginPrefix);
