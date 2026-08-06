@@ -329,10 +329,10 @@ function comparePlugin(
   }
 
   if (incompatibleTable.length > 0) {
-    markdownLines.push(htmlTable(incompatibleTable));
+    markdownLines.push('', htmlTable(incompatibleTable));
   }
 
-  markdownLines.push(links.join('\n'));
+  markdownLines.push('', ...links);
 
   const start = htmlCommentStart(pluginPrefix);
   const end = htmlCommentEnd(pluginPrefix);
@@ -385,8 +385,8 @@ async function main() {
       updatedContent = comparePlugin(prefix, rulesDefinitions, recommended, rules, updatedContent);
     }
 
-    const formatResult = await format(FILENAME, updatedContent, { proseWrap: 'preserve' });
-    updatedContent = formatResult.code;
+    // const formatResult = await format(FILENAME, updatedContent, { proseWrap: 'preserve' });
+    // updatedContent = formatResult.code;
 
     if (originalContent === updatedContent) {
       console.log(`${FILENAME} is up to date.`);
