@@ -7,6 +7,7 @@ import theme from './theme.ts';
 
 import '@fontsource-variable/inter/opsz.css';
 import '@fontsource-variable/jetbrains-mono';
+
 import '#src/style.css';
 
 export default definePreview({
