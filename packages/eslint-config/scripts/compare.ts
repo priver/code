@@ -281,8 +281,8 @@ function comparePlugin(
   const markdownLines = [markdownTableRow('Rule', 'P', 'R'), markdownTableRow('---', '---', '---')];
   const incompatibleTable: string[] = [];
   const links: string[] = [];
-  const ruleNames = Object.keys(rules).toSorted((a, b) => a.localeCompare(b));
 
+  const ruleNames = Object.keys(rules).toSorted((a, b) => a.localeCompare(b));
   for (const ruleName of ruleNames) {
     const ruleNameParts = rsplitOne(ruleName, '/');
     const rulePrefix = ruleNameParts.length === 1 ? 'eslint' : ruleNameParts[0];
