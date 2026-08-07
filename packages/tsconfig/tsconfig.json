@@ -8,13 +8,10 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true,
 
     // Modules
     "allowImportingTsExtensions": true,
     "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "resolveJsonModule": false,
 
     // Emit
     "newLine": "lf",
@@ -27,9 +24,9 @@
     "verbatimModuleSyntax": true,
 
     // Language and Environment
-    "lib": ["es2023"],
+    "lib": ["es2025"],
     "moduleDetection": "force",
-    "target": "es2023",
+    "target": "es2025",
 
     // Output Formatting
     "preserveWatchOutput": true,

@@ -1,3 +1,4 @@
+// eslint-disable-next-line unicorn/no-barrel-files -- Public package entry point.
 export { base } from './rules/base.ts';
 export { browser } from './rules/browser.ts';
 export { node } from './rules/node.ts';

@@ -1,4 +1,5 @@
 {
   "extends": ["@priver/tsconfig", "@priver/tsconfig/react", "@priver/tsconfig/vite"],
+  "compilerOptions": { "types": ["vite/client"] },
   "include": ["src/**/*", ".storybook/**/*", "*.config.ts", "vitest.workspace.ts"]
 }

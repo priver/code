@@ -3,7 +3,6 @@
   "compilerOptions": {
     "module": "preserve",
     "moduleResolution": "bundler",
-    "noEmit": true,
-    "types": ["vite/client"]
+    "noEmit": true
   }
 }

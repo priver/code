@@ -1,4 +1,4 @@
-import type { ESLint, Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as tseslint from 'typescript-eslint';
 
@@ -8,13 +8,13 @@ const allExtensions = [...typeScriptExtensions, '.js', '.cjs', '.mjs'] as const;
 export const typescript = {
   name: 'priver/typescript',
   languageOptions: {
-    parser: tseslint.parser as unknown, // TS2742
+    parser: tseslint.parser,
     parserOptions: {
       projectService: true,
     },
   },
   plugins: {
-    '@typescript-eslint': tseslint.plugin as ESLint.Plugin, // TS2742
+    '@typescript-eslint': tseslint.plugin,
   },
   settings: {
     'import-x/extensions': allExtensions,
@@ -56,7 +56,6 @@ export const typescript = {
     'no-array-constructor': 'off', // @typescript-eslint/no-array-constructor
     'no-constant-condition': 'off', // @typescript-eslint/no-unnecessary-condition
     'no-implied-eval': 'off', // @typescript-eslint/no-implied-eval
-    'no-loop-func': 'off', // @typescript-eslint/no-loop-func
     'no-shadow': 'off', // @typescript-eslint/no-shadow
     'no-throw-literal': 'off', // @typescript-eslint/only-throw-error
     'no-unused-expressions': 'off', // @typescript-eslint/no-unused-expressions
@@ -162,7 +161,6 @@ export const typescript = {
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-void-type': 'error',
-    '@typescript-eslint/no-loop-func': 'error',
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-meaningless-void-operator': 'error',
     '@typescript-eslint/no-misused-new': 'error',
@@ -176,7 +174,6 @@ export const typescript = {
     '@typescript-eslint/no-redeclare': 'off',
     '@typescript-eslint/no-redundant-type-constituents': 'error',
     '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-restricted-imports': 'off',
     '@typescript-eslint/no-restricted-types': [
       'error',
       {

@@ -10,19 +10,25 @@ import reactX from 'eslint-plugin-react-x';
 export const react = {
   name: 'priver/react',
   plugins: {
-    'react-x': reactX as ESLint.Plugin, // TS2742
-    'react-jsx': reactJSX as ESLint.Plugin, // TS2742
-    'react-rsc': reactRSC as ESLint.Plugin, // TS2742
-    'react-dom': reactDOM as ESLint.Plugin, // TS2742
-    'react-web-api': reactWebAPI as ESLint.Plugin, // TS2742
-    'react-naming-convention': reactNamingConvention as ESLint.Plugin, // TS2742
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    'react-x': reactX as ESLint.Plugin,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    'react-jsx': reactJSX as ESLint.Plugin,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    'react-rsc': reactRSC as ESLint.Plugin,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    'react-dom': reactDOM as ESLint.Plugin,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    'react-web-api': reactWebAPI as ESLint.Plugin,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    'react-naming-convention': reactNamingConvention as ESLint.Plugin,
     'react-refresh': reactRefresh.plugin,
   },
   rules: {
     // React
-    'react-x/component-hook-factories': 'error',
     'react-x/error-boundaries': 'error',
     'react-x/exhaustive-deps': 'error',
+    'react-x/globals': 'off',
     'react-x/immutability': 'off', // experimental
     'react-x/no-access-state-in-setstate': 'error',
     'react-x/no-array-index-key': 'error',
@@ -51,12 +57,9 @@ export const react = {
     'react-x/no-misused-capture-owner-stack': 'error', // experimental
     'react-x/no-nested-component-definitions': 'error',
     'react-x/no-nested-lazy-component-declarations': 'error',
-    'react-x/no-redundant-should-component-update': 'error',
     'react-x/no-set-state-in-component-did-mount': 'error',
     'react-x/no-set-state-in-component-did-update': 'error',
     'react-x/no-set-state-in-component-will-update': 'error',
-    'react-x/no-unnecessary-use-callback': 'off', // experimental
-    'react-x/no-unnecessary-use-memo': 'off', // experimental
     'react-x/no-unnecessary-use-prefix': 'error',
     'react-x/no-unsafe-component-will-mount': 'error',
     'react-x/no-unsafe-component-will-receive-props': 'error',
@@ -67,13 +70,12 @@ export const react = {
     'react-x/no-unused-props': 'error', // experimental
     'react-x/no-unused-state': 'error',
     'react-x/no-use-context': 'error',
-    'react-x/prefer-destructuring-assignment': 'error',
-    'react-x/prefer-namespace-import': 'off',
     'react-x/purity': 'error',
     'react-x/refs': 'off', // experimental
     'react-x/rules-of-hooks': 'error',
     'react-x/set-state-in-effect': 'error',
     'react-x/set-state-in-render': 'error', // experimental
+    'react-x/static-components': 'error', // experimental
     'react-x/unsupported-syntax': 'error',
     'react-x/use-memo': 'error',
     'react-x/use-state': 'error',
@@ -108,10 +110,11 @@ export const react = {
     'react-dom/no-unsafe-target-blank': 'off',
     'react-dom/no-use-form-state': 'error',
     'react-dom/no-void-elements-with-children': 'error',
-    'react-dom/prefer-namespace-import': 'off',
 
     // React Web API
     'react-web-api/no-leaked-event-listener': 'error',
+    'react-web-api/no-leaked-fetch': 'error',
+    'react-web-api/no-leaked-intersection-observer': 'error',
     'react-web-api/no-leaked-interval': 'error',
     'react-web-api/no-leaked-resize-observer': 'error',
     'react-web-api/no-leaked-timeout': 'error',
