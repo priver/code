@@ -164,7 +164,7 @@ function severityString(severity: Linter.RuleSeverity): Linter.StringSeverity {
 }
 
 function ruleSeverity(options: Linter.RuleEntry = 'off'): Linter.StringSeverity {
-  return Array.isArray(options) ? severityString(options[0]) : severityString(options);
+  return severityString(Array.isArray(options) ? options[0] : options);
 }
 
 function ruleOptions(ruleEntry: Linter.RuleEntry): unknown[] {
@@ -281,8 +281,9 @@ function comparePlugin(
   const markdownLines = [markdownTableRow('Rule', 'P', 'R'), markdownTableRow('---', '---', '---')];
   const incompatibleTable: string[] = [];
   const links: string[] = [];
+  const ruleNames = Object.keys(rules).toSorted((a, b) => a.localeCompare(b));
 
-  for (const ruleName of Object.keys(rules).toSorted()) {
+  for (const ruleName of ruleNames) {
     const ruleNameParts = rsplitOne(ruleName, '/');
     const rulePrefix = ruleNameParts.length === 1 ? 'eslint' : ruleNameParts[0];
     const unprefixedRuleName = ruleNameParts.length === 1 ? ruleNameParts[0] : ruleNameParts[1];
@@ -338,7 +339,7 @@ function comparePlugin(
   const end = htmlCommentEnd(pluginPrefix);
   return content.replace(
     new RegExp(String.raw`${start}[\s\S]+${end}`, 'u'),
-    `${start}\n${markdownLines.join('\n')}\n${end}`,
+    () => `${start}\n${markdownLines.join('\n')}\n${end}`,
   );
 }
 

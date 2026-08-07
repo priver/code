@@ -1,4 +1,5 @@
 {
   "extends": ["@priver/tsconfig", "@priver/tsconfig/react"],
+  "compilerOptions": { "types": ["node"] },
   "include": ["src/**/*", "*.config.ts"]
 }

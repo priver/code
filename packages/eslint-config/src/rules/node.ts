@@ -11,7 +11,8 @@ export const node = {
     },
   },
   plugins: {
-    n: n as ESLint.Plugin, // TS2742
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- TS2883
+    n: n as ESLint.Plugin,
   },
   rules: {
     // Disable core rules

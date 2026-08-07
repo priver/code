@@ -72,7 +72,7 @@ Configurations compared:
 | [`id-length`] <a id="summary-id-length"></a>                                             | 🚫                                                     | 🚫  |
 | [`id-match`] <a id="summary-id-match"></a>                                               | 🚫                                                     | 🚫  |
 | [`init-declarations`] <a id="summary-init-declarations"></a>                             | 🚫                                                     | 🚫  |
-| [`logical-assignment-operators`] <a id="summary-logical-assignment-operators"></a>       | ✅                                                     | 🚫  |
+| [`logical-assignment-operators`] <a id="summary-logical-assignment-operators"></a>       | 🚫                                                     | 🚫  |
 | [`max-classes-per-file`] <a id="summary-max-classes-per-file"></a>                       | 🚫                                                     | 🚫  |
 | [`max-depth`] <a id="summary-max-depth"></a>                                             | 🚫                                                     | 🚫  |
 | [`max-lines`] <a id="summary-max-lines"></a>                                             | 🚫                                                     | 🚫  |
@@ -202,7 +202,7 @@ Configurations compared:
 | [`no-useless-call`] <a id="summary-no-useless-call"></a>                                 | ✅                                                     | 🚫  |
 | [`no-useless-catch`] <a id="summary-no-useless-catch"></a>                               | ✅                                                     | ✅  |
 | [`no-useless-computed-key`] <a id="summary-no-useless-computed-key"></a>                 | ✅                                                     | 🚫  |
-| [`no-useless-concat`] <a id="summary-no-useless-concat"></a>                             | ✅                                                     | 🚫  |
+| [`no-useless-concat`] <a id="summary-no-useless-concat"></a>                             | 🚫                                                     | 🚫  |
 | [`no-useless-constructor`] <a id="summary-no-useless-constructor"></a>                   | ✅                                                     | 🚫  |
 | [`no-useless-escape`] <a id="summary-no-useless-escape"></a>                             | ✅                                                     | ✅  |
 | [`no-useless-rename`] <a id="summary-no-useless-rename"></a>                             | ✅                                                     | 🚫  |
@@ -213,7 +213,7 @@ Configurations compared:
 | [`no-with`] <a id="summary-no-with"></a>                                                 | ✅                                                     | ✅  |
 | [`object-shorthand`] <a id="summary-object-shorthand"></a>                               | ✅                                                     | 🚫  |
 | [`one-var`] <a id="summary-one-var"></a>                                                 | ✅                                                     | 🚫  |
-| [`operator-assignment`] <a id="summary-operator-assignment"></a>                         | ✅                                                     | 🚫  |
+| [`operator-assignment`] <a id="summary-operator-assignment"></a>                         | 🚫                                                     | 🚫  |
 | [`prefer-arrow-callback`] <a id="summary-prefer-arrow-callback"></a>                     | ✅                                                     | 🚫  |
 | [`prefer-const`] <a id="summary-prefer-const"></a>                                       | ✅                                                     | 🚫  |
 | [`prefer-destructuring`] <a id="summary-prefer-destructuring"></a>                       | ✅                                                     | 🚫  |
@@ -586,52 +586,52 @@ Configurations compared:
   }
 ]</code></pre></td><td><pre><code>"warn"</code></pre></td></tr></table>
 
-[`import-x/consistent-type-specifier-style`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/consistent-type-specifier-style.md
-[`import-x/default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/default.md
-[`import-x/dynamic-import-chunkname`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/dynamic-import-chunkname.md
-[`import-x/export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/export.md
-[`import-x/exports-last`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/exports-last.md
-[`import-x/extensions`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/extensions.md
-[`import-x/first`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/first.md
-[`import-x/group-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/group-exports.md
-[`import-x/max-dependencies`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/max-dependencies.md
-[`import-x/named`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/named.md
-[`import-x/namespace`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/namespace.md
-[`import-x/newline-after-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/newline-after-import.md
-[`import-x/no-absolute-path`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-absolute-path.md
-[`import-x/no-amd`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-amd.md
-[`import-x/no-anonymous-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-anonymous-default-export.md
-[`import-x/no-commonjs`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-commonjs.md
-[`import-x/no-cycle`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-cycle.md
-[`import-x/no-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-default-export.md
-[`import-x/no-deprecated`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-deprecated.md
-[`import-x/no-duplicates`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-duplicates.md
-[`import-x/no-dynamic-require`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-dynamic-require.md
-[`import-x/no-empty-named-blocks`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-empty-named-blocks.md
-[`import-x/no-extraneous-dependencies`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-extraneous-dependencies.md
-[`import-x/no-import-module-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-import-module-exports.md
-[`import-x/no-internal-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-internal-modules.md
-[`import-x/no-mutable-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-mutable-exports.md
-[`import-x/no-named-as-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-as-default.md
-[`import-x/no-named-as-default-member`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-as-default-member.md
-[`import-x/no-named-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-default.md
-[`import-x/no-named-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-named-export.md
-[`import-x/no-namespace`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-namespace.md
-[`import-x/no-nodejs-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-nodejs-modules.md
-[`import-x/no-relative-packages`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-relative-packages.md
-[`import-x/no-relative-parent-imports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-relative-parent-imports.md
-[`import-x/no-rename-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-rename-default.md
-[`import-x/no-restricted-paths`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-restricted-paths.md
-[`import-x/no-self-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-self-import.md
-[`import-x/no-unassigned-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-unassigned-import.md
-[`import-x/no-unresolved`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-unresolved.md
-[`import-x/no-unused-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-unused-modules.md
-[`import-x/no-useless-path-segments`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-useless-path-segments.md
-[`import-x/no-webpack-loader-syntax`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/no-webpack-loader-syntax.md
-[`import-x/order`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/order.md
-[`import-x/prefer-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/prefer-default-export.md
-[`import-x/prefer-namespace-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/prefer-namespace-import.md
-[`import-x/unambiguous`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.16.2/docs/rules/unambiguous.md
+[`import-x/consistent-type-specifier-style`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/consistent-type-specifier-style.md
+[`import-x/default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/default.md
+[`import-x/dynamic-import-chunkname`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/dynamic-import-chunkname.md
+[`import-x/export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/export.md
+[`import-x/exports-last`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/exports-last.md
+[`import-x/extensions`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/extensions.md
+[`import-x/first`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/first.md
+[`import-x/group-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/group-exports.md
+[`import-x/max-dependencies`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/max-dependencies.md
+[`import-x/named`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/named.md
+[`import-x/namespace`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/namespace.md
+[`import-x/newline-after-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/newline-after-import.md
+[`import-x/no-absolute-path`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-absolute-path.md
+[`import-x/no-amd`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-amd.md
+[`import-x/no-anonymous-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-anonymous-default-export.md
+[`import-x/no-commonjs`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-commonjs.md
+[`import-x/no-cycle`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-cycle.md
+[`import-x/no-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-default-export.md
+[`import-x/no-deprecated`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-deprecated.md
+[`import-x/no-duplicates`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-duplicates.md
+[`import-x/no-dynamic-require`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-dynamic-require.md
+[`import-x/no-empty-named-blocks`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-empty-named-blocks.md
+[`import-x/no-extraneous-dependencies`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-extraneous-dependencies.md
+[`import-x/no-import-module-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-import-module-exports.md
+[`import-x/no-internal-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-internal-modules.md
+[`import-x/no-mutable-exports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-mutable-exports.md
+[`import-x/no-named-as-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-named-as-default.md
+[`import-x/no-named-as-default-member`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-named-as-default-member.md
+[`import-x/no-named-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-named-default.md
+[`import-x/no-named-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-named-export.md
+[`import-x/no-namespace`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-namespace.md
+[`import-x/no-nodejs-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-nodejs-modules.md
+[`import-x/no-relative-packages`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-relative-packages.md
+[`import-x/no-relative-parent-imports`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-relative-parent-imports.md
+[`import-x/no-rename-default`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-rename-default.md
+[`import-x/no-restricted-paths`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-restricted-paths.md
+[`import-x/no-self-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-self-import.md
+[`import-x/no-unassigned-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-unassigned-import.md
+[`import-x/no-unresolved`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-unresolved.md
+[`import-x/no-unused-modules`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-unused-modules.md
+[`import-x/no-useless-path-segments`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-useless-path-segments.md
+[`import-x/no-webpack-loader-syntax`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/no-webpack-loader-syntax.md
+[`import-x/order`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/order.md
+[`import-x/prefer-default-export`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/prefer-default-export.md
+[`import-x/prefer-namespace-import`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/prefer-namespace-import.md
+[`import-x/unambiguous`]: https://github.com/un-ts/eslint-plugin-import-x/blob/v4.17.1/docs/rules/unambiguous.md
 
 <!-- END import-x -->
 
@@ -645,154 +645,346 @@ Configurations compared:
 
 <!-- START unicorn -->
 
-| Rule                                                                                                                     | P                                                         | R   |
-| ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- | --- |
-| [`unicorn/better-regex`] <a id="summary-unicorn/better-regex"></a>                                                       | 🚫                                                        | 🚫  |
-| [`unicorn/catch-error-name`] <a id="summary-unicorn/catch-error-name"></a>                                               | ✅                                                        | ✅  |
-| [`unicorn/consistent-assert`] <a id="summary-unicorn/consistent-assert"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/consistent-date-clone`] <a id="summary-unicorn/consistent-date-clone"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/consistent-destructuring`] <a id="summary-unicorn/consistent-destructuring"></a>                               | ✅                                                        | 🚫  |
-| [`unicorn/consistent-empty-array-spread`] <a id="summary-unicorn/consistent-empty-array-spread"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/consistent-existence-index-check`] <a id="summary-unicorn/consistent-existence-index-check"></a>               | ✅                                                        | ✅  |
-| [`unicorn/consistent-function-scoping`] <a id="summary-unicorn/consistent-function-scoping"></a>                         | ✅                                                        | ✅  |
-| [`unicorn/consistent-template-literal-escape`] <a id="summary-unicorn/consistent-template-literal-escape"></a>           | ✅                                                        | ✅  |
-| [`unicorn/custom-error-definition`] <a id="summary-unicorn/custom-error-definition"></a>                                 | ✅                                                        | 🚫  |
-| [`unicorn/empty-brace-spaces`] <a id="summary-unicorn/empty-brace-spaces"></a>                                           | 🚫                                                        | ✅  |
-| [`unicorn/error-message`] <a id="summary-unicorn/error-message"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/escape-case`] <a id="summary-unicorn/escape-case"></a>                                                         | ✅                                                        | ✅  |
-| [`unicorn/expiring-todo-comments`] <a id="summary-unicorn/expiring-todo-comments"></a>                                   | ⚠️ <a href="#rule-unicorn/expiring-todo-comments">(?)</a> | ✅  |
-| [`unicorn/explicit-length-check`] <a id="summary-unicorn/explicit-length-check"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/filename-case`] <a id="summary-unicorn/filename-case"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/import-style`] <a id="summary-unicorn/import-style"></a>                                                       | ✅ <a href="#rule-unicorn/import-style">(?)</a>           | ✅  |
-| [`unicorn/isolated-functions`] <a id="summary-unicorn/isolated-functions"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/new-for-builtins`] <a id="summary-unicorn/new-for-builtins"></a>                                               | ✅                                                        | ✅  |
-| [`unicorn/no-abusive-eslint-disable`] <a id="summary-unicorn/no-abusive-eslint-disable"></a>                             | 🚫                                                        | ✅  |
-| [`unicorn/no-accessor-recursion`] <a id="summary-unicorn/no-accessor-recursion"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/no-anonymous-default-export`] <a id="summary-unicorn/no-anonymous-default-export"></a>                         | ✅                                                        | ✅  |
-| [`unicorn/no-array-callback-reference`] <a id="summary-unicorn/no-array-callback-reference"></a>                         | ✅                                                        | ✅  |
-| [`unicorn/no-array-for-each`] <a id="summary-unicorn/no-array-for-each"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/no-array-method-this-argument`] <a id="summary-unicorn/no-array-method-this-argument"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/no-array-reduce`] <a id="summary-unicorn/no-array-reduce"></a>                                                 | ✅                                                        | ✅  |
-| [`unicorn/no-array-reverse`] <a id="summary-unicorn/no-array-reverse"></a>                                               | ✅                                                        | ✅  |
-| [`unicorn/no-array-sort`] <a id="summary-unicorn/no-array-sort"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/no-await-expression-member`] <a id="summary-unicorn/no-await-expression-member"></a>                           | ✅                                                        | ✅  |
-| [`unicorn/no-await-in-promise-methods`] <a id="summary-unicorn/no-await-in-promise-methods"></a>                         | ✅                                                        | ✅  |
-| [`unicorn/no-console-spaces`] <a id="summary-unicorn/no-console-spaces"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/no-document-cookie`] <a id="summary-unicorn/no-document-cookie"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/no-empty-file`] <a id="summary-unicorn/no-empty-file"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/no-for-loop`] <a id="summary-unicorn/no-for-loop"></a>                                                         | ✅                                                        | ✅  |
-| [`unicorn/no-hex-escape`] <a id="summary-unicorn/no-hex-escape"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/no-immediate-mutation`] <a id="summary-unicorn/no-immediate-mutation"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/no-instanceof-builtins`] <a id="summary-unicorn/no-instanceof-builtins"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/no-invalid-fetch-options`] <a id="summary-unicorn/no-invalid-fetch-options"></a>                               | ✅                                                        | ✅  |
-| [`unicorn/no-invalid-remove-event-listener`] <a id="summary-unicorn/no-invalid-remove-event-listener"></a>               | ✅                                                        | ✅  |
-| [`unicorn/no-keyword-prefix`] <a id="summary-unicorn/no-keyword-prefix"></a>                                             | 🚫                                                        | 🚫  |
-| [`unicorn/no-lonely-if`] <a id="summary-unicorn/no-lonely-if"></a>                                                       | ✅                                                        | ✅  |
-| [`unicorn/no-magic-array-flat-depth`] <a id="summary-unicorn/no-magic-array-flat-depth"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/no-named-default`] <a id="summary-unicorn/no-named-default"></a>                                               | 🚫                                                        | ✅  |
-| [`unicorn/no-negated-condition`] <a id="summary-unicorn/no-negated-condition"></a>                                       | ✅                                                        | ✅  |
-| [`unicorn/no-negation-in-equality-check`] <a id="summary-unicorn/no-negation-in-equality-check"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/no-nested-ternary`] <a id="summary-unicorn/no-nested-ternary"></a>                                             | 🚫                                                        | ✅  |
-| [`unicorn/no-new-array`] <a id="summary-unicorn/no-new-array"></a>                                                       | ✅                                                        | ✅  |
-| [`unicorn/no-new-buffer`] <a id="summary-unicorn/no-new-buffer"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/no-null`] <a id="summary-unicorn/no-null"></a>                                                                 | 🚫                                                        | ✅  |
-| [`unicorn/no-object-as-default-parameter`] <a id="summary-unicorn/no-object-as-default-parameter"></a>                   | ✅                                                        | ✅  |
-| [`unicorn/no-process-exit`] <a id="summary-unicorn/no-process-exit"></a>                                                 | ✅                                                        | ✅  |
-| [`unicorn/no-single-promise-in-promise-methods`] <a id="summary-unicorn/no-single-promise-in-promise-methods"></a>       | ✅                                                        | ✅  |
-| [`unicorn/no-static-only-class`] <a id="summary-unicorn/no-static-only-class"></a>                                       | ✅                                                        | ✅  |
-| [`unicorn/no-thenable`] <a id="summary-unicorn/no-thenable"></a>                                                         | ✅                                                        | ✅  |
-| [`unicorn/no-this-assignment`] <a id="summary-unicorn/no-this-assignment"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/no-typeof-undefined`] <a id="summary-unicorn/no-typeof-undefined"></a>                                         | ✅                                                        | ✅  |
-| [`unicorn/no-unnecessary-array-flat-depth`] <a id="summary-unicorn/no-unnecessary-array-flat-depth"></a>                 | ✅                                                        | ✅  |
-| [`unicorn/no-unnecessary-array-splice-count`] <a id="summary-unicorn/no-unnecessary-array-splice-count"></a>             | ✅                                                        | ✅  |
-| [`unicorn/no-unnecessary-await`] <a id="summary-unicorn/no-unnecessary-await"></a>                                       | ✅                                                        | ✅  |
-| [`unicorn/no-unnecessary-polyfills`] <a id="summary-unicorn/no-unnecessary-polyfills"></a>                               | ✅                                                        | ✅  |
-| [`unicorn/no-unnecessary-slice-end`] <a id="summary-unicorn/no-unnecessary-slice-end"></a>                               | ✅                                                        | ✅  |
-| [`unicorn/no-unreadable-array-destructuring`] <a id="summary-unicorn/no-unreadable-array-destructuring"></a>             | ✅                                                        | ✅  |
-| [`unicorn/no-unreadable-iife`] <a id="summary-unicorn/no-unreadable-iife"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/no-unused-properties`] <a id="summary-unicorn/no-unused-properties"></a>                                       | 🚫                                                        | 🚫  |
-| [`unicorn/no-useless-collection-argument`] <a id="summary-unicorn/no-useless-collection-argument"></a>                   | ✅                                                        | ✅  |
-| [`unicorn/no-useless-error-capture-stack-trace`] <a id="summary-unicorn/no-useless-error-capture-stack-trace"></a>       | ✅                                                        | ✅  |
-| [`unicorn/no-useless-fallback-in-spread`] <a id="summary-unicorn/no-useless-fallback-in-spread"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/no-useless-iterator-to-array`] <a id="summary-unicorn/no-useless-iterator-to-array"></a>                       | ✅                                                        | ✅  |
-| [`unicorn/no-useless-length-check`] <a id="summary-unicorn/no-useless-length-check"></a>                                 | ✅                                                        | ✅  |
-| [`unicorn/no-useless-promise-resolve-reject`] <a id="summary-unicorn/no-useless-promise-resolve-reject"></a>             | ✅                                                        | ✅  |
-| [`unicorn/no-useless-spread`] <a id="summary-unicorn/no-useless-spread"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/no-useless-switch-case`] <a id="summary-unicorn/no-useless-switch-case"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/no-useless-undefined`] <a id="summary-unicorn/no-useless-undefined"></a>                                       | ✅                                                        | ✅  |
-| [`unicorn/no-zero-fractions`] <a id="summary-unicorn/no-zero-fractions"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/number-literal-case`] <a id="summary-unicorn/number-literal-case"></a>                                         | 🚫                                                        | ✅  |
-| [`unicorn/numeric-separators-style`] <a id="summary-unicorn/numeric-separators-style"></a>                               | ✅                                                        | ✅  |
-| [`unicorn/prefer-add-event-listener`] <a id="summary-unicorn/prefer-add-event-listener"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-array-find`] <a id="summary-unicorn/prefer-array-find"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-array-flat`] <a id="summary-unicorn/prefer-array-flat"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-array-flat-map`] <a id="summary-unicorn/prefer-array-flat-map"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-array-index-of`] <a id="summary-unicorn/prefer-array-index-of"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-array-some`] <a id="summary-unicorn/prefer-array-some"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-at`] <a id="summary-unicorn/prefer-at"></a>                                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-bigint-literals`] <a id="summary-unicorn/prefer-bigint-literals"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-blob-reading-methods`] <a id="summary-unicorn/prefer-blob-reading-methods"></a>                         | ✅                                                        | ✅  |
-| [`unicorn/prefer-class-fields`] <a id="summary-unicorn/prefer-class-fields"></a>                                         | ✅                                                        | ✅  |
-| [`unicorn/prefer-classlist-toggle`] <a id="summary-unicorn/prefer-classlist-toggle"></a>                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-code-point`] <a id="summary-unicorn/prefer-code-point"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-date-now`] <a id="summary-unicorn/prefer-date-now"></a>                                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-default-parameters`] <a id="summary-unicorn/prefer-default-parameters"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-dom-node-append`] <a id="summary-unicorn/prefer-dom-node-append"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-dom-node-dataset`] <a id="summary-unicorn/prefer-dom-node-dataset"></a>                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-dom-node-remove`] <a id="summary-unicorn/prefer-dom-node-remove"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-dom-node-text-content`] <a id="summary-unicorn/prefer-dom-node-text-content"></a>                       | ✅                                                        | ✅  |
-| [`unicorn/prefer-event-target`] <a id="summary-unicorn/prefer-event-target"></a>                                         | ✅                                                        | ✅  |
-| [`unicorn/prefer-export-from`] <a id="summary-unicorn/prefer-export-from"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/prefer-global-this`] <a id="summary-unicorn/prefer-global-this"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/prefer-import-meta-properties`] <a id="summary-unicorn/prefer-import-meta-properties"></a>                     | ✅                                                        | 🚫  |
-| [`unicorn/prefer-includes`] <a id="summary-unicorn/prefer-includes"></a>                                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-json-parse-buffer`] <a id="summary-unicorn/prefer-json-parse-buffer"></a>                               | 🚫                                                        | 🚫  |
-| [`unicorn/prefer-keyboard-event-key`] <a id="summary-unicorn/prefer-keyboard-event-key"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-logical-operator-over-ternary`] <a id="summary-unicorn/prefer-logical-operator-over-ternary"></a>       | ✅                                                        | ✅  |
-| [`unicorn/prefer-math-min-max`] <a id="summary-unicorn/prefer-math-min-max"></a>                                         | ✅                                                        | ✅  |
-| [`unicorn/prefer-math-trunc`] <a id="summary-unicorn/prefer-math-trunc"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-modern-dom-apis`] <a id="summary-unicorn/prefer-modern-dom-apis"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-modern-math-apis`] <a id="summary-unicorn/prefer-modern-math-apis"></a>                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-module`] <a id="summary-unicorn/prefer-module"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-native-coercion-functions`] <a id="summary-unicorn/prefer-native-coercion-functions"></a>               | ✅                                                        | ✅  |
-| [`unicorn/prefer-negative-index`] <a id="summary-unicorn/prefer-negative-index"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-node-protocol`] <a id="summary-unicorn/prefer-node-protocol"></a>                                       | 🚫                                                        | ✅  |
-| [`unicorn/prefer-number-properties`] <a id="summary-unicorn/prefer-number-properties"></a>                               | ✅                                                        | ✅  |
-| [`unicorn/prefer-object-from-entries`] <a id="summary-unicorn/prefer-object-from-entries"></a>                           | ✅                                                        | ✅  |
-| [`unicorn/prefer-optional-catch-binding`] <a id="summary-unicorn/prefer-optional-catch-binding"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-prototype-methods`] <a id="summary-unicorn/prefer-prototype-methods"></a>                               | ✅                                                        | ✅  |
-| [`unicorn/prefer-query-selector`] <a id="summary-unicorn/prefer-query-selector"></a>                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-reflect-apply`] <a id="summary-unicorn/prefer-reflect-apply"></a>                                       | ✅                                                        | ✅  |
-| [`unicorn/prefer-regexp-test`] <a id="summary-unicorn/prefer-regexp-test"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/prefer-response-static-json`] <a id="summary-unicorn/prefer-response-static-json"></a>                         | ✅                                                        | ✅  |
-| [`unicorn/prefer-set-has`] <a id="summary-unicorn/prefer-set-has"></a>                                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-set-size`] <a id="summary-unicorn/prefer-set-size"></a>                                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-simple-condition-first`] <a id="summary-unicorn/prefer-simple-condition-first"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-single-call`] <a id="summary-unicorn/prefer-single-call"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/prefer-spread`] <a id="summary-unicorn/prefer-spread"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-string-raw`] <a id="summary-unicorn/prefer-string-raw"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-string-replace-all`] <a id="summary-unicorn/prefer-string-replace-all"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/prefer-string-slice`] <a id="summary-unicorn/prefer-string-slice"></a>                                         | ✅                                                        | ✅  |
-| [`unicorn/prefer-string-starts-ends-with`] <a id="summary-unicorn/prefer-string-starts-ends-with"></a>                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-string-trim-start-end`] <a id="summary-unicorn/prefer-string-trim-start-end"></a>                       | ✅                                                        | ✅  |
-| [`unicorn/prefer-structured-clone`] <a id="summary-unicorn/prefer-structured-clone"></a>                                 | ✅                                                        | ✅  |
-| [`unicorn/prefer-switch`] <a id="summary-unicorn/prefer-switch"></a>                                                     | ✅                                                        | ✅  |
-| [`unicorn/prefer-ternary`] <a id="summary-unicorn/prefer-ternary"></a>                                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-top-level-await`] <a id="summary-unicorn/prefer-top-level-await"></a>                                   | ✅                                                        | ✅  |
-| [`unicorn/prefer-type-error`] <a id="summary-unicorn/prefer-type-error"></a>                                             | ✅                                                        | ✅  |
-| [`unicorn/prevent-abbreviations`] <a id="summary-unicorn/prevent-abbreviations"></a>                                     | 🚫                                                        | ✅  |
-| [`unicorn/relative-url-style`] <a id="summary-unicorn/relative-url-style"></a>                                           | ✅                                                        | ✅  |
-| [`unicorn/require-array-join-separator`] <a id="summary-unicorn/require-array-join-separator"></a>                       | ✅                                                        | ✅  |
-| [`unicorn/require-module-attributes`] <a id="summary-unicorn/require-module-attributes"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/require-module-specifiers`] <a id="summary-unicorn/require-module-specifiers"></a>                             | ✅                                                        | ✅  |
-| [`unicorn/require-number-to-fixed-digits-argument`] <a id="summary-unicorn/require-number-to-fixed-digits-argument"></a> | ✅                                                        | ✅  |
-| [`unicorn/require-post-message-target-origin`] <a id="summary-unicorn/require-post-message-target-origin"></a>           | 🚫                                                        | 🚫  |
-| [`unicorn/string-content`] <a id="summary-unicorn/string-content"></a>                                                   | 🚫                                                        | 🚫  |
-| [`unicorn/switch-case-braces`] <a id="summary-unicorn/switch-case-braces"></a>                                           | ✅ <a href="#rule-unicorn/switch-case-braces">(?)</a>     | ✅  |
-| [`unicorn/switch-case-break-position`] <a id="summary-unicorn/switch-case-break-position"></a>                           | ✅                                                        | ✅  |
-| [`unicorn/template-indent`] <a id="summary-unicorn/template-indent"></a>                                                 | 🚫                                                        | ✅  |
-| [`unicorn/text-encoding-identifier-case`] <a id="summary-unicorn/text-encoding-identifier-case"></a>                     | ✅                                                        | ✅  |
-| [`unicorn/throw-new-error`] <a id="summary-unicorn/throw-new-error"></a>                                                 | ✅                                                        | ✅  |
+| Rule                                                                                                                               | P                                                               | R   |
+| ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | --- |
+| [`unicorn/better-dom-traversing`] <a id="summary-unicorn/better-dom-traversing"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/catch-error-name`] <a id="summary-unicorn/catch-error-name"></a>                                                         | ✅                                                              | ✅  |
+| [`unicorn/class-reference-in-static-methods`] <a id="summary-unicorn/class-reference-in-static-methods"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/comment-content`] <a id="summary-unicorn/comment-content"></a>                                                           | ✅                                                              | 🚫  |
+| [`unicorn/consistent-arrow-return-style`] <a id="summary-unicorn/consistent-arrow-return-style"></a>                               | 🚫                                                              | 🚫  |
+| [`unicorn/consistent-assert`] <a id="summary-unicorn/consistent-assert"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/consistent-boolean-name`] <a id="summary-unicorn/consistent-boolean-name"></a>                                           | 🚫                                                              | ✅  |
+| [`unicorn/consistent-class-member-order`] <a id="summary-unicorn/consistent-class-member-order"></a>                               | 🚫                                                              | ✅  |
+| [`unicorn/consistent-compound-words`] <a id="summary-unicorn/consistent-compound-words"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/consistent-conditional-object-spread`] <a id="summary-unicorn/consistent-conditional-object-spread"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/consistent-date-clone`] <a id="summary-unicorn/consistent-date-clone"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/consistent-destructuring`] <a id="summary-unicorn/consistent-destructuring"></a>                                         | ✅                                                              | 🚫  |
+| [`unicorn/consistent-empty-array-spread`] <a id="summary-unicorn/consistent-empty-array-spread"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/consistent-existence-index-check`] <a id="summary-unicorn/consistent-existence-index-check"></a>                         | ✅                                                              | ✅  |
+| [`unicorn/consistent-export-decorator-position`] <a id="summary-unicorn/consistent-export-decorator-position"></a>                 | 🚫                                                              | ✅  |
+| [`unicorn/consistent-function-scoping`] <a id="summary-unicorn/consistent-function-scoping"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/consistent-function-style`] <a id="summary-unicorn/consistent-function-style"></a>                                       | 🚫                                                              | 🚫  |
+| [`unicorn/consistent-json-file-read`] <a id="summary-unicorn/consistent-json-file-read"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/consistent-optional-chaining`] <a id="summary-unicorn/consistent-optional-chaining"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/consistent-template-literal-escape`] <a id="summary-unicorn/consistent-template-literal-escape"></a>                     | ✅                                                              | ✅  |
+| [`unicorn/consistent-tuple-labels`] <a id="summary-unicorn/consistent-tuple-labels"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/custom-error-definition`] <a id="summary-unicorn/custom-error-definition"></a>                                           | ✅                                                              | 🚫  |
+| [`unicorn/default-export-style`] <a id="summary-unicorn/default-export-style"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/dom-node-dataset`] <a id="summary-unicorn/dom-node-dataset"></a>                                                         | ✅                                                              | ✅  |
+| [`unicorn/empty-brace-spaces`] <a id="summary-unicorn/empty-brace-spaces"></a>                                                     | 🚫                                                              | ✅  |
+| [`unicorn/error-message`] <a id="summary-unicorn/error-message"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/escape-case`] <a id="summary-unicorn/escape-case"></a>                                                                   | ✅                                                              | ✅  |
+| [`unicorn/expiring-todo-comments`] <a id="summary-unicorn/expiring-todo-comments"></a>                                             | ⚠️ <a href="#rule-unicorn/expiring-todo-comments">(?)</a>       | ✅  |
+| [`unicorn/explicit-length-check`] <a id="summary-unicorn/explicit-length-check"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/explicit-timer-delay`] <a id="summary-unicorn/explicit-timer-delay"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/filename-case`] <a id="summary-unicorn/filename-case"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/id-match`] <a id="summary-unicorn/id-match"></a>                                                                         | 🚫                                                              | 🚫  |
+| [`unicorn/import-style`] <a id="summary-unicorn/import-style"></a>                                                                 | ✅ <a href="#rule-unicorn/import-style">(?)</a>                 | ✅  |
+| [`unicorn/isolated-functions`] <a id="summary-unicorn/isolated-functions"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/iteration-fallback-style`] <a id="summary-unicorn/iteration-fallback-style"></a>                                         | 🚫                                                              | 🚫  |
+| [`unicorn/logical-assignment-operators`] <a id="summary-unicorn/logical-assignment-operators"></a>                                 | ✅ <a href="#rule-unicorn/logical-assignment-operators">(?)</a> | ✅  |
+| [`unicorn/max-nested-calls`] <a id="summary-unicorn/max-nested-calls"></a>                                                         | 🚫                                                              | ✅  |
+| [`unicorn/name-replacements`] <a id="summary-unicorn/name-replacements"></a>                                                       | 🚫                                                              | ✅  |
+| [`unicorn/new-for-builtins`] <a id="summary-unicorn/new-for-builtins"></a>                                                         | ✅                                                              | ✅  |
+| [`unicorn/no-abusive-eslint-disable`] <a id="summary-unicorn/no-abusive-eslint-disable"></a>                                       | 🚫                                                              | ✅  |
+| [`unicorn/no-accessor-recursion`] <a id="summary-unicorn/no-accessor-recursion"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-accidental-bitwise-operator`] <a id="summary-unicorn/no-accidental-bitwise-operator"></a>                             | 🚫                                                              | ✅  |
+| [`unicorn/no-anonymous-default-export`] <a id="summary-unicorn/no-anonymous-default-export"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-array-callback-reference`] <a id="summary-unicorn/no-array-callback-reference"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-array-concat-in-loop`] <a id="summary-unicorn/no-array-concat-in-loop"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-array-fill-with-reference-type`] <a id="summary-unicorn/no-array-fill-with-reference-type"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-array-from-fill`] <a id="summary-unicorn/no-array-from-fill"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-array-front-mutation`] <a id="summary-unicorn/no-array-front-mutation"></a>                                           | 🚫                                                              | 🚫  |
+| [`unicorn/no-array-method-this-argument`] <a id="summary-unicorn/no-array-method-this-argument"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-array-reduce`] <a id="summary-unicorn/no-array-reduce"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/no-array-reverse`] <a id="summary-unicorn/no-array-reverse"></a>                                                         | ✅                                                              | ✅  |
+| [`unicorn/no-array-sort`] <a id="summary-unicorn/no-array-sort"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/no-array-sort-for-min-max`] <a id="summary-unicorn/no-array-sort-for-min-max"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-array-splice`] <a id="summary-unicorn/no-array-splice"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/no-asterisk-prefix-in-documentation-comments`] <a id="summary-unicorn/no-asterisk-prefix-in-documentation-comments"></a> | 🚫                                                              | 🚫  |
+| [`unicorn/no-async-promise-finally`] <a id="summary-unicorn/no-async-promise-finally"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-await-expression-member`] <a id="summary-unicorn/no-await-expression-member"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/no-await-in-promise-methods`] <a id="summary-unicorn/no-await-in-promise-methods"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-barrel-files`] <a id="summary-unicorn/no-barrel-files"></a>                                                           | ✅                                                              | 🚫  |
+| [`unicorn/no-blob-to-file`] <a id="summary-unicorn/no-blob-to-file"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/no-boolean-sort-comparator`] <a id="summary-unicorn/no-boolean-sort-comparator"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/no-break-in-nested-loop`] <a id="summary-unicorn/no-break-in-nested-loop"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-canvas-to-image`] <a id="summary-unicorn/no-canvas-to-image"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-chained-comparison`] <a id="summary-unicorn/no-chained-comparison"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-collection-bracket-access`] <a id="summary-unicorn/no-collection-bracket-access"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/no-computed-property-existence-check`] <a id="summary-unicorn/no-computed-property-existence-check"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/no-confusing-array-splice`] <a id="summary-unicorn/no-confusing-array-splice"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-confusing-array-with`] <a id="summary-unicorn/no-confusing-array-with"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-console-spaces`] <a id="summary-unicorn/no-console-spaces"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/no-constant-zero-expression`] <a id="summary-unicorn/no-constant-zero-expression"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-declarations-before-early-exit`] <a id="summary-unicorn/no-declarations-before-early-exit"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-document-cookie`] <a id="summary-unicorn/no-document-cookie"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-double-comparison`] <a id="summary-unicorn/no-double-comparison"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-duplicate-if-branches`] <a id="summary-unicorn/no-duplicate-if-branches"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-duplicate-logical-operands`] <a id="summary-unicorn/no-duplicate-logical-operands"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-duplicate-loops`] <a id="summary-unicorn/no-duplicate-loops"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-duplicate-set-values`] <a id="summary-unicorn/no-duplicate-set-values"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-empty-file`] <a id="summary-unicorn/no-empty-file"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/no-error-property-assignment`] <a id="summary-unicorn/no-error-property-assignment"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/no-exports-in-scripts`] <a id="summary-unicorn/no-exports-in-scripts"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-for-each`] <a id="summary-unicorn/no-for-each"></a>                                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-for-loop`] <a id="summary-unicorn/no-for-loop"></a>                                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-global-object-property-assignment`] <a id="summary-unicorn/no-global-object-property-assignment"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/no-immediate-mutation`] <a id="summary-unicorn/no-immediate-mutation"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-impossible-length-comparison`] <a id="summary-unicorn/no-impossible-length-comparison"></a>                           | ✅                                                              | ✅  |
+| [`unicorn/no-incorrect-query-selector`] <a id="summary-unicorn/no-incorrect-query-selector"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-incorrect-template-string-interpolation`] <a id="summary-unicorn/no-incorrect-template-string-interpolation"></a>     | ✅                                                              | ✅  |
+| [`unicorn/no-instanceof-builtins`] <a id="summary-unicorn/no-instanceof-builtins"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/no-invalid-argument-count`] <a id="summary-unicorn/no-invalid-argument-count"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-invalid-character-comparison`] <a id="summary-unicorn/no-invalid-character-comparison"></a>                           | ✅                                                              | ✅  |
+| [`unicorn/no-invalid-fetch-options`] <a id="summary-unicorn/no-invalid-fetch-options"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-invalid-file-input-accept`] <a id="summary-unicorn/no-invalid-file-input-accept"></a>                                 | 🚫                                                              | 🚫  |
+| [`unicorn/no-invalid-remove-event-listener`] <a id="summary-unicorn/no-invalid-remove-event-listener"></a>                         | ✅                                                              | ✅  |
+| [`unicorn/no-invalid-well-known-symbol-methods`] <a id="summary-unicorn/no-invalid-well-known-symbol-methods"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/no-keyword-prefix`] <a id="summary-unicorn/no-keyword-prefix"></a>                                                       | 🚫                                                              | 🚫  |
+| [`unicorn/no-late-current-target-access`] <a id="summary-unicorn/no-late-current-target-access"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-late-event-control`] <a id="summary-unicorn/no-late-event-control"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-lonely-if`] <a id="summary-unicorn/no-lonely-if"></a>                                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-loop-iterable-mutation`] <a id="summary-unicorn/no-loop-iterable-mutation"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-magic-array-flat-depth`] <a id="summary-unicorn/no-magic-array-flat-depth"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-manually-wrapped-comments`] <a id="summary-unicorn/no-manually-wrapped-comments"></a>                                 | 🚫                                                              | 🚫  |
+| [`unicorn/no-mismatched-map-key`] <a id="summary-unicorn/no-mismatched-map-key"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-misrefactored-assignment`] <a id="summary-unicorn/no-misrefactored-assignment"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-missing-local-resource`] <a id="summary-unicorn/no-missing-local-resource"></a>                                       | 🚫                                                              | 🚫  |
+| [`unicorn/no-multiple-promise-resolver-calls`] <a id="summary-unicorn/no-multiple-promise-resolver-calls"></a>                     | ✅                                                              | ✅  |
+| [`unicorn/no-named-default`] <a id="summary-unicorn/no-named-default"></a>                                                         | 🚫                                                              | ✅  |
+| [`unicorn/no-negated-array-predicate`] <a id="summary-unicorn/no-negated-array-predicate"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/no-negated-comparison`] <a id="summary-unicorn/no-negated-comparison"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-negated-condition`] <a id="summary-unicorn/no-negated-condition"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-negation-in-equality-check`] <a id="summary-unicorn/no-negation-in-equality-check"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-nested-ternary`] <a id="summary-unicorn/no-nested-ternary"></a>                                                       | 🚫                                                              | ✅  |
+| [`unicorn/no-new-array`] <a id="summary-unicorn/no-new-array"></a>                                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-new-buffer`] <a id="summary-unicorn/no-new-buffer"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/no-non-function-verb-prefix`] <a id="summary-unicorn/no-non-function-verb-prefix"></a>                                   | 🚫                                                              | ✅  |
+| [`unicorn/no-nonstandard-builtin-properties`] <a id="summary-unicorn/no-nonstandard-builtin-properties"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-null`] <a id="summary-unicorn/no-null"></a>                                                                           | 🚫                                                              | ✅  |
+| [`unicorn/no-object-as-default-parameter`] <a id="summary-unicorn/no-object-as-default-parameter"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/no-object-methods-with-collections`] <a id="summary-unicorn/no-object-methods-with-collections"></a>                     | ✅                                                              | ✅  |
+| [`unicorn/no-optional-chaining-on-undeclared-variable`] <a id="summary-unicorn/no-optional-chaining-on-undeclared-variable"></a>   | ✅                                                              | ✅  |
+| [`unicorn/no-process-exit`] <a id="summary-unicorn/no-process-exit"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/no-redundant-comparison`] <a id="summary-unicorn/no-redundant-comparison"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-return-array-push`] <a id="summary-unicorn/no-return-array-push"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-selector-as-dom-name`] <a id="summary-unicorn/no-selector-as-dom-name"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-shorthand-property-overrides`] <a id="summary-unicorn/no-shorthand-property-overrides"></a>                           | 🚫                                                              | ✅  |
+| [`unicorn/no-single-promise-in-promise-methods`] <a id="summary-unicorn/no-single-promise-in-promise-methods"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/no-static-only-class`] <a id="summary-unicorn/no-static-only-class"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-subtraction-comparison`] <a id="summary-unicorn/no-subtraction-comparison"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-thenable`] <a id="summary-unicorn/no-thenable"></a>                                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-this-assignment`] <a id="summary-unicorn/no-this-assignment"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-this-outside-of-class`] <a id="summary-unicorn/no-this-outside-of-class"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-top-level-assignment-in-function`] <a id="summary-unicorn/no-top-level-assignment-in-function"></a>                   | ✅                                                              | ✅  |
+| [`unicorn/no-top-level-side-effects`] <a id="summary-unicorn/no-top-level-side-effects"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/no-transition-all`] <a id="summary-unicorn/no-transition-all"></a>                                                       | 🚫                                                              | ✅  |
+| [`unicorn/no-typeof-undefined`] <a id="summary-unicorn/no-typeof-undefined"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-uncalled-method`] <a id="summary-unicorn/no-uncalled-method"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-undeclared-class-members`] <a id="summary-unicorn/no-undeclared-class-members"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-array-flat-depth`] <a id="summary-unicorn/no-unnecessary-array-flat-depth"></a>                           | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-array-flat-map`] <a id="summary-unicorn/no-unnecessary-array-flat-map"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-array-splice-count`] <a id="summary-unicorn/no-unnecessary-array-splice-count"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-await`] <a id="summary-unicorn/no-unnecessary-await"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-boolean-comparison`] <a id="summary-unicorn/no-unnecessary-boolean-comparison"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-fetch-options`] <a id="summary-unicorn/no-unnecessary-fetch-options"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-global-this`] <a id="summary-unicorn/no-unnecessary-global-this"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-nested-ternary`] <a id="summary-unicorn/no-unnecessary-nested-ternary"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-polyfills`] <a id="summary-unicorn/no-unnecessary-polyfills"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-slice-end`] <a id="summary-unicorn/no-unnecessary-slice-end"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-splice`] <a id="summary-unicorn/no-unnecessary-splice"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/no-unnecessary-string-trim`] <a id="summary-unicorn/no-unnecessary-string-trim"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/no-unreadable-array-destructuring`] <a id="summary-unicorn/no-unreadable-array-destructuring"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-unreadable-for-of-expression`] <a id="summary-unicorn/no-unreadable-for-of-expression"></a>                           | ✅                                                              | ✅  |
+| [`unicorn/no-unreadable-iife`] <a id="summary-unicorn/no-unreadable-iife"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/no-unreadable-new-expression`] <a id="summary-unicorn/no-unreadable-new-expression"></a>                                 | 🚫                                                              | 🚫  |
+| [`unicorn/no-unreadable-object-destructuring`] <a id="summary-unicorn/no-unreadable-object-destructuring"></a>                     | ✅                                                              | ✅  |
+| [`unicorn/no-unsafe-buffer-conversion`] <a id="summary-unicorn/no-unsafe-buffer-conversion"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/no-unsafe-dom-html`] <a id="summary-unicorn/no-unsafe-dom-html"></a>                                                     | 🚫                                                              | 🚫  |
+| [`unicorn/no-unsafe-promise-all-settled-values`] <a id="summary-unicorn/no-unsafe-promise-all-settled-values"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/no-unsafe-property-key`] <a id="summary-unicorn/no-unsafe-property-key"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/no-unsafe-sqlite-interpolation`] <a id="summary-unicorn/no-unsafe-sqlite-interpolation"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/no-unsafe-string-replacement`] <a id="summary-unicorn/no-unsafe-string-replacement"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/no-unused-array-method-return`] <a id="summary-unicorn/no-unused-array-method-return"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-unused-properties`] <a id="summary-unicorn/no-unused-properties"></a>                                                 | 🚫                                                              | 🚫  |
+| [`unicorn/no-useless-boolean-cast`] <a id="summary-unicorn/no-useless-boolean-cast"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-useless-coercion`] <a id="summary-unicorn/no-useless-coercion"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-useless-collection-argument`] <a id="summary-unicorn/no-useless-collection-argument"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/no-useless-compound-assignment`] <a id="summary-unicorn/no-useless-compound-assignment"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/no-useless-concat`] <a id="summary-unicorn/no-useless-concat"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/no-useless-continue`] <a id="summary-unicorn/no-useless-continue"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-useless-delete-check`] <a id="summary-unicorn/no-useless-delete-check"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-useless-else`] <a id="summary-unicorn/no-useless-else"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/no-useless-error-capture-stack-trace`] <a id="summary-unicorn/no-useless-error-capture-stack-trace"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/no-useless-fallback-in-spread`] <a id="summary-unicorn/no-useless-fallback-in-spread"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/no-useless-iterator-to-array`] <a id="summary-unicorn/no-useless-iterator-to-array"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/no-useless-length-check`] <a id="summary-unicorn/no-useless-length-check"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/no-useless-logical-operand`] <a id="summary-unicorn/no-useless-logical-operand"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/no-useless-override`] <a id="summary-unicorn/no-useless-override"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/no-useless-promise-resolve-reject`] <a id="summary-unicorn/no-useless-promise-resolve-reject"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/no-useless-re-export`] <a id="summary-unicorn/no-useless-re-export"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-useless-recursion`] <a id="summary-unicorn/no-useless-recursion"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-useless-spread`] <a id="summary-unicorn/no-useless-spread"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/no-useless-switch-case`] <a id="summary-unicorn/no-useless-switch-case"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/no-useless-template-literals`] <a id="summary-unicorn/no-useless-template-literals"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/no-useless-undefined`] <a id="summary-unicorn/no-useless-undefined"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/no-xor-as-exponentiation`] <a id="summary-unicorn/no-xor-as-exponentiation"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/no-zero-fractions`] <a id="summary-unicorn/no-zero-fractions"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/number-literal-case`] <a id="summary-unicorn/number-literal-case"></a>                                                   | 🚫                                                              | ✅  |
+| [`unicorn/numeric-separators-style`] <a id="summary-unicorn/numeric-separators-style"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/operator-assignment`] <a id="summary-unicorn/operator-assignment"></a>                                                   | ✅ <a href="#rule-unicorn/operator-assignment">(?)</a>          | ✅  |
+| [`unicorn/prefer-abort-signal-any`] <a id="summary-unicorn/prefer-abort-signal-any"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-abort-signal-timeout`] <a id="summary-unicorn/prefer-abort-signal-timeout"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-add-event-listener`] <a id="summary-unicorn/prefer-add-event-listener"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-add-event-listener-options`] <a id="summary-unicorn/prefer-add-event-listener-options"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-aggregate-error`] <a id="summary-unicorn/prefer-aggregate-error"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-find`] <a id="summary-unicorn/prefer-array-find"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-flat`] <a id="summary-unicorn/prefer-array-flat"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-flat-map`] <a id="summary-unicorn/prefer-array-flat-map"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-from-async`] <a id="summary-unicorn/prefer-array-from-async"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-from-map`] <a id="summary-unicorn/prefer-array-from-map"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-from-range`] <a id="summary-unicorn/prefer-array-from-range"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-index-of`] <a id="summary-unicorn/prefer-array-index-of"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-iterable-methods`] <a id="summary-unicorn/prefer-array-iterable-methods"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-last-methods`] <a id="summary-unicorn/prefer-array-last-methods"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-slice`] <a id="summary-unicorn/prefer-array-slice"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-array-some`] <a id="summary-unicorn/prefer-array-some"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-at`] <a id="summary-unicorn/prefer-at"></a>                                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-await`] <a id="summary-unicorn/prefer-await"></a>                                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-bigint-literals`] <a id="summary-unicorn/prefer-bigint-literals"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-blob-reading-methods`] <a id="summary-unicorn/prefer-blob-reading-methods"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-block-statement-over-iife`] <a id="summary-unicorn/prefer-block-statement-over-iife"></a>                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-boolean-return`] <a id="summary-unicorn/prefer-boolean-return"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-class-fields`] <a id="summary-unicorn/prefer-class-fields"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-classlist-toggle`] <a id="summary-unicorn/prefer-classlist-toggle"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-code-point`] <a id="summary-unicorn/prefer-code-point"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-continue`] <a id="summary-unicorn/prefer-continue"></a>                                                           | 🚫                                                              | ✅  |
+| [`unicorn/prefer-date-now`] <a id="summary-unicorn/prefer-date-now"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-default-parameters`] <a id="summary-unicorn/prefer-default-parameters"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-direct-iteration`] <a id="summary-unicorn/prefer-direct-iteration"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-dispose`] <a id="summary-unicorn/prefer-dispose"></a>                                                             | ✅                                                              | 🚫  |
+| [`unicorn/prefer-dom-node-append`] <a id="summary-unicorn/prefer-dom-node-append"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-dom-node-html-methods`] <a id="summary-unicorn/prefer-dom-node-html-methods"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-dom-node-remove`] <a id="summary-unicorn/prefer-dom-node-remove"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-dom-node-replace-children`] <a id="summary-unicorn/prefer-dom-node-replace-children"></a>                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-dom-node-text-content`] <a id="summary-unicorn/prefer-dom-node-text-content"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-early-return`] <a id="summary-unicorn/prefer-early-return"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-else-if`] <a id="summary-unicorn/prefer-else-if"></a>                                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-error-is-error`] <a id="summary-unicorn/prefer-error-is-error"></a>                                               | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-event-target`] <a id="summary-unicorn/prefer-event-target"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-explicit-viewport-units`] <a id="summary-unicorn/prefer-explicit-viewport-units"></a>                             | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-export-from`] <a id="summary-unicorn/prefer-export-from"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-flat-math-min-max`] <a id="summary-unicorn/prefer-flat-math-min-max"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-get-or-insert-computed`] <a id="summary-unicorn/prefer-get-or-insert-computed"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-global-number-constants`] <a id="summary-unicorn/prefer-global-number-constants"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-global-this`] <a id="summary-unicorn/prefer-global-this"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-group-by`] <a id="summary-unicorn/prefer-group-by"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-has-check`] <a id="summary-unicorn/prefer-has-check"></a>                                                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-hoisting-branch-code`] <a id="summary-unicorn/prefer-hoisting-branch-code"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-https`] <a id="summary-unicorn/prefer-https"></a>                                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-identifier-import-export-specifiers`] <a id="summary-unicorn/prefer-identifier-import-export-specifiers"></a>     | ✅                                                              | ✅  |
+| [`unicorn/prefer-import-meta-properties`] <a id="summary-unicorn/prefer-import-meta-properties"></a>                               | ✅                                                              | 🚫  |
+| [`unicorn/prefer-includes`] <a id="summary-unicorn/prefer-includes"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-includes-over-repeated-comparisons`] <a id="summary-unicorn/prefer-includes-over-repeated-comparisons"></a>       | 🚫                                                              | ✅  |
+| [`unicorn/prefer-iterable-in-constructor`] <a id="summary-unicorn/prefer-iterable-in-constructor"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-iterator-concat`] <a id="summary-unicorn/prefer-iterator-concat"></a>                                             | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-iterator-helpers`] <a id="summary-unicorn/prefer-iterator-helpers"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-iterator-to-array`] <a id="summary-unicorn/prefer-iterator-to-array"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-iterator-to-array-at-end`] <a id="summary-unicorn/prefer-iterator-to-array-at-end"></a>                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-keyboard-event-key`] <a id="summary-unicorn/prefer-keyboard-event-key"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-location-assign`] <a id="summary-unicorn/prefer-location-assign"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-logical-operator-over-ternary`] <a id="summary-unicorn/prefer-logical-operator-over-ternary"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-map-from-entries`] <a id="summary-unicorn/prefer-map-from-entries"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-math-abs`] <a id="summary-unicorn/prefer-math-abs"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-math-constants`] <a id="summary-unicorn/prefer-math-constants"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-math-min-max`] <a id="summary-unicorn/prefer-math-min-max"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-math-trunc`] <a id="summary-unicorn/prefer-math-trunc"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-minimal-ternary`] <a id="summary-unicorn/prefer-minimal-ternary"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-modern-dom-apis`] <a id="summary-unicorn/prefer-modern-dom-apis"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-modern-math-apis`] <a id="summary-unicorn/prefer-modern-math-apis"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-module`] <a id="summary-unicorn/prefer-module"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-native-coercion-functions`] <a id="summary-unicorn/prefer-native-coercion-functions"></a>                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-negative-index`] <a id="summary-unicorn/prefer-negative-index"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-node-protocol`] <a id="summary-unicorn/prefer-node-protocol"></a>                                                 | 🚫                                                              | ✅  |
+| [`unicorn/prefer-number-coercion`] <a id="summary-unicorn/prefer-number-coercion"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-number-is-safe-integer`] <a id="summary-unicorn/prefer-number-is-safe-integer"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-number-properties`] <a id="summary-unicorn/prefer-number-properties"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-object-define-properties`] <a id="summary-unicorn/prefer-object-define-properties"></a>                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-object-destructuring-defaults`] <a id="summary-unicorn/prefer-object-destructuring-defaults"></a>                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-object-from-entries`] <a id="summary-unicorn/prefer-object-from-entries"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-object-iterable-methods`] <a id="summary-unicorn/prefer-object-iterable-methods"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-observer-apis`] <a id="summary-unicorn/prefer-observer-apis"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-optional-catch-binding`] <a id="summary-unicorn/prefer-optional-catch-binding"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-path2d`] <a id="summary-unicorn/prefer-path2d"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-private-class-fields`] <a id="summary-unicorn/prefer-private-class-fields"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-promise-try`] <a id="summary-unicorn/prefer-promise-try"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-promise-with-resolvers`] <a id="summary-unicorn/prefer-promise-with-resolvers"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-prototype-methods`] <a id="summary-unicorn/prefer-prototype-methods"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-query-selector`] <a id="summary-unicorn/prefer-query-selector"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-queue-microtask`] <a id="summary-unicorn/prefer-queue-microtask"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-reflect-apply`] <a id="summary-unicorn/prefer-reflect-apply"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-regexp-escape`] <a id="summary-unicorn/prefer-regexp-escape"></a>                                                 | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-regexp-test`] <a id="summary-unicorn/prefer-regexp-test"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-response-static-json`] <a id="summary-unicorn/prefer-response-static-json"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-scoped-selector`] <a id="summary-unicorn/prefer-scoped-selector"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-set-has`] <a id="summary-unicorn/prefer-set-has"></a>                                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-set-methods`] <a id="summary-unicorn/prefer-set-methods"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-set-size`] <a id="summary-unicorn/prefer-set-size"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-short-arrow-method`] <a id="summary-unicorn/prefer-short-arrow-method"></a>                                       | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-simple-condition-first`] <a id="summary-unicorn/prefer-simple-condition-first"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-simple-sort-comparator`] <a id="summary-unicorn/prefer-simple-sort-comparator"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-simplified-conditions`] <a id="summary-unicorn/prefer-simplified-conditions"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-single-array-predicate`] <a id="summary-unicorn/prefer-single-array-predicate"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-single-call`] <a id="summary-unicorn/prefer-single-call"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-single-object-destructuring`] <a id="summary-unicorn/prefer-single-object-destructuring"></a>                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-single-replace`] <a id="summary-unicorn/prefer-single-replace"></a>                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-smaller-scope`] <a id="summary-unicorn/prefer-smaller-scope"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-split-limit`] <a id="summary-unicorn/prefer-split-limit"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-spread`] <a id="summary-unicorn/prefer-spread"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-match-all`] <a id="summary-unicorn/prefer-string-match-all"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-pad-start-end`] <a id="summary-unicorn/prefer-string-pad-start-end"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-raw`] <a id="summary-unicorn/prefer-string-raw"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-repeat`] <a id="summary-unicorn/prefer-string-repeat"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-replace-all`] <a id="summary-unicorn/prefer-string-replace-all"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-slice`] <a id="summary-unicorn/prefer-string-slice"></a>                                                   | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-starts-ends-with`] <a id="summary-unicorn/prefer-string-starts-ends-with"></a>                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-string-trim-start-end`] <a id="summary-unicorn/prefer-string-trim-start-end"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-structured-clone`] <a id="summary-unicorn/prefer-structured-clone"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-switch`] <a id="summary-unicorn/prefer-switch"></a>                                                               | ✅                                                              | ✅  |
+| [`unicorn/prefer-temporal`] <a id="summary-unicorn/prefer-temporal"></a>                                                           | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-ternary`] <a id="summary-unicorn/prefer-ternary"></a>                                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-then-catch`] <a id="summary-unicorn/prefer-then-catch"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-toggle-attribute`] <a id="summary-unicorn/prefer-toggle-attribute"></a>                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-top-level-await`] <a id="summary-unicorn/prefer-top-level-await"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/prefer-type-error`] <a id="summary-unicorn/prefer-type-error"></a>                                                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-type-literal-last`] <a id="summary-unicorn/prefer-type-literal-last"></a>                                         | ✅                                                              | ✅  |
+| [`unicorn/prefer-uint8array-base64`] <a id="summary-unicorn/prefer-uint8array-base64"></a>                                         | 🚫                                                              | 🚫  |
+| [`unicorn/prefer-unary-minus`] <a id="summary-unicorn/prefer-unary-minus"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/prefer-unicode-code-point-escapes`] <a id="summary-unicorn/prefer-unicode-code-point-escapes"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/prefer-url-can-parse`] <a id="summary-unicorn/prefer-url-can-parse"></a>                                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-url-href`] <a id="summary-unicorn/prefer-url-href"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/prefer-url-search-parameters`] <a id="summary-unicorn/prefer-url-search-parameters"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/prefer-while-loop-condition`] <a id="summary-unicorn/prefer-while-loop-condition"></a>                                   | ✅                                                              | ✅  |
+| [`unicorn/relative-url-style`] <a id="summary-unicorn/relative-url-style"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/require-array-join-separator`] <a id="summary-unicorn/require-array-join-separator"></a>                                 | ✅                                                              | ✅  |
+| [`unicorn/require-array-sort-compare`] <a id="summary-unicorn/require-array-sort-compare"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/require-css-escape`] <a id="summary-unicorn/require-css-escape"></a>                                                     | ✅                                                              | ✅  |
+| [`unicorn/require-frontmatter-fields`] <a id="summary-unicorn/require-frontmatter-fields"></a>                                     | 🚫                                                              | 🚫  |
+| [`unicorn/require-module-attributes`] <a id="summary-unicorn/require-module-attributes"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/require-module-specifiers`] <a id="summary-unicorn/require-module-specifiers"></a>                                       | ✅                                                              | ✅  |
+| [`unicorn/require-number-to-fixed-digits-argument`] <a id="summary-unicorn/require-number-to-fixed-digits-argument"></a>           | ✅                                                              | ✅  |
+| [`unicorn/require-passive-events`] <a id="summary-unicorn/require-passive-events"></a>                                             | ✅                                                              | ✅  |
+| [`unicorn/require-post-message-target-origin`] <a id="summary-unicorn/require-post-message-target-origin"></a>                     | 🚫                                                              | 🚫  |
+| [`unicorn/require-proxy-trap-boolean-return`] <a id="summary-unicorn/require-proxy-trap-boolean-return"></a>                       | ✅                                                              | ✅  |
+| [`unicorn/single-line-block-comment-style`] <a id="summary-unicorn/single-line-block-comment-style"></a>                           | 🚫                                                              | ✅  |
+| [`unicorn/string-content`] <a id="summary-unicorn/string-content"></a>                                                             | 🚫                                                              | 🚫  |
+| [`unicorn/switch-case-braces`] <a id="summary-unicorn/switch-case-braces"></a>                                                     | ✅ <a href="#rule-unicorn/switch-case-braces">(?)</a>           | ✅  |
+| [`unicorn/switch-case-break-position`] <a id="summary-unicorn/switch-case-break-position"></a>                                     | ✅                                                              | ✅  |
+| [`unicorn/template-indent`] <a id="summary-unicorn/template-indent"></a>                                                           | 🚫                                                              | ✅  |
+| [`unicorn/text-encoding-identifier-case`] <a id="summary-unicorn/text-encoding-identifier-case"></a>                               | ✅                                                              | ✅  |
+| [`unicorn/throw-new-error`] <a id="summary-unicorn/throw-new-error"></a>                                                           | ✅                                                              | ✅  |
+| [`unicorn/try-complexity`] <a id="summary-unicorn/try-complexity"></a>                                                             | 🚫                                                              | 🚫  |
 
 <table><tr><th colspan="2" align="left"><code>unicorn/expiring-todo-comments</code> <a href="#summary-unicorn/expiring-todo-comments">⬆️ back to summary table</a> <a id="rule-unicorn/expiring-todo-comments"></a></th></tr>
 <tr><td><pre><code>[
@@ -815,158 +1007,363 @@ Configurations compared:
     }
   }
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
+<tr><th colspan="2" align="left"><code>unicorn/logical-assignment-operators</code> <a href="#summary-unicorn/logical-assignment-operators">⬆️ back to summary table</a> <a id="rule-unicorn/logical-assignment-operators"></a></th></tr>
+<tr><td><pre><code>[
+  "error",
+  "always",
+  {
+    "enforceForIfStatements": true
+  }
+]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
+<tr><th colspan="2" align="left"><code>unicorn/operator-assignment</code> <a href="#summary-unicorn/operator-assignment">⬆️ back to summary table</a> <a id="rule-unicorn/operator-assignment"></a></th></tr>
+<tr><td><pre><code>[
+  "error",
+  "always"
+]</code></pre></td><td><pre><code>"error"</code></pre></td></tr>
 <tr><th colspan="2" align="left"><code>unicorn/switch-case-braces</code> <a href="#summary-unicorn/switch-case-braces">⬆️ back to summary table</a> <a id="rule-unicorn/switch-case-braces"></a></th></tr>
 <tr><td><pre><code>[
   "error",
   "avoid"
 ]</code></pre></td><td><pre><code>"error"</code></pre></td></tr></table>
 
-[`unicorn/better-regex`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/better-regex.md
-[`unicorn/catch-error-name`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/catch-error-name.md
-[`unicorn/consistent-assert`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-assert.md
-[`unicorn/consistent-date-clone`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-date-clone.md
-[`unicorn/consistent-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-destructuring.md
-[`unicorn/consistent-empty-array-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-empty-array-spread.md
-[`unicorn/consistent-existence-index-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-existence-index-check.md
-[`unicorn/consistent-function-scoping`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-function-scoping.md
-[`unicorn/consistent-template-literal-escape`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-template-literal-escape.md
-[`unicorn/custom-error-definition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/custom-error-definition.md
-[`unicorn/empty-brace-spaces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/empty-brace-spaces.md
-[`unicorn/error-message`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/error-message.md
-[`unicorn/escape-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/escape-case.md
-[`unicorn/expiring-todo-comments`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/expiring-todo-comments.md
-[`unicorn/explicit-length-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/explicit-length-check.md
-[`unicorn/filename-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/filename-case.md
-[`unicorn/import-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/import-style.md
-[`unicorn/isolated-functions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/isolated-functions.md
-[`unicorn/new-for-builtins`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/new-for-builtins.md
-[`unicorn/no-abusive-eslint-disable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-abusive-eslint-disable.md
-[`unicorn/no-accessor-recursion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-accessor-recursion.md
-[`unicorn/no-anonymous-default-export`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-anonymous-default-export.md
-[`unicorn/no-array-callback-reference`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-callback-reference.md
-[`unicorn/no-array-for-each`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-for-each.md
-[`unicorn/no-array-method-this-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-method-this-argument.md
-[`unicorn/no-array-reduce`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-reduce.md
-[`unicorn/no-array-reverse`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-reverse.md
-[`unicorn/no-array-sort`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-sort.md
-[`unicorn/no-await-expression-member`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-await-expression-member.md
-[`unicorn/no-await-in-promise-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-await-in-promise-methods.md
-[`unicorn/no-console-spaces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-console-spaces.md
-[`unicorn/no-document-cookie`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-document-cookie.md
-[`unicorn/no-empty-file`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-empty-file.md
-[`unicorn/no-for-loop`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-for-loop.md
-[`unicorn/no-hex-escape`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-hex-escape.md
-[`unicorn/no-immediate-mutation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-immediate-mutation.md
-[`unicorn/no-instanceof-builtins`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-instanceof-builtins.md
-[`unicorn/no-invalid-fetch-options`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-invalid-fetch-options.md
-[`unicorn/no-invalid-remove-event-listener`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-invalid-remove-event-listener.md
-[`unicorn/no-keyword-prefix`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-keyword-prefix.md
-[`unicorn/no-lonely-if`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-lonely-if.md
-[`unicorn/no-magic-array-flat-depth`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-magic-array-flat-depth.md
-[`unicorn/no-named-default`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-named-default.md
-[`unicorn/no-negated-condition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-negated-condition.md
-[`unicorn/no-negation-in-equality-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-negation-in-equality-check.md
-[`unicorn/no-nested-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-nested-ternary.md
-[`unicorn/no-new-array`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-new-array.md
-[`unicorn/no-new-buffer`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-new-buffer.md
-[`unicorn/no-null`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-null.md
-[`unicorn/no-object-as-default-parameter`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-object-as-default-parameter.md
-[`unicorn/no-process-exit`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-process-exit.md
-[`unicorn/no-single-promise-in-promise-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-single-promise-in-promise-methods.md
-[`unicorn/no-static-only-class`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-static-only-class.md
-[`unicorn/no-thenable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-thenable.md
-[`unicorn/no-this-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-this-assignment.md
-[`unicorn/no-typeof-undefined`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-typeof-undefined.md
-[`unicorn/no-unnecessary-array-flat-depth`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-array-flat-depth.md
-[`unicorn/no-unnecessary-array-splice-count`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-array-splice-count.md
-[`unicorn/no-unnecessary-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-await.md
-[`unicorn/no-unnecessary-polyfills`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-polyfills.md
-[`unicorn/no-unnecessary-slice-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-slice-end.md
-[`unicorn/no-unreadable-array-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unreadable-array-destructuring.md
-[`unicorn/no-unreadable-iife`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unreadable-iife.md
-[`unicorn/no-unused-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unused-properties.md
-[`unicorn/no-useless-collection-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-collection-argument.md
-[`unicorn/no-useless-error-capture-stack-trace`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-error-capture-stack-trace.md
-[`unicorn/no-useless-fallback-in-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-fallback-in-spread.md
-[`unicorn/no-useless-iterator-to-array`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-iterator-to-array.md
-[`unicorn/no-useless-length-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-length-check.md
-[`unicorn/no-useless-promise-resolve-reject`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-promise-resolve-reject.md
-[`unicorn/no-useless-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-spread.md
-[`unicorn/no-useless-switch-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-switch-case.md
-[`unicorn/no-useless-undefined`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-undefined.md
-[`unicorn/no-zero-fractions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-zero-fractions.md
-[`unicorn/number-literal-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/number-literal-case.md
-[`unicorn/numeric-separators-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/numeric-separators-style.md
-[`unicorn/prefer-add-event-listener`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-add-event-listener.md
-[`unicorn/prefer-array-find`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-find.md
-[`unicorn/prefer-array-flat`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-flat.md
-[`unicorn/prefer-array-flat-map`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-flat-map.md
-[`unicorn/prefer-array-index-of`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-index-of.md
-[`unicorn/prefer-array-some`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-some.md
-[`unicorn/prefer-at`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-at.md
-[`unicorn/prefer-bigint-literals`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-bigint-literals.md
-[`unicorn/prefer-blob-reading-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-blob-reading-methods.md
-[`unicorn/prefer-class-fields`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-class-fields.md
-[`unicorn/prefer-classlist-toggle`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-classlist-toggle.md
-[`unicorn/prefer-code-point`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-code-point.md
-[`unicorn/prefer-date-now`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-date-now.md
-[`unicorn/prefer-default-parameters`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-default-parameters.md
-[`unicorn/prefer-dom-node-append`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-append.md
-[`unicorn/prefer-dom-node-dataset`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-dataset.md
-[`unicorn/prefer-dom-node-remove`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-remove.md
-[`unicorn/prefer-dom-node-text-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-text-content.md
-[`unicorn/prefer-event-target`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-event-target.md
-[`unicorn/prefer-export-from`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-export-from.md
-[`unicorn/prefer-global-this`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-global-this.md
-[`unicorn/prefer-import-meta-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-import-meta-properties.md
-[`unicorn/prefer-includes`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-includes.md
-[`unicorn/prefer-json-parse-buffer`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-json-parse-buffer.md
-[`unicorn/prefer-keyboard-event-key`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-keyboard-event-key.md
-[`unicorn/prefer-logical-operator-over-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-logical-operator-over-ternary.md
-[`unicorn/prefer-math-min-max`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-math-min-max.md
-[`unicorn/prefer-math-trunc`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-math-trunc.md
-[`unicorn/prefer-modern-dom-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-modern-dom-apis.md
-[`unicorn/prefer-modern-math-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-modern-math-apis.md
-[`unicorn/prefer-module`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-module.md
-[`unicorn/prefer-native-coercion-functions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-native-coercion-functions.md
-[`unicorn/prefer-negative-index`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-negative-index.md
-[`unicorn/prefer-node-protocol`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-node-protocol.md
-[`unicorn/prefer-number-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-number-properties.md
-[`unicorn/prefer-object-from-entries`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-object-from-entries.md
-[`unicorn/prefer-optional-catch-binding`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-optional-catch-binding.md
-[`unicorn/prefer-prototype-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-prototype-methods.md
-[`unicorn/prefer-query-selector`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-query-selector.md
-[`unicorn/prefer-reflect-apply`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-reflect-apply.md
-[`unicorn/prefer-regexp-test`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-regexp-test.md
-[`unicorn/prefer-response-static-json`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-response-static-json.md
-[`unicorn/prefer-set-has`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-set-has.md
-[`unicorn/prefer-set-size`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-set-size.md
-[`unicorn/prefer-simple-condition-first`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
-[`unicorn/prefer-single-call`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-single-call.md
-[`unicorn/prefer-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-spread.md
-[`unicorn/prefer-string-raw`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-raw.md
-[`unicorn/prefer-string-replace-all`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-replace-all.md
-[`unicorn/prefer-string-slice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-slice.md
-[`unicorn/prefer-string-starts-ends-with`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-starts-ends-with.md
-[`unicorn/prefer-string-trim-start-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-trim-start-end.md
-[`unicorn/prefer-structured-clone`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-structured-clone.md
-[`unicorn/prefer-switch`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-switch.md
-[`unicorn/prefer-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-ternary.md
-[`unicorn/prefer-top-level-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-top-level-await.md
-[`unicorn/prefer-type-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-type-error.md
-[`unicorn/prevent-abbreviations`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prevent-abbreviations.md
-[`unicorn/relative-url-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/relative-url-style.md
-[`unicorn/require-array-join-separator`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-array-join-separator.md
-[`unicorn/require-module-attributes`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-module-attributes.md
-[`unicorn/require-module-specifiers`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-module-specifiers.md
-[`unicorn/require-number-to-fixed-digits-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-number-to-fixed-digits-argument.md
-[`unicorn/require-post-message-target-origin`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-post-message-target-origin.md
-[`unicorn/string-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/string-content.md
-[`unicorn/switch-case-braces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-braces.md
-[`unicorn/switch-case-break-position`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
-[`unicorn/template-indent`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/template-indent.md
-[`unicorn/text-encoding-identifier-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/text-encoding-identifier-case.md
-[`unicorn/throw-new-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/throw-new-error.md
+[`unicorn/better-dom-traversing`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/better-dom-traversing.md
+[`unicorn/catch-error-name`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/catch-error-name.md
+[`unicorn/class-reference-in-static-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/class-reference-in-static-methods.md
+[`unicorn/comment-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/comment-content.md
+[`unicorn/consistent-arrow-return-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-arrow-return-style.md
+[`unicorn/consistent-assert`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-assert.md
+[`unicorn/consistent-boolean-name`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-boolean-name.md
+[`unicorn/consistent-class-member-order`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-class-member-order.md
+[`unicorn/consistent-compound-words`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-compound-words.md
+[`unicorn/consistent-conditional-object-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-conditional-object-spread.md
+[`unicorn/consistent-date-clone`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-date-clone.md
+[`unicorn/consistent-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-destructuring.md
+[`unicorn/consistent-empty-array-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-empty-array-spread.md
+[`unicorn/consistent-existence-index-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-existence-index-check.md
+[`unicorn/consistent-export-decorator-position`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-export-decorator-position.md
+[`unicorn/consistent-function-scoping`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-function-scoping.md
+[`unicorn/consistent-function-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-function-style.md
+[`unicorn/consistent-json-file-read`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-json-file-read.md
+[`unicorn/consistent-optional-chaining`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-optional-chaining.md
+[`unicorn/consistent-template-literal-escape`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-template-literal-escape.md
+[`unicorn/consistent-tuple-labels`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/consistent-tuple-labels.md
+[`unicorn/custom-error-definition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/custom-error-definition.md
+[`unicorn/default-export-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/default-export-style.md
+[`unicorn/dom-node-dataset`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/dom-node-dataset.md
+[`unicorn/empty-brace-spaces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/empty-brace-spaces.md
+[`unicorn/error-message`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/error-message.md
+[`unicorn/escape-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/escape-case.md
+[`unicorn/expiring-todo-comments`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/expiring-todo-comments.md
+[`unicorn/explicit-length-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/explicit-length-check.md
+[`unicorn/explicit-timer-delay`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/explicit-timer-delay.md
+[`unicorn/filename-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/filename-case.md
+[`unicorn/id-match`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/id-match.md
+[`unicorn/import-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/import-style.md
+[`unicorn/isolated-functions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/isolated-functions.md
+[`unicorn/iteration-fallback-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/iteration-fallback-style.md
+[`unicorn/logical-assignment-operators`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/logical-assignment-operators.md
+[`unicorn/max-nested-calls`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/max-nested-calls.md
+[`unicorn/name-replacements`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/name-replacements.md
+[`unicorn/new-for-builtins`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/new-for-builtins.md
+[`unicorn/no-abusive-eslint-disable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-abusive-eslint-disable.md
+[`unicorn/no-accessor-recursion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-accessor-recursion.md
+[`unicorn/no-accidental-bitwise-operator`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-accidental-bitwise-operator.md
+[`unicorn/no-anonymous-default-export`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-anonymous-default-export.md
+[`unicorn/no-array-callback-reference`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-callback-reference.md
+[`unicorn/no-array-concat-in-loop`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-concat-in-loop.md
+[`unicorn/no-array-fill-with-reference-type`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-fill-with-reference-type.md
+[`unicorn/no-array-from-fill`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-from-fill.md
+[`unicorn/no-array-front-mutation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-front-mutation.md
+[`unicorn/no-array-method-this-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-method-this-argument.md
+[`unicorn/no-array-reduce`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-reduce.md
+[`unicorn/no-array-reverse`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-reverse.md
+[`unicorn/no-array-sort`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-sort.md
+[`unicorn/no-array-sort-for-min-max`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-sort-for-min-max.md
+[`unicorn/no-array-splice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-array-splice.md
+[`unicorn/no-asterisk-prefix-in-documentation-comments`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-asterisk-prefix-in-documentation-comments.md
+[`unicorn/no-async-promise-finally`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-async-promise-finally.md
+[`unicorn/no-await-expression-member`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-await-expression-member.md
+[`unicorn/no-await-in-promise-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-await-in-promise-methods.md
+[`unicorn/no-barrel-files`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-barrel-files.md
+[`unicorn/no-blob-to-file`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-blob-to-file.md
+[`unicorn/no-boolean-sort-comparator`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-boolean-sort-comparator.md
+[`unicorn/no-break-in-nested-loop`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-break-in-nested-loop.md
+[`unicorn/no-canvas-to-image`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-canvas-to-image.md
+[`unicorn/no-chained-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-chained-comparison.md
+[`unicorn/no-collection-bracket-access`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-collection-bracket-access.md
+[`unicorn/no-computed-property-existence-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-computed-property-existence-check.md
+[`unicorn/no-confusing-array-splice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-confusing-array-splice.md
+[`unicorn/no-confusing-array-with`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-confusing-array-with.md
+[`unicorn/no-console-spaces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-console-spaces.md
+[`unicorn/no-constant-zero-expression`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-constant-zero-expression.md
+[`unicorn/no-declarations-before-early-exit`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-declarations-before-early-exit.md
+[`unicorn/no-document-cookie`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-document-cookie.md
+[`unicorn/no-double-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-double-comparison.md
+[`unicorn/no-duplicate-if-branches`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-duplicate-if-branches.md
+[`unicorn/no-duplicate-logical-operands`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-duplicate-logical-operands.md
+[`unicorn/no-duplicate-loops`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-duplicate-loops.md
+[`unicorn/no-duplicate-set-values`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-duplicate-set-values.md
+[`unicorn/no-empty-file`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-empty-file.md
+[`unicorn/no-error-property-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-error-property-assignment.md
+[`unicorn/no-exports-in-scripts`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-exports-in-scripts.md
+[`unicorn/no-for-each`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-for-each.md
+[`unicorn/no-for-loop`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-for-loop.md
+[`unicorn/no-global-object-property-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-global-object-property-assignment.md
+[`unicorn/no-immediate-mutation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-immediate-mutation.md
+[`unicorn/no-impossible-length-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-impossible-length-comparison.md
+[`unicorn/no-incorrect-query-selector`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-incorrect-query-selector.md
+[`unicorn/no-incorrect-template-string-interpolation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-incorrect-template-string-interpolation.md
+[`unicorn/no-instanceof-builtins`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-instanceof-builtins.md
+[`unicorn/no-invalid-argument-count`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-invalid-argument-count.md
+[`unicorn/no-invalid-character-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-invalid-character-comparison.md
+[`unicorn/no-invalid-fetch-options`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-invalid-fetch-options.md
+[`unicorn/no-invalid-file-input-accept`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-invalid-file-input-accept.md
+[`unicorn/no-invalid-remove-event-listener`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-invalid-remove-event-listener.md
+[`unicorn/no-invalid-well-known-symbol-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-invalid-well-known-symbol-methods.md
+[`unicorn/no-keyword-prefix`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-keyword-prefix.md
+[`unicorn/no-late-current-target-access`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-late-current-target-access.md
+[`unicorn/no-late-event-control`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-late-event-control.md
+[`unicorn/no-lonely-if`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-lonely-if.md
+[`unicorn/no-loop-iterable-mutation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-loop-iterable-mutation.md
+[`unicorn/no-magic-array-flat-depth`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-magic-array-flat-depth.md
+[`unicorn/no-manually-wrapped-comments`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-manually-wrapped-comments.md
+[`unicorn/no-mismatched-map-key`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-mismatched-map-key.md
+[`unicorn/no-misrefactored-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-misrefactored-assignment.md
+[`unicorn/no-missing-local-resource`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-missing-local-resource.md
+[`unicorn/no-multiple-promise-resolver-calls`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-multiple-promise-resolver-calls.md
+[`unicorn/no-named-default`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-named-default.md
+[`unicorn/no-negated-array-predicate`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-negated-array-predicate.md
+[`unicorn/no-negated-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-negated-comparison.md
+[`unicorn/no-negated-condition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-negated-condition.md
+[`unicorn/no-negation-in-equality-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-negation-in-equality-check.md
+[`unicorn/no-nested-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-nested-ternary.md
+[`unicorn/no-new-array`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-new-array.md
+[`unicorn/no-new-buffer`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-new-buffer.md
+[`unicorn/no-non-function-verb-prefix`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-non-function-verb-prefix.md
+[`unicorn/no-nonstandard-builtin-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-nonstandard-builtin-properties.md
+[`unicorn/no-null`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-null.md
+[`unicorn/no-object-as-default-parameter`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-object-as-default-parameter.md
+[`unicorn/no-object-methods-with-collections`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-object-methods-with-collections.md
+[`unicorn/no-optional-chaining-on-undeclared-variable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-optional-chaining-on-undeclared-variable.md
+[`unicorn/no-process-exit`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-process-exit.md
+[`unicorn/no-redundant-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-redundant-comparison.md
+[`unicorn/no-return-array-push`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-return-array-push.md
+[`unicorn/no-selector-as-dom-name`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-selector-as-dom-name.md
+[`unicorn/no-shorthand-property-overrides`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-shorthand-property-overrides.md
+[`unicorn/no-single-promise-in-promise-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-single-promise-in-promise-methods.md
+[`unicorn/no-static-only-class`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-static-only-class.md
+[`unicorn/no-subtraction-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-subtraction-comparison.md
+[`unicorn/no-thenable`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-thenable.md
+[`unicorn/no-this-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-this-assignment.md
+[`unicorn/no-this-outside-of-class`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-this-outside-of-class.md
+[`unicorn/no-top-level-assignment-in-function`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-top-level-assignment-in-function.md
+[`unicorn/no-top-level-side-effects`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-top-level-side-effects.md
+[`unicorn/no-transition-all`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-transition-all.md
+[`unicorn/no-typeof-undefined`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-typeof-undefined.md
+[`unicorn/no-uncalled-method`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-uncalled-method.md
+[`unicorn/no-undeclared-class-members`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-undeclared-class-members.md
+[`unicorn/no-unnecessary-array-flat-depth`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-array-flat-depth.md
+[`unicorn/no-unnecessary-array-flat-map`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-array-flat-map.md
+[`unicorn/no-unnecessary-array-splice-count`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-array-splice-count.md
+[`unicorn/no-unnecessary-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-await.md
+[`unicorn/no-unnecessary-boolean-comparison`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-boolean-comparison.md
+[`unicorn/no-unnecessary-fetch-options`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-fetch-options.md
+[`unicorn/no-unnecessary-global-this`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-global-this.md
+[`unicorn/no-unnecessary-nested-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-nested-ternary.md
+[`unicorn/no-unnecessary-polyfills`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-polyfills.md
+[`unicorn/no-unnecessary-slice-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-slice-end.md
+[`unicorn/no-unnecessary-splice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-splice.md
+[`unicorn/no-unnecessary-string-trim`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unnecessary-string-trim.md
+[`unicorn/no-unreadable-array-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unreadable-array-destructuring.md
+[`unicorn/no-unreadable-for-of-expression`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unreadable-for-of-expression.md
+[`unicorn/no-unreadable-iife`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unreadable-iife.md
+[`unicorn/no-unreadable-new-expression`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unreadable-new-expression.md
+[`unicorn/no-unreadable-object-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unreadable-object-destructuring.md
+[`unicorn/no-unsafe-buffer-conversion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-buffer-conversion.md
+[`unicorn/no-unsafe-dom-html`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-dom-html.md
+[`unicorn/no-unsafe-promise-all-settled-values`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-promise-all-settled-values.md
+[`unicorn/no-unsafe-property-key`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-property-key.md
+[`unicorn/no-unsafe-sqlite-interpolation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-sqlite-interpolation.md
+[`unicorn/no-unsafe-string-replacement`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-string-replacement.md
+[`unicorn/no-unused-array-method-return`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unused-array-method-return.md
+[`unicorn/no-unused-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unused-properties.md
+[`unicorn/no-useless-boolean-cast`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-boolean-cast.md
+[`unicorn/no-useless-coercion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-coercion.md
+[`unicorn/no-useless-collection-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-collection-argument.md
+[`unicorn/no-useless-compound-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-compound-assignment.md
+[`unicorn/no-useless-concat`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-concat.md
+[`unicorn/no-useless-continue`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-continue.md
+[`unicorn/no-useless-delete-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-delete-check.md
+[`unicorn/no-useless-else`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-else.md
+[`unicorn/no-useless-error-capture-stack-trace`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-error-capture-stack-trace.md
+[`unicorn/no-useless-fallback-in-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-fallback-in-spread.md
+[`unicorn/no-useless-iterator-to-array`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-iterator-to-array.md
+[`unicorn/no-useless-length-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-length-check.md
+[`unicorn/no-useless-logical-operand`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-logical-operand.md
+[`unicorn/no-useless-override`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-override.md
+[`unicorn/no-useless-promise-resolve-reject`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-promise-resolve-reject.md
+[`unicorn/no-useless-re-export`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-re-export.md
+[`unicorn/no-useless-recursion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-recursion.md
+[`unicorn/no-useless-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-spread.md
+[`unicorn/no-useless-switch-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-switch-case.md
+[`unicorn/no-useless-template-literals`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-template-literals.md
+[`unicorn/no-useless-undefined`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-useless-undefined.md
+[`unicorn/no-xor-as-exponentiation`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-xor-as-exponentiation.md
+[`unicorn/no-zero-fractions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-zero-fractions.md
+[`unicorn/number-literal-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/number-literal-case.md
+[`unicorn/numeric-separators-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/numeric-separators-style.md
+[`unicorn/operator-assignment`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/operator-assignment.md
+[`unicorn/prefer-abort-signal-any`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-abort-signal-any.md
+[`unicorn/prefer-abort-signal-timeout`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-abort-signal-timeout.md
+[`unicorn/prefer-add-event-listener`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-add-event-listener.md
+[`unicorn/prefer-add-event-listener-options`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-add-event-listener-options.md
+[`unicorn/prefer-aggregate-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-aggregate-error.md
+[`unicorn/prefer-array-find`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-find.md
+[`unicorn/prefer-array-flat`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-flat.md
+[`unicorn/prefer-array-flat-map`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-flat-map.md
+[`unicorn/prefer-array-from-async`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-from-async.md
+[`unicorn/prefer-array-from-map`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-from-map.md
+[`unicorn/prefer-array-from-range`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-from-range.md
+[`unicorn/prefer-array-index-of`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-index-of.md
+[`unicorn/prefer-array-iterable-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-iterable-methods.md
+[`unicorn/prefer-array-last-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-last-methods.md
+[`unicorn/prefer-array-slice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-slice.md
+[`unicorn/prefer-array-some`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-array-some.md
+[`unicorn/prefer-at`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-at.md
+[`unicorn/prefer-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-await.md
+[`unicorn/prefer-bigint-literals`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-bigint-literals.md
+[`unicorn/prefer-blob-reading-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-blob-reading-methods.md
+[`unicorn/prefer-block-statement-over-iife`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-block-statement-over-iife.md
+[`unicorn/prefer-boolean-return`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-boolean-return.md
+[`unicorn/prefer-class-fields`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-class-fields.md
+[`unicorn/prefer-classlist-toggle`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-classlist-toggle.md
+[`unicorn/prefer-code-point`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-code-point.md
+[`unicorn/prefer-continue`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-continue.md
+[`unicorn/prefer-date-now`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-date-now.md
+[`unicorn/prefer-default-parameters`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-default-parameters.md
+[`unicorn/prefer-direct-iteration`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-direct-iteration.md
+[`unicorn/prefer-dispose`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-dispose.md
+[`unicorn/prefer-dom-node-append`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-dom-node-append.md
+[`unicorn/prefer-dom-node-html-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-dom-node-html-methods.md
+[`unicorn/prefer-dom-node-remove`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-dom-node-remove.md
+[`unicorn/prefer-dom-node-replace-children`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-dom-node-replace-children.md
+[`unicorn/prefer-dom-node-text-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-dom-node-text-content.md
+[`unicorn/prefer-early-return`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-early-return.md
+[`unicorn/prefer-else-if`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-else-if.md
+[`unicorn/prefer-error-is-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-error-is-error.md
+[`unicorn/prefer-event-target`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-event-target.md
+[`unicorn/prefer-explicit-viewport-units`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-explicit-viewport-units.md
+[`unicorn/prefer-export-from`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-export-from.md
+[`unicorn/prefer-flat-math-min-max`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-flat-math-min-max.md
+[`unicorn/prefer-get-or-insert-computed`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-get-or-insert-computed.md
+[`unicorn/prefer-global-number-constants`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-global-number-constants.md
+[`unicorn/prefer-global-this`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-global-this.md
+[`unicorn/prefer-group-by`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-group-by.md
+[`unicorn/prefer-has-check`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-has-check.md
+[`unicorn/prefer-hoisting-branch-code`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-hoisting-branch-code.md
+[`unicorn/prefer-https`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-https.md
+[`unicorn/prefer-identifier-import-export-specifiers`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-identifier-import-export-specifiers.md
+[`unicorn/prefer-import-meta-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-import-meta-properties.md
+[`unicorn/prefer-includes`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-includes.md
+[`unicorn/prefer-includes-over-repeated-comparisons`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-includes-over-repeated-comparisons.md
+[`unicorn/prefer-iterable-in-constructor`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-iterable-in-constructor.md
+[`unicorn/prefer-iterator-concat`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-iterator-concat.md
+[`unicorn/prefer-iterator-helpers`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-iterator-helpers.md
+[`unicorn/prefer-iterator-to-array`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-iterator-to-array.md
+[`unicorn/prefer-iterator-to-array-at-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-iterator-to-array-at-end.md
+[`unicorn/prefer-keyboard-event-key`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-keyboard-event-key.md
+[`unicorn/prefer-location-assign`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-location-assign.md
+[`unicorn/prefer-logical-operator-over-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-logical-operator-over-ternary.md
+[`unicorn/prefer-map-from-entries`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-map-from-entries.md
+[`unicorn/prefer-math-abs`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-math-abs.md
+[`unicorn/prefer-math-constants`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-math-constants.md
+[`unicorn/prefer-math-min-max`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-math-min-max.md
+[`unicorn/prefer-math-trunc`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-math-trunc.md
+[`unicorn/prefer-minimal-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-minimal-ternary.md
+[`unicorn/prefer-modern-dom-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-modern-dom-apis.md
+[`unicorn/prefer-modern-math-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-modern-math-apis.md
+[`unicorn/prefer-module`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-module.md
+[`unicorn/prefer-native-coercion-functions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-native-coercion-functions.md
+[`unicorn/prefer-negative-index`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-negative-index.md
+[`unicorn/prefer-node-protocol`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-node-protocol.md
+[`unicorn/prefer-number-coercion`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-number-coercion.md
+[`unicorn/prefer-number-is-safe-integer`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-number-is-safe-integer.md
+[`unicorn/prefer-number-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-number-properties.md
+[`unicorn/prefer-object-define-properties`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-object-define-properties.md
+[`unicorn/prefer-object-destructuring-defaults`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-object-destructuring-defaults.md
+[`unicorn/prefer-object-from-entries`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-object-from-entries.md
+[`unicorn/prefer-object-iterable-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-object-iterable-methods.md
+[`unicorn/prefer-observer-apis`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-observer-apis.md
+[`unicorn/prefer-optional-catch-binding`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-optional-catch-binding.md
+[`unicorn/prefer-path2d`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-path2d.md
+[`unicorn/prefer-private-class-fields`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-private-class-fields.md
+[`unicorn/prefer-promise-try`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-promise-try.md
+[`unicorn/prefer-promise-with-resolvers`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-promise-with-resolvers.md
+[`unicorn/prefer-prototype-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-prototype-methods.md
+[`unicorn/prefer-query-selector`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-query-selector.md
+[`unicorn/prefer-queue-microtask`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-queue-microtask.md
+[`unicorn/prefer-reflect-apply`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-reflect-apply.md
+[`unicorn/prefer-regexp-escape`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-regexp-escape.md
+[`unicorn/prefer-regexp-test`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-regexp-test.md
+[`unicorn/prefer-response-static-json`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-response-static-json.md
+[`unicorn/prefer-scoped-selector`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-scoped-selector.md
+[`unicorn/prefer-set-has`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-set-has.md
+[`unicorn/prefer-set-methods`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-set-methods.md
+[`unicorn/prefer-set-size`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-set-size.md
+[`unicorn/prefer-short-arrow-method`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-short-arrow-method.md
+[`unicorn/prefer-simple-condition-first`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-simple-condition-first.md
+[`unicorn/prefer-simple-sort-comparator`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-simple-sort-comparator.md
+[`unicorn/prefer-simplified-conditions`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-simplified-conditions.md
+[`unicorn/prefer-single-array-predicate`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-single-array-predicate.md
+[`unicorn/prefer-single-call`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-single-call.md
+[`unicorn/prefer-single-object-destructuring`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-single-object-destructuring.md
+[`unicorn/prefer-single-replace`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-single-replace.md
+[`unicorn/prefer-smaller-scope`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-smaller-scope.md
+[`unicorn/prefer-split-limit`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-split-limit.md
+[`unicorn/prefer-spread`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-spread.md
+[`unicorn/prefer-string-match-all`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-match-all.md
+[`unicorn/prefer-string-pad-start-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-pad-start-end.md
+[`unicorn/prefer-string-raw`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-raw.md
+[`unicorn/prefer-string-repeat`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-repeat.md
+[`unicorn/prefer-string-replace-all`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-replace-all.md
+[`unicorn/prefer-string-slice`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-slice.md
+[`unicorn/prefer-string-starts-ends-with`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-starts-ends-with.md
+[`unicorn/prefer-string-trim-start-end`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-string-trim-start-end.md
+[`unicorn/prefer-structured-clone`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-structured-clone.md
+[`unicorn/prefer-switch`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-switch.md
+[`unicorn/prefer-temporal`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-temporal.md
+[`unicorn/prefer-ternary`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-ternary.md
+[`unicorn/prefer-then-catch`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-then-catch.md
+[`unicorn/prefer-toggle-attribute`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-toggle-attribute.md
+[`unicorn/prefer-top-level-await`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-top-level-await.md
+[`unicorn/prefer-type-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-type-error.md
+[`unicorn/prefer-type-literal-last`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-type-literal-last.md
+[`unicorn/prefer-uint8array-base64`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-uint8array-base64.md
+[`unicorn/prefer-unary-minus`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-unary-minus.md
+[`unicorn/prefer-unicode-code-point-escapes`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-unicode-code-point-escapes.md
+[`unicorn/prefer-url-can-parse`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-url-can-parse.md
+[`unicorn/prefer-url-href`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-url-href.md
+[`unicorn/prefer-url-search-parameters`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-url-search-parameters.md
+[`unicorn/prefer-while-loop-condition`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-while-loop-condition.md
+[`unicorn/relative-url-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/relative-url-style.md
+[`unicorn/require-array-join-separator`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-array-join-separator.md
+[`unicorn/require-array-sort-compare`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-array-sort-compare.md
+[`unicorn/require-css-escape`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-css-escape.md
+[`unicorn/require-frontmatter-fields`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-frontmatter-fields.md
+[`unicorn/require-module-attributes`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-module-attributes.md
+[`unicorn/require-module-specifiers`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-module-specifiers.md
+[`unicorn/require-number-to-fixed-digits-argument`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-number-to-fixed-digits-argument.md
+[`unicorn/require-passive-events`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-passive-events.md
+[`unicorn/require-post-message-target-origin`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-post-message-target-origin.md
+[`unicorn/require-proxy-trap-boolean-return`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/require-proxy-trap-boolean-return.md
+[`unicorn/single-line-block-comment-style`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/single-line-block-comment-style.md
+[`unicorn/string-content`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/string-content.md
+[`unicorn/switch-case-braces`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/switch-case-braces.md
+[`unicorn/switch-case-break-position`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/switch-case-break-position.md
+[`unicorn/template-indent`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/template-indent.md
+[`unicorn/text-encoding-identifier-case`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/text-encoding-identifier-case.md
+[`unicorn/throw-new-error`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/throw-new-error.md
+[`unicorn/try-complexity`]: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/try-complexity.md
 
 <!-- END unicorn -->
 
@@ -1040,7 +1437,7 @@ Configurations compared:
 | [`n/no-restricted-require`] <a id="summary-n/no-restricted-require"></a>       | 🚫  | 🚫  |
 | [`n/no-sync`] <a id="summary-n/no-sync"></a>                                   | 🚫  | 🚫  |
 | [`n/no-top-level-await`] <a id="summary-n/no-top-level-await"></a>             | 🚫  | 🚫  |
-| [`n/no-unpublished-bin`] <a id="summary-n/no-unpublished-bin"></a>             | ✅  | ✅  |
+| [`n/no-unpublished-bin`] <a id="summary-n/no-unpublished-bin"></a>             | ✅  | 🚫  |
 | [`n/no-unpublished-import`] <a id="summary-n/no-unpublished-import"></a>       | ✅  | ✅  |
 | [`n/no-unpublished-require`] <a id="summary-n/no-unpublished-require"></a>     | 🚫  | ✅  |
 | [`n/prefer-node-protocol`] <a id="summary-n/prefer-node-protocol"></a>         | ✅  | 🚫  |
@@ -1134,7 +1531,6 @@ Configurations compared:
 | [`@typescript-eslint/no-inferrable-types`] <a id="summary-@typescript-eslint/no-inferrable-types"></a>                                                   | ✅                                                                        | ✅  |
 | [`@typescript-eslint/no-invalid-this`] <a id="summary-@typescript-eslint/no-invalid-this"></a>                                                           | 🚫                                                                        | 🚫  |
 | [`@typescript-eslint/no-invalid-void-type`] <a id="summary-@typescript-eslint/no-invalid-void-type"></a>                                                 | ✅                                                                        | ✅  |
-| [`@typescript-eslint/no-loop-func`] <a id="summary-@typescript-eslint/no-loop-func"></a>                                                                 | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/no-magic-numbers`] <a id="summary-@typescript-eslint/no-magic-numbers"></a>                                                         | 🚫                                                                        | 🚫  |
 | [`@typescript-eslint/no-meaningless-void-operator`] <a id="summary-@typescript-eslint/no-meaningless-void-operator"></a>                                 | ✅                                                                        | ✅  |
 | [`@typescript-eslint/no-misused-new`] <a id="summary-@typescript-eslint/no-misused-new"></a>                                                             | ✅                                                                        | ✅  |
@@ -1148,7 +1544,6 @@ Configurations compared:
 | [`@typescript-eslint/no-redeclare`] <a id="summary-@typescript-eslint/no-redeclare"></a>                                                                 | 🚫                                                                        | 🚫  |
 | [`@typescript-eslint/no-redundant-type-constituents`] <a id="summary-@typescript-eslint/no-redundant-type-constituents"></a>                             | ✅                                                                        | ✅  |
 | [`@typescript-eslint/no-require-imports`] <a id="summary-@typescript-eslint/no-require-imports"></a>                                                     | ✅                                                                        | ✅  |
-| [`@typescript-eslint/no-restricted-imports`] <a id="summary-@typescript-eslint/no-restricted-imports"></a>                                               | 🚫                                                                        | 🚫  |
 | [`@typescript-eslint/no-restricted-types`] <a id="summary-@typescript-eslint/no-restricted-types"></a>                                                   | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/no-shadow`] <a id="summary-@typescript-eslint/no-shadow"></a>                                                                       | ✅                                                                        | 🚫  |
 | [`@typescript-eslint/no-this-alias`] <a id="summary-@typescript-eslint/no-this-alias"></a>                                                               | ✅                                                                        | ✅  |
@@ -1307,7 +1702,6 @@ Configurations compared:
 [`@typescript-eslint/no-inferrable-types`]: https://typescript-eslint.io/rules/no-inferrable-types
 [`@typescript-eslint/no-invalid-this`]: https://typescript-eslint.io/rules/no-invalid-this
 [`@typescript-eslint/no-invalid-void-type`]: https://typescript-eslint.io/rules/no-invalid-void-type
-[`@typescript-eslint/no-loop-func`]: https://typescript-eslint.io/rules/no-loop-func
 [`@typescript-eslint/no-magic-numbers`]: https://typescript-eslint.io/rules/no-magic-numbers
 [`@typescript-eslint/no-meaningless-void-operator`]: https://typescript-eslint.io/rules/no-meaningless-void-operator
 [`@typescript-eslint/no-misused-new`]: https://typescript-eslint.io/rules/no-misused-new
@@ -1321,7 +1715,6 @@ Configurations compared:
 [`@typescript-eslint/no-redeclare`]: https://typescript-eslint.io/rules/no-redeclare
 [`@typescript-eslint/no-redundant-type-constituents`]: https://typescript-eslint.io/rules/no-redundant-type-constituents
 [`@typescript-eslint/no-require-imports`]: https://typescript-eslint.io/rules/no-require-imports
-[`@typescript-eslint/no-restricted-imports`]: https://typescript-eslint.io/rules/no-restricted-imports
 [`@typescript-eslint/no-restricted-types`]: https://typescript-eslint.io/rules/no-restricted-types
 [`@typescript-eslint/no-shadow`]: https://typescript-eslint.io/rules/no-shadow
 [`@typescript-eslint/no-this-alias`]: https://typescript-eslint.io/rules/no-this-alias
@@ -1404,9 +1797,9 @@ Configurations compared:
 
 | Rule                                                                                                                   | P   | R   |
 | ---------------------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-x/component-hook-factories`] <a id="summary-react-x/component-hook-factories"></a>                             | ✅  | ✅  |
 | [`react-x/error-boundaries`] <a id="summary-react-x/error-boundaries"></a>                                             | ✅  | ✅  |
 | [`react-x/exhaustive-deps`] <a id="summary-react-x/exhaustive-deps"></a>                                               | ✅  | ⚠️  |
+| [`react-x/globals`] <a id="summary-react-x/globals"></a>                                                               | 🚫  | 🚫  |
 | [`react-x/immutability`] <a id="summary-react-x/immutability"></a>                                                     | 🚫  | 🚫  |
 | [`react-x/no-access-state-in-setstate`] <a id="summary-react-x/no-access-state-in-setstate"></a>                       | ✅  | ✅  |
 | [`react-x/no-array-index-key`] <a id="summary-react-x/no-array-index-key"></a>                                         | ✅  | ⚠️  |
@@ -1435,12 +1828,9 @@ Configurations compared:
 | [`react-x/no-misused-capture-owner-stack`] <a id="summary-react-x/no-misused-capture-owner-stack"></a>                 | ✅  | ✅  |
 | [`react-x/no-nested-component-definitions`] <a id="summary-react-x/no-nested-component-definitions"></a>               | ✅  | ✅  |
 | [`react-x/no-nested-lazy-component-declarations`] <a id="summary-react-x/no-nested-lazy-component-declarations"></a>   | ✅  | ✅  |
-| [`react-x/no-redundant-should-component-update`] <a id="summary-react-x/no-redundant-should-component-update"></a>     | ✅  | ✅  |
 | [`react-x/no-set-state-in-component-did-mount`] <a id="summary-react-x/no-set-state-in-component-did-mount"></a>       | ✅  | ⚠️  |
 | [`react-x/no-set-state-in-component-did-update`] <a id="summary-react-x/no-set-state-in-component-did-update"></a>     | ✅  | ⚠️  |
 | [`react-x/no-set-state-in-component-will-update`] <a id="summary-react-x/no-set-state-in-component-will-update"></a>   | ✅  | ⚠️  |
-| [`react-x/no-unnecessary-use-callback`] <a id="summary-react-x/no-unnecessary-use-callback"></a>                       | 🚫  | ⚠️  |
-| [`react-x/no-unnecessary-use-memo`] <a id="summary-react-x/no-unnecessary-use-memo"></a>                               | 🚫  | ⚠️  |
 | [`react-x/no-unnecessary-use-prefix`] <a id="summary-react-x/no-unnecessary-use-prefix"></a>                           | ✅  | ⚠️  |
 | [`react-x/no-unsafe-component-will-mount`] <a id="summary-react-x/no-unsafe-component-will-mount"></a>                 | ✅  | ⚠️  |
 | [`react-x/no-unsafe-component-will-receive-props`] <a id="summary-react-x/no-unsafe-component-will-receive-props"></a> | ✅  | ⚠️  |
@@ -1449,22 +1839,21 @@ Configurations compared:
 | [`react-x/no-unstable-default-props`] <a id="summary-react-x/no-unstable-default-props"></a>                           | ✅  | ⚠️  |
 | [`react-x/no-unused-class-component-members`] <a id="summary-react-x/no-unused-class-component-members"></a>           | ✅  | ⚠️  |
 | [`react-x/no-unused-props`] <a id="summary-react-x/no-unused-props"></a>                                               | ✅  | ⚠️  |
-| [`react-x/no-unused-state`] <a id="summary-react-x/no-unused-state"></a>                                               | ✅  | ⚠️  |
+| [`react-x/no-unused-state`] <a id="summary-react-x/no-unused-state"></a>                                               | ✅  | 🚫  |
 | [`react-x/no-use-context`] <a id="summary-react-x/no-use-context"></a>                                                 | ✅  | ⚠️  |
-| [`react-x/prefer-destructuring-assignment`] <a id="summary-react-x/prefer-destructuring-assignment"></a>               | ✅  | ⚠️  |
-| [`react-x/prefer-namespace-import`] <a id="summary-react-x/prefer-namespace-import"></a>                               | 🚫  | 🚫  |
 | [`react-x/purity`] <a id="summary-react-x/purity"></a>                                                                 | ✅  | ⚠️  |
 | [`react-x/refs`] <a id="summary-react-x/refs"></a>                                                                     | 🚫  | 🚫  |
 | [`react-x/rules-of-hooks`] <a id="summary-react-x/rules-of-hooks"></a>                                                 | ✅  | ✅  |
 | [`react-x/set-state-in-effect`] <a id="summary-react-x/set-state-in-effect"></a>                                       | ✅  | ⚠️  |
 | [`react-x/set-state-in-render`] <a id="summary-react-x/set-state-in-render"></a>                                       | ✅  | ✅  |
+| [`react-x/static-components`] <a id="summary-react-x/static-components"></a>                                           | ✅  | ✅  |
 | [`react-x/unsupported-syntax`] <a id="summary-react-x/unsupported-syntax"></a>                                         | ✅  | ✅  |
 | [`react-x/use-memo`] <a id="summary-react-x/use-memo"></a>                                                             | ✅  | ✅  |
 | [`react-x/use-state`] <a id="summary-react-x/use-state"></a>                                                           | ✅  | ⚠️  |
 
-[`react-x/component-hook-factories`]: https://eslint-react.xyz/docs/rules/component-hook-factories
 [`react-x/error-boundaries`]: https://eslint-react.xyz/docs/rules/error-boundaries
 [`react-x/exhaustive-deps`]: https://github.com/facebook/react/issues/14920
+[`react-x/globals`]: https://eslint-react.xyz/docs/rules/globals
 [`react-x/immutability`]: https://eslint-react.xyz/docs/rules/immutability
 [`react-x/no-access-state-in-setstate`]: https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
 [`react-x/no-array-index-key`]: https://eslint-react.xyz/docs/rules/no-array-index-key
@@ -1493,12 +1882,9 @@ Configurations compared:
 [`react-x/no-misused-capture-owner-stack`]: https://eslint-react.xyz/docs/rules/no-misused-capture-owner-stack
 [`react-x/no-nested-component-definitions`]: https://eslint-react.xyz/docs/rules/no-nested-component-definitions
 [`react-x/no-nested-lazy-component-declarations`]: https://eslint-react.xyz/docs/rules/no-nested-lazy-component-declarations
-[`react-x/no-redundant-should-component-update`]: https://eslint-react.xyz/docs/rules/no-redundant-should-component-update
 [`react-x/no-set-state-in-component-did-mount`]: https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-mount
 [`react-x/no-set-state-in-component-did-update`]: https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-update
 [`react-x/no-set-state-in-component-will-update`]: https://eslint-react.xyz/docs/rules/no-set-state-in-component-will-update
-[`react-x/no-unnecessary-use-callback`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-callback
-[`react-x/no-unnecessary-use-memo`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-memo
 [`react-x/no-unnecessary-use-prefix`]: https://eslint-react.xyz/docs/rules/no-unnecessary-use-prefix
 [`react-x/no-unsafe-component-will-mount`]: https://eslint-react.xyz/docs/rules/no-unsafe-component-will-mount
 [`react-x/no-unsafe-component-will-receive-props`]: https://eslint-react.xyz/docs/rules/no-unsafe-component-will-receive-props
@@ -1509,13 +1895,12 @@ Configurations compared:
 [`react-x/no-unused-props`]: https://eslint-react.xyz/docs/rules/no-unused-props
 [`react-x/no-unused-state`]: https://eslint-react.xyz/docs/rules/no-unused-state
 [`react-x/no-use-context`]: https://eslint-react.xyz/docs/rules/no-use-context
-[`react-x/prefer-destructuring-assignment`]: https://eslint-react.xyz/docs/rules/prefer-destructuring-assignment
-[`react-x/prefer-namespace-import`]: https://eslint-react.xyz/docs/rules/prefer-namespace-import
 [`react-x/purity`]: https://eslint-react.xyz/docs/rules/purity
 [`react-x/refs`]: https://eslint-react.xyz/docs/rules/refs
 [`react-x/rules-of-hooks`]: https://react.dev/reference/rules/rules-of-hooks
 [`react-x/set-state-in-effect`]: https://eslint-react.xyz/docs/rules/set-state-in-effect
 [`react-x/set-state-in-render`]: https://eslint-react.xyz/docs/rules/set-state-in-render
+[`react-x/static-components`]: https://eslint-react.xyz/docs/rules/static-components
 [`react-x/unsupported-syntax`]: https://eslint-react.xyz/docs/rules/unsupported-syntax
 [`react-x/use-memo`]: https://eslint-react.xyz/docs/rules/use-memo
 [`react-x/use-state`]: https://eslint-react.xyz/docs/rules/use-state
@@ -1529,7 +1914,7 @@ Configurations compared:
 | Rule                                                                                                       | P   | R   |
 | ---------------------------------------------------------------------------------------------------------- | --- | --- |
 | [`react-jsx/no-children-prop`] <a id="summary-react-jsx/no-children-prop"></a>                             | ✅  | ✅  |
-| [`react-jsx/no-children-prop-with-children`] <a id="summary-react-jsx/no-children-prop-with-children"></a> | ✅  | 🚫  |
+| [`react-jsx/no-children-prop-with-children`] <a id="summary-react-jsx/no-children-prop-with-children"></a> | ✅  | ✅  |
 | [`react-jsx/no-comment-textnodes`] <a id="summary-react-jsx/no-comment-textnodes"></a>                     | ✅  | ⚠️  |
 | [`react-jsx/no-key-after-spread`] <a id="summary-react-jsx/no-key-after-spread"></a>                       | ✅  | ✅  |
 | [`react-jsx/no-leaked-dollar`] <a id="summary-react-jsx/no-leaked-dollar"></a>                             | 🚫  | ⚠️  |
@@ -1537,14 +1922,14 @@ Configurations compared:
 | [`react-jsx/no-namespace`] <a id="summary-react-jsx/no-namespace"></a>                                     | ✅  | ✅  |
 | [`react-jsx/no-useless-fragment`] <a id="summary-react-jsx/no-useless-fragment"></a>                       | ✅  | ⚠️  |
 
-[`react-jsx/no-children-prop`]: https://eslint-react.xyz/docs/rules/no-children-prop
-[`react-jsx/no-children-prop-with-children`]: https://eslint-react.xyz/docs/rules/no-children-prop-with-children
-[`react-jsx/no-comment-textnodes`]: https://eslint-react.xyz/docs/rules/no-comment-textnodes
-[`react-jsx/no-key-after-spread`]: https://eslint-react.xyz/docs/rules/no-key-after-spread
-[`react-jsx/no-leaked-dollar`]: https://eslint-react.xyz/docs/rules/no-leaked-dollar
-[`react-jsx/no-leaked-semicolon`]: https://eslint-react.xyz/docs/rules/no-leaked-semicolon
-[`react-jsx/no-namespace`]: https://eslint-react.xyz/docs/rules/no-namespace
-[`react-jsx/no-useless-fragment`]: https://eslint-react.xyz/docs/rules/no-useless-fragment
+[`react-jsx/no-children-prop`]: https://eslint-react.xyz/docs/rules/jsx-no-children-prop
+[`react-jsx/no-children-prop-with-children`]: https://eslint-react.xyz/docs/rules/jsx-no-children-prop-with-children
+[`react-jsx/no-comment-textnodes`]: https://eslint-react.xyz/docs/rules/jsx-no-comment-textnodes
+[`react-jsx/no-key-after-spread`]: https://eslint-react.xyz/docs/rules/jsx-no-key-after-spread
+[`react-jsx/no-leaked-dollar`]: https://eslint-react.xyz/docs/rules/jsx-no-leaked-dollar
+[`react-jsx/no-leaked-semicolon`]: https://eslint-react.xyz/docs/rules/jsx-no-leaked-semicolon
+[`react-jsx/no-namespace`]: https://eslint-react.xyz/docs/rules/jsx-no-namespace
+[`react-jsx/no-useless-fragment`]: https://eslint-react.xyz/docs/rules/jsx-no-useless-fragment
 
 <!-- END react-jsx -->
 
@@ -1556,7 +1941,7 @@ Configurations compared:
 | ------------------------------------------------------------------------------------ | --- | --- |
 | [`react-rsc/function-definition`] <a id="summary-react-rsc/function-definition"></a> | ✅  | ✅  |
 
-[`react-rsc/function-definition`]: https://eslint-react.xyz/docs/rules/function-definition
+[`react-rsc/function-definition`]: https://eslint-react.xyz/docs/rules/rsc-function-definition
 
 <!-- END react-rsc -->
 
@@ -1582,7 +1967,6 @@ Configurations compared:
 | [`react-dom/no-unsafe-target-blank`] <a id="summary-react-dom/no-unsafe-target-blank"></a>                                         | 🚫  | ⚠️  |
 | [`react-dom/no-use-form-state`] <a id="summary-react-dom/no-use-form-state"></a>                                                   | ✅  | ✅  |
 | [`react-dom/no-void-elements-with-children`] <a id="summary-react-dom/no-void-elements-with-children"></a>                         | ✅  | ✅  |
-| [`react-dom/prefer-namespace-import`] <a id="summary-react-dom/prefer-namespace-import"></a>                                       | 🚫  | 🚫  |
 
 [`react-dom/no-dangerously-set-innerhtml`]: https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
 [`react-dom/no-dangerously-set-innerhtml-with-children`]: https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml-with-children
@@ -1600,7 +1984,6 @@ Configurations compared:
 [`react-dom/no-unsafe-target-blank`]: https://eslint-react.xyz/docs/rules/dom-no-unsafe-target-blank
 [`react-dom/no-use-form-state`]: https://eslint-react.xyz/docs/rules/dom-no-use-form-state
 [`react-dom/no-void-elements-with-children`]: https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
-[`react-dom/prefer-namespace-import`]: https://eslint-react.xyz/docs/rules/dom-prefer-namespace-import
 
 <!-- END react-dom -->
 
@@ -1608,14 +1991,18 @@ Configurations compared:
 
 <!-- START react-web-api -->
 
-| Rule                                                                                                     | P   | R   |
-| -------------------------------------------------------------------------------------------------------- | --- | --- |
-| [`react-web-api/no-leaked-event-listener`] <a id="summary-react-web-api/no-leaked-event-listener"></a>   | ✅  | ⚠️  |
-| [`react-web-api/no-leaked-interval`] <a id="summary-react-web-api/no-leaked-interval"></a>               | ✅  | ⚠️  |
-| [`react-web-api/no-leaked-resize-observer`] <a id="summary-react-web-api/no-leaked-resize-observer"></a> | ✅  | ⚠️  |
-| [`react-web-api/no-leaked-timeout`] <a id="summary-react-web-api/no-leaked-timeout"></a>                 | ✅  | ⚠️  |
+| Rule                                                                                                                 | P   | R   |
+| -------------------------------------------------------------------------------------------------------------------- | --- | --- |
+| [`react-web-api/no-leaked-event-listener`] <a id="summary-react-web-api/no-leaked-event-listener"></a>               | ✅  | ⚠️  |
+| [`react-web-api/no-leaked-fetch`] <a id="summary-react-web-api/no-leaked-fetch"></a>                                 | ✅  | ⚠️  |
+| [`react-web-api/no-leaked-intersection-observer`] <a id="summary-react-web-api/no-leaked-intersection-observer"></a> | ✅  | ⚠️  |
+| [`react-web-api/no-leaked-interval`] <a id="summary-react-web-api/no-leaked-interval"></a>                           | ✅  | ⚠️  |
+| [`react-web-api/no-leaked-resize-observer`] <a id="summary-react-web-api/no-leaked-resize-observer"></a>             | ✅  | ⚠️  |
+| [`react-web-api/no-leaked-timeout`] <a id="summary-react-web-api/no-leaked-timeout"></a>                             | ✅  | ⚠️  |
 
 [`react-web-api/no-leaked-event-listener`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-event-listener
+[`react-web-api/no-leaked-fetch`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-fetch
+[`react-web-api/no-leaked-intersection-observer`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-intersection-observer
 [`react-web-api/no-leaked-interval`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-interval
 [`react-web-api/no-leaked-resize-observer`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-resize-observer
 [`react-web-api/no-leaked-timeout`]: https://eslint-react.xyz/docs/rules/web-api-no-leaked-timeout

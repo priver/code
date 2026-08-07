@@ -86,8 +86,8 @@ function main() {
       .map(([ruleName]) => ruleName),
   );
 
-  const unknownRuleNames = [...usedRuleNames].filter((name) => !availableRuleNames.has(name));
-  const unusedRuleNames = [...notDeprecatedRulesNames].filter((name) => !usedRuleNames.has(name));
+  const unknownRuleNames = [...usedRuleNames.difference(availableRuleNames)];
+  const unusedRuleNames = [...notDeprecatedRulesNames.difference(usedRuleNames)];
   const deprecatedRuleNames = [...usedRuleNames].filter(
     (ruleName) => availableRuleNames.has(ruleName) && !notDeprecatedRulesNames.has(ruleName),
   );
@@ -95,7 +95,7 @@ function main() {
   const notDisabledPrettierRuleNames = new Set<string>();
   for (const rules of RULES) {
     for (const [ruleName, ruleValue] of Object.entries<Linter.RuleEntry>(rules)) {
-      if (prettierRules.has(ruleName) && ruleValue !== 'off') {
+      if (ruleValue !== 'off' && prettierRules.has(ruleName)) {
         notDisabledPrettierRuleNames.add(ruleName);
       }
     }
