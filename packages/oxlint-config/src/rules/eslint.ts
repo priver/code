@@ -184,6 +184,7 @@ export const eslintRules = {
       avoidQuotes: true,
     },
   ],
+  'one-var': ['error', 'never'],
   'operator-assignment': 'off',
   'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
   'prefer-const': ['error', { destructuring: 'all' }],
