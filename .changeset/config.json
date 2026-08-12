@@ -1,21 +1,7 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
+  "$schema": "https://unpkg.com/@changesets/config@4.0.0/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "priver/code", "disableThanks": true }],
   "commit": false,
   "access": "public",
-  "baseBranch": "main",
-  "ignore": [],
-  "fixed": [],
-  "linked": [],
-  "updateInternalDependencies": "patch",
-  "changelog": [
-    "@changesets/changelog-github",
-    {
-      "repo": "priver/code",
-      "disableThanks": true
-    }
-  ],
-  "privatePackages": {
-    "version": false,
-    "tag": false
-  }
+  "format": "oxfmt"
 }
