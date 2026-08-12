@@ -15,7 +15,7 @@
   },
   "tasks": {
     "//#check-format": {
-      "description": "Check repository formatting with Prettier",
+      "description": "Check repository formatting with Oxfmt",
       "outputLogs": "errors-only"
     },
     "//#check-deps": {
