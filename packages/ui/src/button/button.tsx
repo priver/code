@@ -129,7 +129,8 @@ export function Button(props: ButtonProps): React.ReactNode {
       ? (`${variant}-destructive` as const)
       : variant;
 
-  const finalSize = Icon && !children ? (`${size}-icon` as const) : size;
+  const hasChildren = Boolean(children);
+  const finalSize = Icon && !hasChildren ? (`${size}-icon` as const) : size;
 
   const icon = Icon ? (
     <Icon aria-hidden size={iconSize[size]} className="pointer-events-none shrink-0" />
@@ -143,7 +144,7 @@ export function Button(props: ButtonProps): React.ReactNode {
       {...buttonProps}
     >
       {iconPosition === 'start' && icon}
-      {children ? <span className="px-0.5">{children}</span> : undefined}
+      {hasChildren ? <span className="px-0.5">{children}</span> : undefined}
       {iconPosition === 'end' && icon}
     </ButtonPrimitive>
   );

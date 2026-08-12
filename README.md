@@ -9,7 +9,7 @@ Monorepo for my Mikhail Priver's projects.
 ## Packages
 
 - [`@priver/ui`](packages/ui) - Shared UI components
-- [`@priver/eslint-config`](packages/eslint-config) - ESLint configuration
+- [`@priver/oxlint-config`](packages/oxlint-config) - oxlint configuration
 - [`@priver/tsconfig`](packages/tsconfig) - TypeScript configuration
 
 ## Contributing

@@ -14,13 +14,10 @@
     "module": "nodenext",
 
     // Emit
-    "newLine": "lf",
     "noEmit": true,
 
     // Interop Constraints
     "erasableSyntaxOnly": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
     "verbatimModuleSyntax": true,
 
     // Language and Environment

@@ -4,7 +4,8 @@
     "turborepo": {
       "source": "vercel/turborepo",
       "sourceType": "github",
-      "computedHash": "e9c923a56fb6f16c22c438b37ee9db2a520588b439bfffb85c2ee025e992028f"
+      "skillPath": "skills/turborepo/SKILL.md",
+      "computedHash": "a1c0d800764082bbf57e97e8f0b47a9d8e5f5bf62340fb22f52addf2c6d30c30"
     }
   }
 }
