@@ -7,7 +7,8 @@
     "format": "oxfmt",
     "check-format": "oxfmt --check",
     "check-deps": "sherif",
-    "check": "turbo run check-format check-deps lint check-types test",
+    "lint": "oxlint .",
+    "check": "turbo run check-format check-deps lint test",
     "build": "turbo run build",
     "serve": "caddy run",
     "dev:storybook": "turbo run dev --filter=@priver/storybook",
@@ -16,7 +17,10 @@
   "devDependencies": {
     "@changesets/changelog-github": "catalog:",
     "@changesets/cli": "catalog:",
+    "@priver/oxlint-config": "workspace:*",
     "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
     "sherif": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:"

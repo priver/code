@@ -11,8 +11,6 @@ catalog:
   '@base-ui/react': ^1.7.0
   '@changesets/changelog-github': ^0.7.0
   '@changesets/cli': ^2.31.1
-  '@eslint-community/eslint-plugin-eslint-comments': ^4.7.2
-  '@eslint/js': ^10.0.1
   '@fontsource-variable/inter': ^5.3.0
   '@fontsource-variable/jetbrains-mono': ^5.3.0
   '@storybook/addon-a11y': ^10.5.7
@@ -27,33 +25,17 @@ catalog:
   '@vitejs/plugin-react': ^6.0.5
   cva: 1.0.0-beta.4
   del-cli: ^7.0.0
-  eslint: ^10.8.0
-  eslint-config-prettier: ^10.1.8
-  eslint-import-resolver-typescript: ^4.4.5
-  eslint-plugin-compat: ^7.0.2
-  eslint-plugin-depend: ^1.5.0
-  eslint-plugin-import-x: ^4.17.1
-  eslint-plugin-n: ^18.2.2
-  eslint-plugin-react-dom: ^5.18.3
-  eslint-plugin-react-jsx: ^5.18.3
-  eslint-plugin-react-naming-convention: ^5.18.3
-  eslint-plugin-react-refresh: ^0.5.3
-  eslint-plugin-react-rsc: ^5.18.3
-  eslint-plugin-react-web-api: ^5.18.3
-  eslint-plugin-react-x: ^5.18.3
-  eslint-plugin-storybook: ^10.5.7
-  eslint-plugin-unicorn: ^73.0.0
-  globals: ^17.9.0
   lucide-react: ^1.29.0
   oxfmt: ^0.62.0
+  oxlint: ^1.77.0
+  oxlint-tsgolint: ^7.0.2001
   react: ^19.2.8
   react-dom: ^19.2.8
   sherif: ^1.13.0
   storybook: ^10.5.7
   tailwindcss: ^4.3.3
   turbo: ^2.10.8
-  typescript: ^6.0.3
-  typescript-eslint: ^8.66.0
+  typescript: ^7.0.2
   vite: ^8.2.1
 
 catalogMode: strict
@@ -61,8 +43,6 @@ catalogMode: strict
 cleanupUnusedCatalogs: true
 
 engineStrict: true
-
-nodeOptions: '--experimental-strip-types'
 
 onlyBuiltDependencies:
   - '@parcel/watcher'

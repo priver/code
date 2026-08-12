@@ -22,24 +22,14 @@
       "description": "Validate dependency declarations across the workspace",
       "outputLogs": "errors-only"
     },
+    "//#lint": {
+      "description": "Lint source files across packages",
+      "outputLogs": "errors-only"
+    },
     "//#serve": {
       "description": "Run shared local services required by development tasks",
       "cache": false,
       "persistent": true
-    },
-    "transit": {
-      "description": "Propagate dependency changes for cache invalidation",
-      "dependsOn": ["^transit"]
-    },
-    "lint": {
-      "description": "Lint source files across packages",
-      "dependsOn": ["transit"],
-      "outputLogs": "errors-only"
-    },
-    "check-types": {
-      "description": "Run TypeScript type checks without emitting files",
-      "dependsOn": ["transit"],
-      "outputLogs": "errors-only"
     },
     "test": {
       "description": "Run package test suites",
