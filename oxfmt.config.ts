@@ -1,7 +1,12 @@
 import { defineConfig } from 'oxfmt';
 
 export default defineConfig({
-  ignorePatterns: ['**/*.html', 'pnpm-lock.yaml', '.agents/skills/'],
+  ignorePatterns: [
+    '**/*.html',
+    'pnpm-lock.yaml',
+    '.agents/skills/',
+    'apps/reader/src/routeTree.gen.ts',
+  ],
   singleQuote: true,
   quoteProps: 'consistent',
   proseWrap: 'always',

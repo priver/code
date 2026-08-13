@@ -4,6 +4,7 @@ Monorepo for my Mikhail Priver's projects.
 
 ## Apps
 
+- [reader](apps/reader) - RSS feed reader
 - [storybook](apps/storybook) - Component library documentation and development
 
 ## Packages

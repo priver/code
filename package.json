@@ -11,6 +11,7 @@
     "check": "turbo run check-format check-deps lint test",
     "build": "turbo run build",
     "serve": "caddy run",
+    "dev:reader": "turbo run dev --filter=@priver/reader",
     "dev:storybook": "turbo run dev --filter=@priver/storybook"
   },
   "devDependencies": {

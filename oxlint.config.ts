@@ -4,7 +4,7 @@ import { reactConfig } from '@priver/oxlint-config';
 
 export default defineConfig({
   extends: [reactConfig],
-  ignorePatterns: ['dist/**'],
+  ignorePatterns: ['dist/**', 'apps/reader/src/routeTree.gen.ts'],
   options: {
     reportUnusedDisableDirectives: 'error',
     typeAware: true,

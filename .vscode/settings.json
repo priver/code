@@ -15,6 +15,12 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -25,8 +31,12 @@
   "js/ts.tsdk.path": "./node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
   "prettier.enable": false,
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
   "tailwindCSS.classFunctions": ["cva", "cx"],
   "tailwindCSS.experimental.configFile": {
+    "apps/reader/src/style.css": "apps/reader/src/**",
     "apps/storybook/src/style.css": "apps/storybook/src/**",
     "packages/ui/src/style.css": "packages/ui/src/**"
   }
