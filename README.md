@@ -10,7 +10,7 @@ Monorepo for my Mikhail Priver's projects.
 
 - [`@priver/ui`](packages/ui) - Shared UI components
 - [`@priver/oxfmt-config`](packages/oxfmt-config) - Oxfmt configuration
-- [`@priver/oxlint-config`](packages/oxlint-config) - oxlint configuration
+- [`@priver/oxlint-config`](packages/oxlint-config) - Oxlint configuration
 - [`@priver/tsconfig`](packages/tsconfig) - TypeScript configuration
 
 ## Contributing
