@@ -40,7 +40,7 @@
   "scripts": {
     "test": "node scripts/find-rules.ts",
     "clean": "tsc -b tsconfig.build.json --clean",
-    "build": "tsc -b tsconfig.build.json --dry"
+    "build": "pnpm run clean && tsc -b tsconfig.build.json"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11"
