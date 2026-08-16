@@ -16,6 +16,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "catalog:",
     "@changesets/cli": "catalog:",
+    "@priver/oxfmt-config": "workspace:*",
     "@priver/oxlint-config": "workspace:*",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",

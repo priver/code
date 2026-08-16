@@ -1,24 +1,10 @@
 import { defineConfig } from 'oxfmt';
 
+import config from '@priver/oxfmt-config';
+
 export default defineConfig({
+  ...config,
   ignorePatterns: ['**/*.html', 'pnpm-lock.yaml', '.agents/skills/'],
-  singleQuote: true,
-  quoteProps: 'consistent',
-  proseWrap: 'always',
-  jsdoc: true,
-  sortImports: {
-    ignoreCase: false,
-    internalPattern: ['@priver/'],
-    groups: [
-      'builtin',
-      'external',
-      'internal',
-      'subpath',
-      ['parent', 'sibling', 'index'],
-      'style',
-      'unknown',
-    ],
-  },
   sortTailwindcss: {
     stylesheet: './packages/ui/src/style.css',
     functions: ['cva', 'cx'],
@@ -26,9 +12,7 @@ export default defineConfig({
   overrides: [
     {
       files: ['**/CHANGELOG.md', '.changeset/*.md'],
-      options: {
-        proseWrap: 'preserve',
-      },
+      options: { proseWrap: 'preserve' },
     },
   ],
 });

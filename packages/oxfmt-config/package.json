@@ -1,0 +1,55 @@
+{
+  "name": "@priver/oxfmt-config",
+  "version": "0.0.0",
+  "description": "Opinionated shared Oxfmt configuration",
+  "keywords": [
+    "config",
+    "formatter",
+    "javascript",
+    "oxfmt",
+    "typescript"
+  ],
+  "homepage": "https://github.com/priver/code/tree/main/packages/oxfmt-config#readme",
+  "bugs": "https://github.com/priver/code/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Mikhail Priver",
+    "email": "m.priver@gmail.com",
+    "url": "https://github.com/priver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/oxfmt-config"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": "./src/index.ts",
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    },
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "tsc -b tsconfig.build.json --clean",
+    "build": "pnpm run clean && tsc -b tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@priver/tsconfig": "workspace:*",
+    "oxfmt": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "oxfmt": "catalog:"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
