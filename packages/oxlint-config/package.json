@@ -1,12 +1,46 @@
 {
   "name": "@priver/oxlint-config",
   "version": "0.0.0",
-  "private": true,
+  "description": "Opinionated shared Oxlint presets for TypeScript projects",
+  "keywords": [
+    "config",
+    "javascript",
+    "lint",
+    "oxlint",
+    "typescript"
+  ],
+  "homepage": "https://github.com/priver/code/tree/main/packages/oxlint-config#readme",
+  "bugs": "https://github.com/priver/code/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Mikhail Priver",
+    "email": "m.priver@gmail.com",
+    "url": "https://github.com/priver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/oxlint-config"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "sideEffects": false,
   "exports": "./src/index.ts",
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    },
+    "access": "public"
+  },
   "scripts": {
-    "test": "node scripts/find-rules.ts"
+    "test": "node scripts/find-rules.ts",
+    "clean": "tsc -b tsconfig.build.json --clean",
+    "build": "pnpm run clean && tsc -b tsconfig.build.json"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11"
