@@ -7,7 +7,6 @@ export default defineConfig({
   jsdoc: true,
   sortImports: {
     ignoreCase: false,
-    internalPattern: ['@priver/'],
     groups: [
       'builtin',
       'external',

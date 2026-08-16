@@ -1,6 +1,5 @@
-import { defineConfig } from 'oxfmt';
-
 import config from '@priver/oxfmt-config';
+import { defineConfig } from 'oxfmt';
 
 export default defineConfig({
   ...config,

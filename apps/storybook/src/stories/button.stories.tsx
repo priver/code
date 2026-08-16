@@ -1,3 +1,4 @@
+import { Button, type ButtonProps } from '@priver/ui/button';
 import {
   ArrowRightIcon,
   CircleArrowDownIcon,
@@ -8,8 +9,6 @@ import {
   Trash2Icon,
 } from 'lucide-react';
 import * as React from 'react';
-
-import { Button, type ButtonProps } from '@priver/ui/button';
 
 import preview from '#.storybook/preview.ts';
 
