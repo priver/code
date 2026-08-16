@@ -1,7 +1,9 @@
 # @priver/oxlint-config
 
-Opinionated shared Oxlint presets for JavaScript and TypeScript projects in this monorepo. This is a
-private, monorepo-only workspace package and is not published to npm.
+[![NPM Version](https://img.shields.io/npm/v/%40priver%2Foxlint-config)](https://www.npmjs.com/package/@priver/oxlint-config)
+[![NPM License](https://img.shields.io/npm/l/%40priver%2Foxlint-config)](https://opensource.org/licenses/MIT)
+
+Opinionated shared Oxlint presets for TypeScript projects.
 
 ## Requirements
 
@@ -11,36 +13,23 @@ private, monorepo-only workspace package and is not published to npm.
 
 ## Installation
 
-Add the workspace package and its linting dependencies to the root `package.json`:
-
-```json
-{
-  "devDependencies": {
-    "@priver/oxlint-config": "workspace:*",
-    "oxlint": "catalog:",
-    "oxlint-tsgolint": "catalog:",
-    "typescript": "catalog:"
-  }
-}
-```
-
 ```sh
-pnpm install
+pnpm add --save-dev @priver/oxlint-config oxlint oxlint-tsgolint typescript
 ```
 
 ## Presets
 
-| Export        | Intended environment | Included plugins                                  | Additional behavior                                                  |
-| ------------- | -------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
-| `reactConfig` | Browser and React    | `import`, `oxc`, `react`, `typescript`, `unicorn` | Applies Node rules to `**/*.config.ts`; `no-console` remains enabled |
-| `nodeConfig`  | Node.js              | `import`, `node`, `oxc`, `typescript`, `unicorn`  | Allows `console`                                                     |
+| Export        | Intended environment | Included plugins                                  |
+| ------------- | -------------------- | ------------------------------------------------- |
+| `reactConfig` | Browser and React    | `import`, `oxc`, `react`, `typescript`, `unicorn` |
+| `nodeConfig`  | Node.js              | `import`, `node`, `oxc`, `typescript`, `unicorn`  |
 
-The React preset's config-file override matches only `**/*.config.ts`. Other config extensions do
-not receive its Node-specific environment, plugins, or rules.
+The React preset applies its Node-specific environment, plugins, and rules to
+`**/*.config.{ts,mts}`.
 
 ## Quick Start
 
-Create `oxlint.config.ts` at the monorepo root:
+Create `oxlint.config.ts` at the project root:
 
 ```ts
 import { defineConfig } from 'oxlint';
@@ -50,6 +39,7 @@ import { reactConfig } from '@priver/oxlint-config';
 export default defineConfig({
   extends: [reactConfig],
   options: {
+    reportUnusedDisableDirectives: 'error',
     typeAware: true,
   },
   env: {
@@ -109,7 +99,7 @@ Add a script to `package.json`:
 ```json
 {
   "scripts": {
-    "lint": "oxlint ."
+    "lint": "oxlint"
   }
 }
 ```
@@ -118,14 +108,14 @@ Run it with `pnpm lint`.
 
 ## Known Limitations
 
-- With Oxlint 1.77.0, the version currently used by this workspace, top-level `env` values are not
-  inherited through `extends`. Declare the ECMAScript and runtime environments in the consuming root
-  configuration. This behavior may change in a future Oxlint release.
+- With Oxlint 1.78.0, the version currently supported by this package, top-level `env` values are
+  not inherited through `extends`. Declare the ECMAScript and runtime environments in the consuming
+  root configuration. This behavior may change in a future Oxlint release.
 - `ignorePatterns` and root-only options such as `options.typeAware` and `options.typeCheck` must be
   set in the consuming root configuration.
 - Importing these presets requires the Node-based `oxlint` package. The standalone Oxlint binary
   cannot load TypeScript configuration files.
-- JSON configuration files cannot import configuration objects from workspace packages. See Oxlint's
+- JSON configuration files cannot import configuration objects from shared packages. See Oxlint's
   [shared configuration documentation][shared-configs].
 
 ## License

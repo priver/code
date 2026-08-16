@@ -24,7 +24,7 @@ export const reactConfig = defineConfig({
   },
   overrides: [
     {
-      files: ['**/*.config.ts'],
+      files: ['**/*.config.{ts,mts}'],
       env: {
         builtin: true,
         node: true,
