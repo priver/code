@@ -86,7 +86,7 @@ Add scripts to `package.json`:
 }
 ```
 
-Run `pnpm format` to write changes or `pnpm check-format` in CI.
+Run `pnpm run format` to write changes or `pnpm run check-format` in CI.
 
 ## License
 

@@ -45,12 +45,6 @@
       "with": ["//#serve"],
       "cache": false,
       "persistent": true
-    },
-    "preview": {
-      "description": "Run built applications in preview mode",
-      "dependsOn": ["build"],
-      "cache": false,
-      "persistent": true
     }
   }
 }
