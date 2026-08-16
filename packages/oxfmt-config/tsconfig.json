@@ -1,0 +1,4 @@
+{
+  "extends": ["@priver/tsconfig"],
+  "include": ["src/**/*", "*.config.ts"]
+}

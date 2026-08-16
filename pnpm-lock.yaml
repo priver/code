@@ -104,6 +104,9 @@ importers:
       '@changesets/cli':
         specifier: 'catalog:'
         version: 3.0.0
+      '@priver/oxfmt-config':
+        specifier: workspace:*
+        version: link:packages/oxfmt-config
       '@priver/oxlint-config':
         specifier: workspace:*
         version: link:packages/oxlint-config
@@ -195,6 +198,18 @@ importers:
       vite:
         specifier: 'catalog:'
         version: 8.2.1(@types/node@24.13.3)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)
+
+  packages/oxfmt-config:
+    devDependencies:
+      '@priver/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+      oxfmt:
+        specifier: 'catalog:'
+        version: 0.63.0
+      typescript:
+        specifier: 'catalog:'
+        version: 7.0.2
 
   packages/oxlint-config:
     dependencies:
