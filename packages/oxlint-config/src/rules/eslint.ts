@@ -1,4 +1,3 @@
-import confusingBrowserGlobals from 'confusing-browser-globals';
 import type { DummyRuleMap } from 'oxlint';
 
 export const eslintRules = {
@@ -128,7 +127,6 @@ export const eslintRules = {
       message:
         'This API is deprecated. Use https://github.com/sindresorhus/uint8array-extras instead.',
     },
-    ...confusingBrowserGlobals,
   ],
   'no-restricted-imports': 'off',
   'no-restricted-properties': 'off',
