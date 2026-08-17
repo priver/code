@@ -1,6 +1,6 @@
 {
   "name": "@priver/oxlint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opinionated shared Oxlint presets for TypeScript projects",
   "keywords": [
     "config",
