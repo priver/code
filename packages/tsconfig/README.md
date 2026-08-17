@@ -7,12 +7,12 @@ Opinionated shared TypeScript configurations.
 
 ## Requirements
 
-- TypeScript 7
+- TypeScript 7 or later
 
 ## Installation
 
 ```sh
-pnpm add --save-dev @priver/tsconfig typescript@^7
+pnpm add --save-dev @priver/tsconfig typescript
 ```
 
 ## Configurations
