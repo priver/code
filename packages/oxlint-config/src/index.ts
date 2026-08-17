@@ -9,10 +9,6 @@ import { typescriptRules } from './rules/typescript.ts';
 import { unicornRules } from './rules/unicorn.ts';
 
 export const reactConfig = defineConfig({
-  env: {
-    builtin: true,
-    browser: true,
-  },
   plugins: ['import', 'oxc', 'react', 'typescript', 'unicorn'],
   rules: {
     ...eslintRules,
@@ -25,10 +21,6 @@ export const reactConfig = defineConfig({
   overrides: [
     {
       files: ['**/*.config.{ts,mts}'],
-      env: {
-        builtin: true,
-        node: true,
-      },
       plugins: ['import', 'node', 'oxc', 'typescript', 'unicorn'],
       rules: {
         ...eslintRules,
@@ -43,10 +35,6 @@ export const reactConfig = defineConfig({
 });
 
 export const nodeConfig = defineConfig({
-  env: {
-    builtin: true,
-    node: true,
-  },
   plugins: ['import', 'node', 'oxc', 'typescript', 'unicorn'],
   rules: {
     ...eslintRules,

@@ -42,12 +42,8 @@
     "clean": "tsc -b tsconfig.build.json --clean",
     "build": "pnpm run clean && tsc -b tsconfig.build.json"
   },
-  "dependencies": {
-    "confusing-browser-globals": "^1.0.11"
-  },
   "devDependencies": {
     "@priver/tsconfig": "workspace:*",
-    "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "catalog:",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
