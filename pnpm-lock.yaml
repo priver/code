@@ -239,7 +239,11 @@ importers:
         specifier: 'catalog:'
         version: 7.0.2
 
-  packages/tsconfig: {}
+  packages/tsconfig:
+    dependencies:
+      typescript:
+        specifier: '>=7'
+        version: 7.0.2
 
   packages/ui:
     dependencies:
