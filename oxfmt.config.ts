@@ -3,7 +3,7 @@ import { defineConfig } from 'oxfmt';
 
 export default defineConfig({
   ...config,
-  ignorePatterns: ['**/*.html', 'pnpm-lock.yaml', '.agents/skills/'],
+  ignorePatterns: ['**/*.html', 'pnpm-lock.yaml'],
   sortTailwindcss: {
     stylesheet: './packages/ui/src/style.css',
     functions: ['cva', 'cx'],
