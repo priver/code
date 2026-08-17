@@ -1,11 +1,38 @@
 {
   "name": "@priver/tsconfig",
   "version": "0.0.0",
-  "private": true,
+  "description": "Opinionated shared TypeScript configurations",
+  "keywords": [
+    "config",
+    "tsconfig",
+    "typescript"
+  ],
+  "homepage": "https://github.com/priver/code/tree/main/packages/tsconfig#readme",
+  "bugs": "https://github.com/priver/code/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Mikhail Priver",
+    "email": "m.priver@gmail.com",
+    "url": "https://github.com/priver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priver/code.git",
+    "directory": "packages/tsconfig"
+  },
+  "files": [
+    "tsconfig*.json"
+  ],
   "exports": {
     ".": "./tsconfig.json",
     "./library": "./tsconfig.library.json",
     "./react": "./tsconfig.react.json",
     "./vite": "./tsconfig.vite.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "typescript": ">=7"
   }
 }
