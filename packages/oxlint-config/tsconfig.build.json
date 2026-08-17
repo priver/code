@@ -1,7 +1,6 @@
 {
   "extends": ["@priver/tsconfig", "@priver/tsconfig/library"],
   "compilerOptions": {
-    "types": ["node"],
     "rootDir": "src",
     "outDir": "dist"
   },

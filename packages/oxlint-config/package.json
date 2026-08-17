@@ -44,7 +44,6 @@
   },
   "devDependencies": {
     "@priver/tsconfig": "workspace:*",
-    "@types/node": "catalog:",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
     "oxlint-tsgolint": "catalog:",

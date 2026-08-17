@@ -216,9 +216,6 @@ importers:
       '@priver/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
-      '@types/node':
-        specifier: 'catalog:'
-        version: 24.13.3
       oxfmt:
         specifier: 'catalog:'
         version: 0.63.0
