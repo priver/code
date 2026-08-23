@@ -6,18 +6,38 @@ import oxlintPackage from 'oxlint/package.json' with { type: 'json' };
 
 import { eslintRules } from '../src/rules/eslint.ts';
 import { importRules } from '../src/rules/import.ts';
+import { jsdocRules } from '../src/rules/jsdoc.ts';
+import { jsxA11yRules } from '../src/rules/jsx-a11y.ts';
 import { nodeRules } from '../src/rules/node.ts';
 import { oxcRules } from '../src/rules/oxc.ts';
+import { promiseRules } from '../src/rules/promise.ts';
+import { reactPerfRules } from '../src/rules/react-perf.ts';
 import { reactRules } from '../src/rules/react.ts';
 import { typescriptRules } from '../src/rules/typescript.ts';
 import { unicornRules } from '../src/rules/unicorn.ts';
 
-const PLUGINS = new Set(['eslint', 'import', 'node', 'oxc', 'react', 'typescript', 'unicorn']);
+const PLUGINS = new Set([
+  'eslint',
+  'import',
+  'jsdoc',
+  'jsx_a11y',
+  'node',
+  'oxc',
+  'promise',
+  'react',
+  'react_perf',
+  'typescript',
+  'unicorn',
+]);
 const RULE_MODULES = [
   eslintRules,
   importRules,
+  jsdocRules,
+  jsxA11yRules,
   nodeRules,
   oxcRules,
+  promiseRules,
+  reactPerfRules,
   reactRules,
   typescriptRules,
   unicornRules,
@@ -93,7 +113,7 @@ async function main() {
     oxlintRules
       .filter((rule) => PLUGINS.has(rule.scope))
       .map((rule) => [
-        rule.scope === 'eslint' ? rule.value : `${rule.scope}/${rule.value}`,
+        rule.scope === 'eslint' ? rule.value : `${rule.scope.replaceAll('_', '-')}/${rule.value}`,
         rule.docs_url,
       ]),
   );

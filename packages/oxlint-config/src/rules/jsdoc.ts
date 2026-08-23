@@ -1,0 +1,27 @@
+import type { DummyRuleMap } from 'oxlint';
+
+export const jsdocRules = {
+  'jsdoc/check-access': 'error',
+  'jsdoc/check-property-names': 'error',
+  'jsdoc/check-tag-names': ['error', { typed: true }],
+  'jsdoc/empty-tags': 'error',
+  'jsdoc/implements-on-classes': 'error',
+  'jsdoc/no-blank-blocks': 'error',
+  'jsdoc/no-defaults': 'error',
+  'jsdoc/require-param': 'off',
+  'jsdoc/require-param-description': 'error',
+  'jsdoc/require-param-name': 'error',
+  'jsdoc/require-param-type': 'off',
+  'jsdoc/require-property': 'error',
+  'jsdoc/require-property-description': 'error',
+  'jsdoc/require-property-name': 'error',
+  'jsdoc/require-property-type': 'off',
+  'jsdoc/require-returns': 'off',
+  'jsdoc/require-returns-description': 'error',
+  'jsdoc/require-returns-type': 'off',
+  'jsdoc/require-throws-description': 'error',
+  'jsdoc/require-throws-type': 'error',
+  'jsdoc/require-yields': 'error',
+  'jsdoc/require-yields-description': 'error',
+  'jsdoc/require-yields-type': 'error',
+} as const satisfies DummyRuleMap;

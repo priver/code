@@ -260,6 +260,10 @@ export const AllCombinations = meta.story({
   ),
 });
 
+function preventDefaultFormSubmit(event: React.SubmitEvent<HTMLFormElement>) {
+  event.preventDefault();
+}
+
 /** Examples of buttons in form context with different type attributes. */
 export const FormButtons = meta.story({
   argTypes: {
@@ -270,13 +274,14 @@ export const FormButtons = meta.story({
   render: (args) => (
     <form
       className="w-96 space-y-4 rounded-lg border border-primary p-6"
-      onSubmit={(e) => {
-        e.preventDefault();
-      }}
+      onSubmit={preventDefaultFormSubmit}
     >
       <div>
-        <label className="mb-2 block text-sm font-medium">Email</label>
+        <label className="mb-2 block text-sm font-medium" htmlFor="form-buttons-imput">
+          Email
+        </label>
         <input
+          id="form-buttons-imput"
           type="email"
           className="w-full rounded-md border border-primary px-3 py-2"
           placeholder="Enter your email"
