@@ -19,10 +19,10 @@ pnpm add --save-dev @priver/oxlint-config oxlint oxlint-tsgolint typescript
 
 ## Presets
 
-| Export        | Intended environment | Included plugins                                  |
-| ------------- | -------------------- | ------------------------------------------------- |
-| `reactConfig` | Browser and React    | `import`, `oxc`, `react`, `typescript`, `unicorn` |
-| `nodeConfig`  | Node.js              | `import`, `node`, `oxc`, `typescript`, `unicorn`  |
+| Export        | Intended environment | Included plugins                                                                                |
+| ------------- | -------------------- | ----------------------------------------------------------------------------------------------- |
+| `reactConfig` | Browser and React    | `import`, `jsdoc`, `jsx-a11y`, `oxc`, `promise`, `react`, `react-perf`, `typescript`, `unicorn` |
+| `nodeConfig`  | Node.js              | `import`, `jsdoc`, `node`, `oxc`, `promise`, `typescript`, `unicorn`                            |
 
 The React preset applies its Node-specific environment, plugins, and rules to
 `**/*.config.{ts,mts}`.
