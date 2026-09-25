@@ -1,5 +1,7 @@
 {
   "extends": ["@priver/tsconfig"],
-  "compilerOptions": { "types": ["node"] },
+  "compilerOptions": {
+    "types": ["node"]
+  },
   "include": ["src/**/*", "scripts/**/*", "*.config.ts"]
 }
