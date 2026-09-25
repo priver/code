@@ -26,6 +26,7 @@
   "exports": {
     ".": "./tsconfig.json",
     "./library": "./tsconfig.library.json",
+    "./node": "./tsconfig.node.json",
     "./react": "./tsconfig.react.json",
     "./vite": "./tsconfig.vite.json"
   },
