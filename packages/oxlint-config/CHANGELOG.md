@@ -1,5 +1,11 @@
 # @priver/oxlint-config
 
+## 1.2.0
+
+### Minor Changes
+
+- [#96](https://github.com/priver/code/pull/96) [`2550e7e`](https://github.com/priver/code/commit/2550e7ee900601a9445a318bc7a73165c4a79b7f) - Update Oxlint to v1.85.0 and Oxfmt to v0.70.0
+
 ## 1.1.0
 
 ### Minor Changes
